@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecteer spelversie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+            color: #00ffe0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            text-align: center;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.8);
+            border-bottom: 2px solid #00ffe0;
+            box-shadow: 0 0 20px #00ffe088;
+        }
+
+        header h1, footer {
+            margin: 0;
+            font-size: 2rem;
+            text-shadow: 0 0 10px #00ffe0;
+        }
+
+        .language-selector {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .language-selector li {
+            display: inline-block;
+        }
+
+        .language-selector img {
+            width: 40px;
+            height: 28px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .language-selector img:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 10px #00ffe0;
+        }
+
+        main {
+            flex: 1;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .neon-box {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #00ffe0;
+            box-shadow: 0 0 20px #00ffe0;
+            border-radius: 15px;
+            padding: 2rem;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .button-container {
+            max-width: 100%;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button, .back-button {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 10px;
+            font-size: 16px;
+            color: #00ffe0;
+            background-color: transparent;
+            border: 2px solid #00ffe0;
+            border-radius: 12px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s, transform 0.2s;
+        }
+
+        .button:hover, .back-button:hover {
+            background-color: #00ffe0;
+            color: #0f0f0f;
+            transform: scale(1.05);
+        }
+
+        footer {
+            font-size: 0.8rem;
+            border-top: 2px solid #00ffe0;
+        }
+
+        .shape-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .shape-bg div {
+            position: absolute;
+            border: 2px solid #00ffe055;
+            border-radius: 50%;
+            animation: float 20s infinite linear;
+        }
+
+        .shape1 {
+            width: 200px;
+            height: 200px;
+            top: 10%;
+            left: 10%;
+        }
+
+        .shape2 {
+            width: 300px;
+            height: 300px;
+            bottom: 10%;
+            right: 15%;
+        }
+
+        @keyframes float {
+            0% { transform: rotate(0deg) scale(1); }
+            50% { transform: rotate(180deg) scale(1.2); }
+            100% { transform: rotate(360deg) scale(1); }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="page-title">Selecteer spelversie</h1>
+    </header>
+
+    <ul class="language-selector">
+        <li><img src="../images/flag_nl.gif" alt="Nederlands" onclick="changeLanguage('nl')" /></li>
+        <li><img src="../images/flag_de.gif" alt="Deutsch" onclick="changeLanguage('de')" /></li>
+        <li><img src="../images/flag_uk.gif" alt="English (UK)" onclick="changeLanguage('en-uk')" /></li>
+        <li><img src="../images/flag_us.gif" alt="English (US)" onclick="changeLanguage('en-us')" /></li>
+        <li><img src="../images/flag_au.gif" alt="English (AU)" onclick="changeLanguage('en-au')" /></li>
+        <li><a class="back-button" id="back-button" href="../index">Terug</a></li>
+    </ul>
+
+    <main>
+        <div class="neon-box">
+            <h2 id="welcome-message">Selecteer hieronder een knop om naar de overzichten te gaan.</h2>
+            <div class="button-container">
+                <a class="button" id="button-nl" href="nl_NL/indexNL">Meldkamerspel (nl_NL)</a>
+                <a class="button" id="button-de" href="de_DE/indexDE">Leitstellenspiel (de_DE)</a>
+                <a class="button" id="button-uk" href="en_UK/indexUK">Missionchief (en_UK)</a>
+                <a class="button" id="button-us" href="en_US/indexUS">Missionchief (en_US)</a>
+                <a class="button" id="button-au" href="en_AU/indexAU">Missionchief (en_AU)</a>
+                <a class="button" id="button-au" href="es_ES/indexES">Missionchief (es_ES)</a>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        &copy; <span id="footer-year"></span> JR04. Alle rechten voorbehouden. Gebruik van onderdelen vanaf deze site is zonder schriftelijke toestemming verboden.
+    </footer>
+
+    <script>
+        // Dynamische jaartalberekening
+        const startYear = 2024;
+        const currentYear = new Date().getFullYear();
+        const yearSpan = document.getElementById('footer-year');
+        yearSpan.textContent = startYear === currentYear ? `${currentYear}` : `${startYear} - ${currentYear}`;
+
+        // Functie voor taalwissel in de header
+        function changeHeaderLanguage(lang) {
+            let pageTitle = '';
+            switch (lang) {
+                case "nl":
+                    pageTitle = "Selecteer spelversie";
+                    break;
+                case "de":
+                    pageTitle = "Wählen Sie Spielversion";
+                    break;
+                case "en-uk":
+                    pageTitle = "Select Game Version (UK)";
+                    break;
+                case "en-us":
+                    pageTitle = "Select Game Version (US)";
+                    break;
+                case "en-au":
+                    pageTitle = "Select Game Version (AU)";
+                    break;
+                default:
+                    pageTitle = "Selecteer spelversie";
+            }
+            document.getElementById('page-title').textContent = pageTitle;
+        }
+
+        // Functie voor taalwissel in de footer
+        function changeFooterLanguage(lang) {
+            let footerText = '';
+            switch (lang) {
+                case "nl":
+                    footerText = "Alle rechten voorbehouden. Gebruik van onderdelen vanaf deze site is zonder schriftelijke toestemming verboden.";
+                    break;
+                case "de":
+                    footerText = "Alle Rechte vorbehalten. Die Verwendung von Teilen dieser Website ist ohne schriftliche Genehmigung untersagt.";
+                    break;
+                case "en-uk":
+                case "en-us":
+                case "en-au":
+                    footerText = "All rights reserved. Use of components from this site is prohibited without written permission.";
+                    break;
+                default:
+                    footerText = "Alle rechten voorbehouden.";
+            }
+
+            const footerElement = document.getElementById('footer');
+            footerElement.innerHTML = `&copy; <span id="footer-year">${yearSpan.textContent}</span> JR04. ${footerText}`;
+        }
+
+        // Functie voor algemene taalwissel
+        function changeLanguage(lang) {
+            changeHeaderLanguage(lang);
+            switch (lang) {
+                case "nl":
+                    document.title = "Selecteer spelversie";
+                    document.getElementById('welcome-message').textContent = "Selecteer hieronder een knop om naar de overzichten te gaan.";
+                    document.getElementById('button-nl').textContent = "Meldkamerspel (nl_NL)";
+                    document.getElementById('button-de').textContent = "Leitstellenspiel (de_DE)";
+                    document.getElementById('button-uk').textContent = "Missionchief (en_UK)";
+                    document.getElementById('button-us').textContent = "Missionchief (en_US)";
+                    document.getElementById('button-au').textContent = "Missionchief (en_AU)";
+                    document.getElementById('back-button').textContent = "Terug";
+                    break;
+                case "de":
+                    document.title = "Wählen Sie Spielversion";
+                    document.getElementById('welcome-message').textContent = "Wählen Sie unten einen Knopf, um zu den Übersichten zu gelangen.";
+                    document.getElementById('back-button').textContent = "Zurück";
+                    break;
+                case "en-uk":
+                case "en-us":
+                case "en-au":
+                    document.title = `Select Game Version (${lang.split('-')[1].toUpperCase()})`;
+                    document.getElementById('welcome-message').textContent = "Select a button below to go to the overviews.";
+                    document.getElementById('back-button').textContent = "Back";
+                    break;
+                default:
+                    break;
+            }
+            // Update de footer taal
+            changeFooterLanguage(lang);
+        }
+    </script>
+</body>
+</html>

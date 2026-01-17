@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einsätze Leitstellenspiel (de_DE)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <script src="https://apis.google.com/js/api.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Orbitron', sans-serif;
+            background-color: #0e0e1a;
+            color: #00ffe0; /* Neon kleur voor tekst */
+            text-align: center;
+        }
+
+        h1 {
+            margin: 30px 0 10px;
+            font-size: 32px;
+            text-shadow: 0 0 5px #00ffe0; /* Neon glow effect */
+        }
+
+        p {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            font-size: 15px;
+        }
+
+        .language-selector {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 0;
+            gap: 10px;
+        }
+
+        .language-selector li img {
+            width: 30px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .language-selector li img:hover {
+            transform: scale(1.1);
+        }
+
+        .button-container {
+            margin: 20px 0;
+        }
+
+        .button {
+            background-color: #1b1b2f;
+            color: #00ffe0; /* Neon kleur voor knoppen */
+            border: 2px solid #00ffe0; /* Neon kleur voor de rand van knoppen */
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 0 5px;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .button:hover {
+            background-color: #00ffe0; /* Neon kleur voor hover */
+            color: #1b1b2f;
+            transform: scale(1.05);
+        }
+
+        table {
+            width: 95%;
+            max-width: 1200px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #1f1f2e;
+            color: #00ffe0; /* Neon kleur voor tekst in de tabel */
+            box-shadow: 0 0 10px #00ffe0; /* Neon kleur voor schaduw */
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        thead th {
+            background-color: #2e2e3e;
+            padding: 12px;
+            border-bottom: 2px solid #00ffe0;
+        }
+
+        tbody td {
+            padding: 10px;
+            border-bottom: 1px solid #444;
+        }
+
+        tbody tr:hover {
+            background-color: #2a2a3e;
+        }
+
+        #footer {
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 12px;
+            color: #ccc;
+        }
+    </style>
+    <script>
+        function init() {
+            gapi.client.init({
+                'apiKey': 'AIzaSyCKxsInSgRVfJDI50eGmC0wUxb_VLqr8sk',
+                'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
+            }).then(getSheetData);
+        }
+
+        function getSheetData() {
+            const sheetId = '1698J9ImOQPVWLZcFgb_dRM0e79AU-xL88QCl3GEW9Jk';
+
+            const range1 = 'Sheet1!A:F';
+            const range2 = 'Sheet1!H1:I1';
+
+            gapi.client.sheets.spreadsheets.values.get({
+                spreadsheetId: sheetId,
+                range: range1
+            }).then(function(response) {
+                const data1 = response.result.values;
+                const table = document.createElement('table');
+
+                const thead = document.createElement('thead');
+                const headerRow = document.createElement('tr');
+
+                data1[0].forEach(function(cell) {
+                    const th = document.createElement('th');
+                    th.textContent = cell || '';
+                    headerRow.appendChild(th);
+                });
+
+                thead.appendChild(headerRow);
+                table.appendChild(thead);
+
+                const tbody = document.createElement('tbody');
+                for (let i = 1; i < data1.length; i++) {
+                    const tr = document.createElement('tr');
+                    data1[i].forEach(function(cell) {
+                        const td = document.createElement('td');
+                        td.textContent = cell || '';
+                        tr.appendChild(td);
+                    });
+                    tbody.appendChild(tr);
+                }
+                table.appendChild(tbody);
+                document.getElementById('sheet-data').appendChild(table);
+            });
+
+            gapi.client.sheets.spreadsheets.values.get({
+                spreadsheetId: sheetId,
+                range: range2
+            }).then(function(response) {
+                const data2 = response.result.values;
+                const updateDate = data2[0] && data2[0][0] ? data2[0][0] : '';
+                const lastUpdated = data2[0] && data2[0][1] ? data2[0][1] : '';
+
+                const updateElement = document.createElement('p');
+                updateElement.textContent = `${updateDate} ${lastUpdated}`;
+                document.getElementById('sheet-data').prepend(updateElement);
+            });
+        }
+
+        gapi.load('client', init);
+    </script>
+</head>
+<body>
+    <ul class="language-selector">
+        <li><img src="../../images/flag_nl.gif" alt="Nederlands" onclick="changeLanguage('nl')" /></li>
+        <li><img src="../../images/flag_de.gif" alt="Deutsch" onclick="changeLanguage('de')" /></li>
+        <li><img src="../../images/flag_uk.gif" alt="English (UK)" onclick="changeLanguage('en-uk')" /></li>
+        <li><img src="../../images/flag_us.gif" alt="English (US)" onclick="changeLanguage('en-us')" /></li>
+        <li><img src="../../images/flag_au.gif" alt="English (AU)" onclick="changeLanguage('en-au')" /></li>
+        <li><a class="button" id="back-button" href="/gameversions/de_DE/indexDE">Terug</a></li>
+    </ul>
+
+    <div class="button-container">
+        <a class="button" id="game-button" href="/index">Startpagina</a>
+        <a class="button" id="contact-button" href="/gameversions/contact">Contact</a>
+    </div>
+
+    <h1 id="page-title">Einsätze IDs (de_DE)</h1>
+    <p id="page-message">Hier finden Sie eine Übersicht aller Einsätze in Leitstellenspiel (de_DE).</p>
+
+    <div id="sheet-data"></div>
+
+    <footer id="footer">
+        &copy; <span id="footer-year"></span> JR04. Alle Rechte vorbehalten.
+    </footer>
+
+    <script>
+        const startYear = 2024;
+        const currentYear = new Date().getFullYear();
+        document.getElementById('footer-year').textContent = startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
+
+        function changeLanguage(lang) {
+            switch(lang) {
+                case "nl":
+                    document.title = "Melding IDs (de_DE)";
+                    document.getElementById('page-title').textContent = "Melding IDs (de_DE)";
+                    document.getElementById('page-message').textContent = "Hier kunt u een overzicht vinden van alle meldingen in Meldkamerspel (de_DE). Het laden kan enkele seconden duren. Wijzigingen? Klik op Contact.";
+                    document.getElementById('game-button').textContent = "Startpagina";
+                    document.getElementById('contact-button').textContent = "Contact";
+                    document.getElementById('back-button').textContent = "Terug";
+                    break;
+                case "de":
+                    document.title = "Einsätze IDs (de_DE)";
+                    document.getElementById('page-title').textContent = "Einsätze IDs (de_DE)";
+                    document.getElementById('page-message').textContent = "Hier finden Sie eine Übersicht aller Einsätze in Leitstellenspiel (de_DE).";
+                    document.getElementById('game-button').textContent = "Startseite";
+                    document.getElementById('contact-button').textContent = "Kontakt";
+                    document.getElementById('back-button').textContent = "Zurück";
+                    break;
+                default:
+                    document.title = "Mission IDs (de_DE)";
+                    document.getElementById('page-title').textContent = "Mission IDs (de_DE)";
+                    document.getElementById('page-message').textContent = "Here you can find an overview of all missions in Missionchief (de_DE).";
+                    document.getElementById('game-button').textContent = "Homepage";
+                    document.getElementById('contact-button').textContent = "Contact";
+                    document.getElementById('back-button').textContent = "Back";
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

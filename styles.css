@@ -1,0 +1,116 @@
+/* Resetten van standaard marges en paddings voor de hele pagina */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Algemene stijl voor koppen en paragrafen */
+h1, p {
+    padding: 16px;
+}
+
+/* Container voor knoppen met flex-lay-out */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Stijl voor knoppen */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Stijl voor knoppen bij hover */
+.button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Stijl voor tabellen */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+/* Stijl voor tabelrijen en -koppen */
+table, th, td {
+    border: 1px solid black;
+}
+
+/* Stijl voor tabelkoppen */
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Achtergrondkleur voor tabelkoppen */
+th {
+    background-color: #f2f2f2;
+}
+
+/* Lijststijl op nul zetten */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Stijl voor lijstitems */
+ul li {
+    padding: 8px;
+}
+
+/* Stijl voor ankertags in lijstitems */
+ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Stijl voor ankertags bij hover in lijstitems */
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Stijl voor footer onderaan de pagina */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #e1e1e1;
+}
+
+/* Stijlen voor taalwisselaar met vlaggen */
+.language-selector {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.language-selector li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.language-selector img {
+    width: 20px; /* Aangepaste breedte voor de vlaggen */
+    height: auto; /* Zorg ervoor dat de hoogte automatisch wordt aangepast */
+    cursor: pointer;
+    border: 1px solid #ccc; /* Optioneel: voeg een lichte rand toe rond de vlaggen */
+    border-radius: 4px; /* Optioneel: voeg afgeronde hoeken toe aan de vlaggen */
+}
+
+.language-selector img:hover {
+    opacity: 0.8; /* Optioneel: verlaag de opaciteit van de vlag bij hover */
+}

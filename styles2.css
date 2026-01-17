@@ -1,0 +1,127 @@
+/* Resetten van standaard marges en paddings voor de hele pagina */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Achtergrondkleur voor de pagina */
+    color: #333;
+}
+
+/* Algemene stijl voor koppen en paragrafen */
+h1, p {
+    padding: 16px;
+}
+
+/* Container voor knoppen met flex-lay-out */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Stijl voor knoppen */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Stijl voor knoppen bij hover */
+.button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Tabelstijl: Algemene stijl voor de tabel */
+table {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Zachte schaduw voor de tabel */
+    border-radius: 12px;
+}
+
+/* Stijl voor tabelrijen en -koppen */
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+/* Stijl voor tabelkoppen */
+th, td {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Achtergrondkleur voor tabelkoppen */
+th {
+    background-color: #f2f2f2;
+}
+
+/* Stijl voor hover in tabelrijen */
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Lijststijl op nul zetten */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Stijl voor lijstitems */
+ul li {
+    padding: 8px;
+}
+
+/* Stijl voor ankertags in lijstitems */
+ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Stijl voor ankertags bij hover in lijstitems */
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Stijl voor footer onderaan de pagina */
+footer {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 8px 0; /* Verkleinde padding voor een kleinere footer */
+    border-top: 1px solid #e1e1e1;
+    margin-top: 20px; /* Zorgt ervoor dat de footer onderaan komt en niet in de weg zit */
+}
+
+/* Stijlen voor taalwisselaar met vlaggen */
+.language-selector {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center; /* Centraal uitlijnen van de vlaggen */
+}
+
+.language-selector li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.language-selector img {
+    width: 30px; /* Grotere breedte voor de vlaggen */
+    height: auto;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.language-selector img:hover {
+    opacity: 0.8;
+}

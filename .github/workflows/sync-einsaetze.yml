@@ -28,5 +28,5 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add gameversions/nl_NL/nl_NL-Data/einsaetze.json
-          git commit -m "Auto update einsaetze.json" || echo "Nothing to commit"
+          git commit -m "Update einsaetze.json" || echo "Nothing to commit"
           git push origin main

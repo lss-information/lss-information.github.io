@@ -19,7 +19,6 @@
   "min_pump_speed": "Benodigde Min. Pomp Capaciteit",
   "traffic_units": "Benodigde Signalisatie Voertuigen",
   "traffic_unit": "Signalisatie Voertuigen",
-  "personnel_educations": " Personen benodigd",
   "boats": "Benodigde Bootaanhanger(s) (WOA of BA-RB)",
   "diver_units": "Benodigde Waterongevallenvoertuig(en) / Oppervlaktereddingsteam(s)",
   "arff": "Benodigde Crashtender(s)",
@@ -73,5 +72,7 @@
   "bomb_disposal_patrol": "Benodigde DB-TEV",
 
   "Arrayx": "Onbekend aantal -",
-  "patient_transport": "Patienten transport"
+  "patient_transport": "Patienten transport",
+  "personnel_educations": " Personen benodigd",
+  "wildfire": "Handcrew"
 }

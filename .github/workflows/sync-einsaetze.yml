@@ -2,33 +2,30 @@ name: Sync einsaetze.json
 
 on:
   schedule:
-    - cron: "*/30 * * * *"  # elke 30 minuten
+    - cron: "0 * * * *"
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repo (full)
+      - name: Checkout repo
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-
-      - name: Ensure target directory exists
-        run: mkdir -p gameversions/nl_NL-Data
-
       - name: Download JSON
         run: |
-          curl -f -s http://meldkamerspel.com/einsaetze.json \
-          -o gameversions/nl_NL-Data/einsaetze.json
+          mkdir -p gameversions/nl_NL-Data
+          curl -f -s http://meldkamerspel.com/einsaetze.json -o gameversions/nl_NL-Data/einsaetze.json
 
-      - name: Commit & push
+      - name: Commit if changed
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-
           git add gameversions/nl_NL-Data/einsaetze.json
           git commit -m "Auto update einsaetze.json" || echo "Nothing to commit"
           git push origin main

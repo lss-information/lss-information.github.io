@@ -82,10 +82,10 @@
 
     <script>
         async function loadData() {
-            const missionsResponse = await fetch('gameversions/nl_NL/nl_NL-Data/einsaetze.json');
+            const missionsResponse = await fetch('nl_NL-Data/einsaetze.json');
             const missions = await missionsResponse.json();
 
-            const translationsResponse = await fetch('gameversions/nl_NL/translations.json');
+            const translationsResponse = await fetch('translations.json');
             const translations = await translationsResponse.json();
 
             const table = document.createElement('table');

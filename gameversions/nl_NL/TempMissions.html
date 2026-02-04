@@ -149,17 +149,35 @@ async function initMissions() {
 
         // Combineer requirements en chances zonder overschrijven
         const allReqs = {};
-        if (mission.requirements) Object.assign(allReqs, mission.requirements);
+        // Requirements
+        if (mission.requirements) {
+            for (const key of Object.keys(translations)) { // volgorde uit translations.json
+                if (mission.requirements[key]) {
+                    const value = mission.requirements[key];
+                    const name = translations[key] || key;
 
-        if (mission.chances) {
-            Object.keys(mission.chances).forEach(key => {
-                if (allReqs[key] !== undefined) {
-                    allReqs[key] = `${allReqs[key]} (kans: ${mission.chances[key]}%)`;
-                } else {
-                    allReqs[key] = `kans: ${mission.chances[key]}%`;
+                    if (typeof value === "object") {
+                        // value is een object, dus per subkey tonen
+                        for (const subKey in value) {
+                            reqDiv.innerHTML += `${name} (${subKey}): ${value[subKey]}<br>`;
+                        }
+                    } else {
+                        reqDiv.innerHTML += `${name}: ${value}<br>`;
+                    }
                 }
-            });
+            }
         }
+
+        // Chances
+        if (mission.chances) {
+            for (const key of Object.keys(translations)) {
+                if (mission.chances[key] !== undefined) {
+                    const name = translations[key] || key;
+                    reqDiv.innerHTML += `${name} - kans: ${mission.chances[key]} %<br>`;
+                }
+            }
+        }
+
 
             // Sorteer op volgorde van translations.json
         translationOrder.forEach(key => {

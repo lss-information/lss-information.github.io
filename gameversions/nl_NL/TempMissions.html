@@ -142,7 +142,8 @@ async function loadData() {
         }
         for (const key in chances) {
             const displayName = translations[key] || key;
-            content.innerHTML += `${displayName} (kans %): ${chances[key]}<br>`;
+            content.innerHTML += `${displayName} - kans: ${chances[key]} %<br>`;
+
         }
 
         btn.addEventListener('click', () => {

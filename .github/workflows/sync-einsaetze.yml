@@ -1,0 +1,31 @@
+name: Sync einsaetze.json
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # elke 30 minuten
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Download JSON
+        run: |
+          curl -s http://meldkamerspel.com/einsaetze.json -o /gameversions/nl_NL-Data/einsaetze.json
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+
+          if git diff --quiet; then
+            echo "Geen wijzigingen"
+          else
+            git add einsaetze.json
+            git commit -m "Auto update einsaetze.json"
+            git push
+          fi

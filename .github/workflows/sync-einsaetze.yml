@@ -25,7 +25,7 @@ jobs:
           if git diff --quiet; then
             echo "Geen wijzigingen"
           else
-            git add einsaetze.json
+            git add gameversions/nl_NL-Data/einsaetze.json
             git commit -m "Auto update einsaetze.json"
             git push
           fi

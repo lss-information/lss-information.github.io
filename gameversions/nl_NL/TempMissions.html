@@ -1,214 +1,221 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meldingen Meldkamerspel (nl_NL)</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Orbitron', sans-serif;
-            background-color: #0e0e1a;
-            color: #00ffe0;
-            text-align: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meldingen Meldkamerspel (nl_NL)</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Orbitron', sans-serif;
+        background-color: #0e0e1a;
+        color: #00ffe0;
+        text-align: center;
+    }
 
-        h1 {
-            margin: 30px 0 10px;
-            font-size: 32px;
-            text-shadow: 0 0 5px #00ffe0;
-        }
+    h1 {
+        margin: 30px 0 10px;
+        font-size: 32px;
+        text-shadow: 0 0 5px #00ffe0;
+    }
 
-        .language-selector {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-            padding: 0;
-            gap: 10px;
-        }
+    .button-container {
+        margin: 20px 0;
+    }
 
-        .language-selector li img {
-            width: 30px;
-            height: auto;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
+    .button {
+        background-color: #1b1b2f;
+        color: #00ffe0;
+        border: 2px solid #00ffe0;
+        padding: 8px 16px;
+        text-decoration: none;
+        border-radius: 8px;
+        margin: 0 5px;
+        transition: background-color 0.2s, transform 0.2s;
+    }
 
-        .language-selector li img:hover {
-            transform: scale(1.1);
-        }
+    .button:hover {
+        background-color: #00ffe0;
+        color: #1b1b2f;
+        transform: scale(1.05);
+    }
 
-        .button-container {
-            margin: 20px 0;
-        }
+    table {
+        width: 95%;
+        max-width: 1200px;
+        margin: 20px auto;
+        border-collapse: collapse;
+        background-color: #1f1f2e;
+        color: #00ffe0;
+        box-shadow: 0 0 10px #00ffe0;
+        border-radius: 10px;
+        overflow: hidden;
+    }
 
-        .button {
-            background-color: #1b1b2f;
-            color: #00ffe0;
-            border: 2px solid #00ffe0;
-            padding: 8px 16px;
-            text-decoration: none;
-            border-radius: 8px;
-            margin: 0 5px;
-            transition: background-color 0.2s, transform 0.2s;
-        }
+    thead th {
+        background-color: #2e2e3e;
+        padding: 12px;
+        border-bottom: 2px solid #00ffe0;
+    }
 
-        .button:hover {
-            background-color: #00ffe0;
-            color: #1b1b2f;
-            transform: scale(1.05);
-        }
+    tbody td {
+        padding: 10px;
+        border-bottom: 1px solid #444;
+    }
 
-        table {
-            width: 95%;
-            max-width: 1200px;
-            margin: 20px auto;
-            border-collapse: collapse;
-            background-color: #1f1f2e;
-            color: #00ffe0;
-            box-shadow: 0 0 10px #00ffe0;
-            border-radius: 10px;
-            overflow: hidden;
-        }
+    tbody tr:hover {
+        background-color: #2a2a3e;
+    }
 
-        thead th {
-            background-color: #2e2e3e;
-            padding: 12px;
-            border-bottom: 2px solid #00ffe0;
-        }
+    details {
+        background-color: #1b1b2f;
+        color: #00ffe0;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-top: 5px;
+        text-align: left;
+    }
 
-        tbody td {
-            padding: 10px;
-            border-bottom: 1px solid #444;
-        }
+    summary {
+        cursor: pointer;
+        font-weight: bold;
+    }
 
-        tbody tr:hover {
-            background-color: #2a2a3e;
-        }
-
-        #footer {
-            margin-top: 40px;
-            padding: 20px;
-            font-size: 12px;
-            color: #ccc;
-        }
-    </style>
+    #footer {
+        margin-top: 40px;
+        padding: 20px;
+        font-size: 12px;
+        color: #ccc;
+    }
+</style>
 </head>
 <body>
-    <ul class="language-selector">
-        <li><img src="../../images/flag_nl.gif" alt="Nederlands" onclick="changeLanguage('nl')" /></li>
-        <li><img src="../../images/flag_de.gif" alt="Deutsch" onclick="changeLanguage('de')" /></li>
-        <li><img src="../../images/flag_uk.gif" alt="English (UK)" onclick="changeLanguage('en-uk')" /></li>
-        <li><img src="../../images/flag_us.gif" alt="English (US)" onclick="changeLanguage('en-us')" /></li>
-        <li><img src="../../images/flag_au.gif" alt="English (AU)" onclick="changeLanguage('en-au')" /></li>
-        <li><a class="button" id="back-button" href="/gameversions/nl_NL/indexNL">Terug</a></li>
-    </ul>
 
-    <div class="button-container">
-        <a class="button" id="game-button" href="/index">Startpagina</a>
-        <a class="button" id="contact-button" href="/gameversions/contact">Contact</a>
-    </div>
+<h1>Melding IDs</h1>
+<p>Hier vindt u een overzicht van alle meldingen in Meldkamerspel. Klik op een ID voor details.</p>
 
-    <h1 id="page-title">Melding IDs</h1>
-    <p id="page-message">Hier kunt u een overzicht vinden van alle meldingen in Meldkamerspel. Het laden kan enkele seconden duren. Wijzigingen? Klik op Contact.</p>
+<div class="button-container">
+    <a class="button" href="/index">Startpagina</a>
+    <a class="button" href="/gameversions/contact">Contact</a>
+</div>
 
-    <div id="json-table"></div>
+<div id="missions-table"></div>
 
-    <footer id="footer">
-        &copy; <span id="footer-year"></span> JR04. Alle rechten voorbehouden.
-    </footer>
+<footer id="footer">
+    &copy; <span id="footer-year"></span> JR04. Alle rechten voorbehouden.
+</footer>
 
-    <script>
-        // Laad de JSON lokaal
-        async function loadJSON() {
-            const response = await fetch('nl_NL-Data/einsaetze.json');
-            const data = await response.json();
+<script>
+const currentLang = 'nl'; // voor nu Nederlands, kan uitbreiden
+let vehicleTranslations = {};
 
-            renderTable(data);
-        }
+// Laad externe vertalingen
+async function loadTranslations() {
+    try {
+        const response = await fetch('translations.json');
+        vehicleTranslations = await response.json();
+    } catch(e) {
+        console.error("Kon translations.json niet laden:", e);
+    }
+}
 
-        function renderTable(data) {
-            const container = document.getElementById('json-table');
-            container.innerHTML = '';
+// Laad en toon de missions
+async function loadMissions() {
+    try {
+        const response = await fetch('nl_NL-Data/einsaetze.json');
+        const data = await response.json();
 
-            const table = document.createElement('table');
-            const thead = document.createElement('thead');
-            const headerRow = document.createElement('tr');
+        const table = document.createElement('table');
+        const thead = document.createElement('thead');
+        const headerRow = document.createElement('tr');
+        ['ID', 'Naam', 'POI', 'Gemiddelde Credits', 'Details'].forEach(text => {
+            const th = document.createElement('th');
+            th.textContent = text;
+            headerRow.appendChild(th);
+        });
+        thead.appendChild(headerRow);
+        table.appendChild(thead);
 
-            const columns = ["ID", "Naam", "POI", "Gemiddelde Credits"];
-            columns.forEach(col => {
-                const th = document.createElement('th');
-                th.textContent = col;
-                headerRow.appendChild(th);
+        const tbody = document.createElement('tbody');
+
+        data.forEach(mission => {
+            const tr = document.createElement('tr');
+
+            // Basis info
+            ['ID', 'Naam', 'POI', 'Gemiddelde Credits'].forEach(field => {
+                const td = document.createElement('td');
+                td.textContent = mission[field] || '';
+                tr.appendChild(td);
             });
 
-            thead.appendChild(headerRow);
-            table.appendChild(thead);
+            // Details met dropdown
+            const tdDetails = document.createElement('td');
+            const details = document.createElement('details');
+            const summary = document.createElement('summary');
+            summary.textContent = 'Requirements / Chances';
+            details.appendChild(summary);
 
-            const tbody = document.createElement('tbody');
-            data.forEach(item => {
-                const tr = document.createElement('tr');
-                tr.innerHTML = `
-                    <td>${item.ID || item.id}</td>
-                    <td>${item.Naam || item.name}</td>
-                    <td>${item.POI || item.place}</td>
-                    <td>${item["Gemiddelde Credits"] || item.average_credits}</td>
-                `;
-                tbody.appendChild(tr);
-            });
+            const ul = document.createElement('ul');
 
-            table.appendChild(tbody);
-            container.appendChild(table);
-        }
+            // Requirements
+            if (mission.requirements) {
+                const reqHeader = document.createElement('li');
+                reqHeader.textContent = 'Requirements:';
+                const reqList = document.createElement('ul');
 
-        // Taalselectie
-        function changeLanguage(lang) {
-            let headers;
-            switch(lang) {
-                case "nl":
-                    document.title = "Melding IDs";
-                    document.getElementById('page-title').textContent = "Melding IDs";
-                    document.getElementById('page-message').textContent = "Hier kunt u een overzicht vinden van alle meldingen in Meldkamerspel. Het laden kan enkele seconden duren. Wijzigingen? Klik op Contact.";
-                    document.getElementById('game-button').textContent = "Startpagina";
-                    document.getElementById('contact-button').textContent = "Contact";
-                    document.getElementById('back-button').textContent = "Terug";
-                    headers = ["ID", "Naam", "POI", "Gemiddelde Credits"];
-                    break;
-                case "de":
-                    document.title = "Einsätze IDs";
-                    document.getElementById('page-title').textContent = "Einsätze IDs";
-                    document.getElementById('page-message').textContent = "Hier finden Sie eine Übersicht aller Einsätze in Leitstellenspiel.";
-                    document.getElementById('game-button').textContent = "Startseite";
-                    document.getElementById('contact-button').textContent = "Kontakt";
-                    document.getElementById('back-button').textContent = "Zurück";
-                    headers = ["ID", "Name", "POI", "Durchschnitt Credits"];
-                    break;
-                default:
-                    document.title = "Mission IDs";
-                    document.getElementById('page-title').textContent = "Mission IDs";
-                    document.getElementById('page-message').textContent = "Here you can find an overview of all missions in Missionchief.";
-                    document.getElementById('game-button').textContent = "Homepage";
-                    document.getElementById('contact-button').textContent = "Contact";
-                    document.getElementById('back-button').textContent = "Back";
-                    headers = ["ID", "Name", "POI", "Average Credits"];
-                    break;
+                for (let veh in mission.requirements) {
+                    const li = document.createElement('li');
+                    const name = vehicleTranslations[veh] ? vehicleTranslations[veh][currentLang] : veh;
+                    li.textContent = `${name}: ${mission.requirements[veh]}`;
+                    reqList.appendChild(li);
+                }
+                reqHeader.appendChild(reqList);
+                ul.appendChild(reqHeader);
             }
 
-            // Update table headers
-            const ths = document.querySelectorAll('#json-table thead th');
-            ths.forEach((th, i) => th.textContent = headers[i]);
-        }
+            // Chances
+            if (mission.chances) {
+                const chHeader = document.createElement('li');
+                chHeader.textContent = 'Chances:';
+                const chList = document.createElement('ul');
+                for (let veh in mission.chances) {
+                    const li = document.createElement('li');
+                    const name = vehicleTranslations[veh] ? vehicleTranslations[veh][currentLang] : veh;
+                    li.textContent = `${name}: ${mission.chances[veh]}%`;
+                    chList.appendChild(li);
+                }
+                chHeader.appendChild(chList);
+                ul.appendChild(chHeader);
+            }
 
-        // Footer jaar
-        const startYear = 2024;
-        const currentYear = new Date().getFullYear();
-        document.getElementById('footer-year').textContent = startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
+            details.appendChild(ul);
+            tdDetails.appendChild(details);
+            tr.appendChild(tdDetails);
 
-        // Start
-        loadJSON();
-    </script>
+            tbody.appendChild(tr);
+        });
+
+        table.appendChild(tbody);
+        document.getElementById('missions-table').appendChild(table);
+    } catch(e) {
+        console.error("Kon einsaetze.json niet laden:", e);
+    }
+}
+
+// Start alles
+async function initPage() {
+    await loadTranslations();
+    await loadMissions();
+
+    const startYear = 2024;
+    const currentYear = new Date().getFullYear();
+    document.getElementById('footer-year').textContent = startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
+}
+
+initPage();
+</script>
+
 </body>
 </html>

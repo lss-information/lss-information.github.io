@@ -157,9 +157,9 @@ async function initMissions() {
                     const name = translations[key] || key;
 
                     if (typeof value === "object") {
-                        // value is een object, dus per subkey tonen
                         for (const subKey in value) {
-                            reqDiv.innerHTML += `${name} (${subKey}): ${value[subKey]}<br>`;
+                            const subName = translations[subKey] || subKey; // <-- vertaling van subKey
+                            reqDiv.innerHTML += `${name} (${subName}): ${value[subKey]}<br>`;
                         }
                     } else {
                         reqDiv.innerHTML += `${name}: ${value}<br>`;
@@ -167,6 +167,7 @@ async function initMissions() {
                 }
             }
         }
+
 
         // Chances
         if (mission.chances) {

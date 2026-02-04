@@ -2,7 +2,7 @@ name: Sync einsaetze.json
 
 on:
   schedule:
-    - cron: "0 * * * *"   # elke 30 minuten
+    - cron: "0 * * * *"   # elk uur
   workflow_dispatch:
 
 jobs:
@@ -13,9 +13,13 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      - name: Ensure target directory exists
+        run: mkdir -p gameversions/nl_NL-Data
+
       - name: Download JSON
         run: |
-          curl -s http://meldkamerspel.com/einsaetze.json -o gameversions/nl_NL-Data/einsaetze.json
+          curl -f -s http://meldkamerspel.com/einsaetze.json \
+          -o gameversions/nl_NL-Data/einsaetze.json
 
       - name: Commit if changed
         run: |

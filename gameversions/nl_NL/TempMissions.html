@@ -48,15 +48,6 @@ tbody td {
 tbody tr:hover {
     background-color: #2a2a3e;
 }
-.requirements {
-    text-align: left;
-    font-size: 14px;
-    margin-top: 5px;
-    display: none;
-    padding: 10px;
-    background-color: #222233;
-    border-radius: 5px;
-}
 .button-toggle {
     background-color: #1b1b2f;
     color: #00ffe0;
@@ -69,6 +60,21 @@ tbody tr:hover {
 .button-toggle:hover {
     background-color: #00ffe0;
     color: #1b1b2f;
+}
+.requirements-row td {
+    background-color: #222233;
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 14px;
+}
+.requirements-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+.requirements-content.show {
+    opacity: 1;
 }
 #footer {
     margin-top: 40px;
@@ -89,8 +95,8 @@ tbody tr:hover {
 </footer>
 
 <script>
-const dataFile = 'nl_NL-Data/einsaetze.json';
-const translationsFile = 'translations.json';
+const dataFile = 'gameversions/nl_NL/nl_NL-Data/einsaetze.json';
+const translationsFile = 'gameversions/nl_NL/translations.json';
 
 async function loadJSON(path) {
     const res = await fetch(path);
@@ -117,21 +123,32 @@ async function initMissions() {
     const tbody = document.createElement('tbody');
 
     missions.forEach((mission, index) => {
+        // Hoofdrow
         const row = document.createElement('tr');
 
-        // ID, Naam, POI, Gemiddelde Credits
         const tdId = document.createElement('td'); tdId.textContent = mission.id; row.appendChild(tdId);
         const tdName = document.createElement('td'); tdName.textContent = mission.name; row.appendChild(tdName);
         const tdPoi = document.createElement('td'); tdPoi.textContent = mission.place; row.appendChild(tdPoi);
         const tdCredits = document.createElement('td'); tdCredits.textContent = mission.average_credits; row.appendChild(tdCredits);
 
-        // Toggle knop
+        // Button voor uitklappen
         const tdBtn = document.createElement('td');
         const btn = document.createElement('button');
         btn.textContent = 'Toon Benodigdheden';
         btn.className = 'button-toggle';
+        tdBtn.appendChild(btn);
+        row.appendChild(tdBtn);
+
+        tbody.appendChild(row);
+
+        // Row voor benodigdheden
+        const reqRow = document.createElement('tr');
+        reqRow.className = 'requirements-row';
+        const reqTd = document.createElement('td');
+        reqTd.colSpan = 5;
+
         const reqDiv = document.createElement('div');
-        reqDiv.className = 'requirements';
+        reqDiv.className = 'requirements-content';
 
         // Requirements
         if (mission.requirements) {
@@ -148,15 +165,20 @@ async function initMissions() {
             }
         }
 
+        reqTd.appendChild(reqDiv);
+        reqRow.appendChild(reqTd);
+        tbody.appendChild(reqRow);
+
+        // Button toggle event
         btn.addEventListener('click', () => {
-            reqDiv.style.display = reqDiv.style.display === 'none' ? 'block' : 'none';
+            if (reqDiv.classList.contains('show')) {
+                reqDiv.style.maxHeight = null;
+                reqDiv.classList.remove('show');
+            } else {
+                reqDiv.style.maxHeight = reqDiv.scrollHeight + "px";
+                reqDiv.classList.add('show');
+            }
         });
-
-        tdBtn.appendChild(btn);
-        tdBtn.appendChild(reqDiv);
-        row.appendChild(tdBtn);
-
-        tbody.appendChild(row);
     });
 
     table.appendChild(tbody);

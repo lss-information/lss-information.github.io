@@ -1,188 +1,160 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meldingen Meldkamerspel (nl_NL)</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-<style>
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Orbitron', sans-serif;
-    background-color: #0e0e1a;
-    color: #00ffe0;
-    text-align: center;
-}
-h1 {
-    margin: 30px 0 10px;
-    font-size: 32px;
-    text-shadow: 0 0 5px #00ffe0;
-}
-p {
-    max-width: 800px;
-    margin: 0 auto 20px;
-    font-size: 15px;
-}
-table {
-    width: 95%;
-    max-width: 1200px;
-    margin: 20px auto;
-    border-collapse: collapse;
-    background-color: #1f1f2e;
-    color: #00ffe0;
-    box-shadow: 0 0 10px #00ffe0;
-    border-radius: 10px;
-    overflow: hidden;
-}
-thead th {
-    background-color: #2e2e3e;
-    padding: 12px;
-    border-bottom: 2px solid #00ffe0;
-}
-tbody td {
-    padding: 10px;
-    border-bottom: 1px solid #444;
-    vertical-align: top;
-}
-tbody tr:hover {
-    background-color: #2a2a3e;
-}
-.button-toggle {
-    background-color: #1b1b2f;
-    color: #00ffe0;
-    border: 1px solid #00ffe0;
-    padding: 4px 8px;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 12px;
-}
-.button-toggle:hover {
-    background-color: #00ffe0;
-    color: #1b1b2f;
-}
-.requirements-row td {
-    background-color: #222233;
-    padding: 10px 20px;
-    text-align: left;
-    font-size: 14px;
-}
-.requirements-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-    opacity: 0;
-}
-.requirements-content.show {
-    opacity: 1;
-}
-#footer {
-    margin-top: 40px;
-    padding: 20px;
-    font-size: 12px;
-    color: #ccc;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meldingen Meldkamerspel (nl_NL)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Orbitron', sans-serif;
+            background-color: #0e0e1a;
+            color: #00ffe0;
+            text-align: center;
+        }
+        h1 {
+            margin: 30px 0 10px;
+            font-size: 32px;
+            text-shadow: 0 0 5px #00ffe0;
+        }
+        table {
+            width: 95%;
+            max-width: 1200px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #1f1f2e;
+            color: #00ffe0;
+            box-shadow: 0 0 10px #00ffe0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        thead th {
+            background-color: #2e2e3e;
+            padding: 12px;
+            border-bottom: 2px solid #00ffe0;
+        }
+        tbody td {
+            padding: 10px;
+            border-bottom: 1px solid #444;
+        }
+        tbody tr:hover {
+            background-color: #2a2a3e;
+        }
+        .req {
+            background-color: #222233;
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 5px;
+            display: none;
+            transition: all 0.3s ease;
+        }
+        .toggle-btn {
+            cursor: pointer;
+            color: #00ffe0;
+            background-color: #1b1b2f;
+            border: 2px solid #00ffe0;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-top: 5px;
+            display: inline-block;
+            transition: all 0.2s;
+        }
+        .toggle-btn:hover {
+            background-color: #00ffe0;
+            color: #1b1b2f;
+        }
+        #footer {
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 12px;
+            color: #ccc;
+        }
+    </style>
 </head>
 <body>
-<h1>Melding IDs</h1>
-<p>Hier kunt u een overzicht vinden van alle meldingen in Meldkamerspel. Klik op "Toon Benodigdheden" om details te bekijken.</p>
 
-<div id="sheet-data"></div>
+<h1>Meldingen Meldkamerspel</h1>
+<p>Hier vindt u een overzicht van alle meldingen. Klik op "Benodigdheden" om de details te zien.</p>
+
+<div id="missions-container"></div>
 
 <footer id="footer">
     &copy; <span id="footer-year"></span> JR04. Alle rechten voorbehouden.
 </footer>
 
 <script>
-const dataFile = 'nl_NL-Data/einsaetze.json';
-const translationsFile = 'translations.json';
+async function loadMissions() {
+    const missionsResp = await fetch('nl_NL-Data/einsaetze.json');
+    const missions = await missionsResp.json();
 
-async function loadJSON(path) {
-    const res = await fetch(path);
-    return await res.json();
-}
+    const translationsResp = await fetch('translations.json');
+    const translations = await translationsResp.json();
 
-async function initMissions() {
-    const missions = await loadJSON(dataFile);
-    const translations = await loadJSON(translationsFile);
+    const container = document.getElementById('missions-container');
 
-    const container = document.getElementById('sheet-data');
+    // Maak een array van vehicle keys in de volgorde van translations.json
+    const translationOrder = Object.keys(translations);
 
-    const table = document.createElement('table');
-    const thead = document.createElement('thead');
-    const headerRow = document.createElement('tr');
-    ['ID', 'Naam', 'POI', 'Gemiddelde Credits', 'Benodigdheden'].forEach(col => {
-        const th = document.createElement('th');
-        th.textContent = col;
-        headerRow.appendChild(th);
-    });
-    thead.appendChild(headerRow);
-    table.appendChild(thead);
+    missions.forEach(mission => {
+        const missionDiv = document.createElement('div');
+        missionDiv.style.borderBottom = "1px solid #444";
+        missionDiv.style.padding = "10px 0";
 
-    const tbody = document.createElement('tbody');
+        // Basis info
+        const info = document.createElement('div');
+        info.innerHTML = `<strong>ID:</strong> ${mission.ID || mission.id || ''} |
+                          <strong>Naam:</strong> ${mission.Naam || mission.name || ''} |
+                          <strong>POI:</strong> ${mission.POI || mission.place || ''}`;
+        missionDiv.appendChild(info);
 
-    missions.forEach((mission, index) => {
-        // Hoofdrow
-        const row = document.createElement('tr');
+        // Button
+        const btn = document.createElement('div');
+        btn.textContent = "Benodigdheden";
+        btn.className = "toggle-btn";
+        missionDiv.appendChild(btn);
 
-        const tdId = document.createElement('td'); tdId.textContent = mission.id; row.appendChild(tdId);
-        const tdName = document.createElement('td'); tdName.textContent = mission.name; row.appendChild(tdName);
-        const tdPoi = document.createElement('td'); tdPoi.textContent = mission.place; row.appendChild(tdPoi);
-        const tdCredits = document.createElement('td'); tdCredits.textContent = mission.average_credits; row.appendChild(tdCredits);
+        // Requirements + Chances container
+        const reqContainer = document.createElement('div');
+        reqContainer.className = "req";
 
-        // Button voor uitklappen
-        const tdBtn = document.createElement('td');
-        const btn = document.createElement('button');
-        btn.textContent = 'Toon Benodigdheden';
-        btn.className = 'button-toggle';
-        tdBtn.appendChild(btn);
-        row.appendChild(tdBtn);
+        const allReqs = {};
 
-        tbody.appendChild(row);
-
-        // Row voor benodigdheden
-        const reqRow = document.createElement('tr');
-        reqRow.className = 'requirements-row';
-        const reqTd = document.createElement('td');
-        reqTd.colSpan = 5;
-
-        const reqDiv = document.createElement('div');
-        reqDiv.className = 'requirements-content';
-
-        // Requirements
         if (mission.requirements) {
-            for (const key in mission.requirements) {
-                const name = translations[key] || key;
-                reqDiv.innerHTML += `${name}: ${mission.requirements[key]}<br>`;
-            }
+            Object.assign(allReqs, mission.requirements);
         }
-        // Chances
         if (mission.chances) {
-            for (const key in mission.chances) {
-                const name = translations[key] || key;
-                reqDiv.innerHTML += `${name} - kans: ${mission.chances[key]} %<br>`;
-            }
+            Object.keys(mission.chances).forEach(k => {
+                allReqs[k] = mission.chances[k] + " %";
+            });
         }
 
-        reqTd.appendChild(reqDiv);
-        reqRow.appendChild(reqTd);
-        tbody.appendChild(reqRow);
-
-        // Button toggle event
-        btn.addEventListener('click', () => {
-            if (reqDiv.classList.contains('show')) {
-                reqDiv.style.maxHeight = null;
-                reqDiv.classList.remove('show');
-            } else {
-                reqDiv.style.maxHeight = reqDiv.scrollHeight + "px";
-                reqDiv.classList.add('show');
+        // Sorteren op translations.json volgorde
+        translationOrder.forEach(key => {
+            if (allReqs[key] !== undefined) {
+                reqContainer.innerHTML += `<div>${translations[key]}: ${allReqs[key]}</div>`;
+                delete allReqs[key];
             }
         });
-    });
 
-    table.appendChild(tbody);
-    container.appendChild(table);
+        // Eventuele overige keys achteraan
+        Object.keys(allReqs).forEach(k => {
+            reqContainer.innerHTML += `<div>${k}: ${allReqs[k]}</div>`;
+        });
+
+        missionDiv.appendChild(reqContainer);
+
+        btn.addEventListener('click', () => {
+            if (reqContainer.style.display === 'block') {
+                reqContainer.style.display = 'none';
+            } else {
+                reqContainer.style.display = 'block';
+            }
+        });
+
+        container.appendChild(missionDiv);
+    });
 }
 
 // Footer jaar
@@ -190,7 +162,8 @@ const startYear = 2024;
 const currentYear = new Date().getFullYear();
 document.getElementById('footer-year').textContent = startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
 
-initMissions();
+loadMissions();
 </script>
+
 </body>
 </html>

@@ -1,221 +1,159 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meldingen Meldkamerspel (nl_NL)</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Orbitron', sans-serif;
-        background-color: #0e0e1a;
-        color: #00ffe0;
-        text-align: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meldingen Meldkamerspel (nl_NL)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Orbitron', sans-serif;
+            background-color: #0e0e1a;
+            color: #00ffe0;
+            text-align: center;
+        }
 
-    h1 {
-        margin: 30px 0 10px;
-        font-size: 32px;
-        text-shadow: 0 0 5px #00ffe0;
-    }
+        h1 {
+            margin: 30px 0 10px;
+            font-size: 32px;
+            text-shadow: 0 0 5px #00ffe0;
+        }
 
-    .button-container {
-        margin: 20px 0;
-    }
+        table {
+            width: 95%;
+            max-width: 1200px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #1f1f2e;
+            color: #00ffe0;
+            box-shadow: 0 0 10px #00ffe0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
 
-    .button {
-        background-color: #1b1b2f;
-        color: #00ffe0;
-        border: 2px solid #00ffe0;
-        padding: 8px 16px;
-        text-decoration: none;
-        border-radius: 8px;
-        margin: 0 5px;
-        transition: background-color 0.2s, transform 0.2s;
-    }
+        thead th {
+            background-color: #2e2e3e;
+            padding: 12px;
+            border-bottom: 2px solid #00ffe0;
+        }
 
-    .button:hover {
-        background-color: #00ffe0;
-        color: #1b1b2f;
-        transform: scale(1.05);
-    }
+        tbody td {
+            padding: 10px;
+            border-bottom: 1px solid #444;
+        }
 
-    table {
-        width: 95%;
-        max-width: 1200px;
-        margin: 20px auto;
-        border-collapse: collapse;
-        background-color: #1f1f2e;
-        color: #00ffe0;
-        box-shadow: 0 0 10px #00ffe0;
-        border-radius: 10px;
-        overflow: hidden;
-    }
+        tbody tr:hover {
+            background-color: #2a2a3e;
+        }
 
-    thead th {
-        background-color: #2e2e3e;
-        padding: 12px;
-        border-bottom: 2px solid #00ffe0;
-    }
+        .dropdown {
+            cursor: pointer;
+            color: #00ffe0;
+            background-color: #1f1f2e;
+            border: none;
+            font-family: 'Orbitron', sans-serif;
+        }
 
-    tbody td {
-        padding: 10px;
-        border-bottom: 1px solid #444;
-    }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #1b1b2f;
+            min-width: 200px;
+            border: 1px solid #00ffe0;
+            z-index: 1;
+            color: #00ffe0;
+            text-align: left;
+            padding: 10px;
+            font-size: 14px;
+        }
 
-    tbody tr:hover {
-        background-color: #2a2a3e;
-    }
-
-    details {
-        background-color: #1b1b2f;
-        color: #00ffe0;
-        padding: 5px 10px;
-        border-radius: 5px;
-        margin-top: 5px;
-        text-align: left;
-    }
-
-    summary {
-        cursor: pointer;
-        font-weight: bold;
-    }
-
-    #footer {
-        margin-top: 40px;
-        padding: 20px;
-        font-size: 12px;
-        color: #ccc;
-    }
-</style>
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
 <body>
+    <h1>Melding IDs</h1>
+    <p>Hier kunt u een overzicht vinden van alle meldingen in Meldkamerspel. Het laden kan enkele seconden duren.</p>
 
-<h1>Melding IDs</h1>
-<p>Hier vindt u een overzicht van alle meldingen in Meldkamerspel. Klik op een ID voor details.</p>
+    <div id="table-container"></div>
 
-<div class="button-container">
-    <a class="button" href="/index">Startpagina</a>
-    <a class="button" href="/gameversions/contact">Contact</a>
-</div>
+    <script>
+        async function loadData() {
+            const missionsResponse = await fetch('gameversions/nl_NL/nl_NL-Data/einsaetze.json');
+            const missions = await missionsResponse.json();
 
-<div id="missions-table"></div>
+            const translationsResponse = await fetch('gameversions/nl_NL/translations.json');
+            const translations = await translationsResponse.json();
 
-<footer id="footer">
-    &copy; <span id="footer-year"></span> JR04. Alle rechten voorbehouden.
-</footer>
+            const table = document.createElement('table');
+            const thead = document.createElement('thead');
+            const headerRow = document.createElement('tr');
+            ['ID', 'Naam', 'POI', 'Gemiddelde Credits', 'Benodigdheden'].forEach(title => {
+                const th = document.createElement('th');
+                th.textContent = title;
+                headerRow.appendChild(th);
+            });
+            thead.appendChild(headerRow);
+            table.appendChild(thead);
 
-<script>
-const currentLang = 'nl'; // voor nu Nederlands, kan uitbreiden
-let vehicleTranslations = {};
+            const tbody = document.createElement('tbody');
 
-// Laad externe vertalingen
-async function loadTranslations() {
-    try {
-        const response = await fetch('translations.json');
-        vehicleTranslations = await response.json();
-    } catch(e) {
-        console.error("Kon translations.json niet laden:", e);
-    }
-}
+            missions.forEach(mission => {
+                const tr = document.createElement('tr');
 
-// Laad en toon de missions
-async function loadMissions() {
-    try {
-        const response = await fetch('nl_NL-Data/einsaetze.json');
-        const data = await response.json();
+                // ID, Naam, POI, Gemiddelde Credits
+                const tdID = document.createElement('td');
+                tdID.textContent = mission.ID || mission.id || '';
+                tr.appendChild(tdID);
 
-        const table = document.createElement('table');
-        const thead = document.createElement('thead');
-        const headerRow = document.createElement('tr');
-        ['ID', 'Naam', 'POI', 'Gemiddelde Credits', 'Details'].forEach(text => {
-            const th = document.createElement('th');
-            th.textContent = text;
-            headerRow.appendChild(th);
-        });
-        thead.appendChild(headerRow);
-        table.appendChild(thead);
+                const tdName = document.createElement('td');
+                tdName.textContent = mission.Naam || mission.name || '';
+                tr.appendChild(tdName);
 
-        const tbody = document.createElement('tbody');
+                const tdPOI = document.createElement('td');
+                tdPOI.textContent = mission.POI || mission.place || '';
+                tr.appendChild(tdPOI);
 
-        data.forEach(mission => {
-            const tr = document.createElement('tr');
+                const tdCredits = document.createElement('td');
+                tdCredits.textContent = mission['Gemiddelde Credits'] || mission.average_credits || '';
+                tr.appendChild(tdCredits);
 
-            // Basis info
-            ['ID', 'Naam', 'POI', 'Gemiddelde Credits'].forEach(field => {
-                const td = document.createElement('td');
-                td.textContent = mission[field] || '';
-                tr.appendChild(td);
+                // Requirements / Chances dropdown
+                const tdReq = document.createElement('td');
+                const dropdown = document.createElement('div');
+                dropdown.className = 'dropdown';
+                dropdown.textContent = 'Bekijk Benodigdheden';
+
+                const content = document.createElement('div');
+                content.className = 'dropdown-content';
+
+                const reqs = mission.requirements || {};
+                const chances = mission.chances || {};
+
+                for (const key in reqs) {
+                    const displayName = translations[key] || key;
+                    content.innerHTML += `${displayName}: ${reqs[key]}<br>`;
+                }
+                for (const key in chances) {
+                    const displayName = translations[key] || key;
+                    content.innerHTML += `${displayName} (kans %): ${chances[key]}<br>`;
+                }
+
+                dropdown.appendChild(content);
+                tdReq.appendChild(dropdown);
+                tr.appendChild(tdReq);
+
+                tbody.appendChild(tr);
             });
 
-            // Details met dropdown
-            const tdDetails = document.createElement('td');
-            const details = document.createElement('details');
-            const summary = document.createElement('summary');
-            summary.textContent = 'Requirements / Chances';
-            details.appendChild(summary);
+            table.appendChild(tbody);
+            document.getElementById('table-container').appendChild(table);
+        }
 
-            const ul = document.createElement('ul');
-
-            // Requirements
-            if (mission.requirements) {
-                const reqHeader = document.createElement('li');
-                reqHeader.textContent = 'Requirements:';
-                const reqList = document.createElement('ul');
-
-                for (let veh in mission.requirements) {
-                    const li = document.createElement('li');
-                    const name = vehicleTranslations[veh] ? vehicleTranslations[veh][currentLang] : veh;
-                    li.textContent = `${name}: ${mission.requirements[veh]}`;
-                    reqList.appendChild(li);
-                }
-                reqHeader.appendChild(reqList);
-                ul.appendChild(reqHeader);
-            }
-
-            // Chances
-            if (mission.chances) {
-                const chHeader = document.createElement('li');
-                chHeader.textContent = 'Chances:';
-                const chList = document.createElement('ul');
-                for (let veh in mission.chances) {
-                    const li = document.createElement('li');
-                    const name = vehicleTranslations[veh] ? vehicleTranslations[veh][currentLang] : veh;
-                    li.textContent = `${name}: ${mission.chances[veh]}%`;
-                    chList.appendChild(li);
-                }
-                chHeader.appendChild(chList);
-                ul.appendChild(chHeader);
-            }
-
-            details.appendChild(ul);
-            tdDetails.appendChild(details);
-            tr.appendChild(tdDetails);
-
-            tbody.appendChild(tr);
-        });
-
-        table.appendChild(tbody);
-        document.getElementById('missions-table').appendChild(table);
-    } catch(e) {
-        console.error("Kon einsaetze.json niet laden:", e);
-    }
-}
-
-// Start alles
-async function initPage() {
-    await loadTranslations();
-    await loadMissions();
-
-    const startYear = 2024;
-    const currentYear = new Date().getFullYear();
-    document.getElementById('footer-year').textContent = startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
-}
-
-initPage();
-</script>
-
+        loadData();
+    </script>
 </body>
 </html>

@@ -1,77 +1,70 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meldingen Meldkamerspel (nl_NL)</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Orbitron', sans-serif;
-            background-color: #0e0e1a;
-            color: #00ffe0;
-            text-align: center;
-        }
-        h1 {
-            margin: 30px 0 10px;
-            font-size: 32px;
-            text-shadow: 0 0 5px #00ffe0;
-        }
-        table {
-            width: 95%;
-            max-width: 1200px;
-            margin: 20px auto;
-            border-collapse: collapse;
-            background-color: #1f1f2e;
-            color: #00ffe0;
-            box-shadow: 0 0 10px #00ffe0;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        thead th {
-            background-color: #2e2e3e;
-            padding: 12px;
-            border-bottom: 2px solid #00ffe0;
-        }
-        tbody td {
-            padding: 10px;
-            border-bottom: 1px solid #444;
-        }
-        tbody tr:hover {
-            background-color: #2a2a3e;
-        }
-        .req {
-            background-color: #222233;
-            margin: 5px 0;
-            padding: 8px;
-            border-radius: 5px;
-            display: none;
-            transition: all 0.3s ease;
-        }
-        .toggle-btn {
-            cursor: pointer;
-            color: #00ffe0;
-            background-color: #1b1b2f;
-            border: 2px solid #00ffe0;
-            padding: 5px 10px;
-            border-radius: 5px;
-            margin-top: 5px;
-            display: inline-block;
-            transition: all 0.2s;
-        }
-        .toggle-btn:hover {
-            background-color: #00ffe0;
-            color: #1b1b2f;
-        }
-        #footer {
-            margin-top: 40px;
-            padding: 20px;
-            font-size: 12px;
-            color: #ccc;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meldingen Meldkamerspel (nl_NL)</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0e0e1a;
+    color: #00ffe0;
+    text-align: center;
+}
+h1 {
+    margin: 30px 0 10px;
+    font-size: 32px;
+    text-shadow: 0 0 5px #00ffe0;
+}
+.mission {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #444;
+    transition: background-color 0.2s;
+}
+.mission:hover {
+    background-color: #2a2a3e;
+}
+.mission-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.toggle-btn {
+    cursor: pointer;
+    color: #00ffe0;
+    background-color: #1b1b2f;
+    border: 2px solid #00ffe0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+.toggle-btn:hover {
+    background-color: #00ffe0;
+    color: #1b1b2f;
+}
+.req-container {
+    display: none;
+    background-color: #222233;
+    padding: 10px 20px;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+.req-container div {
+    margin: 3px 0;
+}
+#footer {
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 12px;
+    color: #ccc;
+}
+</style>
 </head>
 <body>
 
@@ -94,20 +87,20 @@ async function loadMissions() {
 
     const container = document.getElementById('missions-container');
 
-    // Maak een array van vehicle keys in de volgorde van translations.json
     const translationOrder = Object.keys(translations);
 
     missions.forEach(mission => {
+        // Mission wrapper
         const missionDiv = document.createElement('div');
-        missionDiv.style.borderBottom = "1px solid #444";
-        missionDiv.style.padding = "10px 0";
+        missionDiv.className = 'mission';
 
-        // Basis info
-        const info = document.createElement('div');
-        info.innerHTML = `<strong>ID:</strong> ${mission.ID || mission.id || ''} |
-                          <strong>Naam:</strong> ${mission.Naam || mission.name || ''} |
-                          <strong>POI:</strong> ${mission.POI || mission.place || ''}`;
-        missionDiv.appendChild(info);
+        // Mission info
+        const infoDiv = document.createElement('div');
+        infoDiv.className = 'mission-info';
+        infoDiv.innerHTML = `<div><strong>ID:</strong> ${mission.ID || mission.id || ''}</div>
+                             <div><strong>Naam:</strong> ${mission.Naam || mission.name || ''}</div>
+                             <div><strong>POI:</strong> ${mission.POI || mission.place || ''}</div>`;
+        missionDiv.appendChild(infoDiv);
 
         // Button
         const btn = document.createElement('div');
@@ -117,7 +110,7 @@ async function loadMissions() {
 
         // Requirements + Chances container
         const reqContainer = document.createElement('div');
-        reqContainer.className = "req";
+        reqContainer.className = 'req-container';
 
         const allReqs = {};
 
@@ -130,7 +123,7 @@ async function loadMissions() {
             });
         }
 
-        // Sorteren op translations.json volgorde
+        // Sorteren op volgorde translations.json
         translationOrder.forEach(key => {
             if (allReqs[key] !== undefined) {
                 reqContainer.innerHTML += `<div>${translations[key]}: ${allReqs[key]}</div>`;
@@ -138,13 +131,16 @@ async function loadMissions() {
             }
         });
 
-        // Eventuele overige keys achteraan
+        // Overige keys achteraan
         Object.keys(allReqs).forEach(k => {
             reqContainer.innerHTML += `<div>${k}: ${allReqs[k]}</div>`;
         });
 
-        missionDiv.appendChild(reqContainer);
+        // Voeg reqContainer toe onder de missie
+        container.appendChild(missionDiv);
+        container.appendChild(reqContainer);
 
+        // Toggle functie
         btn.addEventListener('click', () => {
             if (reqContainer.style.display === 'block') {
                 reqContainer.style.display = 'none';
@@ -152,8 +148,6 @@ async function loadMissions() {
                 reqContainer.style.display = 'block';
             }
         });
-
-        container.appendChild(missionDiv);
     });
 }
 

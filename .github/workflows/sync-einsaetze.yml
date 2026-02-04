@@ -19,8 +19,8 @@ jobs:
 
       - name: Download JSON
         run: |
-          mkdir -p gameversions/nl_NL-Data
-          curl -f -s -L http://meldkamerspel.com/einsaetze.json -o gameversions/nl_NL/nl_NL-Data/einsaetze.json
+          mkdir -p gameversions/nl_NL/nl_NL-Data
+          curl -f -s -L http://meldkamerspel.com/einsaetze.json | jq '.' > gameversions/nl_NL/nl_NL-Data/einsaetze.json
 
 
       - name: Commit if changed

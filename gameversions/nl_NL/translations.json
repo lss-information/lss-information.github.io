@@ -30,8 +30,10 @@
   "search_and_rescue_equipment": "Benodigde VW-USAR",
   "rescue_dog_units": "Benodigde DB-Speurhonden",
   "fire_aviation": "Benodigde FBO-Helikopter(s)",
-  "wildfire_command": "benodigde DA-LANB",
+  "wildfire_command": "benodigde DA-LA-NB",
   "wildfire_equipment": "Benodigde VW-NB / NBH",
+  "care_service_command": "Benodigde PelotonsCommandant - Logistiek"
+
 
   "car_carrier": "Benodigde Bergingsvoertuig(en)",
 

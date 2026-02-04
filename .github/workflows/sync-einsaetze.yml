@@ -15,7 +15,7 @@ jobs:
 
       - name: Download JSON
         run: |
-          curl -s http://meldkamerspel.com/einsaetze.json -o /gameversions/nl_NL-Data/einsaetze.json
+          curl -s http://meldkamerspel.com/einsaetze.json -o gameversions/nl_NL-Data/einsaetze.json
 
       - name: Commit if changed
         run: |

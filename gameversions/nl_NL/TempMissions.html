@@ -124,7 +124,7 @@
     <script>
         // Laad de JSON lokaal
         async function loadJSON() {
-            const response = await fetch('gameversions/nl_NL/nl_NL-Data/einsaetze.json');
+            const response = await fetch('nl_NL-Data/einsaetze.json');
             const data = await response.json();
 
             renderTable(data);

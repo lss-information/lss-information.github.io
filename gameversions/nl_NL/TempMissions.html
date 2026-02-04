@@ -161,6 +161,14 @@ async function initMissions() {
             });
         }
 
+            // Sorteer op volgorde van translations.json
+        translationOrder.forEach(key => {
+            if (allReqs[key] !== undefined) {
+                reqDiv.innerHTML += `${translations[key]}: ${allReqs[key]}<br>`;
+                delete allReqs[key];
+            }
+        });
+
         // overige keys achteraan
         Object.keys(allReqs).forEach(k => {
             reqDiv.innerHTML += `${k}: ${allReqs[k]}<br>`;

@@ -19,44 +19,62 @@ h1 {
     font-size: 32px;
     text-shadow: 0 0 5px #00ffe0;
 }
-.mission {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    border-bottom: 1px solid #444;
-    transition: background-color 0.2s;
+p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 15px;
 }
-.mission:hover {
+table {
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #1f1f2e;
+    color: #00ffe0;
+    box-shadow: 0 0 10px #00ffe0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+thead th {
+    background-color: #2e2e3e;
+    padding: 12px;
+    border-bottom: 2px solid #00ffe0;
+}
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    vertical-align: top;
+}
+tbody tr:hover {
     background-color: #2a2a3e;
 }
-.mission-info {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-.toggle-btn {
-    cursor: pointer;
-    color: #00ffe0;
+.button-toggle {
     background-color: #1b1b2f;
-    border: 2px solid #00ffe0;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: all 0.2s;
+    color: #00ffe0;
+    border: 1px solid #00ffe0;
+    padding: 4px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
 }
-.toggle-btn:hover {
+.button-toggle:hover {
     background-color: #00ffe0;
     color: #1b1b2f;
 }
-.req-container {
-    display: none;
+.requirements-row td {
     background-color: #222233;
     padding: 10px 20px;
-    margin: 0;
-    transition: all 0.3s ease;
+    text-align: left;
+    font-size: 14px;
 }
-.req-container div {
-    margin: 3px 0;
+.requirements-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+.requirements-content.show {
+    opacity: 1;
 }
 #footer {
     margin-top: 40px;
@@ -67,88 +85,108 @@ h1 {
 </style>
 </head>
 <body>
+<h1>Melding IDs</h1>
+<p>Hier kunt u een overzicht vinden van alle meldingen in Meldkamerspel. Klik op "Toon Benodigdheden" om details te bekijken.</p>
 
-<h1>Meldingen Meldkamerspel</h1>
-<p>Hier vindt u een overzicht van alle meldingen. Klik op "Benodigdheden" om de details te zien.</p>
-
-<div id="missions-container"></div>
+<div id="sheet-data"></div>
 
 <footer id="footer">
     &copy; <span id="footer-year"></span> JR04. Alle rechten voorbehouden.
 </footer>
 
 <script>
-async function loadMissions() {
-    const missionsResp = await fetch('nl_NL-Data/einsaetze.json');
-    const missions = await missionsResp.json();
+const dataFile = 'gameversions/nl_NL/nl_NL-Data/einsaetze.json';
+const translationsFile = 'gameversions/nl_NL/translations.json';
 
-    const translationsResp = await fetch('translations.json');
-    const translations = await translationsResp.json();
+async function loadJSON(path) {
+    const res = await fetch(path);
+    return await res.json();
+}
 
-    const container = document.getElementById('missions-container');
+async function initMissions() {
+    const missions = await loadJSON(dataFile);
+    const translations = await loadJSON(translationsFile);
 
-    const translationOrder = Object.keys(translations);
+    const translationOrder = Object.keys(translations); // volgorde van voertuigen
 
-    missions.forEach(mission => {
-        // Mission wrapper
-        const missionDiv = document.createElement('div');
-        missionDiv.className = 'mission';
+    const container = document.getElementById('sheet-data');
 
-        // Mission info
-        const infoDiv = document.createElement('div');
-        infoDiv.className = 'mission-info';
-        infoDiv.innerHTML = `<div><strong>ID:</strong> ${mission.ID || mission.id || ''}</div>
-                             <div><strong>Naam:</strong> ${mission.Naam || mission.name || ''}</div>
-                             <div><strong>POI:</strong> ${mission.POI || mission.place || ''}</div>`;
-        missionDiv.appendChild(infoDiv);
+    const table = document.createElement('table');
+    const thead = document.createElement('thead');
+    const headerRow = document.createElement('tr');
+    ['ID', 'Naam', 'POI', 'Gemiddelde Credits', 'Benodigdheden'].forEach(col => {
+        const th = document.createElement('th');
+        th.textContent = col;
+        headerRow.appendChild(th);
+    });
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
+
+    const tbody = document.createElement('tbody');
+
+    missions.forEach((mission) => {
+        // Hoofdrow
+        const row = document.createElement('tr');
+        const tdId = document.createElement('td'); tdId.textContent = mission.id || mission.ID; row.appendChild(tdId);
+        const tdName = document.createElement('td'); tdName.textContent = mission.name || mission.Naam; row.appendChild(tdName);
+        const tdPoi = document.createElement('td'); tdPoi.textContent = mission.place || mission.POI; row.appendChild(tdPoi);
+        const tdCredits = document.createElement('td'); tdCredits.textContent = mission.average_credits || mission['Gemiddelde Credits']; row.appendChild(tdCredits);
 
         // Button
-        const btn = document.createElement('div');
-        btn.textContent = "Benodigdheden";
-        btn.className = "toggle-btn";
-        missionDiv.appendChild(btn);
+        const tdBtn = document.createElement('td');
+        const btn = document.createElement('button');
+        btn.textContent = 'Toon Benodigdheden';
+        btn.className = 'button-toggle';
+        tdBtn.appendChild(btn);
+        row.appendChild(tdBtn);
+        tbody.appendChild(row);
 
-        // Requirements + Chances container
-        const reqContainer = document.createElement('div');
-        reqContainer.className = 'req-container';
+        // Requirements row
+        const reqRow = document.createElement('tr');
+        reqRow.className = 'requirements-row';
+        const reqTd = document.createElement('td'); reqTd.colSpan = 5;
+        const reqDiv = document.createElement('div'); reqDiv.className = 'requirements-content';
 
+        // Combineer requirements en chances
         const allReqs = {};
-
-        if (mission.requirements) {
-            Object.assign(allReqs, mission.requirements);
-        }
+        if (mission.requirements) Object.assign(allReqs, mission.requirements);
         if (mission.chances) {
             Object.keys(mission.chances).forEach(k => {
-                allReqs[k] = mission.chances[k] + " %";
+                allReqs[k] = `${mission.chances[k]} %`;
             });
         }
 
-        // Sorteren op volgorde translations.json
+        // Sorteer op volgorde van translations.json
         translationOrder.forEach(key => {
             if (allReqs[key] !== undefined) {
-                reqContainer.innerHTML += `<div>${translations[key]}: ${allReqs[key]}</div>`;
+                reqDiv.innerHTML += `${translations[key]}: ${allReqs[key]}<br>`;
                 delete allReqs[key];
             }
         });
 
-        // Overige keys achteraan
+        // overige keys achteraan
         Object.keys(allReqs).forEach(k => {
-            reqContainer.innerHTML += `<div>${k}: ${allReqs[k]}</div>`;
+            reqDiv.innerHTML += `${k}: ${allReqs[k]}<br>`;
         });
 
-        // Voeg reqContainer toe onder de missie
-        container.appendChild(missionDiv);
-        container.appendChild(reqContainer);
+        reqTd.appendChild(reqDiv);
+        reqRow.appendChild(reqTd);
+        tbody.appendChild(reqRow);
 
-        // Toggle functie
+        // Toggle effect
         btn.addEventListener('click', () => {
-            if (reqContainer.style.display === 'block') {
-                reqContainer.style.display = 'none';
+            if (reqDiv.classList.contains('show')) {
+                reqDiv.style.maxHeight = null;
+                reqDiv.classList.remove('show');
             } else {
-                reqContainer.style.display = 'block';
+                reqDiv.style.maxHeight = reqDiv.scrollHeight + "px";
+                reqDiv.classList.add('show');
             }
         });
     });
+
+    table.appendChild(tbody);
+    container.appendChild(table);
 }
 
 // Footer jaar
@@ -156,8 +194,7 @@ const startYear = 2024;
 const currentYear = new Date().getFullYear();
 document.getElementById('footer-year').textContent = startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
 
-loadMissions();
+initMissions();
 </script>
-
 </body>
 </html>

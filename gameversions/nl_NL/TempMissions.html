@@ -235,148 +235,35 @@ const currentYear = new Date().getFullYear();
 document.getElementById('footer-year').textContent =
     startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
 
-// Standaard taal
+// Standaardtaal
 let currentLang = "nl";
 
-// Vertalingen
-const translations = {
-    nl: {
-        headers: ["ID", "Naam", "POI", "Gemiddelde Credits", "Benodigdheden"],
-        showButton: "Toon Benodigdheden",
-        hideButton: "Verberg Benodigdheden",
-        pageTitle: "Melding IDs",
-        pageMessage: "Hier kunt u een overzicht vinden van alle meldingen in Meldkamerspel. Klik op \"Toon Benodigdheden\" om details te bekijken.",
-    },
-    de: {
-        headers: ["ID", "Name", "POI", "Durchschnittliche Credits", "Benötigte Ausrüstung"],
-        showButton: "Benötigte anzeigen",
-        hideButton: "Ausblenden",
-        pageTitle: "Einsätze IDs",
-        pageMessage: "Hier finden Sie eine Übersicht aller Einsätze in Leitstellenspiel.",
-    },
-    "en-uk": {
-        headers: ["ID", "Name", "POI", "Average Credits", "Requirements"],
-        showButton: "Show Requirements",
-        hideButton: "Hide Requirements",
-        pageTitle: "Mission IDs",
-        pageMessage: "Here you can find an overview of all missions in Missionchief.",
-    },
-    "en-us": {
-        headers: ["ID", "Name", "POI", "Average Credits", "Requirements"],
-        showButton: "Show Requirements",
-        hideButton: "Hide Requirements",
-        pageTitle: "Mission IDs",
-        pageMessage: "Here you can find an overview of all missions in Missionchief.",
-    },
-    "en-au": {
-        headers: ["ID", "Name", "POI", "Average Credits", "Requirements"],
-        showButton: "Show Requirements",
-        hideButton: "Hide Requirements",
-        pageTitle: "Mission IDs",
-        pageMessage: "Here you can find an overview of all missions in Missionchief.",
-    }
-};
-
-// Functie om taal te veranderen
+// Language change functie
 function changeLanguage(lang) {
-    currentLang = lang;
-
-    // Pagina tekst
-    document.title = translations[lang].pageTitle;
-    document.getElementById('page-title').textContent = translations[lang].pageTitle;
-    document.getElementById('page-message').textContent = translations[lang].pageMessage;
-
-    // Als de tabel al bestaat, update headers + knoppen
-    const table = document.querySelector('#sheet-data table');
-    if (table) {
-        const headerCells = table.querySelectorAll('thead th');
-        translations[lang].headers.forEach((text, idx) => {
-            if (headerCells[idx]) headerCells[idx].textContent = text;
-        });
-
-        // Update alle toggle knoppen
-        table.querySelectorAll('.button-toggle').forEach(btn => {
-            if (btn.dataset.expanded === "true") {
-                btn.textContent = translations[lang].hideButton;
-            } else {
-                btn.textContent = translations[lang].showButton;
-            }
-        });
+    currentLang = lang; // opslaan welke taal gekozen is
+    switch(lang) {
+        case "nl":
+            document.title = "Melding IDs";
+            document.getElementById('page-title').textContent = "Melding IDs";
+            document.getElementById('page-message').textContent = "Hier kunt u een overzicht vinden van alle meldingen in Meldkamerspel. Klik op \"Toon Benodigdheden\" om details te bekijken.";
+            break;
+        case "de":
+            document.title = "Einsätze IDs";
+            document.getElementById('page-title').textContent = "Einsätze IDs";
+            document.getElementById('page-message').textContent = "Hier finden Sie eine Übersicht aller Einsätze in Leitstellenspiel.";
+            break;
+        default:
+            document.title = "Mission IDs";
+            document.getElementById('page-title').textContent = "Mission IDs";
+            document.getElementById('page-message').textContent = "Here you can find an overview of all missions in Missionchief.";
+            break;
     }
 }
 
-// Tabel opbouwen met knoppen die tekst dynamisch aanpassen
-function createMissionTable(missions) {
-    const container = document.getElementById('sheet-data');
-    const table = document.createElement('table');
-
-    // Header
-    const thead = document.createElement('thead');
-    const headerRow = document.createElement('tr');
-    translations[currentLang].headers.forEach(col => {
-        const th = document.createElement('th');
-        th.textContent = col;
-        headerRow.appendChild(th);
-    });
-    thead.appendChild(headerRow);
-    table.appendChild(thead);
-
-    // Body
-    const tbody = document.createElement('tbody');
-    missions.forEach(mission => {
-        const row = document.createElement('tr');
-
-        row.innerHTML = `
-            <td>${mission.id || mission.ID || ''}</td>
-            <td>${mission.name || mission.Naam || ''}</td>
-            <td>${Array.isArray(mission.place_array) ? mission.place_array.join(', ') : (mission.place || '').replace(/\n+/g, ', ')}</td>
-            <td>${mission.average_credits || mission['Gemiddelde Credits'] || ''}</td>
-            <td><button class="button-toggle">${translations[currentLang].showButton}</button></td>
-        `;
-        tbody.appendChild(row);
-
-        // Benodigdheden rij
-        const reqRow = document.createElement('tr');
-        reqRow.className = 'requirements-row';
-        const reqTd = document.createElement('td');
-        reqTd.colSpan = 5;
-        const reqDiv = document.createElement('div');
-        reqDiv.className = 'requirements-content';
-        if (mission.requirements) {
-            for (const key in mission.requirements) {
-                const val = mission.requirements[key];
-                if (typeof val === 'object') {
-                    for (const sub in val) {
-                        reqDiv.innerHTML += `${key} (${sub}): ${val[sub]}<br>`;
-                    }
-                } else {
-                    reqDiv.innerHTML += `${key}: ${val}<br>`;
-                }
-            }
-        }
-        reqTd.appendChild(reqDiv);
-        reqRow.appendChild(reqTd);
-        tbody.appendChild(reqRow);
-
-        // Toggle knop
-        const btn = row.querySelector('button');
-        btn.dataset.expanded = "false";
-        btn.addEventListener('click', () => {
-            const isExpanded = reqDiv.classList.toggle('show');
-            reqDiv.style.maxHeight = isExpanded ? reqDiv.scrollHeight + 'px' : null;
-            btn.textContent = isExpanded ? translations[currentLang].hideButton : translations[currentLang].showButton;
-            btn.dataset.expanded = isExpanded ? "true" : "false";
-        });
-    });
-    table.appendChild(tbody);
-    container.appendChild(table);
-}
-
-// Bij pagina load: standaard NL
+// Zet standaard NL bij pagina load
 window.addEventListener('DOMContentLoaded', () => {
-    changeLanguage('nl');
+    changeLanguage(currentLang);
 });
-
 
 
 // Start alles

@@ -180,6 +180,13 @@ const translationsFile = 'translations.json';
 const lastUpdateFile = 'nl_NL-Data/last_update.txt';
 let lastUpdateDate = null; // globale opslag
 
+const translationsHeaders = {
+    nl: ['ID', 'Naam', 'POI', 'Gemiddelde Credits', 'Benodigdheden'],
+    de: ['ID', 'Name', 'POI', 'Durchschnittliche Credits', 'Benötigte Fahrzeuge'],
+    en: ['ID', 'Name', 'POI', 'Average Credits', 'Requirements']
+};
+
+    
 async function loadJSON(path) {
     const res = await fetch(path);
     return await res.json();
@@ -260,12 +267,11 @@ async function initMissions() {
     const thead = document.createElement('thead');
     const headerRow = document.createElement('tr');
 
-    ['ID', 'Naam', 'POI', 'Gemiddelde Credits', 'Benodigdheden']
-        .forEach(col => {
-            const th = document.createElement('th');
-            th.textContent = col;
-            headerRow.appendChild(th);
-        });
+    translationsHeaders[currentLang].forEach(col => {
+        const th = document.createElement('th');
+        th.textContent = col;
+        headerRow.appendChild(th);
+    });
 
     thead.appendChild(headerRow);
     table.appendChild(thead);

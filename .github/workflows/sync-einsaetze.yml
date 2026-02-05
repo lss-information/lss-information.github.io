@@ -3,7 +3,7 @@ name: Sync einsaetze.json
 on:
   push:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "0 0,12 * * *"
   workflow_dispatch:
 
 permissions:

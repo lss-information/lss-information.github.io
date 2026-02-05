@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Meldingen Meldkamerspel (nl_NL)</title>
-
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 
 <style>
@@ -35,6 +34,25 @@ p {
     margin-bottom: 20px;
 }
 
+.language-selector {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0;
+    gap: 10px;
+}
+
+.language-selector li img {
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.language-selector li img:hover {
+    transform: scale(1.1);
+}
+
 table {
     width: 95%;
     max-width: 1200px;
@@ -46,26 +64,6 @@ table {
     border-radius: 10px;
     overflow: hidden;
 }
-
-        .language-selector {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-            padding: 0;
-            gap: 10px;
-        }
-
-        .language-selector li img {
-            width: 30px;
-            height: auto;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-
-        .language-selector li img:hover {
-            transform: scale(1.1);
-        }
 
 thead th {
     background-color: #2e2e3e;
@@ -83,81 +81,29 @@ tbody tr:hover {
     background-color: #2a2a3e;
 }
 
-
-     .button-container {
-            margin: 20px 0;
-        }
-
-        .button {
-            background-color: #1b1b2f;
-            color: #00ffe0; /* Neon kleur voor knoppen */
-            border: 2px solid #00ffe0; /* Neon kleur voor de rand van knoppen */
-            padding: 8px 16px;
-            text-decoration: none;
-            border-radius: 8px;
-            margin: 0 5px;
-            transition: background-color 0.2s, transform 0.2s;
-        }
-
-        .button:hover {
-            background-color: #00ffe0; /* Neon kleur voor hover */
-            color: #1b1b2f;
-            transform: scale(1.05);
-        }
-
 .button-toggle {
     background-color: #1b1b2f;
     color: #00ffe0;
     border: 1px solid #00ffe0;
-    padding: 6px 16px;       /* meer padding */
+    padding: 6px 16px;
     cursor: pointer;
     border-radius: 4px;
     font-size: 12px;
-    min-width: 160px;        /* breed genoeg voor "Verberg Benodigdheden" */
-    white-space: nowrap;     /* voorkom regelbreking */
-    transition: all 0.2s ease;
+    min-width: 160px;
+    white-space: nowrap;
+    transition: all 0.2s ease, box-shadow 0.3s ease, text-shadow 0.3s ease;
 }
 
 .button-toggle:hover {
     background-color: #00ffe0;
     color: #1b1b2f;
-}
-.button-toggle {
-    background-color: #1b1b2f;
-    color: #00ffe0;
-    border: 1px solid #00ffe0;
-    padding: 6px 16px;       /* meer padding */
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 12px;
-    min-width: 160px;        /* breed genoeg voor "Verberg Benodigdheden" */
-    white-space: nowrap;     /* voorkom regelbreking */
-    transition: all 0.2s ease;
+    box-shadow: 0 0 10px #00ffe0, 0 0 20px #00ffe0;
+    text-shadow: 0 0 5px #00ffe0;
 }
 
-.button-toggle:hover {
-    background-color: #00ffe0;
-    color: #1b1b2f;
-}
-
-
-
-.requirements-row td {
-    background-color: #222233;
-    padding: 10px 20px;
-    text-align: left;
-    font-size: 14px;
-}
-
-.requirements-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-    opacity: 0;
-}
-
-.requirements-content.show {
-    opacity: 1;
+.button-toggle.active {
+    box-shadow: 0 0 15px #00ffe0, 0 0 30px #00ffe0;
+    text-shadow: 0 0 10px #00ffe0;
 }
 
 #footer {
@@ -168,24 +114,18 @@ tbody tr:hover {
 }
 </style>
 </head>
-
 <body>
-        <ul class="language-selector">
-        <li><img src="../../images/flag_nl.gif" alt="Nederlands" onclick="changeLanguage('nl')" /></li>
-        <li><img src="../../images/flag_de.gif" alt="Deutsch" onclick="changeLanguage('de')" /></li>
-        <li><img src="../../images/flag_uk.gif" alt="English (UK)" onclick="changeLanguage('en-uk')" /></li>
-        <li><img src="../../images/flag_us.gif" alt="English (US)" onclick="changeLanguage('en-us')" /></li>
-        <li><img src="../../images/flag_au.gif" alt="English (AU)" onclick="changeLanguage('en-au')" /></li>
-        <li><a class="button" id="back-button" href="/gameversions/nl_NL/indexNL">Terug</a></li>
-    </ul>
 
-    <div class="button-container">
-        <a class="button" id="game-button" href="/index">Startpagina</a>
-        <a class="button" id="contact-button" href="/gameversions/contact">Contact</a>
-    </div>
+<ul class="language-selector">
+    <li><img src="../../images/flag_nl.gif" alt="Nederlands" onclick="changeLanguage('nl')"></li>
+    <li><img src="../../images/flag_de.gif" alt="Deutsch" onclick="changeLanguage('de')"></li>
+    <li><img src="../../images/flag_uk.gif" alt="English (UK)" onclick="changeLanguage('en-uk')"></li>
+    <li><img src="../../images/flag_us.gif" alt="English (US)" onclick="changeLanguage('en-us')"></li>
+    <li><img src="../../images/flag_au.gif" alt="English (AU)" onclick="changeLanguage('en-au')"></li>
+</ul>
 
-<h1>Melding IDs</h1>
-<p>Overzicht van alle meldingen in Meldkamerspel.</p>
+<h1 id="page-title">Melding IDs</h1>
+<p id="page-message">Hier kunt u een overzicht vinden van alle meldingen in Meldkamerspel. Klik op "Toon Benodigdheden" om details te bekijken.</p>
 <p id="last-update">Laatste update: laden…</p>
 
 <div id="sheet-data"></div>
@@ -199,47 +139,39 @@ const dataFile = 'nl_NL-Data/einsaetze.json';
 const translationsFile = 'translations.json';
 const lastUpdateFile = 'nl_NL-Data/last_update.txt';
 
+// Laad JSON
 async function loadJSON(path) {
     const res = await fetch(path);
     return await res.json();
 }
 
+// Laad laatste update
 async function loadLastUpdate() {
     try {
         const res = await fetch(lastUpdateFile);
         const text = await res.text();
-
         const date = new Date(text.trim());
-        const formatted = date.toLocaleString('nl-NL', {
-            dateStyle: 'long',
-            timeStyle: 'short'
-        });
-
-        document.getElementById('last-update').textContent =
-            `Laatste update: ${formatted}`;
+        const formatted = date.toLocaleString('nl-NL', { dateStyle: 'long', timeStyle: 'short' });
+        document.getElementById('last-update').textContent = `Laatste update: ${formatted}`;
     } catch {
-        document.getElementById('last-update').textContent =
-            'Laatste update: onbekend';
+        document.getElementById('last-update').textContent = 'Laatste update: onbekend';
     }
 }
 
+// Init tabel
 async function initMissions() {
     const missions = await loadJSON(dataFile);
     const translations = await loadJSON(translationsFile);
-
     const container = document.getElementById('sheet-data');
 
     const table = document.createElement('table');
     const thead = document.createElement('thead');
     const headerRow = document.createElement('tr');
-
-    ['ID', 'Naam', 'POI', 'Gemiddelde Credits', 'Benodigdheden']
-        .forEach(col => {
-            const th = document.createElement('th');
-            th.textContent = col;
-            headerRow.appendChild(th);
-        });
-
+    ['ID', 'Naam', 'POI', 'Gemiddelde Credits', 'Benodigdheden'].forEach(col => {
+        const th = document.createElement('th');
+        th.textContent = col;
+        headerRow.appendChild(th);
+    });
     thead.appendChild(headerRow);
     table.appendChild(thead);
 
@@ -247,41 +179,34 @@ async function initMissions() {
 
     missions.forEach(mission => {
         const row = document.createElement('tr');
-
         row.innerHTML = `
             <td>${mission.id || mission.ID || ''}</td>
             <td>${mission.name || mission.Naam || ''}</td>
-            <td>${
-                Array.isArray(mission.place_array)
-                    ? mission.place_array.join(', ')
-                    : (mission.place || '').replace(/\n+/g, ', ')
-            }</td>
+            <td>${Array.isArray(mission.place_array) ? mission.place_array.join(', ') : (mission.place || '').replace(/\n+/g, ', ')}</td>
             <td>${mission.average_credits || mission['Gemiddelde Credits'] || ''}</td>
             <td><button class="button-toggle">Toon Benodigdheden</button></td>
         `;
-
         tbody.appendChild(row);
 
         const reqRow = document.createElement('tr');
         reqRow.className = 'requirements-row';
-
         const reqTd = document.createElement('td');
         reqTd.colSpan = 5;
-
         const reqDiv = document.createElement('div');
         reqDiv.className = 'requirements-content';
 
         if (mission.requirements) {
-            for (const key in mission.requirements) {
-                const name = translations[key] || key;
-                const value = mission.requirements[key];
-
-                if (typeof value === 'object') {
-                    for (const sub in value) {
-                        reqDiv.innerHTML += `${name} (${translations[sub] || sub}): ${value[sub]}<br>`;
+            for (const key in translations) {
+                if (mission.requirements[key]) {
+                    const value = mission.requirements[key];
+                    const name = translations[key] || key;
+                    if (typeof value === "object") {
+                        for (const sub in value) {
+                            reqDiv.innerHTML += `${name} (${translations[sub] || sub}): ${value[sub]}<br>`;
+                        }
+                    } else {
+                        reqDiv.innerHTML += `${name}: ${value}<br>`;
                     }
-                } else {
-                    reqDiv.innerHTML += `${name}: ${value}<br>`;
                 }
             }
         }
@@ -290,59 +215,58 @@ async function initMissions() {
         reqRow.appendChild(reqTd);
         tbody.appendChild(reqRow);
 
+        // Button toggle
         row.querySelector('button').addEventListener('click', () => {
-        const isShown = reqDiv.classList.toggle('show');
-        reqDiv.style.maxHeight = isShown ? reqDiv.scrollHeight + 'px' : null;
-
-    // Pas de button tekst aan
-        row.querySelector('button').textContent = isShown 
-            ? 'Verberg Benodigdheden' 
-            : 'Toon Benodigdheden';
-    });
-
+            const btn = row.querySelector('button');
+            const isShown = reqDiv.classList.toggle('show');
+            reqDiv.style.maxHeight = isShown ? reqDiv.scrollHeight + 'px' : null;
+            btn.textContent = isShown ? 'Verberg Benodigdheden' : 'Toon Benodigdheden';
+            btn.classList.toggle('active', isShown);
+        });
     });
 
     table.appendChild(tbody);
     container.appendChild(table);
 }
 
-        function changeLanguage(lang) {
-            switch(lang) {
-                case "nl":
-                    document.title = "Melding IDs";
-                    document.getElementById('page-title').textContent = "Melding IDs";
-                    document.getElementById('page-message').textContent = "Hier kunt u een overzicht vinden van alle meldingen in Meldkamerspel. Wijzigingen? Klik op Contact.";
-                    document.getElementById('game-button').textContent = "Startpagina";
-                    document.getElementById('contact-button').textContent = "Contact";
-                    document.getElementById('back-button').textContent = "Terug";
-                    break;
-                case "de":
-                    document.title = "Einsätze IDs";
-                    document.getElementById('page-title').textContent = "Einsätze IDs";
-                    document.getElementById('page-message').textContent = "Hier finden Sie eine Übersicht aller Einsätze in Leitstellenspiel. Änderungen? Klicken Sie auf Kontakt.";
-                    document.getElementById('game-button').textContent = "Startseite";
-                    document.getElementById('contact-button').textContent = "Kontakt";
-                    document.getElementById('back-button').textContent = "Zurück";
-                    break;
-                default:
-                    document.title = "Mission IDs";
-                    document.getElementById('page-title').textContent = "Mission IDs";
-                    document.getElementById('page-message').textContent = "Here you can find an overview of all missions in Missionchief. Changes? Click Contact.";
-                    document.getElementById('game-button').textContent = "Homepage";
-                    document.getElementById('contact-button').textContent = "Contact";
-                    document.getElementById('back-button').textContent = "Back";
-                    break;
-            }
-        }
-
-
-
-    
+// Footer jaar
 const startYear = 2024;
 const currentYear = new Date().getFullYear();
 document.getElementById('footer-year').textContent =
     startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
 
+// Standaardtaal
+let currentLang = "nl";
+
+// Language change functie
+function changeLanguage(lang) {
+    currentLang = lang; // opslaan welke taal gekozen is
+    switch(lang) {
+        case "nl":
+            document.title = "Melding IDs";
+            document.getElementById('page-title').textContent = "Melding IDs";
+            document.getElementById('page-message').textContent = "Hier kunt u een overzicht vinden van alle meldingen in Meldkamerspel. Klik op \"Toon Benodigdheden\" om details te bekijken.";
+            break;
+        case "de":
+            document.title = "Einsätze IDs";
+            document.getElementById('page-title').textContent = "Einsätze IDs";
+            document.getElementById('page-message').textContent = "Hier finden Sie eine Übersicht aller Einsätze in Leitstellenspiel.";
+            break;
+        default:
+            document.title = "Mission IDs";
+            document.getElementById('page-title').textContent = "Mission IDs";
+            document.getElementById('page-message').textContent = "Here you can find an overview of all missions in Missionchief.";
+            break;
+    }
+}
+
+// Zet standaard NL bij pagina load
+window.addEventListener('DOMContentLoaded', () => {
+    changeLanguage(currentLang);
+});
+
+
+// Start alles
 loadLastUpdate();
 initMissions();
 </script>

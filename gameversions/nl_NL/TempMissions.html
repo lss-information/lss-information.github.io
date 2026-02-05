@@ -4,150 +4,112 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Meldingen Meldkamerspel (nl_NL)</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
 <style>
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Inter', system-ui, sans-serif;
-    background: linear-gradient(180deg, #0f1220, #0b0e18);
-    color: #e3e8ee;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0e0e1a;
+    color: #00ffe0;
     text-align: center;
 }
 
-
-    body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    background: repeating-linear-gradient(
-        to bottom,
-        rgba(255,255,255,0.015),
-        rgba(255,255,255,0.015) 1px,
-        transparent 1px,
-        transparent 4px
-    );
-    mix-blend-mode: overlay;
-}
-
-/* Titel & intro */
 h1 {
-    margin: 28px 0 8px;
-    font-family: 'Orbitron', sans-serif;
+    margin: 30px 0 10px;
     font-size: 32px;
-    letter-spacing: 0.6px;
-    color: #cfe6e2;
-    text-shadow: none;
+    text-shadow: 0 0 5px #00ffe0;
 }
 
 p {
-    max-width: 820px;
-    margin: 0 auto 26px;
+    max-width: 800px;
+    margin: 0 auto 10px;
     font-size: 15px;
-    line-height: 1.6;
-    color: #b8c4cf;
 }
 
-/* Tabel */
+#last-update {
+    font-size: 13px;
+    color: #8fffee;
+    margin-bottom: 20px;
+}
+
 table {
     width: 95%;
     max-width: 1200px;
-    margin: 24px auto;
+    margin: 20px auto;
     border-collapse: collapse;
-    background-color: #141827;
-    border-radius: 12px;
+    background-color: #1f1f2e;
+    color: #00ffe0;
+    box-shadow: 0 0 10px #00ffe0;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
 }
 
 thead th {
-    background-color: #1b2033;
-    padding: 13px 10px;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 12.5px;
-    text-transform: uppercase;
-    letter-spacing: 0.6px;
-    color: #a9bccf;
-    border-bottom: 1px solid #2a3048;
+    background-color: #2e2e3e;
+    padding: 12px;
+    border-bottom: 2px solid #00ffe0;
 }
 
 tbody td {
-    padding: 12px 10px;
-    font-size: 14px;
-    border-bottom: 1px solid #242a42;
+    padding: 10px;
+    border-bottom: 1px solid #444;
     vertical-align: top;
-    font-variant-numeric: tabular-nums;
-    color: #e1e7ee;
-}
-
-tbody tr {
-    transition: background-color 0.2s ease;
 }
 
 tbody tr:hover {
-    background-color: #1a2036;
+    background-color: #2a2a3e;
 }
 
-/* POI subtiel accent */
-tbody td:nth-child(3) {
-    color: #c2ddd8;
-    font-weight: 500;
-}
-
-/* Button */
 .button-toggle {
-    background-color: #1b2336;
-    color: #cfe1ee;
-    border: 1px solid #2f3a57;
-    padding: 6px 12px;
+    background-color: #1b1b2f;
+    color: #00ffe0;
+    border: 1px solid #00ffe0;
+    padding: 4px 8px;
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: 4px;
     font-size: 12px;
-    transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .button-toggle:hover {
-    background-color: #232c46;
-    border-color: #3c4a6b;
+    background-color: #00ffe0;
+    color: #1b1b2f;
 }
 
-/* Benodigdheden */
 .requirements-row td {
-    background-color: #101424;
-    padding: 14px 24px;
+    background-color: #222233;
+    padding: 10px 20px;
     text-align: left;
-    font-size: 13.5px;
-    color: #d7dee6;
+    font-size: 14px;
 }
 
 .requirements-content {
     max-height: 0;
     overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
     opacity: 0;
-    line-height: 1.6;
-    transition: max-height 0.35s ease, opacity 0.25s ease;
 }
 
 .requirements-content.show {
     opacity: 1;
 }
 
-/* Footer */
 #footer {
-    margin-top: 48px;
+    margin-top: 40px;
     padding: 20px;
     font-size: 12px;
-    color: #8e9aac;
+    color: #ccc;
 }
-
 </style>
 </head>
+
 <body>
 
 <h1>Melding IDs</h1>
-<p>Hier kunt u een overzicht vinden van alle meldingen in Meldkamerspel. Klik op "Toon Benodigdheden" om details te bekijken.</p>
+<p>Overzicht van alle meldingen in Meldkamerspel.</p>
+<p id="last-update">Laatste update: laden…</p>
 
 <div id="sheet-data"></div>
 
@@ -158,69 +120,68 @@ tbody td:nth-child(3) {
 <script>
 const dataFile = 'nl_NL-Data/einsaetze.json';
 const translationsFile = 'translations.json';
+const lastUpdateFile = 'nl_NL-Data/last_update.txt';
 
 async function loadJSON(path) {
     const res = await fetch(path);
     return await res.json();
 }
 
+async function loadLastUpdate() {
+    try {
+        const res = await fetch(lastUpdateFile);
+        const text = await res.text();
+
+        const date = new Date(text.trim());
+        const formatted = date.toLocaleString('nl-NL', {
+            dateStyle: 'long',
+            timeStyle: 'short'
+        });
+
+        document.getElementById('last-update').textContent =
+            `Laatste update: ${formatted}`;
+    } catch {
+        document.getElementById('last-update').textContent =
+            'Laatste update: onbekend';
+    }
+}
+
 async function initMissions() {
     const missions = await loadJSON(dataFile);
     const translations = await loadJSON(translationsFile);
 
-    const translationOrder = Object.keys(translations);
     const container = document.getElementById('sheet-data');
 
     const table = document.createElement('table');
     const thead = document.createElement('thead');
     const headerRow = document.createElement('tr');
 
-    ['ID', 'Naam', 'POI', 'Gemiddelde Credits', 'Benodigdheden'].forEach(col => {
-        const th = document.createElement('th');
-        th.textContent = col;
-        headerRow.appendChild(th);
-    });
+    ['ID', 'Naam', 'POI', 'Gemiddelde Credits', 'Benodigdheden']
+        .forEach(col => {
+            const th = document.createElement('th');
+            th.textContent = col;
+            headerRow.appendChild(th);
+        });
 
     thead.appendChild(headerRow);
     table.appendChild(thead);
 
     const tbody = document.createElement('tbody');
 
-    missions.forEach((mission) => {
+    missions.forEach(mission => {
         const row = document.createElement('tr');
 
-        const tdId = document.createElement('td');
-        tdId.textContent = mission.id || mission.ID;
-        row.appendChild(tdId);
-
-        const tdName = document.createElement('td');
-        tdName.textContent = mission.name || mission.Naam;
-        row.appendChild(tdName);
-
-        /* ===== POI FIX ===== */
-        const tdPoi = document.createElement('td');
-        let poiValue = null;
-
-        if (Array.isArray(mission.place_array) && mission.place_array.length > 0) {
-            poiValue = mission.place_array.join(', ');
-        } else if (typeof mission.place === 'string') {
-            poiValue = mission.place.replace(/\n+/g, ', ');
-        }
-
-        tdPoi.textContent = poiValue || '';
-        row.appendChild(tdPoi);
-        /* =================== */
-
-        const tdCredits = document.createElement('td');
-        tdCredits.textContent = mission.average_credits || mission['Gemiddelde Credits'];
-        row.appendChild(tdCredits);
-
-        const tdBtn = document.createElement('td');
-        const btn = document.createElement('button');
-        btn.textContent = 'Toon Benodigdheden';
-        btn.className = 'button-toggle';
-        tdBtn.appendChild(btn);
-        row.appendChild(tdBtn);
+        row.innerHTML = `
+            <td>${mission.id || mission.ID || ''}</td>
+            <td>${mission.name || mission.Naam || ''}</td>
+            <td>${
+                Array.isArray(mission.place_array)
+                    ? mission.place_array.join(', ')
+                    : (mission.place || '').replace(/\n+/g, ', ')
+            }</td>
+            <td>${mission.average_credits || mission['Gemiddelde Credits'] || ''}</td>
+            <td><button class="button-toggle">Toon Benodigdheden</button></td>
+        `;
 
         tbody.appendChild(row);
 
@@ -234,28 +195,16 @@ async function initMissions() {
         reqDiv.className = 'requirements-content';
 
         if (mission.requirements) {
-            for (const key of Object.keys(translations)) {
-                if (mission.requirements[key]) {
-                    const value = mission.requirements[key];
-                    const name = translations[key] || key;
+            for (const key in mission.requirements) {
+                const name = translations[key] || key;
+                const value = mission.requirements[key];
 
-                    if (typeof value === "object") {
-                        for (const subKey in value) {
-                            const subName = translations[subKey] || subKey;
-                            reqDiv.innerHTML += `${name} (${subName}): ${value[subKey]}<br>`;
-                        }
-                    } else {
-                        reqDiv.innerHTML += `${name}: ${value}<br>`;
+                if (typeof value === 'object') {
+                    for (const sub in value) {
+                        reqDiv.innerHTML += `${name} (${translations[sub] || sub}): ${value[sub]}<br>`;
                     }
-                }
-            }
-        }
-
-        if (mission.chances) {
-            for (const key of Object.keys(translations)) {
-                if (mission.chances[key] !== undefined) {
-                    const name = translations[key] || key;
-                    reqDiv.innerHTML += `${name} - kans: ${mission.chances[key]} %<br>`;
+                } else {
+                    reqDiv.innerHTML += `${name}: ${value}<br>`;
                 }
             }
         }
@@ -264,14 +213,11 @@ async function initMissions() {
         reqRow.appendChild(reqTd);
         tbody.appendChild(reqRow);
 
-        btn.addEventListener('click', () => {
-            if (reqDiv.classList.contains('show')) {
-                reqDiv.style.maxHeight = null;
-                reqDiv.classList.remove('show');
-            } else {
-                reqDiv.style.maxHeight = reqDiv.scrollHeight + "px";
-                reqDiv.classList.add('show');
-            }
+        row.querySelector('button').addEventListener('click', () => {
+            reqDiv.classList.toggle('show');
+            reqDiv.style.maxHeight = reqDiv.classList.contains('show')
+                ? reqDiv.scrollHeight + 'px'
+                : null;
         });
     });
 
@@ -284,6 +230,7 @@ const currentYear = new Date().getFullYear();
 document.getElementById('footer-year').textContent =
     startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
 
+loadLastUpdate();
 initMissions();
 </script>
 

@@ -22,11 +22,15 @@ jobs:
           mkdir -p gameversions/nl_NL/nl_NL-Data
           curl -f -s -L http://meldkamerspel.com/einsaetze.json | jq '.' > gameversions/nl_NL/nl_NL-Data/einsaetze.json
 
+      - name: Write last update timestamp
+        run: |
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > gameversions/nl_NL/nl_NL-Data/last_update.txt
 
       - name: Commit if changed
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add gameversions/nl_NL/nl_NL-Data/einsaetze.json
+          git add gameversions/nl_NL/nl_NL-Data/last_update.txt
           git commit -m "Update einsaetze.json" || echo "Nothing to commit"
           git push origin main

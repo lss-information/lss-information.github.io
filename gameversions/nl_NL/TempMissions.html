@@ -360,10 +360,15 @@ async function loadLastUpdate() {
         const res = await fetch(lastUpdateFile);
         const text = await res.text();
         const date = new Date(text.trim());
-        const formatted = date.toLocaleString('nl-NL', { dateStyle: 'long', timeStyle: 'short' });
+
+        // Format datum en tijd netjes
+        const formatted = date.toLocaleString('nl-NL', {
+            dateStyle: 'long',
+            timeStyle: 'short' // geeft uur:minute
+        });
 
         const lastUpdateElement = document.getElementById('last-update');
-        const currentLabel = lastUpdateElement.textContent.split(':')[0];
+        const currentLabel = lastUpdateElement.textContent.split(':')[0]; // pak label "Laatste update"
         lastUpdateElement.textContent = `${currentLabel}: ${formatted}`;
     } catch {
         const lastUpdateElement = document.getElementById('last-update');
@@ -371,6 +376,7 @@ async function loadLastUpdate() {
         lastUpdateElement.textContent = `${currentLabel}: onbekend`;
     }
 }
+
 
 
 

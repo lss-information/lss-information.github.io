@@ -33,6 +33,8 @@
   "wildfire_command": "benodigde DA-LA-NB",
   "wildfire_equipment": "Benodigde VW-NB / NBH",
   "care_service_command": "Benodigde PelotonsCommandant - Logistiek",
+  "care_service": "Benodigde Verzorging",
+  "clean_service": "Benodigde Arbeidshygiëne",
 
 
   "car_carrier": "Benodigde Bergingsvoertuig(en)",

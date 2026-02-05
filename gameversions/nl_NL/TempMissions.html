@@ -360,21 +360,44 @@ function changeLanguage(lang) {
     }
 }
 
+let lastUpdateDate = null; // globaal opslaan
+
 async function loadLastUpdate() {
     try {
         const res = await fetch(lastUpdateFile);
         const text = await res.text();
-        const date = new Date(text.trim());
-
-        const lastUpdateElement = document.getElementById('last-update');
-        lastUpdateElement.dataset.rawDate = text.trim(); // sla originele datum op
-
-        formatLastUpdate(text.trim());
+        lastUpdateDate = new Date(text.trim()); // opslaan
+        updateLastUpdateText('nl'); // standaard taal
     } catch {
-        const lastUpdateElement = document.getElementById('last-update');
-        lastUpdateElement.textContent = `${lastUpdateElement.dataset.label || 'Laatste update'}: onbekend`;
+        document.getElementById('last-update').textContent = 'Laatste update: onbekend';
     }
 }
+
+// functie om de tekst te updaten afhankelijk van taal
+function updateLastUpdateText(lang) {
+    if (!lastUpdateDate) return;
+
+    const formatted = lastUpdateDate.toLocaleString('nl-NL', {
+        dateStyle: 'long',
+        timeStyle: 'short'
+    });
+
+    let prefix;
+    switch(lang) {
+        case 'nl':
+            prefix = 'Laatste update';
+            break;
+        case 'de':
+            prefix = 'Letzte Aktualisierung';
+            break;
+        default:
+            prefix = 'Last update';
+            break;
+    }
+
+    document.getElementById('last-update').textContent = `${prefix}: ${formatted}`;
+}
+
 
 function formatLastUpdate(isoDate) {
     const date = new Date(isoDate);

@@ -335,11 +335,18 @@ function changeLanguage(lang) {
     // Update last-update label
     loadLastUpdate();
 
-    // Update toggle buttons
-    document.querySelectorAll('.button-toggle').forEach(button => {
-        const isShown = button.nextElementSibling.classList.contains('show');
-        button.textContent = isShown ? t.toggle.hide : t.toggle.show;
-    });
+// Update toggle buttons
+document.querySelectorAll('.button-toggle').forEach(button => {
+    // Vind de requirements-content in de volgende rij
+    const reqRow = button.closest('tr').nextElementSibling;
+    if (!reqRow) return;
+    const reqDiv = reqRow.querySelector('.requirements-content');
+    if (!reqDiv) return;
+
+    const isShown = reqDiv.classList.contains('show');
+    button.textContent = isShown ? pageTranslations[currentLang].toggle.hide : pageTranslations[currentLang].toggle.show;
+});
+
 
     // Rebuild table headers
     const table = document.querySelector('table');

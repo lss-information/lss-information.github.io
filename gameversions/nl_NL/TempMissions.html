@@ -322,10 +322,11 @@ async function initMissions() {
             reqDiv.style.maxHeight = isShown ? reqDiv.scrollHeight + 'px' : null;
 
             row.querySelector('button').textContent = isShown 
-                ? (currentLang === 'de' ? 'Benötigte Fahrzeuge verbergen' :
-                  currentLang === 'nl' ? 'Verberg Benodigdheden' : 'Hide Requirements')
-                : (currentLang === 'de' ? 'Benötigte Fahrzeuge anzeigen' :
-                  currentLang === 'nl' ? 'Toon Benodigdheden' : 'Show Requirements');
+            ? (currentLang === 'de' ? 'Benötigte Fahrzeuge verbergen' :
+              currentLang === 'nl' ? 'Verberg Benodigdheden' : 'Hide Requirements')
+            : (currentLang === 'de' ? 'Benötigte Fahrzeuge anzeigen' :
+              currentLang === 'nl' ? 'Toon Benodigdheden' : 'Show Requirements');
+
         });
     });
 

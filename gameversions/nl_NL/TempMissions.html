@@ -47,6 +47,26 @@ table {
     overflow: hidden;
 }
 
+        .language-selector {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 0;
+            gap: 10px;
+        }
+
+        .language-selector li img {
+            width: 30px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .language-selector li img:hover {
+            transform: scale(1.1);
+        }
+
 thead th {
     background-color: #2e2e3e;
     padding: 12px;

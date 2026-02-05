@@ -305,19 +305,21 @@ async function initMissions() {
     table.appendChild(tbody);
     container.appendChild(table);
 }
-    const translationsText = {
-        "last_update": {
-            "nl": "Laatste update",
-            "de": "Letzte Aktualisierung",
-            "en": "Last update"
-        }
-    };
+const translationsText = {
+    last_update: {
+        nl: "Laatste update",
+        de: "Letzte Aktualisierung",
+        "en-uk": "Last update",
+        "en-us": "Last update",
+        "en-au": "Last update"
+    }
+};
 
 
 
     
 function changeLanguage(lang) {
-    const lastUpdateLabel = translationsText.last_update[lang] || translationsText.last_update['en'];
+    const lastUpdateLabel = translationsText.last_update[lang] || translationsText.last_update['en-uk'];
     
     switch(lang) {
         case "nl":
@@ -327,7 +329,6 @@ function changeLanguage(lang) {
             document.getElementById('game-button').textContent = "Startpagina";
             document.getElementById('contact-button').textContent = "Contact";
             document.getElementById('back-button').textContent = "Terug";
-            document.getElementById('last-update').textContent = `${lastUpdateLabel}: laden…`;
             break;
         case "de":
             document.title = "Einsätze IDs";
@@ -336,7 +337,6 @@ function changeLanguage(lang) {
             document.getElementById('game-button').textContent = "Startseite";
             document.getElementById('contact-button').textContent = "Kontakt";
             document.getElementById('back-button').textContent = "Zurück";
-            document.getElementById('last-update').textContent = `${lastUpdateLabel}: laden…`;
             break;
         default:
             document.title = "Mission IDs";
@@ -345,29 +345,33 @@ function changeLanguage(lang) {
             document.getElementById('game-button').textContent = "Homepage";
             document.getElementById('contact-button').textContent = "Contact";
             document.getElementById('back-button').textContent = "Back";
-            document.getElementById('last-update').textContent = `${lastUpdateLabel}: loading…`;
             break;
     }
+
+    // Update het label van de laatste update, datum blijft intact
+    const lastUpdateElement = document.getElementById('last-update');
+    const currentDate = lastUpdateElement.textContent.split(':')[1] || ' laden…';
+    lastUpdateElement.textContent = `${lastUpdateLabel}:${currentDate}`;
 }
+
 
 async function loadLastUpdate() {
     try {
         const res = await fetch(lastUpdateFile);
         const text = await res.text();
         const date = new Date(text.trim());
-        const formatted = date.toLocaleString('nl-NL', {
-            dateStyle: 'long',
-            timeStyle: 'short'
-        });
-        
-        // Alleen de datum invullen, label wordt door changeLanguage bepaald
-        const currentLabel = document.getElementById('last-update').textContent.split(':')[0];
-        document.getElementById('last-update').textContent = `${currentLabel}: ${formatted}`;
+        const formatted = date.toLocaleString('nl-NL', { dateStyle: 'long', timeStyle: 'short' });
+
+        const lastUpdateElement = document.getElementById('last-update');
+        const currentLabel = lastUpdateElement.textContent.split(':')[0];
+        lastUpdateElement.textContent = `${currentLabel}: ${formatted}`;
     } catch {
-        const currentLabel = document.getElementById('last-update').textContent.split(':')[0];
-        document.getElementById('last-update').textContent = `${currentLabel}: onbekend`;
+        const lastUpdateElement = document.getElementById('last-update');
+        const currentLabel = lastUpdateElement.textContent.split(':')[0];
+        lastUpdateElement.textContent = `${currentLabel}: onbekend`;
     }
 }
+
 
 
 

@@ -318,9 +318,12 @@ const translationsText = {
 
 
     
+let currentLanguage = 'nl'; // standaard taal
+
 function changeLanguage(lang) {
-    const lastUpdateLabel = translationsText.last_update[lang] || translationsText.last_update['en-uk'];
-    
+    currentLanguage = lang; // sla de taal op voor andere functies
+    const lastUpdateElement = document.getElementById('last-update');
+
     switch(lang) {
         case "nl":
             document.title = "Melding IDs";
@@ -329,6 +332,7 @@ function changeLanguage(lang) {
             document.getElementById('game-button').textContent = "Startpagina";
             document.getElementById('contact-button').textContent = "Contact";
             document.getElementById('back-button').textContent = "Terug";
+            lastUpdateElement.dataset.label = "Laatste update";
             break;
         case "de":
             document.title = "Einsätze IDs";
@@ -337,23 +341,24 @@ function changeLanguage(lang) {
             document.getElementById('game-button').textContent = "Startseite";
             document.getElementById('contact-button').textContent = "Kontakt";
             document.getElementById('back-button').textContent = "Zurück";
+            lastUpdateElement.dataset.label = "Letzte Aktualisierung";
             break;
-        default:
+        default: // Engels
             document.title = "Mission IDs";
             document.getElementById('page-title').textContent = "Mission IDs";
             document.getElementById('page-message').textContent = "Here you can find an overview of all missions in Missionchief.";
             document.getElementById('game-button').textContent = "Homepage";
             document.getElementById('contact-button').textContent = "Contact";
             document.getElementById('back-button').textContent = "Back";
+            lastUpdateElement.dataset.label = "Last update";
             break;
     }
 
-    // Update het label van de laatste update, datum blijft intact
-    const lastUpdateElement = document.getElementById('last-update');
-    const currentDate = lastUpdateElement.textContent.split(':')[1] || ' laden…';
-    lastUpdateElement.textContent = `${lastUpdateLabel}:${currentDate}`;
+    // herlaad de tekst van last-update als deze al geladen is
+    if (lastUpdateElement.dataset.rawDate) {
+        formatLastUpdate(lastUpdateElement.dataset.rawDate);
+    }
 }
-
 
 async function loadLastUpdate() {
     try {
@@ -361,22 +366,35 @@ async function loadLastUpdate() {
         const text = await res.text();
         const date = new Date(text.trim());
 
-        // Format datum en tijd netjes
-        const formatted = date.toLocaleString('nl-NL', {
-            dateStyle: 'long',
-            timeStyle: 'short' // geeft uur:minute
-        });
-
         const lastUpdateElement = document.getElementById('last-update');
-        const currentLabel = lastUpdateElement.textContent.split(':')[0]; // pak label "Laatste update"
-        lastUpdateElement.textContent = `${currentLabel}: ${formatted}`;
+        lastUpdateElement.dataset.rawDate = text.trim(); // sla originele datum op
+
+        formatLastUpdate(text.trim());
     } catch {
         const lastUpdateElement = document.getElementById('last-update');
-        const currentLabel = lastUpdateElement.textContent.split(':')[0];
-        lastUpdateElement.textContent = `${currentLabel}: onbekend`;
+        lastUpdateElement.textContent = `${lastUpdateElement.dataset.label || 'Laatste update'}: onbekend`;
     }
 }
 
+function formatLastUpdate(isoDate) {
+    const date = new Date(isoDate);
+    const lastUpdateElement = document.getElementById('last-update');
+
+    let formatted;
+    switch(currentLanguage) {
+        case 'nl':
+            formatted = date.toLocaleString('nl-NL', { dateStyle: 'long', timeStyle: 'short' });
+            break;
+        case 'de':
+            formatted = date.toLocaleString('de-DE', { dateStyle: 'long', timeStyle: 'short' });
+            break;
+        default:
+            formatted = date.toLocaleString('en-US', { dateStyle: 'long', timeStyle: 'short' });
+            break;
+    }
+
+    lastUpdateElement.textContent = `${lastUpdateElement.dataset.label}: ${formatted}`;
+}
 
 
 

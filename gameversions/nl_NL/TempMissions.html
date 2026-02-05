@@ -67,16 +67,19 @@ tbody tr:hover {
     background-color: #1b1b2f;
     color: #00ffe0;
     border: 1px solid #00ffe0;
-    padding: 4px 8px;
+    padding: 4px 12px; /* iets breder dan nodig */
     cursor: pointer;
     border-radius: 4px;
     font-size: 12px;
+    min-width: 130px; /* vaste minimale breedte zodat "Verberg Benodigdheden" past */
+    transition: all 0.2s ease; /* voor smooth hover/klik */
 }
 
 .button-toggle:hover {
     background-color: #00ffe0;
     color: #1b1b2f;
 }
+
 
 .requirements-row td {
     background-color: #222233;

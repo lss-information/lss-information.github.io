@@ -306,6 +306,38 @@ async function initMissions() {
     container.appendChild(table);
 }
 
+function changeLanguage(lang) {
+    switch(lang) {
+        case "nl":
+            document.title = "Melding IDs";
+            document.getElementById('page-title').textContent = "Melding IDs";
+            document.getElementById('page-message').textContent = "Hier kunt u een overzicht vinden van alle meldingen in Meldkamerspel.";
+            document.getElementById('game-button').textContent = "Startpagina";
+            document.getElementById('contact-button').textContent = "Contact";
+            document.getElementById('back-button').textContent = "Terug";
+            break;
+        case "de":
+            document.title = "Einsätze IDs";
+            document.getElementById('page-title').textContent = "Einsätze IDs";
+            document.getElementById('page-message').textContent = "Hier finden Sie eine Übersicht aller Einsätze in Leitstellenspiel.";
+            document.getElementById('game-button').textContent = "Startseite";
+            document.getElementById('contact-button').textContent = "Kontakt";
+            document.getElementById('back-button').textContent = "Zurück";
+            break;
+        default:
+            document.title = "Mission IDs";
+            document.getElementById('page-title').textContent = "Mission IDs";
+            document.getElementById('page-message').textContent = "Here you can find an overview of all missions in Missionchief.";
+            document.getElementById('game-button').textContent = "Homepage";
+            document.getElementById('contact-button').textContent = "Contact";
+            document.getElementById('back-button').textContent = "Back";
+            break;
+    }
+}
+
+
+
+    
 const startYear = 2024;
 const currentYear = new Date().getFullYear();
 document.getElementById('footer-year').textContent =

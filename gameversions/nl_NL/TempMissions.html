@@ -214,11 +214,15 @@ async function initMissions() {
         tbody.appendChild(reqRow);
 
         row.querySelector('button').addEventListener('click', () => {
-            reqDiv.classList.toggle('show');
-            reqDiv.style.maxHeight = reqDiv.classList.contains('show')
-                ? reqDiv.scrollHeight + 'px'
-                : null;
-        });
+        const isShown = reqDiv.classList.toggle('show');
+        reqDiv.style.maxHeight = isShown ? reqDiv.scrollHeight + 'px' : null;
+
+    // Pas de button tekst aan
+        row.querySelector('button').textContent = isShown 
+            ? 'Verberg Benodigdheden' 
+            : 'Toon Benodigdheden';
+    });
+
     });
 
     table.appendChild(tbody);

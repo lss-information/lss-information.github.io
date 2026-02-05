@@ -16,6 +16,22 @@ body {
     text-align: center;
 }
 
+
+    body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.015),
+        rgba(255,255,255,0.015) 1px,
+        transparent 1px,
+        transparent 4px
+    );
+    mix-blend-mode: overlay;
+}
+
 /* Titel & intro */
 h1 {
     margin: 28px 0 8px;

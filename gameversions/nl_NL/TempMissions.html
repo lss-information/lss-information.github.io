@@ -85,6 +85,7 @@ tbody tr:hover {
 </style>
 </head>
 <body>
+
 <h1>Melding IDs</h1>
 <p>Hier kunt u een overzicht vinden van alle meldingen in Meldkamerspel. Klik op "Toon Benodigdheden" om details te bekijken.</p>
 
@@ -107,58 +108,80 @@ async function initMissions() {
     const missions = await loadJSON(dataFile);
     const translations = await loadJSON(translationsFile);
 
-    const translationOrder = Object.keys(translations); // volgorde van voertuigen
-
+    const translationOrder = Object.keys(translations);
     const container = document.getElementById('sheet-data');
 
     const table = document.createElement('table');
     const thead = document.createElement('thead');
     const headerRow = document.createElement('tr');
+
     ['ID', 'Naam', 'POI', 'Gemiddelde Credits', 'Benodigdheden'].forEach(col => {
         const th = document.createElement('th');
         th.textContent = col;
         headerRow.appendChild(th);
     });
+
     thead.appendChild(headerRow);
     table.appendChild(thead);
 
     const tbody = document.createElement('tbody');
 
     missions.forEach((mission) => {
-        // Hoofdrow
         const row = document.createElement('tr');
-        const tdId = document.createElement('td'); tdId.textContent = mission.id || mission.ID; row.appendChild(tdId);
-        const tdName = document.createElement('td'); tdName.textContent = mission.name || mission.Naam; row.appendChild(tdName);
-        const tdPoi = document.createElement('td'); tdPoi.textContent = mission.place || mission.POI; row.appendChild(tdPoi);
-        const tdCredits = document.createElement('td'); tdCredits.textContent = mission.average_credits || mission['Gemiddelde Credits']; row.appendChild(tdCredits);
 
-        // Button
+        const tdId = document.createElement('td');
+        tdId.textContent = mission.id || mission.ID;
+        row.appendChild(tdId);
+
+        const tdName = document.createElement('td');
+        tdName.textContent = mission.name || mission.Naam;
+        row.appendChild(tdName);
+
+        /* ===== POI FIX ===== */
+        const tdPoi = document.createElement('td');
+        let poiValue = null;
+
+        if (Array.isArray(mission.place_array) && mission.place_array.length > 0) {
+            poiValue = mission.place_array.join(', ');
+        } else if (typeof mission.place === 'string') {
+            poiValue = mission.place.replace(/\n+/g, ', ');
+        }
+
+        tdPoi.textContent = poiValue || '';
+        row.appendChild(tdPoi);
+        /* =================== */
+
+        const tdCredits = document.createElement('td');
+        tdCredits.textContent = mission.average_credits || mission['Gemiddelde Credits'];
+        row.appendChild(tdCredits);
+
         const tdBtn = document.createElement('td');
         const btn = document.createElement('button');
         btn.textContent = 'Toon Benodigdheden';
         btn.className = 'button-toggle';
         tdBtn.appendChild(btn);
         row.appendChild(tdBtn);
+
         tbody.appendChild(row);
 
-        // Requirements row
         const reqRow = document.createElement('tr');
         reqRow.className = 'requirements-row';
-        const reqTd = document.createElement('td'); reqTd.colSpan = 5;
-        const reqDiv = document.createElement('div'); reqDiv.className = 'requirements-content';
 
-        // Combineer requirements en chances zonder overschrijven
-        const allReqs = {};
-        // Requirements
+        const reqTd = document.createElement('td');
+        reqTd.colSpan = 5;
+
+        const reqDiv = document.createElement('div');
+        reqDiv.className = 'requirements-content';
+
         if (mission.requirements) {
-            for (const key of Object.keys(translations)) { // volgorde uit translations.json
+            for (const key of Object.keys(translations)) {
                 if (mission.requirements[key]) {
                     const value = mission.requirements[key];
                     const name = translations[key] || key;
 
                     if (typeof value === "object") {
                         for (const subKey in value) {
-                            const subName = translations[subKey] || subKey; // <-- vertaling van subKey
+                            const subName = translations[subKey] || subKey;
                             reqDiv.innerHTML += `${name} (${subName}): ${value[subKey]}<br>`;
                         }
                     } else {
@@ -168,8 +191,6 @@ async function initMissions() {
             }
         }
 
-
-        // Chances
         if (mission.chances) {
             for (const key of Object.keys(translations)) {
                 if (mission.chances[key] !== undefined) {
@@ -179,25 +200,10 @@ async function initMissions() {
             }
         }
 
-
-            // Sorteer op volgorde van translations.json
-        translationOrder.forEach(key => {
-            if (allReqs[key] !== undefined) {
-                reqDiv.innerHTML += `${translations[key]}: ${allReqs[key]}<br>`;
-                delete allReqs[key];
-            }
-        });
-
-        // overige keys achteraan
-        Object.keys(allReqs).forEach(k => {
-            reqDiv.innerHTML += `${k}: ${allReqs[k]}<br>`;
-        });
-
         reqTd.appendChild(reqDiv);
         reqRow.appendChild(reqTd);
         tbody.appendChild(reqRow);
 
-        // Toggle effect
         btn.addEventListener('click', () => {
             if (reqDiv.classList.contains('show')) {
                 reqDiv.style.maxHeight = null;
@@ -213,12 +219,13 @@ async function initMissions() {
     container.appendChild(table);
 }
 
-// Footer jaar
 const startYear = 2024;
 const currentYear = new Date().getFullYear();
-document.getElementById('footer-year').textContent = startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
+document.getElementById('footer-year').textContent =
+    startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
 
 initMissions();
 </script>
+
 </body>
 </html>

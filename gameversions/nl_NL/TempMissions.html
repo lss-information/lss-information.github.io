@@ -10,77 +10,113 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Orbitron', sans-serif;
-    background-color: #0e0e1a;
-    color: #00ffe0;
+    background: radial-gradient(circle at top, #141428, #0b0b14 70%);
+    color: #e6fdf8;
     text-align: center;
 }
+
+/* Titel & intro */
 h1 {
     margin: 30px 0 10px;
-    font-size: 32px;
-    text-shadow: 0 0 5px #00ffe0;
+    font-size: 34px;
+    letter-spacing: 1px;
+    color: #4fffe3;
+    text-shadow: 0 0 12px rgba(79, 255, 227, 0.6);
 }
+
 p {
-    max-width: 800px;
-    margin: 0 auto 20px;
+    max-width: 820px;
+    margin: 0 auto 25px;
     font-size: 15px;
+    line-height: 1.6;
+    color: #bfeee7;
 }
+
+/* Tabel */
 table {
     width: 95%;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 25px auto;
     border-collapse: collapse;
-    background-color: #1f1f2e;
-    color: #00ffe0;
-    box-shadow: 0 0 10px #00ffe0;
-    border-radius: 10px;
+    background: linear-gradient(180deg, #1a1a2f, #141424);
+    border-radius: 14px;
     overflow: hidden;
+    box-shadow:
+        0 0 0 1px rgba(79, 255, 227, 0.15),
+        0 10px 40px rgba(0, 0, 0, 0.6);
 }
+
 thead th {
-    background-color: #2e2e3e;
-    padding: 12px;
-    border-bottom: 2px solid #00ffe0;
+    background: linear-gradient(180deg, #26263f, #1f1f33);
+    padding: 14px 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #6fffe9;
+    border-bottom: 1px solid rgba(79, 255, 227, 0.25);
 }
+
 tbody td {
-    padding: 10px;
-    border-bottom: 1px solid #444;
+    padding: 12px 10px;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     vertical-align: top;
 }
+
+tbody tr {
+    transition: background 0.25s ease;
+}
+
 tbody tr:hover {
-    background-color: #2a2a3e;
+    background-color: rgba(79, 255, 227, 0.06);
 }
+
+/* Button */
 .button-toggle {
-    background-color: #1b1b2f;
-    color: #00ffe0;
-    border: 1px solid #00ffe0;
-    padding: 4px 8px;
+    background: linear-gradient(180deg, #1f2f2c, #162322);
+    color: #5fffe6;
+    border: 1px solid rgba(95, 255, 230, 0.6);
+    padding: 6px 12px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: 12px;
+    transition: all 0.25s ease;
 }
+
 .button-toggle:hover {
-    background-color: #00ffe0;
-    color: #1b1b2f;
+    background: #5fffe6;
+    color: #0e1c1b;
+    box-shadow: 0 0 12px rgba(95, 255, 230, 0.6);
 }
+
+/* Benodigdheden */
 .requirements-row td {
-    background-color: #222233;
-    padding: 10px 20px;
+    background: linear-gradient(180deg, #19192c, #141423);
+    padding: 14px 24px;
     text-align: left;
     font-size: 14px;
+    color: #d9fff7;
 }
+
 .requirements-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
     opacity: 0;
+    transition:
+        max-height 0.35s ease,
+        opacity 0.25s ease;
 }
+
 .requirements-content.show {
     opacity: 1;
 }
+
+/* Footer */
 #footer {
-    margin-top: 40px;
+    margin-top: 50px;
     padding: 20px;
     font-size: 12px;
-    color: #ccc;
+    color: #7fa8a2;
 }
 </style>
 </head>

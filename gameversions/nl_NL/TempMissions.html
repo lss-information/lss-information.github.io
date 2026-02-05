@@ -153,9 +153,9 @@ tbody tr:hover {
 <ul class="language-selector">
     <li><img src="../../images/flag_nl.gif" alt="Nederlands" onclick="changeLanguage('nl')" /></li>
     <li><img src="../../images/flag_de.gif" alt="Deutsch" onclick="changeLanguage('de')" /></li>
-    <li><img src="../../images/flag_uk.gif" alt="English (UK)" onclick="changeLanguage('en-uk')" /></li>
-    <li><img src="../../images/flag_us.gif" alt="English (US)" onclick="changeLanguage('en-us')" /></li>
-    <li><img src="../../images/flag_au.gif" alt="English (AU)" onclick="changeLanguage('en-au')" /></li>
+    <li><img src="../../images/flag_uk.gif" alt="English (UK)" onclick="changeLanguage('en')" /></li>
+    <li><img src="../../images/flag_us.gif" alt="English (US)" onclick="changeLanguage('en')" /></li>
+    <li><img src="../../images/flag_au.gif" alt="English (AU)" onclick="changeLanguage('en')" /></li>
     <li><a class="button" id="back-button" href="/gameversions/nl_NL/indexNL">Terug</a></li>
 </ul>
 
@@ -178,15 +178,43 @@ tbody tr:hover {
 const dataFile = 'nl_NL-Data/einsaetze.json';
 const translationsFile = 'translations.json';
 const lastUpdateFile = 'nl_NL-Data/last_update.txt';
-let lastUpdateDate = null; // globale opslag
 
-const translationsHeaders = {
-    nl: ['ID', 'Naam', 'POI', 'Gemiddelde Credits', 'Benodigdheden'],
-    de: ['ID', 'Name', 'POI', 'Durchschnittliche Credits', 'Benötigte Fahrzeuge'],
-    en: ['ID', 'Name', 'POI', 'Average Credits', 'Requirements']
+// Vertalingen voor de pagina
+const pageTranslations = {
+    nl: {
+        title: "Melding IDs",
+        message: "Overzicht van alle meldingen in Meldkamerspel.",
+        gameButton: "Startpagina",
+        contactButton: "Contact",
+        backButton: "Terug",
+        lastUpdate: "Laatste update",
+        tableHeaders: ["ID", "Naam", "POI", "Gemiddelde Credits", "Benodigdheden"],
+        toggle: { show: "Toon Benodigdheden", hide: "Verberg Benodigdheden" }
+    },
+    de: {
+        title: "Einsätze IDs",
+        message: "Hier finden Sie eine Übersicht aller Einsätze in Leitstellenspiel.",
+        gameButton: "Startseite",
+        contactButton: "Kontakt",
+        backButton: "Zurück",
+        lastUpdate: "Letzte Aktualisierung",
+        tableHeaders: ["ID", "Name", "POI", "Durchschnittliche Credits", "Benötigte Fahrzeuge"],
+        toggle: { show: "Benötigte Fahrzeuge anzeigen", hide: "Benötigte Fahrzeuge verbergen" }
+    },
+    en: {
+        title: "Mission IDs",
+        message: "Here you can find an overview of all missions in Missionchief.",
+        gameButton: "Homepage",
+        contactButton: "Contact",
+        backButton: "Back",
+        lastUpdate: "Last update",
+        tableHeaders: ["ID", "Name", "POI", "Average Credits", "Requirements"],
+        toggle: { show: "Show Requirements", hide: "Hide Requirements" }
+    }
 };
 
-    
+let currentLang = 'nl';
+
 async function loadJSON(path) {
     const res = await fetch(path);
     return await res.json();
@@ -196,65 +224,19 @@ async function loadLastUpdate() {
     try {
         const res = await fetch(lastUpdateFile);
         const text = await res.text();
-        lastUpdateDate = new Date(text.trim());
-        updateLastUpdateText(currentLang || 'nl');
+        const date = new Date(text.trim());
+
+        const formatted = date.toLocaleString('nl-NL', {
+            dateStyle: 'long',
+            timeStyle: 'short'
+        });
+
+        document.getElementById('last-update').textContent =
+            `${pageTranslations[currentLang].lastUpdate}: ${formatted}`;
     } catch {
-        document.getElementById('last-update').textContent = 'Laatste update: onbekend';
+        document.getElementById('last-update').textContent =
+            `${pageTranslations[currentLang].lastUpdate}: onbekend`;
     }
-}
-
-function updateLastUpdateText(lang) {
-    if (!lastUpdateDate) return;
-
-    const formatted = lastUpdateDate.toLocaleString('nl-NL', {
-        dateStyle: 'long',
-        timeStyle: 'short'
-    });
-
-    let prefix;
-    switch(lang) {
-        case 'nl': prefix = 'Laatste update'; break;
-        case 'de': prefix = 'Letzte Aktualisierung'; break;
-        default: prefix = 'Last update'; break;
-    }
-
-    document.getElementById('last-update').textContent = `${prefix}: ${formatted}`;
-}
-
-let currentLang = 'nl'; // standaard taal
-
-function changeLanguage(lang) {
-    currentLang = lang;
-
-    switch(lang) {
-        case "nl":
-            document.title = "Melding IDs";
-            document.getElementById('page-title').textContent = "Melding IDs";
-            document.getElementById('page-message').textContent = "Hier kunt u een overzicht vinden van alle meldingen in Meldkamerspel.";
-            document.getElementById('game-button').textContent = "Startpagina";
-            document.getElementById('contact-button').textContent = "Contact";
-            document.getElementById('back-button').textContent = "Terug";
-            break;
-        case "de":
-            document.title = "Einsätze IDs";
-            document.getElementById('page-title').textContent = "Einsätze IDs";
-            document.getElementById('page-message').textContent = "Hier finden Sie eine Übersicht aller Einsätze in Leitstellenspiel.";
-            document.getElementById('game-button').textContent = "Startseite";
-            document.getElementById('contact-button').textContent = "Kontakt";
-            document.getElementById('back-button').textContent = "Zurück";
-            break;
-        default:
-            document.title = "Mission IDs";
-            document.getElementById('page-title').textContent = "Mission IDs";
-            document.getElementById('page-message').textContent = "Here you can find an overview of all missions in Missionchief.";
-            document.getElementById('game-button').textContent = "Homepage";
-            document.getElementById('contact-button').textContent = "Contact";
-            document.getElementById('back-button').textContent = "Back";
-            break;
-    }
-
-    // update last-update ook in juiste taal
-    updateLastUpdateText(lang);
 }
 
 async function initMissions() {
@@ -262,12 +244,13 @@ async function initMissions() {
     const translations = await loadJSON(translationsFile);
 
     const container = document.getElementById('sheet-data');
+    container.innerHTML = ''; // oude tabel verwijderen
 
     const table = document.createElement('table');
     const thead = document.createElement('thead');
     const headerRow = document.createElement('tr');
 
-    translationsHeaders[currentLang].forEach(col => {
+    pageTranslations[currentLang].tableHeaders.forEach(col => {
         const th = document.createElement('th');
         th.textContent = col;
         headerRow.appendChild(th);
@@ -290,7 +273,7 @@ async function initMissions() {
                     : (mission.place || '').replace(/\n+/g, ', ')
             }</td>
             <td>${mission.average_credits || mission['Gemiddelde Credits'] || ''}</td>
-            <td><button class="button-toggle">Toon Benodigdheden</button></td>
+            <td><button class="button-toggle">${pageTranslations[currentLang].toggle.show}</button></td>
         `;
 
         tbody.appendChild(row);
@@ -323,16 +306,13 @@ async function initMissions() {
         reqRow.appendChild(reqTd);
         tbody.appendChild(reqRow);
 
-        row.querySelector('button').addEventListener('click', () => {
+        const toggleButton = row.querySelector('button');
+        toggleButton.addEventListener('click', () => {
             const isShown = reqDiv.classList.toggle('show');
             reqDiv.style.maxHeight = isShown ? reqDiv.scrollHeight + 'px' : null;
-
-            row.querySelector('button').textContent = isShown 
-            ? (currentLang === 'de' ? 'Benötigte Fahrzeuge verbergen' :
-              currentLang === 'nl' ? 'Verberg Benodigdheden' : 'Hide Requirements')
-            : (currentLang === 'de' ? 'Benötigte Fahrzeuge anzeigen' :
-              currentLang === 'nl' ? 'Toon Benodigdheden' : 'Show Requirements');
-
+            toggleButton.textContent = isShown
+                ? pageTranslations[currentLang].toggle.hide
+                : pageTranslations[currentLang].toggle.show;
         });
     });
 
@@ -340,6 +320,38 @@ async function initMissions() {
     container.appendChild(table);
 }
 
+function changeLanguage(lang) {
+    currentLang = lang;
+
+    const t = pageTranslations[lang] || pageTranslations['en'];
+
+    document.title = t.title;
+    document.getElementById('page-title').textContent = t.title;
+    document.getElementById('page-message').textContent = t.message;
+    document.getElementById('game-button').textContent = t.gameButton;
+    document.getElementById('contact-button').textContent = t.contactButton;
+    document.getElementById('back-button').textContent = t.backButton;
+
+    // Update last-update label
+    loadLastUpdate();
+
+    // Update toggle buttons
+    document.querySelectorAll('.button-toggle').forEach(button => {
+        const isShown = button.nextElementSibling.classList.contains('show');
+        button.textContent = isShown ? t.toggle.hide : t.toggle.show;
+    });
+
+    // Rebuild table headers
+    const table = document.querySelector('table');
+    if (table) {
+        const ths = table.querySelectorAll('thead th');
+        t.tableHeaders.forEach((header, i) => {
+            if (ths[i]) ths[i].textContent = header;
+        });
+    }
+}
+
+// Footer jaar
 const startYear = 2024;
 const currentYear = new Date().getFullYear();
 document.getElementById('footer-year').textContent =

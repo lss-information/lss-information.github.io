@@ -264,6 +264,13 @@ function changeLanguage(lang) {
     document.getElementById('back-button').textContent = t.backButton;
     document.getElementById('swipe-hint').textContent = t.swipeHint;
 
+
+    const startYear = 2024;
+    const currentYear = new Date().getFullYear();
+    document.getElementById('footer-year').textContent =
+    startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
+
+    
     loadLastUpdate();
     initMissions();
 }

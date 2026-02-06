@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=1200, initial-scale=0.4, maximum-scale=1.0">
 <title>Meldingen Meldkamerspel (NL)</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
@@ -92,7 +92,7 @@ p {
 /* ===== TABLE ===== */
 .table-wrapper {
     width: 100%;
-    overflow-x: auto;
+    overflow-x: auto; /* scroll indien nodig */
     -webkit-overflow-scrolling: touch;
 }
 
@@ -160,10 +160,10 @@ tbody tr:hover {
 
 /* ===== MOBILE ===== */
 @media (max-width: 600px) {
-    #swipe-hint {
-        display: block;
-        animation: pulse 2s infinite;
-    }
+    #swipe-hint { display: block; ... }
+    .language-selector img { width: 26px; }
+    .button { font-size: 12px; padding: 6px 12px; }
+}
 
     @keyframes pulse {
         0% { opacity: 0.4; }

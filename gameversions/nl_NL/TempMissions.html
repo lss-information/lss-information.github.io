@@ -144,11 +144,27 @@ tbody tr:hover {
     color: #888888;
 }
 
+    
 /* MOBILE */
 @media (max-width: 600px) {
     #swipe-hint { display: block; }
     .language-selector img { width: 26px; }
     .button { font-size: 12px; padding: 6px 12px; }
+}
+        @keyframes pulse {
+        0% { opacity: 0.4; }
+        50% { opacity: 1; }
+        100% { opacity: 0.4; }
+    }
+
+    .language-selector img {
+        width: 26px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
 }
 
 </style>

@@ -12,8 +12,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Orbitron', sans-serif;
-    background-color: #0e0e1a;
-    color: #00ffe0;
+    background-color: #f5f5f5; /* zachte lichtgrijze achtergrond */
+    color: #333333; /* donkergrijs */
     text-align: center;
 }
 
@@ -45,19 +45,19 @@ body {
 }
 
 .button {
-    background-color: #1b1b2f;
-    color: #00ffe0;
-    border: 2px solid #00ffe0;
+    background-color: #e0e0e0; /* lichtgrijs */
+    color: #333333;
+    border: 2px solid #999999;
     padding: 8px 16px;
     text-decoration: none;
     border-radius: 8px;
     white-space: nowrap;
-    transition: background-color 0.2s, transform 0.2s;
+    transition: background-color 0.2s, transform 0.2s, color 0.2s;
 }
 
 .button:hover {
-    background-color: #00ffe0;
-    color: #1b1b2f;
+    background-color: #d1d1d1;
+    color: #111111;
     transform: scale(1.05);
 }
 
@@ -65,25 +65,27 @@ body {
 h1 {
     margin: 30px 0 10px;
     font-size: 32px;
-    text-shadow: 0 0 5px #00ffe0;
+    color: #222222;
+    text-shadow: none;
 }
 
 p {
     max-width: 800px;
     margin: 0 auto 10px;
     font-size: 15px;
+    color: #444444;
 }
 
 #last-update {
     font-size: 13px;
-    color: #8fffee;
+    color: #666666;
 }
 
 /* ===== SWIPE HINT ===== */
 #swipe-hint {
     display: none;
     font-size: 12px;
-    color: #8fffee;
+    color: #777777;
     margin: 8px auto 5px;
     text-align: center;
     opacity: 0.9;
@@ -102,31 +104,33 @@ table {
     max-width: 1200px;
     margin: 20px auto;
     border-collapse: collapse;
-    background-color: #1f1f2e;
-    box-shadow: 0 0 10px #00ffe0;
+    background-color: #ffffff; /* witte table achtergrond */
+    box-shadow: 0 0 5px rgba(0,0,0,0.1); /* zachte schaduw */
     border-radius: 10px;
 }
 
 thead th {
-    background-color: #2e2e3e;
+    background-color: #f0f0f0;
     padding: 12px;
-    border-bottom: 2px solid #00ffe0;
+    border-bottom: 2px solid #cccccc;
+    color: #333333;
 }
 
 tbody td {
     padding: 10px;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #e0e0e0;
+    color: #555555;
 }
 
 tbody tr:hover {
-    background-color: #2a2a3e;
+    background-color: #f9f9f9;
 }
 
 /* ===== REQUIREMENTS ===== */
 .button-toggle {
-    background-color: #1b1b2f;
-    color: #00ffe0;
-    border: 1px solid #00ffe0;
+    background-color: #e0e0e0;
+    color: #333333;
+    border: 1px solid #cccccc;
     padding: 6px 16px;
     cursor: pointer;
     border-radius: 4px;
@@ -134,7 +138,7 @@ tbody tr:hover {
 }
 
 .requirements-row td {
-    background-color: #222233;
+    background-color: #f9f9f9;
     text-align: left;
     font-size: 14px;
 }
@@ -155,30 +159,14 @@ tbody tr:hover {
     margin-top: 40px;
     padding: 20px;
     font-size: 12px;
-    color: #ccc;
+    color: #777777;
 }
 
 /* ===== MOBILE ===== */
 @media (max-width: 600px) {
-    #swipe-hint { display: block; ... }
+    #swipe-hint { display: block; }
     .language-selector img { width: 26px; }
     .button { font-size: 12px; padding: 6px 12px; }
-}
-
-    @keyframes pulse {
-        0% { opacity: 0.4; }
-        50% { opacity: 1; }
-        100% { opacity: 0.4; }
-    }
-
-    .language-selector img {
-        width: 26px;
-    }
-
-    .button {
-        font-size: 12px;
-        padding: 6px 12px;
-    }
 }
 </style>
 </head>
@@ -266,13 +254,11 @@ function changeLanguage(lang) {
     document.getElementById('back-button').textContent = t.backButton;
     document.getElementById('swipe-hint').textContent = t.swipeHint;
 
-
     const startYear = 2024;
     const currentYear = new Date().getFullYear();
     document.getElementById('footer-year').textContent =
     startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
 
-    
     loadLastUpdate();
     initMissions();
 }

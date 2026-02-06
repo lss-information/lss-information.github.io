@@ -34,17 +34,6 @@ body {
     flex:
 }
     
-/* TOP BAR */
-.language-selector img {
-    width: 30px;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.language-selector img:hover {
-    transform: scale(1.1);
-}
-
 .button {
     background-color: #2c2c3c; /* donkergrijs/blauwachtig */
     color: #dddddd;
@@ -162,13 +151,26 @@ tbody tr:hover {
 }
 
     
-/* MOBILE */
+/* FLAGS - GELIJKE HOOGTE EN PROPORTIES */
+.language-selector img {
+    height: 30px;    /* Alle vlaggen even hoog */
+    width: auto;     /* Breedte past zich automatisch aan */
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.language-selector img:hover {
+    transform: scale(1.1);
+}
+
+/* MOBILE FLAGS */
 @media (max-width: 600px) {
     .language-selector img {
-        height: 26px;    /* Kleinere hoogte voor mobiel */
+        height: 26px; /* Iets kleiner op mobiel */
         width: auto;
     }
 }
+
 
         @keyframes pulse {
         0% { opacity: 0.4; }

@@ -151,13 +151,15 @@ tbody tr:hover {
 }
 
     
-/* FLAGS - GELIJKE HOOGTE EN PROPORTIES */
 .language-selector img {
     height: 24px;    /* Alle vlaggen even hoog */
     width: auto;     /* Breedte past zich automatisch aan */
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: transform 0.2s, border 0.2s; /* border toevoegen aan transition */
+    border: 2px solid #dddddd; /* witte border */
+    border-radius: 4px; /* optioneel: licht afgeronde hoeken */
 }
+
 
 .language-selector img:hover {
     transform: scale(1.1);

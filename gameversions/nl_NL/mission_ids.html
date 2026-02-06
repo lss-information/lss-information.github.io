@@ -1,229 +1,366 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meldingen Meldkamerspel (nl_NL)</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-    <script src="https://apis.google.com/js/api.js"></script>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Orbitron', sans-serif;
-            background-color: #0e0e1a;
-            color: #00ffe0; /* Neon kleur voor tekst */
-            text-align: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meldingen Meldkamerspel (NL)</title>
 
-        h1 {
-            margin: 30px 0 10px;
-            font-size: 32px;
-            text-shadow: 0 0 5px #00ffe0; /* Neon glow effect */
-        }
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 
-        p {
-            max-width: 800px;
-            margin: 0 auto 20px;
-            font-size: 15px;
-        }
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0e0e1a;
+    color: #00ffe0;
+    text-align: center;
+}
 
-        .language-selector {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-            padding: 0;
-            gap: 10px;
-        }
+/* ===== TOP BAR ===== */
+.language-selector {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    padding: 0;
+    width: 100%;
+}
 
-        .language-selector li img {
-            width: 30px;
-            height: auto;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
+.language-selector li {
+    flex: 0 0 auto;
+}
 
-        .language-selector li img:hover {
-            transform: scale(1.1);
-        }
+.language-selector img {
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
 
-        .button-container {
-            margin: 20px 0;
-        }
+.language-selector img:hover {
+    transform: scale(1.1);
+}
 
-        .button {
-            background-color: #1b1b2f;
-            color: #00ffe0; /* Neon kleur voor knoppen */
-            border: 2px solid #00ffe0; /* Neon kleur voor de rand van knoppen */
-            padding: 8px 16px;
-            text-decoration: none;
-            border-radius: 8px;
-            margin: 0 5px;
-            transition: background-color 0.2s, transform 0.2s;
-        }
+.button {
+    background-color: #1b1b2f;
+    color: #00ffe0;
+    border: 2px solid #00ffe0;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    white-space: nowrap;
+    transition: background-color 0.2s, transform 0.2s;
+}
 
-        .button:hover {
-            background-color: #00ffe0; /* Neon kleur voor hover */
-            color: #1b1b2f;
-            transform: scale(1.05);
-        }
+.button:hover {
+    background-color: #00ffe0;
+    color: #1b1b2f;
+    transform: scale(1.05);
+}
 
-        table {
-            width: 95%;
-            max-width: 1200px;
-            margin: 20px auto;
-            border-collapse: collapse;
-            background-color: #1f1f2e;
-            color: #00ffe0; /* Neon kleur voor tekst in de tabel */
-            box-shadow: 0 0 10px #00ffe0; /* Neon kleur voor schaduw */
-            border-radius: 10px;
-            overflow: hidden;
-        }
+/* ===== TITLES ===== */
+h1 {
+    margin: 30px 0 10px;
+    font-size: 32px;
+    text-shadow: 0 0 5px #00ffe0;
+}
 
-        thead th {
-            background-color: #2e2e3e;
-            padding: 12px;
-            border-bottom: 2px solid #00ffe0;
-        }
+p {
+    max-width: 800px;
+    margin: 0 auto 10px;
+    font-size: 15px;
+}
 
-        tbody td {
-            padding: 10px;
-            border-bottom: 1px solid #444;
-        }
+#last-update {
+    font-size: 13px;
+    color: #8fffee;
+}
 
-        tbody tr:hover {
-            background-color: #2a2a3e;
-        }
+/* ===== SWIPE HINT ===== */
+#swipe-hint {
+    display: none;
+    font-size: 12px;
+    color: #8fffee;
+    margin: 8px auto 5px;
+    text-align: center;
+    opacity: 0.9;
+}
 
-        #footer {
-            margin-top: 40px;
-            padding: 20px;
-            font-size: 12px;
-            color: #ccc;
-        }
-    </style>
-    <script>
-        function init() {
-            gapi.client.init({
-                'apiKey': 'AIzaSyCKxsInSgRVfJDI50eGmC0wUxb_VLqr8sk',
-                'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
-            }).then(getSheetData);
-        }
+/* ===== TABLE ===== */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
 
-        function getSheetData() {
-            const sheetId = '1NRn4GK9cbI-sTAiSKA8H6FmWE3BTGiqQuqs-f9zgTAo';
+table {
+    width: 95%;
+    min-width: 900px;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #1f1f2e;
+    box-shadow: 0 0 10px #00ffe0;
+    border-radius: 10px;
+}
 
-            const range1 = 'Sheet1!A:F';
-            const range2 = 'Sheet1!H1:I1';
+thead th {
+    background-color: #2e2e3e;
+    padding: 12px;
+    border-bottom: 2px solid #00ffe0;
+}
 
-            gapi.client.sheets.spreadsheets.values.get({
-                spreadsheetId: sheetId,
-                range: range1
-            }).then(function(response) {
-                const data1 = response.result.values;
-                const table = document.createElement('table');
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
 
-                const thead = document.createElement('thead');
-                const headerRow = document.createElement('tr');
+tbody tr:hover {
+    background-color: #2a2a3e;
+}
 
-                data1[0].forEach(function(cell) {
-                    const th = document.createElement('th');
-                    th.textContent = cell || '';
-                    headerRow.appendChild(th);
-                });
+/* ===== REQUIREMENTS ===== */
+.button-toggle {
+    background-color: #1b1b2f;
+    color: #00ffe0;
+    border: 1px solid #00ffe0;
+    padding: 6px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+}
 
-                thead.appendChild(headerRow);
-                table.appendChild(thead);
+.requirements-row td {
+    background-color: #222233;
+    text-align: left;
+    font-size: 14px;
+}
 
-                const tbody = document.createElement('tbody');
-                for (let i = 1; i < data1.length; i++) {
-                    const tr = document.createElement('tr');
-                    data1[i].forEach(function(cell) {
-                        const td = document.createElement('td');
-                        td.textContent = cell || '';
-                        tr.appendChild(td);
-                    });
-                    tbody.appendChild(tr);
-                }
-                table.appendChild(tbody);
-                document.getElementById('sheet-data').appendChild(table);
-            });
+.requirements-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
 
-            gapi.client.sheets.spreadsheets.values.get({
-                spreadsheetId: sheetId,
-                range: range2
-            }).then(function(response) {
-                const data2 = response.result.values;
-                const updateDate = data2[0] && data2[0][0] ? data2[0][0] : '';
-                const lastUpdated = data2[0] && data2[0][1] ? data2[0][1] : '';
+.requirements-content.show {
+    opacity: 1;
+}
 
-                const updateElement = document.createElement('p');
-                updateElement.textContent = `${updateDate} ${lastUpdated}`;
-                document.getElementById('sheet-data').prepend(updateElement);
-            });
-        }
+/* ===== FOOTER ===== */
+#footer {
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 12px;
+    color: #ccc;
+}
 
-        gapi.load('client', init);
-    </script>
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+    #swipe-hint {
+        display: block;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% { opacity: 0.4; }
+        50% { opacity: 1; }
+        100% { opacity: 0.4; }
+    }
+
+    .language-selector img {
+        width: 26px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+</style>
 </head>
+
 <body>
-    <ul class="language-selector">
-        <li><img src="../../images/flag_nl.gif" alt="Nederlands" onclick="changeLanguage('nl')" /></li>
-        <li><img src="../../images/flag_de.gif" alt="Deutsch" onclick="changeLanguage('de')" /></li>
-        <li><img src="../../images/flag_uk.gif" alt="English (UK)" onclick="changeLanguage('en-uk')" /></li>
-        <li><img src="../../images/flag_us.gif" alt="English (US)" onclick="changeLanguage('en-us')" /></li>
-        <li><img src="../../images/flag_au.gif" alt="English (AU)" onclick="changeLanguage('en-au')" /></li>
-        <li><a class="button" id="back-button" href="/gameversions/nl_NL/indexNL">Terug</a></li>
-    </ul>
 
-    <div class="button-container">
-        <a class="button" id="game-button" href="/index">Startpagina</a>
-        <a class="button" id="contact-button" href="/gameversions/contact">Contact</a>
-    </div>
+<ul class="language-selector">
+    <li><img src="../../images/flag_nl.gif" alt="Nederlands" onclick="changeLanguage('nl')"></li>
+    <li><img src="../../images/flag_de.gif" alt="Deutsch" onclick="changeLanguage('de')"></li>
+    <li><img src="../../images/flag_uk.gif" alt="English" onclick="changeLanguage('en')"></li>
+    <li><img src="../../images/flag_us.gif" alt="English" onclick="changeLanguage('en')"></li>
+    <li><img src="../../images/flag_au.gif" alt="English" onclick="changeLanguage('en')"></li>
 
-    <h1 id="page-title">Melding IDs</h1>
-    <p id="page-message">Hier kunt u een overzicht vinden van alle meldingen in Meldkamerspel. Het laden kan enkele seconden duren. Wijzigingen? Klik op Contact.</p>
+    <li><a class="button" id="game-button" href="/index">Startpagina</a></li>
+    <li><a class="button" id="contact-button" href="/gameversions/contact">Contact</a></li>
+    <li><a class="button" id="back-button" href="/gameversions/nl_NL/indexNL">Terug</a></li>
+</ul>
 
+<h1 id="page-title"></h1>
+<p id="page-message"></p>
+<p id="last-update"></p>
+
+<div id="swipe-hint"></div>
+
+<div class="table-wrapper">
     <div id="sheet-data"></div>
+</div>
 
-    <footer id="footer">
-        &copy; <span id="footer-year"></span> JR04. Alle rechten voorbehouden.
-    </footer>
+<footer id="footer">
+    &copy; <span id="footer-year"></span> JR04. Alle rechten voorbehouden.
+</footer>
 
-    <script>
-        const startYear = 2024;
-        const currentYear = new Date().getFullYear();
-        document.getElementById('footer-year').textContent = startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
+<script>
+const dataFile = 'nl_NL-Data/einsaetze.json';
+const translationsFile = 'translations.json';
+const lastUpdateFile = 'nl_NL-Data/last_update.txt';
 
-        function changeLanguage(lang) {
-            switch(lang) {
-                case "nl":
-                    document.title = "Melding IDs";
-                    document.getElementById('page-title').textContent = "Melding IDs";
-                    document.getElementById('page-message').textContent = "Hier kunt u een overzicht vinden van alle meldingen in Meldkamerspel. Het laden kan enkele seconden duren. Wijzigingen? Klik op Contact.";
-                    document.getElementById('game-button').textContent = "Startpagina";
-                    document.getElementById('contact-button').textContent = "Contact";
-                    document.getElementById('back-button').textContent = "Terug";
-                    break;
-                case "de":
-                    document.title = "Einsätze IDs";
-                    document.getElementById('page-title').textContent = "Einsätze IDs";
-                    document.getElementById('page-message').textContent = "Hier finden Sie eine Übersicht aller Einsätze in Leitstellenspiel.";
-                    document.getElementById('game-button').textContent = "Startseite";
-                    document.getElementById('contact-button').textContent = "Kontakt";
-                    document.getElementById('back-button').textContent = "Zurück";
-                    break;
-                default:
-                    document.title = "Mission IDs";
-                    document.getElementById('page-title').textContent = "Mission IDs";
-                    document.getElementById('page-message').textContent = "Here you can find an overview of all missions in Missionchief.";
-                    document.getElementById('game-button').textContent = "Homepage";
-                    document.getElementById('contact-button').textContent = "Contact";
-                    document.getElementById('back-button').textContent = "Back";
-                    break;
-            }
+const pageTranslations = {
+    nl: {
+        title: "Melding IDs",
+        message: "Overzicht van alle meldingen in Meldkamerspel (NL).",
+        gameButton: "Startpagina",
+        contactButton: "Contact",
+        backButton: "Terug",
+        lastUpdate: "Laatste update",
+        swipeHint: "← swipe naar links of rechts om de tabel te bekijken →",
+        tableHeaders: ["ID", "Naam", "POI", "Gemiddelde Credits", "Benodigdheden"],
+        toggle: { show: "Toon Benodigdheden", hide: "Verberg Benodigdheden" }
+    },
+    de: {
+        title: "Einsätze IDs",
+        message: "Hier finden Sie eine Übersicht aller Einsätze (NL).",
+        gameButton: "Startseite",
+        contactButton: "Kontakt",
+        backButton: "Zurück",
+        lastUpdate: "Letzte Aktualisierung",
+        swipeHint: "← nach links oder rechts wischen, um die Tabelle zu sehen →",
+        tableHeaders: ["ID", "Name", "POI", "Durchschnittliche Credits", "Benötigte Fahrzeuge"],
+        toggle: { show: "Fahrzeuge anzeigen", hide: "Fahrzeuge verbergen" }
+    },
+    en: {
+        title: "Mission IDs",
+        message: "Here you can find an overview of all missions (NL).",
+        gameButton: "Homepage",
+        contactButton: "Contact",
+        backButton: "Back",
+        lastUpdate: "Last update",
+        swipeHint: "← swipe left or right to view the table →",
+        tableHeaders: ["ID", "Name", "POI", "Average Credits", "Requirements"],
+        toggle: { show: "Show Requirements", hide: "Hide Requirements" }
+    }
+};
+
+let currentLang = 'nl';
+
+function changeLanguage(lang) {
+    currentLang = lang;
+    const t = pageTranslations[lang];
+
+    document.title = t.title;
+    document.getElementById('page-title').textContent = t.title;
+    document.getElementById('page-message').textContent = t.message;
+    document.getElementById('game-button').textContent = t.gameButton;
+    document.getElementById('contact-button').textContent = t.contactButton;
+    document.getElementById('back-button').textContent = t.backButton;
+    document.getElementById('swipe-hint').textContent = t.swipeHint;
+
+
+    const startYear = 2024;
+    const currentYear = new Date().getFullYear();
+    document.getElementById('footer-year').textContent =
+    startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
+
+    
+    loadLastUpdate();
+    initMissions();
+}
+
+async function loadLastUpdate() {
+    try {
+        const res = await fetch(lastUpdateFile);
+        const date = new Date((await res.text()).trim());
+        document.getElementById('last-update').textContent =
+            `${pageTranslations[currentLang].lastUpdate}: ${date.toLocaleString()}`;
+    } catch {
+        document.getElementById('last-update').textContent =
+            `${pageTranslations[currentLang].lastUpdate}: onbekend`;
+    }
+}
+
+async function initMissions() {
+    const missions = await (await fetch(dataFile)).json();
+    const translations = await (await fetch(translationsFile)).json();
+
+    const container = document.getElementById('sheet-data');
+    container.innerHTML = '';
+
+    const table = document.createElement('table');
+    const thead = document.createElement('thead');
+    const tr = document.createElement('tr');
+
+    pageTranslations[currentLang].tableHeaders.forEach(h => {
+        const th = document.createElement('th');
+        th.textContent = h;
+        tr.appendChild(th);
+    });
+
+    thead.appendChild(tr);
+    table.appendChild(thead);
+
+    const tbody = document.createElement('tbody');
+
+    missions.forEach(m => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${m.id}</td>
+            <td>${m.name}</td>
+            <td>${(m.place_array || []).join(', ')}</td>
+            <td>${m.average_credits}</td>
+            <td><button class="button-toggle">${pageTranslations[currentLang].toggle.show}</button></td>
+        `;
+        tbody.appendChild(row);
+
+        const reqRow = document.createElement('tr');
+        reqRow.className = 'requirements-row';
+        const td = document.createElement('td');
+        td.colSpan = 5;
+
+        const div = document.createElement('div');
+        div.className = 'requirements-content';
+
+        for (const k in m.requirements || {}) {
+            div.innerHTML += `${translations[k] || k}: ${m.requirements[k]}<br>`;
         }
-    </script>
+
+        td.appendChild(div);
+        reqRow.appendChild(td);
+        tbody.appendChild(reqRow);
+
+        const toggleBtn = row.querySelector('.button-toggle');
+        
+        toggleBtn.onclick = () => {
+            const open = div.classList.toggle('show');
+            div.style.maxHeight = open ? div.scrollHeight + 'px' : null;
+        
+            toggleBtn.textContent = open
+                ? pageTranslations[currentLang].toggle.hide
+                : pageTranslations[currentLang].toggle.show;
+        };
+
+    });
+
+    table.appendChild(tbody);
+    container.appendChild(table);
+}
+
+document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+window.addEventListener('DOMContentLoaded', () => {
+    changeLanguage(currentLang);
+});
+</script>
+
 </body>
 </html>

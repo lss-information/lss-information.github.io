@@ -416,6 +416,13 @@ function changeLanguage(lang) {
         const isShown = reqDiv.classList.contains('show');
         button.textContent = isShown ? t.toggle.hide : t.toggle.show;
     });
+
+        // Swipe hint updaten
+    const swipeHint = document.getElementById('swipe-hint');
+    if (swipeHint) {
+        swipeHint.textContent = t.swipeHint || '';
+    }
+
 }
 
 

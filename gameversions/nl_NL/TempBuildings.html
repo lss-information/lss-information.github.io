@@ -4,19 +4,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=1200, initial-scale=0.4, maximum-scale=1.0">
 <title>Gebouwen Meldkamerspel (NL)</title>
-
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 
 <style>
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px; /* iets groter voor leesbaarheid */
+    line-height: 1.6; /* meer ruimte tussen regels */
     background-color: #1e1e28;
     color: #dddddd;
     text-align: center;
 }
 
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+}
+.button {
+    font-family: 'Orbitron', sans-serif;
+}
+    
 .language-selector {
     list-style: none;
     display: flex;
@@ -129,10 +138,9 @@ tbody tr:hover {
 }
 
 .extensions-content, .vehicles-content {
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
 }
 
 .extensions-content.show, .vehicles-content.show {

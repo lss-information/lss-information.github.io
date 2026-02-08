@@ -72,17 +72,18 @@ p {
     transform: scale(1.1);
 }
 
-/* MAIN CARD */
+/* MAIN */
 main {
-    padding: 40px 20px;
+    padding: 50px 20px;
 }
 
+/* CARD (GROTER) */
 .card {
     background-color: #2a2a3a;
     border: 2px solid #555566;
-    border-radius: 15px;
-    padding: 30px;
-    max-width: 600px;
+    border-radius: 18px;
+    padding: 45px 40px;
+    max-width: 850px;
     margin: 0 auto;
 }
 
@@ -97,13 +98,13 @@ main {
     background-color: #2c2c3c;
     color: #dddddd;
     border: 2px solid #555566;
-    padding: 10px 20px;
-    margin: 8px 0;
-    border-radius: 8px;
+    padding: 14px 24px;
+    margin: 10px 0;
+    border-radius: 10px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 15px;
     width: 100%;
-    max-width: 320px;
+    max-width: 420px;
     transition: background-color 0.2s, transform 0.2s, color 0.2s;
 }
 
@@ -152,10 +153,10 @@ document.getElementById('year').textContent =
     startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
 
 function changeLanguage(lang) {
-    let texts = {};
+    let t;
 
     if (lang === "nl") {
-        texts = {
+        t = {
             title: "Welkom",
             info: "Selecteer hieronder een knop om naar de overzichten te gaan.",
             home: "Terug naar de startpagina",
@@ -166,7 +167,7 @@ function changeLanguage(lang) {
             page: "Overzichten – Meldkamerspel (NL)"
         };
     } else if (lang === "de") {
-        texts = {
+        t = {
             title: "Willkommen",
             info: "Wählen Sie unten eine Schaltfläche, um zu den Übersichten zu gelangen.",
             home: "Zurück zur Startseite",
@@ -177,7 +178,7 @@ function changeLanguage(lang) {
             page: "Übersichten – Leitstellenspiel"
         };
     } else {
-        texts = {
+        t = {
             title: "Welcome",
             info: "Select a button below to go to the overviews.",
             home: "Back to homepage",
@@ -189,14 +190,14 @@ function changeLanguage(lang) {
         };
     }
 
-    document.title = texts.page;
-    document.getElementById('welcome-title').textContent = texts.title;
-    document.getElementById('select-info').textContent = texts.info;
-    document.getElementById('back-to-home').textContent = texts.home;
-    document.getElementById('building-ids').textContent = texts.building;
-    document.getElementById('vehicle-ids').textContent = texts.vehicle;
-    document.getElementById('mission-ids').textContent = texts.mission;
-    document.getElementById('pois').textContent = texts.pois;
+    document.title = t.page;
+    document.getElementById('welcome-title').textContent = t.title;
+    document.getElementById('select-info').textContent = t.info;
+    document.getElementById('back-to-home').textContent = t.home;
+    document.getElementById('building-ids').textContent = t.building;
+    document.getElementById('vehicle-ids').textContent = t.vehicle;
+    document.getElementById('mission-ids').textContent = t.mission;
+    document.getElementById('pois').textContent = t.pois;
 }
 </script>
 

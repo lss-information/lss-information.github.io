@@ -157,7 +157,18 @@ tbody tr:hover {
     opacity: 1;
     padding: 6px 8px;  /* Padding terug bij open */
 }
+.vehicles-content {
+    display: flex;
+    flex-wrap: wrap;        /* meerdere voertuigen op dezelfde regel */
+    gap: 12px;              /* ruimte tussen voertuigen */
+}
 
+.vehicle-item {
+    background-color: #33334a;
+    padding: 6px 10px;
+    border-radius: 6px;
+    flex: 1 1 150px;        /* breedte van een item, past automatisch */
+}
 #footer {
     margin-top: 40px;
     padding: 20px;
@@ -353,16 +364,18 @@ async function initBuildings() {
             div.className = 'vehicles-content';
 
             Object.keys(vehicles).forEach(vID => {
-                const v = vehicles[vID];
-                if ((v.possibleBuildings || []).includes(Number(key))) {
-                    div.innerHTML += `
-                        <strong>${v.caption}</strong><br>
-                        Credits: ${v.credits}<br>
-                        Personeel: ${v.staff?.min || 0} - ${v.staff?.max || 0}<br><br>
-                    `;
-                }
-            });
-
+    const v = vehicles[vID];
+    if ((v.possibleBuildings || []).includes(Number(key))) {
+        const item = document.createElement('div');
+        item.className = 'vehicle-item';
+        item.innerHTML = `
+            <strong>${v.caption}</strong> (ID: ${vID})<br>
+            Credits: ${v.credits}<br>
+            Personeel: ${v.staff?.min || 0} - ${v.staff?.max || 0}
+        `;
+        div.appendChild(item);
+    }
+});
             td.appendChild(div);
             vehRow.appendChild(td);
             tbody.appendChild(vehRow);

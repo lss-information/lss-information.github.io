@@ -156,9 +156,9 @@ main {
 <ul class="language-selector">
     <li><img src="images/flag_nl.gif" alt="NL" onclick="changeLanguage('nl')"></li>
     <li><img src="images/flag_de.gif" alt="DE" onclick="changeLanguage('de')"></li>
-    <li><img src="images/flag_uk.gif" alt="UK" onclick="changeLanguage('en-uk')"></li>
-    <li><img src="images/flag_us.gif" alt="US" onclick="changeLanguage('en-us')"></li>
-    <li><img src="images/flag_au.gif" alt="AU" onclick="changeLanguage('en-au')"></li>
+    <li><img src="images/flag_uk.gif" alt="UK" onclick="changeLanguage('en')"></li>
+    <li><img src="images/flag_us.gif" alt="US" onclick="changeLanguage('en')"></li>
+    <li><img src="images/flag_au.gif" alt="AU" onclick="changeLanguage('en')"></li>
 </ul>
 
 <main>
@@ -168,8 +168,8 @@ main {
     </div>
 
     <div class="neon-box">
-        <p>Datum: <span id="currentDate"></span></p>
-        <p>Tijd: <span id="currentTime"></span></p>
+        <p><strong id="date-label">Datum:</strong> <span id="currentDate"></span></p>
+        <p><strong id="time-label">Tijd:</strong> <span id="currentTime"></span></p>
 
         <div class="button-container">
             <a class="button" id="select-button" href="gameversions/gameversionsinfo">
@@ -184,43 +184,72 @@ main {
 </footer>
 
 <script>
+/* ===== BASIS ===== */
 const startYear = 2024;
 const currentYear = new Date().getFullYear();
 document.getElementById('year').textContent =
     startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
 
-function updateDateTime() {
+/* ===== DATUM / TIJD ===== */
+function updateDateTime(locale) {
     const now = new Date();
-    document.getElementById('currentDate').textContent = now.toLocaleDateString();
-    document.getElementById('currentTime').textContent = now.toLocaleTimeString();
+    document.getElementById('currentDate').textContent =
+        now.toLocaleDateString(locale);
+    document.getElementById('currentTime').textContent =
+        now.toLocaleTimeString(locale);
 }
-updateDateTime();
-setInterval(updateDateTime, 1000);
 
+/* ===== TAAL ===== */
 function changeLanguage(lang) {
-    switch (lang) {
-        case "nl":
-            document.title = "Overzichten JR04";
-            welcome-title.textContent = "Welkom";
-            select-info.textContent = "Selecteer hieronder een knop om naar de overzichten te gaan.";
-            select-button.textContent = "Selecteer Versie";
-            footer.innerHTML = `&copy; ${startYear} - ${currentYear} JR04. Alle rechten voorbehouden.`;
-            break;
-        case "de":
-            document.title = "Übersichten JR04";
-            welcome-title.textContent = "Willkommen";
-            select-info.textContent = "Wählen Sie unten einen Knopf, um zu den Übersichten zu gelangen.";
-            select-button.textContent = "Spielversion wählen";
-            footer.innerHTML = `&copy; ${startYear} - ${currentYear} JR04. Alle Rechte vorbehalten.`;
-            break;
-        default:
-            document.title = "Overviews JR04";
-            welcome-title.textContent = "Welcome";
-            select-info.textContent = "Select a button below to go to the overviews.";
-            select-button.textContent = "Select Game Version";
-            footer.innerHTML = `&copy; ${startYear} - ${currentYear} JR04. All rights reserved.`;
+    const title = document.getElementById('welcome-title');
+    const info = document.getElementById('select-info');
+    const button = document.getElementById('select-button');
+    const footer = document.getElementById('footer');
+    const dateLabel = document.getElementById('date-label');
+    const timeLabel = document.getElementById('time-label');
+
+    let locale = "nl-NL";
+
+    if (lang === "nl") {
+        document.title = "Overzichten JR04";
+        title.textContent = "Welkom";
+        info.textContent = "Selecteer hieronder een knop om naar de overzichten te gaan.";
+        button.textContent = "Selecteer Versie";
+        dateLabel.textContent = "Datum:";
+        timeLabel.textContent = "Tijd:";
+        footer.innerHTML = `&copy; ${startYear} - ${currentYear} JR04. Alle rechten voorbehouden.`;
+        locale = "nl-NL";
     }
+
+    if (lang === "de") {
+        document.title = "Übersichten JR04";
+        title.textContent = "Willkommen";
+        info.textContent = "Wählen Sie unten einen Knopf, um zu den Übersichten zu gelangen.";
+        button.textContent = "Spielversion wählen";
+        dateLabel.textContent = "Datum:";
+        timeLabel.textContent = "Uhrzeit:";
+        footer.innerHTML = `&copy; ${startYear} - ${currentYear} JR04. Alle Rechte vorbehalten.`;
+        locale = "de-DE";
+    }
+
+    if (lang === "en") {
+        document.title = "Overviews JR04";
+        title.textContent = "Welcome";
+        info.textContent = "Select a button below to go to the overviews.";
+        button.textContent = "Select Game Version";
+        dateLabel.textContent = "Date:";
+        timeLabel.textContent = "Time:";
+        footer.innerHTML = `&copy; ${startYear} - ${currentYear} JR04. All rights reserved.`;
+        locale = "en-GB";
+    }
+
+    updateDateTime(locale);
+    clearInterval(window.clockInterval);
+    window.clockInterval = setInterval(() => updateDateTime(locale), 1000);
 }
+
+/* ===== INIT ===== */
+changeLanguage("nl");
 </script>
 
 </body>

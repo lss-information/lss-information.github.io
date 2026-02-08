@@ -109,6 +109,7 @@ tbody td {
     color: #dddddd;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    vertical-align: top;
 }
 
 tbody tr:hover {
@@ -127,13 +128,6 @@ tbody tr:hover {
     font-family: 'Orbitron', sans-serif;
 }
 
-.extensions-row td, .vehicles-row td {
-    background-color: #262632;
-    text-align: left;
-    font-size: 14px;
-    color: #cccccc;
-}
-
 .extensions-content, .vehicles-content {
     max-height: 0;
     overflow: hidden;
@@ -143,12 +137,12 @@ tbody tr:hover {
     font-size: 13px;
     line-height: 1.5;
     padding: 6px 8px;
+    margin-top: 5px;
 }
 
 .extensions-content.show, .vehicles-content.show {
     opacity: 1;
 }
-
 #footer {
     margin-top: 40px;
     padding: 20px;
@@ -281,92 +275,79 @@ async function initBuildings() {
 
     Object.keys(buildings).forEach(key => {
         const b = buildings[key];
-
         const hasExtensions = b.extensions && b.extensions.length > 0;
         const hasVehicles = Object.values(vehicles).some(v => (v.possibleBuildings || []).includes(Number(key)));
 
         const row = document.createElement('tr');
-        row.innerHTML = `<td>${key}</td>
-                         <td>${b.caption}</td>
-                         <td>${b.credits}</td>
-                         <td>
-                            ${hasExtensions ? `<button class="button-toggle ext-btn">${pageTranslations[currentLang].toggleExtensions.show}</button>` : ''}
-                            ${hasVehicles ? `<button class="button-toggle veh-btn">${pageTranslations[currentLang].toggleVehicles.show}</button>` : ''}
-                         </td>`;
-        tbody.appendChild(row);
+        const actionCell = document.createElement('td');
 
-        // Extensions
+        // Buttons
         if (hasExtensions) {
-            const extRow = document.createElement('tr');
-            extRow.className = 'extensions-row';
-            const td = document.createElement('td');
-            td.colSpan = 4;
+            const extBtn = document.createElement('button');
+            extBtn.className = 'button-toggle ext-btn';
+            extBtn.textContent = pageTranslations[currentLang].toggleExtensions.show;
+            actionCell.appendChild(extBtn);
+        }
+        if (hasVehicles) {
+            const vehBtn = document.createElement('button');
+            vehBtn.className = 'button-toggle veh-btn';
+            vehBtn.textContent = pageTranslations[currentLang].toggleVehicles.show;
+            actionCell.appendChild(vehBtn);
+        }
 
-            const div = document.createElement('div');
-            div.className = 'extensions-content';
-
+        // Dropdowns
+        if (hasExtensions) {
+            const extDiv = document.createElement('div');
+            extDiv.className = 'extensions-content';
             (b.extensions || []).forEach(ext => {
                 if (!ext) return;
                 const vehicleNames = (ext?.unlocksVehicleTypes || [])
                     .map(vID => vehicles[vID]?.caption || vID)
                     .join(', ');
 
-                div.innerHTML += `
-                    <strong>${ext.caption}</strong><br>
-                    Credits: ${ext.credits}<br>
-                    Bouwduur: ${ext.duration}<br>
-                    Voertuigen: ${vehicleNames || 'Geen'}<br><br>
-                `;
+                extDiv.innerHTML += `<strong>${ext.caption}</strong><br>
+                                     Credits: ${ext.credits}<br>
+                                     Bouwduur: ${ext.duration}<br>
+                                     Voertuigen: ${vehicleNames || 'Geen'}<br><br>`;
             });
+            actionCell.appendChild(extDiv);
 
-            td.appendChild(div);
-            extRow.appendChild(td);
-            tbody.appendChild(extRow);
-
-            const toggleBtn = row.querySelector('.ext-btn');
-            toggleBtn.onclick = () => {
-                const open = div.classList.toggle('show');
-                div.style.maxHeight = open ? div.scrollHeight + 'px' : null;
-                toggleBtn.textContent = open
+            const extBtn = actionCell.querySelector('.ext-btn');
+            extBtn.onclick = () => {
+                const open = extDiv.classList.toggle('show');
+                extDiv.style.maxHeight = open ? extDiv.scrollHeight + 'px' : null;
+                extBtn.textContent = open
                     ? pageTranslations[currentLang].toggleExtensions.hide
                     : pageTranslations[currentLang].toggleExtensions.show;
             };
         }
 
-        // Vehicles
         if (hasVehicles) {
-            const vehRow = document.createElement('tr');
-            vehRow.className = 'vehicles-row';
-            const td = document.createElement('td');
-            td.colSpan = 4;
-
-            const div = document.createElement('div');
-            div.className = 'vehicles-content';
-
+            const vehDiv = document.createElement('div');
+            vehDiv.className = 'vehicles-content';
             Object.keys(vehicles).forEach(vID => {
                 const v = vehicles[vID];
                 if ((v.possibleBuildings || []).includes(Number(key))) {
-                    div.innerHTML += `
-                        <strong>${v.caption}</strong><br>
-                        Credits: ${v.credits}<br>
-                        Personeel: ${v.staff?.min || 0} - ${v.staff?.max || 0}<br><br>
-                    `;
+                    vehDiv.innerHTML += `<strong>${v.caption}</strong><br>
+                                         Credits: ${v.credits}<br>
+                                         Personeel: ${v.staff?.min || 0} - ${v.staff?.max || 0}<br><br>`;
                 }
             });
+            actionCell.appendChild(vehDiv);
 
-            td.appendChild(div);
-            vehRow.appendChild(td);
-            tbody.appendChild(vehRow);
-
-            const toggleBtn = row.querySelector('.veh-btn');
-            toggleBtn.onclick = () => {
-                const open = div.classList.toggle('show');
-                div.style.maxHeight = open ? div.scrollHeight + 'px' : null;
-                toggleBtn.textContent = open
+            const vehBtn = actionCell.querySelector('.veh-btn');
+            vehBtn.onclick = () => {
+                const open = vehDiv.classList.toggle('show');
+                vehDiv.style.maxHeight = open ? vehDiv.scrollHeight + 'px' : null;
+                vehBtn.textContent = open
                     ? pageTranslations[currentLang].toggleVehicles.hide
                     : pageTranslations[currentLang].toggleVehicles.show;
             };
         }
+
+        row.innerHTML = `<td>${key}</td><td>${b.caption}</td><td>${b.credits}</td>`;
+        row.appendChild(actionCell);
+        tbody.appendChild(row);
     });
 
     table.appendChild(tbody);

@@ -422,7 +422,11 @@ async function initBuildings() {
                         Coins: ${s.coins || 0}<br>
                         Bouwduur: ${s.duration}<br>
                         Extra opslag: ${s.additionalStorage}<br>
-                        Vereist: ${(s.requiredStorageUpgrades || []).join(', ') || 'Geen'}<br>
+                        Vereist: ${
+    (s.requiredStorageUpgrades || [])
+        .map(reqKey => b.storageUpgrades[reqKey]?.caption || reqKey)
+        .join(', ') || 'Geen'
+}<br>
                     </div>
                 `;
             });

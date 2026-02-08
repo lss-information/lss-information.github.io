@@ -1,34 +1,35 @@
-name: Update Vehicles.json
+name: Sync Vehicles.json
 
 on:
+  push:
   schedule:
     - cron: "0 0 * * *"  # Elke dag om 00:00 UTC
-  workflow_dispatch:       # Handmatig triggeren ook mogelijk
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-vehicles:
+  sync:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Download Vehicles.json
+      - name: Download Vehicles.json (NL)
         run: |
           mkdir -p gameversions/nl_NL/nl_NL-Data
-          curl -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/nl_NL/Vehicles.json -o gameversions/nl_NL/nl_NL-Data/vehicles.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/nl_NL/Vehicles.json -o gameversions/nl_NL/nl_NL-Data/vehicles.json
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > gameversions/nl_NL/nl_NL-Data/last_update.txt
 
-      - name: Commit changes
+      - name: Commit if changed
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add gameversions/nl_NL/nl_NL-Data/Vehicles.json
-          git diff-index --quiet HEAD || git commit -m "Update Vehicles"
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
 
-      - name: Push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          git add gameversions/nl_NL/nl_NL-Data/*
+          git diff-index --quiet HEAD || git commit -m "Update Vehicles.json"
+          git push origin main

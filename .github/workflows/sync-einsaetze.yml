@@ -38,6 +38,10 @@ jobs:
           download "DE" "https://www.leitstellenspiel.de/einsaetze.json" "gameversions/de_DE/de_DE-Data"
           download "UK" "https://www.missionchief.co.uk/einsaetze.json" "gameversions/en_UK/en_UK-Data"
           download "US" "https://www.missionchief.com/einsaetze.json" "gameversions/en_US/en_US-Data"
+          download "AU" "https://www.missionchief-australia.com/einsaetze.json" "gameversions/en_AU/en_AU-Data"
+          download "ES" "https://www.centro-de-mando.es/einsaetze.json" "gameversions/es_ES/es_ES-Data"
+
+
 
       - name: Commit if changed
         run: |

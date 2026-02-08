@@ -218,7 +218,7 @@ const lastUpdateFile = 'nl_NL-Data/last_update_buildings.txt';
 const pageTranslations = {
     nl: {
         title: "Gebouwen",
-        message: "Overzicht van alle gebouwen (NL).",
+        message: "Overzicht van alle gebouwen in Meldkamerspel (NL).",
         gameButton: "Startpagina",
         contactButton: "Contact",
         backButton: "Terug",
@@ -226,7 +226,17 @@ const pageTranslations = {
         tableHeaders: ["ID", "Gebouwnaam", "Credits", "Acties"],
         toggleExtensions: { show: "Toon Uitbreidingen", hide: "Verberg Uitbreidingen" },
         toggleVehicles: { show: "Toon Voertuigen", hide: "Verberg Voertuigen" },
-        toggleStorage: { show: "Toon Opslag", hide: "Verberg Opslag" }
+        toggleStorage: { show: "Toon Opslag", hide: "Verberg Opslag" },
+        innerLabels: {
+            credits: "Credits",
+            duration: "Bouwduur",
+            required: "Vereist",
+            none: "Geen",
+            vehicles: "Voertuigen",
+            staff: "Personeel",
+            maxStorage: "Max opslag",
+            extraStorage: "Extra opslag",
+        }
     },
     de: {
         title: "Gebäude",
@@ -238,7 +248,17 @@ const pageTranslations = {
         tableHeaders: ["ID", "Gebäude", "Credits", "Aktionen"],
         toggleExtensions: { show: "Erweiterungen anzeigen", hide: "Erweiterungen verbergen" },
         toggleVehicles: { show: "Fahrzeuge anzeigen", hide: "Fahrzeuge verbergen" },
-        toggleStorage: { show: "Speicher anzeigen", hide: "Speicher verbergen" }
+        toggleStorage: { show: "Speicher anzeigen", hide: "Speicher verbergen" },
+        innerLabels: {
+            credits: "Credits",
+            duration: "Bauzeit",
+            required: "Erforderlich",
+            none: "Keine",
+            vehicles: "Fahrzeuge",
+            staff: "Personal",
+            maxStorage: "Max Lager",
+            extraStorage: "Extra Lager",
+        }
     },
     en: {
         title: "Buildings",
@@ -250,7 +270,17 @@ const pageTranslations = {
         tableHeaders: ["ID", "Building Name", "Credits", "Actions"],
         toggleExtensions: { show: "Show Extensions", hide: "Hide Extensions" },
         toggleVehicles: { show: "Show Vehicles", hide: "Hide Vehicles" },
-        toggleStorage: { show: "Show Storage", hide: "Hide Storage" }
+        toggleStorage: { show: "Show Storage", hide: "Hide Storage" },
+        innerLabels: {
+            credits: "Credits",
+            duration: "Build Time",
+            required: "Required",
+            none: "None",
+            vehicles: "Vehicles",
+            staff: "Staff",
+            maxStorage: "Max Storage",
+            extraStorage: "Extra Storage",
+        }
     }
 };
 
@@ -328,6 +358,8 @@ async function initBuildings() {
                          </td>`;
         tbody.appendChild(row);
 
+        const labels = pageTranslations[currentLang].innerLabels;
+
         // Extensions
         if (hasExtensions) {
             const extRow = document.createElement('tr');
@@ -344,18 +376,17 @@ async function initBuildings() {
                     .map(vID => vehicles[vID]?.caption || vID)
                     .join(', ');
 
-                // Determine required extensions captions
-const requiredExtCaptions = (ext.requiredExtensions || [])
-    .map(idx => b.extensions[idx]?.caption || idx)
-    .join(', ') || 'Geen';
+                const requiredExtCaptions = (ext.requiredExtensions || [])
+                    .map(idx => b.extensions[idx]?.caption || idx)
+                    .join(', ') || labels.none;
 
-div.innerHTML += `
-    <strong>${ext.caption}</strong><br>
-    Credits: ${ext.credits}<br>
-    Bouwduur: ${ext.duration}<br>
-    Vereist: ${requiredExtCaptions}<br>
-    Voertuigen: ${vehicleNames || 'Geen'}<br><br>
-`;
+                div.innerHTML += `
+                    <strong>${ext.caption}</strong><br>
+                    ${labels.credits}: ${ext.credits}<br>
+                    ${labels.duration}: ${ext.duration}<br>
+                    ${labels.required}: ${requiredExtCaptions}<br>
+                    ${labels.vehicles}: ${vehicleNames || labels.none}<br><br>
+                `;
             });
 
             td.appendChild(div);
@@ -389,9 +420,9 @@ div.innerHTML += `
                     item.className = 'vehicle-item';
                     item.innerHTML = `
                         <strong>${v.caption}</strong> (ID: ${vID})<br>
-                        Credits: ${v.credits}<br>
-                        Personeel: Min - Max ${v.staff?.min || 0} - ${v.staff?.max || 0}<br>
-                        Max opslag: ${v.equipmentCapacity || 0}
+                        ${labels.credits}: ${v.credits}<br>
+                        ${labels.staff}: Min - Max ${v.staff?.min || 0} - ${v.staff?.max || 0}<br>
+                        ${labels.maxStorage}: ${v.equipmentCapacity || 0}
                     `;
                     div.appendChild(item);
                 }
@@ -426,15 +457,15 @@ div.innerHTML += `
                 div.innerHTML += `
                     <div class="storage-item">
                         <strong>${s.caption}</strong><br>
-                        Credits: ${s.credits}<br>
+                        ${labels.credits}: ${s.credits}<br>
                         Coins: ${s.coins || 0}<br>
-                        Bouwduur: ${s.duration}<br>
-                        Extra opslag: ${s.additionalStorage}<br>
-                        Vereist: ${
-    (s.requiredStorageUpgrades || [])
-        .map(reqKey => b.storageUpgrades[reqKey]?.caption || reqKey)
-        .join(', ') || 'Geen'
-}<br>
+                        ${labels.duration}: ${s.duration}<br>
+                        ${labels.extraStorage}: ${s.additionalStorage}<br>
+                        ${labels.required}: ${
+                            (s.requiredStorageUpgrades || [])
+                                .map(reqKey => b.storageUpgrades[reqKey]?.caption || reqKey)
+                                .join(', ') || labels.none
+                        }<br>
                     </div>
                 `;
             });

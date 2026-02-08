@@ -52,7 +52,6 @@ p {
     list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 10px;
     margin: 20px auto;
     padding: 0;
@@ -60,15 +59,9 @@ p {
 
 .language-selector img {
     height: 24px;
-    width: auto;
     cursor: pointer;
     border: 2px solid #555566;
     border-radius: 4px;
-    transition: transform 0.2s;
-}
-
-.language-selector img:hover {
-    transform: scale(1.1);
 }
 
 /* MAIN */
@@ -77,21 +70,17 @@ main {
     position: relative;
 }
 
-/* CARD */
-.neon-box {
+/* BOXES */
+.card {
     background-color: #2a2a3a;
     border: 2px solid #555566;
     border-radius: 18px;
-    padding: 45px 40px;
+    padding: 40px;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto 35px auto;
 }
 
 /* BUTTON */
-.button-container {
-    margin-top: 25px;
-}
-
 .button {
     display: inline-block;
     background-color: #2c2c3c;
@@ -103,7 +92,8 @@ main {
     font-size: 18px;
     width: 100%;
     max-width: 420px;
-    transition: background-color 0.2s, transform 0.2s, color 0.2s;
+    margin-top: 20px;
+    transition: 0.2s;
 }
 
 .button:hover {
@@ -132,16 +122,8 @@ main {
 .shape2 { width: 300px; height: 300px; bottom: 10%; right: 15%; }
 
 @keyframes float {
-    0% { transform: rotate(0deg) scale(1); }
-    50% { transform: rotate(180deg) scale(1.2); }
-    100% { transform: rotate(360deg) scale(1); }
-}
-
-/* MOBILE */
-@media (max-width: 600px) {
-    main { padding: 20px 10px; }
-    .neon-box { padding: 25px 20px; }
-    .button { font-size: 16px; padding: 14px 24px; }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 </style>
 </head>
@@ -154,11 +136,9 @@ main {
 </header>
 
 <ul class="language-selector">
-    <li><img src="images/flag_nl.gif" alt="NL" onclick="changeLanguage('nl')"></li>
-    <li><img src="images/flag_de.gif" alt="DE" onclick="changeLanguage('de')"></li>
-    <li><img src="images/flag_uk.gif" alt="UK" onclick="changeLanguage('en')"></li>
-    <li><img src="images/flag_us.gif" alt="US" onclick="changeLanguage('en')"></li>
-    <li><img src="images/flag_au.gif" alt="AU" onclick="changeLanguage('en')"></li>
+    <li><img src="images/flag_nl.gif" onclick="changeLanguage('nl')"></li>
+    <li><img src="images/flag_de.gif" onclick="changeLanguage('de')"></li>
+    <li><img src="images/flag_uk.gif" onclick="changeLanguage('en')"></li>
 </ul>
 
 <main>
@@ -167,15 +147,24 @@ main {
         <div class="shape2"></div>
     </div>
 
-    <div class="neon-box">
+    <!-- DATUM / TIJD -->
+    <div class="card">
         <p><strong id="date-label">Datum:</strong> <span id="currentDate"></span></p>
         <p><strong id="time-label">Tijd:</strong> <span id="currentTime"></span></p>
 
-        <div class="button-container">
-            <a class="button" id="select-button" href="gameversions/gameversionsinfo">
-                Selecteer Versie
-            </a>
-        </div>
+        <a class="button" id="select-button" href="gameversions/gameversionsinfo">
+            Selecteer Versie
+        </a>
+    </div>
+
+    <!-- UITLEG BOX -->
+    <div class="card">
+        <h2 id="about-title">Waar is deze site voor?</h2>
+        <p id="about-text">
+            Deze website biedt overzichtelijke informatie en tools voor verschillende
+            spelversies van het Meldkamerspel. Je vindt hier gestructureerde data,
+            actuele overzichten en handige navigatie per versie.
+        </p>
     </div>
 </main>
 
@@ -184,13 +173,11 @@ main {
 </footer>
 
 <script>
-/* ===== BASIS ===== */
 const startYear = 2024;
 const currentYear = new Date().getFullYear();
 document.getElementById('year').textContent =
     startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
 
-/* ===== DATUM / TIJD ===== */
 function updateDateTime(locale) {
     const now = new Date();
     document.getElementById('currentDate').textContent =
@@ -199,47 +186,45 @@ function updateDateTime(locale) {
         now.toLocaleTimeString(locale);
 }
 
-/* ===== TAAL ===== */
 function changeLanguage(lang) {
-    const title = document.getElementById('welcome-title');
-    const info = document.getElementById('select-info');
-    const button = document.getElementById('select-button');
-    const footer = document.getElementById('footer');
-    const dateLabel = document.getElementById('date-label');
-    const timeLabel = document.getElementById('time-label');
-
     let locale = "nl-NL";
 
     if (lang === "nl") {
         document.title = "Overzichten JR04";
-        title.textContent = "Welkom";
-        info.textContent = "Selecteer hieronder een knop om naar de overzichten te gaan.";
-        button.textContent = "Selecteer Versie";
-        dateLabel.textContent = "Datum:";
-        timeLabel.textContent = "Tijd:";
-        footer.innerHTML = `&copy; ${startYear} - ${currentYear} JR04. Alle rechten voorbehouden.`;
+        welcome-title.textContent = "Welkom";
+        select-info.textContent = "Selecteer hieronder een knop om naar de overzichten te gaan.";
+        select-button.textContent = "Selecteer Versie";
+        date-label.textContent = "Datum:";
+        time-label.textContent = "Tijd:";
+        about-title.textContent = "Waar is deze site voor?";
+        about-text.textContent =
+            "Deze website biedt overzichtelijke informatie en tools voor verschillende spelversies van het Meldkamerspel.";
         locale = "nl-NL";
     }
 
     if (lang === "de") {
         document.title = "Übersichten JR04";
-        title.textContent = "Willkommen";
-        info.textContent = "Wählen Sie unten einen Knopf, um zu den Übersichten zu gelangen.";
-        button.textContent = "Spielversion wählen";
-        dateLabel.textContent = "Datum:";
-        timeLabel.textContent = "Uhrzeit:";
-        footer.innerHTML = `&copy; ${startYear} - ${currentYear} JR04. Alle Rechte vorbehalten.`;
+        welcome-title.textContent = "Willkommen";
+        select-info.textContent = "Wählen Sie unten eine Schaltfläche für die Übersichten.";
+        select-button.textContent = "Spielversion wählen";
+        date-label.textContent = "Datum:";
+        time-label.textContent = "Uhrzeit:";
+        about-title.textContent = "Wofür ist diese Seite?";
+        about-text.textContent =
+            "Diese Website bietet strukturierte Informationen und Übersichten für verschiedene Spielversionen.";
         locale = "de-DE";
     }
 
     if (lang === "en") {
         document.title = "Overviews JR04";
-        title.textContent = "Welcome";
-        info.textContent = "Select a button below to go to the overviews.";
-        button.textContent = "Select Game Version";
-        dateLabel.textContent = "Date:";
-        timeLabel.textContent = "Time:";
-        footer.innerHTML = `&copy; ${startYear} - ${currentYear} JR04. All rights reserved.`;
+        welcome-title.textContent = "Welcome";
+        select-info.textContent = "Select a button below to view the overviews.";
+        select-button.textContent = "Select Game Version";
+        date-label.textContent = "Date:";
+        time-label.textContent = "Time:";
+        about-title.textContent = "What is this site for?";
+        about-text.textContent =
+            "This website provides structured information and overviews for different game versions.";
         locale = "en-GB";
     }
 
@@ -248,7 +233,6 @@ function changeLanguage(lang) {
     window.clockInterval = setInterval(() => updateDateTime(locale), 1000);
 }
 
-/* ===== INIT ===== */
 changeLanguage("nl");
 </script>
 

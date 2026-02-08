@@ -371,7 +371,7 @@ async function initBuildings() {
         item.innerHTML = `
             <strong>${v.caption}</strong> (ID: ${vID})<br>
             Credits: ${v.credits}<br>
-            Personeel: ${v.staff?.min || 0} - ${v.staff?.max || 0}
+            Personeel: "Min - Max" ${v.staff?.min || 0} - ${v.staff?.max || 0}
         `;
         div.appendChild(item);
     }

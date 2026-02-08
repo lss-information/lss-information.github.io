@@ -48,41 +48,29 @@ h2 {
     color: #cccccc;
 }
 
-/* LANGUAGE SELECTOR + BACK BUTTON INLINE */
+/* LANGUAGE SELECTOR */
 .language-selector {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     gap: 10px;
     margin: 20px auto;
     padding: 0;
 }
 
+.language-selector img {
+    height: 24px;
+    cursor: pointer;
+    border: 2px solid #555566;
+    border-radius: 4px;
+}
 .language-selector li {
     list-style: none;
 }
 
-.language-selector img,
-.language-selector .back-flag {
-    height: 24px;
-    width: auto;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    border: 2px solid #555566;
-    border-radius: 4px;
-    text-decoration: none;
-    color: #dddddd;
-    font-size: 14px;
-    padding: 0 8px;
-    transition: transform 0.2s, background-color 0.2s, color 0.2s;
-}
 
-.language-selector img:hover,
-.language-selector .back-flag:hover {
+
+.language-selector img:hover{
     transform: scale(1.1);
     background-color: #444456;
     color: #ffffff;

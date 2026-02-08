@@ -121,7 +121,6 @@ tbody tr:hover {
     color: #888888;
 }
 </style>
-    
 </head>
 
 <body>
@@ -150,7 +149,8 @@ tbody tr:hover {
 
 <script>
 const dataFile = 'nl_NL-Data/vehicles.json';
-const lastUpdateFile = 'nl_NL-Data/last_update_buildings.txt';
+const buildingsFile = 'nl_NL-Data/buildings.json';
+const lastUpdateFile = 'nl_NL-Data/last_update.txt';
 
 const pageTranslations = {
     nl: {
@@ -213,6 +213,13 @@ async function loadLastUpdate() {
 
 async function initVehicles() {
     const vehiclesData = await (await fetch(dataFile)).json();
+    const buildingsData = await (await fetch(buildingsFile)).json();
+
+    // Mapping van buildingID -> caption
+    const buildingMap = {};
+    Object.entries(buildingsData).forEach(([id, b]) => {
+        buildingMap[id] = b.caption;
+    });
 
     const container = document.getElementById('sheet-data');
     container.innerHTML = '';
@@ -233,18 +240,21 @@ async function initVehicles() {
     const tbody = document.createElement('tbody');
 
     Object.entries(vehiclesData).forEach(([id, v]) => {
-    const row = document.createElement('tr');
-    row.innerHTML = `
-        <td>${id}</td>
-        <td>${v.caption}</td>
-        <td>${v.credits}</td>
-        <td>${v.coins}</td>
-        <td>${v.staff.min}-${v.staff.max}</td>
-        <td>${(v.possibleBuildings || []).join(', ')}</td>
-        <td>${v.equipmentCapacity ?? 0}</td>
-    `;
-    tbody.appendChild(row);
-});
+        const buildingNames = (v.possibleBuildings || []).map(bid => buildingMap[bid] || bid);
+
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${id}</td>
+            <td>${v.caption}</td>
+            <td>${v.credits}</td>
+            <td>${v.coins}</td>
+            <td>${v.staff.min}-${v.staff.max}</td>
+            <td>${buildingNames.join(', ')}</td>
+            <td>${v.equipmentCapacity ?? 0}</td>
+        `;
+        tbody.appendChild(row);
+    });
+
     table.appendChild(tbody);
     container.appendChild(table);
 }

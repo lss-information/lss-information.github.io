@@ -155,7 +155,6 @@ main {
 <footer id="footer">
     &copy; <span id="year"></span> JR04. Alle rechten voorbehouden.
 </footer>
-
 <script>
 const startYear = 2024;
 const currentYear = new Date().getFullYear();
@@ -173,50 +172,55 @@ function updateDateTime(locale) {
 function changeLanguage(lang) {
     let locale = "nl-NL";
 
+    // NL
     if (lang === "nl") {
         document.title = "Overzichten JR04";
-        welcome-title.textContent = "Welkom";
-        select-info.textContent = "Selecteer hieronder een knop om naar de overzichten te gaan.";
-        select-button.textContent = "Selecteer Versie";
-        date-label.textContent = "Datum:";
-        time-label.textContent = "Tijd:";
-        about-title.textContent = "Waar is deze site voor?";
-        about-text.textContent =
+        document.getElementById("welcome-title").textContent = "Welkom";
+        document.getElementById("select-info").textContent = "Selecteer hieronder een knop om naar de overzichten te gaan.";
+        document.getElementById("select-button").textContent = "Selecteer Versie";
+        document.getElementById("date-label").textContent = "Datum:";
+        document.getElementById("time-label").textContent = "Tijd:";
+        document.getElementById("about-title").textContent = "Waar is deze site voor?";
+        document.getElementById("about-text").textContent =
             "Deze website biedt overzichtelijke informatie en tools voor verschillende spelversies van het Meldkamerspel.";
         locale = "nl-NL";
     }
 
+    // DE
     if (lang === "de") {
         document.title = "Übersichten JR04";
-        welcome-title.textContent = "Willkommen";
-        select-info.textContent = "Wählen Sie unten eine Schaltfläche für die Übersichten.";
-        select-button.textContent = "Spielversion wählen";
-        date-label.textContent = "Datum:";
-        time-label.textContent = "Uhrzeit:";
-        about-title.textContent = "Wofür ist diese Seite?";
-        about-text.textContent =
+        document.getElementById("welcome-title").textContent = "Willkommen";
+        document.getElementById("select-info").textContent = "Wählen Sie unten eine Schaltfläche für die Übersichten.";
+        document.getElementById("select-button").textContent = "Spielversion wählen";
+        document.getElementById("date-label").textContent = "Datum:";
+        document.getElementById("time-label").textContent = "Uhrzeit:";
+        document.getElementById("about-title").textContent = "Wofür ist diese Seite?";
+        document.getElementById("about-text").textContent =
             "Diese Website bietet strukturierte Informationen und Übersichten für verschiedene Spielversionen.";
         locale = "de-DE";
     }
 
+    // EN
     if (lang === "en") {
         document.title = "Overviews JR04";
-        welcome-title.textContent = "Welcome";
-        select-info.textContent = "Select a button below to view the overviews.";
-        select-button.textContent = "Select Game Version";
-        date-label.textContent = "Date:";
-        time-label.textContent = "Time:";
-        about-title.textContent = "What is this site for?";
-        about-text.textContent =
+        document.getElementById("welcome-title").textContent = "Welcome";
+        document.getElementById("select-info").textContent = "Select a button below to view the overviews.";
+        document.getElementById("select-button").textContent = "Select Game Version";
+        document.getElementById("date-label").textContent = "Date:";
+        document.getElementById("time-label").textContent = "Time:";
+        document.getElementById("about-title").textContent = "What is this site for?";
+        document.getElementById("about-text").textContent =
             "This website provides structured information and overviews for different game versions.";
         locale = "en-GB";
     }
 
+    // Datum & Tijd updaten en live klok starten
     updateDateTime(locale);
-    clearInterval(window.clockInterval);
+    if (window.clockInterval) clearInterval(window.clockInterval);
     window.clockInterval = setInterval(() => updateDateTime(locale), 1000);
 }
 
+// Start standaard in NL
 changeLanguage("nl");
 </script>
 

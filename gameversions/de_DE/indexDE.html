@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="nl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=1200, initial-scale=0.4, maximum-scale=1.0">
@@ -220,6 +220,9 @@ function changeLanguage(lang) {
     document.getElementById('mission-ids').textContent = t.mission;
     document.getElementById('pois').textContent = t.pois;
 }
+    document.addEventListener("DOMContentLoaded", () => {
+    changeLanguage("de");
+});
 </script>
 
 </body>

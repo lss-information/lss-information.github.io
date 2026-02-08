@@ -233,19 +233,18 @@ async function initVehicles() {
     const tbody = document.createElement('tbody');
 
     Object.entries(vehiclesData).forEach(([id, v]) => {
-        const row = document.createElement('tr');
-        row.innerHTML = `
-            <td>${id}</td>
-            <td>${v.caption}</td>
-            <td>${v.credits}</td>
-            <td>${v.coins}</td>
-            <td>${v.staff.min}-${v.staff.max}</td>
-            <td>${(v.possibleBuildings || []).join(', ')}</td>
-            <td>${v.equipmentCapacity}</td>
-        `;
-        tbody.appendChild(row);
-    });
-
+    const row = document.createElement('tr');
+    row.innerHTML = `
+        <td>${id}</td>
+        <td>${v.caption}</td>
+        <td>${v.credits}</td>
+        <td>${v.coins}</td>
+        <td>${v.staff.min}-${v.staff.max}</td>
+        <td>${(v.possibleBuildings || []).join(', ')}</td>
+        <td>${v.equipmentCapacity ?? 0}</td>
+    `;
+    tbody.appendChild(row);
+});
     table.appendChild(tbody);
     container.appendChild(table);
 }

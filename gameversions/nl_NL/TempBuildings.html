@@ -253,7 +253,6 @@ async function loadLastUpdate() {
 async function initBuildings() {
     const buildings = await (await fetch(buildingsFile)).json();
     const vehicles = await (await fetch(vehiclesFile)).json();
-    const translations = await (await fetch(translationsFile)).json();
 
     const container = document.getElementById('sheet-data');
     container.innerHTML = '';
@@ -275,9 +274,9 @@ async function initBuildings() {
 
     Object.keys(buildings).forEach(key => {
         const b = buildings[key];
-
         const hasExtensions = b.extensions && b.extensions.length > 0;
 
+        // Hoofdrij
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>${key}</td>
@@ -287,6 +286,7 @@ async function initBuildings() {
         `;
         tbody.appendChild(row);
 
+        // Extensions dropdown alleen als aanwezig
         if (hasExtensions) {
             const extRow = document.createElement('tr');
             extRow.className = 'extensions-row';

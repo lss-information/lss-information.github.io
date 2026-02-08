@@ -12,26 +12,38 @@ permissions:
 jobs:
   sync:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Download JSON
+      - name: Download einsaetze (all regions)
         run: |
-          mkdir -p gameversions/nl_NL/nl_NL-Data
-          curl -f -s -L http://meldkamerspel.com/einsaetze.json | jq '.' > gameversions/nl_NL/nl_NL-Data/einsaetze.json
+          set -e
 
-      - name: Write last update timestamp
-        run: |
-          date -u +"%Y-%m-%dT%H:%M:%SZ" > gameversions/nl_NL/nl_NL-Data/last_update.txt
+          download() {
+            NAME=$1
+            URL=$2
+            DIR=$3
+
+            echo "Downloading $NAME from $URL"
+            mkdir -p "$DIR"
+            curl -f -s -L "$URL" | jq '.' > "$DIR/einsaetze.json"
+            date -u +"%Y-%m-%dT%H:%M:%SZ" > "$DIR/last_update.txt"
+          }
+
+          download "NL" "https://www.meldkamerspel.com/einsaetze.json" "gameversions/nl_NL/nl_NL-Data"
+          download "DE" "https://www.leitstellenspiel.de/einsaetze.json" "gameversions/de_DE/de_DE-Data"
+          download "UK" "https://www.missionchief.co.uk/einsaetze.json" "gameversions/en_GB/en_GB-Data"
+          download "US" "https://www.missionchief.com/einsaetze.json" "gameversions/en_US/en_US-Data"
 
       - name: Commit if changed
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add gameversions/nl_NL/nl_NL-Data/einsaetze.json
-          git add gameversions/nl_NL/nl_NL-Data/last_update.txt
-          git commit -m "Update einsaetze.json" || echo "Nothing to commit"
+
+          git add gameversions/*
+          git commit -m "Update einsaetze.json (all regions)" || echo "Nothing to commit"
           git push origin main

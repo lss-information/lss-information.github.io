@@ -128,23 +128,7 @@ tbody tr:hover {
     font-family: 'Orbitron', sans-serif;
 }
 
-.actions-cell {
-    position: relative; /* container voor absolute dropdowns */
-    vertical-align: top;
-    padding: 8px;
-}
-
-/* Dropdowns absolute */
 .extensions-content, .vehicles-content {
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background-color: #262632;
-    padding: 6px 8px;
-    border-radius: 4px;
-    width: 300px;
-    z-index: 10;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
     max-height: 0;
     overflow: hidden;
     opacity: 0;
@@ -152,13 +136,13 @@ tbody tr:hover {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
     line-height: 1.5;
+    padding: 6px 8px;
+    margin-top: 5px;
 }
 
 .extensions-content.show, .vehicles-content.show {
-    max-height: 500px;
     opacity: 1;
 }
-
 #footer {
     margin-top: 40px;
     padding: 20px;
@@ -296,7 +280,6 @@ async function initBuildings() {
 
         const row = document.createElement('tr');
         const actionCell = document.createElement('td');
-        actionCell.className = 'actions-cell';
 
         // Buttons
         if (hasExtensions) {

@@ -5,15 +5,15 @@
 <meta name="viewport" content="width=1200, initial-scale=0.4, maximum-scale=1.0">
 <title>Missions Missionchief (AU)</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 <style>
 body {
     margin: 0;
     padding: 0;
     font-family: 'Orbitron', sans-serif;
-    background-color: #1e1e28;
-    color: #dddddd;
+    background-color: #1e1e28; 
+    color: #dddddd; 
     text-align: center;
 }
 
@@ -26,11 +26,10 @@ body {
     gap: 10px;
     margin: 20px auto;
     padding: 0;
-    width: 100%;
 }
 
 .button {
-    background-color: #2c2c3c;
+    background-color: #2c2c3c; 
     color: #dddddd;
     border: 2px solid #555566;
     padding: 8px 16px;
@@ -46,6 +45,7 @@ body {
     transform: scale(1.05);
 }
 
+/* TITLES */
 h1 {
     margin: 30px 0 10px;
     font-size: 32px;
@@ -65,14 +65,17 @@ p {
     color: #aaaaaa;
 }
 
+/* SWIPE HINT */
 #swipe-hint {
     display: none;
     font-size: 12px;
     color: #bbbbbb;
     margin: 8px auto 5px;
     text-align: center;
+    opacity: 0.9;
 }
 
+/* TABLE */
 .table-wrapper {
     width: 100%;
     overflow-x: auto;
@@ -84,7 +87,7 @@ table {
     max-width: 1200px;
     margin: 20px auto;
     border-collapse: collapse;
-    background-color: #2a2a3a;
+    background-color: #2a2a3a; 
     border-radius: 10px;
 }
 
@@ -93,23 +96,70 @@ thead th {
     padding: 12px;
     border-bottom: 2px solid #555566;
     color: #eeeeee;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
 tbody td {
-    padding: 10px;
+    padding: 12px;
     border-bottom: 1px solid #444455;
     color: #dddddd;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
 tbody tr:hover {
     background-color: #3c3c4c;
 }
 
+/* REQUIREMENTS */
+.button-toggle {
+    background-color: #2c2c3c;
+    color: #dddddd;
+    border: 1px solid #555566;
+    padding: 6px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.requirements-row td {
+    background-color: #262632;
+    text-align: left;
+    font-size: 17px;
+    color: #cccccc;
+    font-family: 'Roboto', sans-serif;
+}
+
+.requirements-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+    padding: 0 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.requirements-content.show {
+    opacity: 1;
+    padding: 6px 8px;
+}
+
+/* FOOTER */
+#footer {
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 12px;
+    color: #888888;
+}
+
 .language-selector img {
     height: 24px;
     width: auto;
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: transform 0.2s, border 0.2s;
     border: 2px solid #555566;
     border-radius: 4px;
 }
@@ -118,17 +168,12 @@ tbody tr:hover {
     transform: scale(1.1);
 }
 
+/* MOBILE FLAGS */
 @media (max-width: 600px) {
     .language-selector img {
         height: 22px;
+        width: auto;
     }
-}
-
-#footer {
-    margin-top: 40px;
-    padding: 20px;
-    font-size: 12px;
-    color: #888888;
 }
 </style>
 </head>

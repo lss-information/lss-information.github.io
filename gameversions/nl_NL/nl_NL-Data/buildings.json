@@ -1168,8 +1168,8 @@
   "14": {
     "caption": "Groot gebouwencomplex",
     "color": "#ffffff",
-    "coins": -1,
-    "credits": -1,
+    "coins": 1000000,
+    "credits": 50,
     "levelPrices": {
       "credits": [],
       "coins": []

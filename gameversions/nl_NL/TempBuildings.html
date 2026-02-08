@@ -17,7 +17,6 @@ body {
     text-align: center;
 }
 
-/* Language selector */
 .language-selector {
     list-style: none;
     display: flex;
@@ -43,7 +42,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Buttons */
 .button {
     background-color: #2c2c3c;
     color: #dddddd;
@@ -61,7 +59,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Titles */
 h1 {
     margin: 30px 0 10px;
     font-size: 32px;
@@ -81,7 +78,6 @@ p {
     color: #aaaaaa;
 }
 
-/* Table */
 .table-wrapper {
     width: 100%;
     overflow-x: auto;
@@ -114,7 +110,6 @@ tbody tr:hover {
     background-color: #3c3c4c;
 }
 
-/* Extensions */
 .button-toggle {
     background-color: #2c2c3c;
     color: #dddddd;
@@ -143,7 +138,6 @@ tbody tr:hover {
     opacity: 1;
 }
 
-/* Footer */
 #footer {
     margin-top: 40px;
     padding: 20px;
@@ -180,7 +174,6 @@ tbody tr:hover {
 <script>
 const buildingsFile = 'nl_NL-Data/buildings.json';
 const vehiclesFile = 'nl_NL-Data/Vehicles.json';
-const translationsFile = 'translations.json';
 const lastUpdateFile = 'nl_NL-Data/last_update.txt';
 
 const pageTranslations = {
@@ -276,7 +269,6 @@ async function initBuildings() {
         const b = buildings[key];
         const hasExtensions = b.extensions && b.extensions.length > 0;
 
-        // Hoofdrij
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>${key}</td>
@@ -286,7 +278,6 @@ async function initBuildings() {
         `;
         tbody.appendChild(row);
 
-        // Extensions dropdown alleen als aanwezig
         if (hasExtensions) {
             const extRow = document.createElement('tr');
             extRow.className = 'extensions-row';
@@ -296,8 +287,13 @@ async function initBuildings() {
             const div = document.createElement('div');
             div.className = 'extensions-content';
 
-            b.extensions.forEach(ext => {
-                const vehicleNames = (ext.unlocksVehicleTypes || []).map(vID => vehicles[vID]?.caption || vID).join(', ');
+            (b.extensions || []).forEach(ext => {
+                if (!ext) return; // skip null/undefined entries
+
+                const vehicleNames = (ext?.unlocksVehicleTypes || [])
+                    .map(vID => vehicles[vID]?.caption || vID)
+                    .join(', ');
+
                 div.innerHTML += `
                     <strong>${ext.caption}</strong><br>
                     Credits: ${ext.credits}<br>

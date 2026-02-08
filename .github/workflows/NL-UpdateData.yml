@@ -31,7 +31,7 @@ jobs:
 
       - name: Update last update timestamp
         run: |
-          date -u +"%Y-%m-%dT%H:%M:%SZ" > gameversions/nl_NL/nl_NL-Data/last_update.txt
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > gameversions/nl_NL/nl_NL-Data/last_update_buildings.txt
 
       - name: Commit if changed
         run: |

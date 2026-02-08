@@ -33,7 +33,7 @@ jobs:
       - name: Download Pois.json
         run: |
           mkdir -p gameversions/nl_NL/nl_NL-Data
-          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/nl_NL/Pois.json -o gameversions/nl_NL/nl_NL-Data/pois.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/nl_NL/pois.json -o gameversions/nl_NL/nl_NL-Data/pois.json
           
           
       - name: Update last update timestamp

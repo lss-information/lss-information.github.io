@@ -29,6 +29,13 @@ jobs:
           mkdir -p gameversions/nl_NL/nl_NL-Data
           curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/nl_NL/buildings.json -o gameversions/nl_NL/nl_NL-Data/buildings.json
 
+
+      - name: Download Pois.json
+        run: |
+          mkdir -p gameversions/nl_NL/nl_NL-Data
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/nl_NL/Pois.json -o gameversions/nl_NL/nl_NL-Data/pois.json
+          
+          
       - name: Update last update timestamp
         run: |
           date -u +"%Y-%m-%dT%H:%M:%SZ" > gameversions/nl_NL/nl_NL-Data/last_update_buildings.txt

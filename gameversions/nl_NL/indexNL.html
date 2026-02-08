@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 
 <style>
+/* BASE */
 body {
     margin: 0;
     padding: 0;
@@ -98,11 +99,11 @@ main {
     background-color: #2c2c3c;
     color: #dddddd;
     border: 2px solid #555566;
-    padding: 18px 26px;              /* MEER HOOGTE */
+    padding: 18px 26px;
     margin: 12px 0;
     border-radius: 10px;
     text-decoration: none;
-    font-size: 18px;                 /* GROTERE TEKST */
+    font-size: 18px;
     font-weight: 500;
     width: 100%;
     max-width: 460px;
@@ -114,16 +115,26 @@ main {
     color: #ffffff;
     transform: scale(1.05);
 }
-    @media (max-width: 600px) {
+
+/* ===== MOBILE FIX ===== */
+@media (max-width: 600px) {
 
     body {
-        min-height: auto;   /* stopt het forceren van schermhoogte */
+        min-height: auto;       /* voorkomt leeg vak */
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+
+    .card {
+        padding: 25px 20px;
     }
 
     footer {
-        margin-top: 20px;   /* normale afstand i.p.v. push */
+        margin-top: 20px;       /* footer volgt content */
     }
-    }
+}
 </style>
 </head>
 

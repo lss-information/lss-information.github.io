@@ -110,7 +110,7 @@ tbody td {
     border-bottom: 1px solid #444455;
     color: #dddddd;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;  /* Vergroot lettertype */
+    font-size: 18px;
 }
 
 tbody tr:hover {
@@ -131,44 +131,50 @@ tbody tr:hover {
 
 /* Extensions & Vehicles Rows */
 .extensions-row td,
-.vehicles-row td {
+.vehicles-row td,
+.storage-row td {
     background-color: #262632;
     text-align: left;
     font-size: 17px;
     color: #cccccc;
-    padding: 0;  /* Kleine padding bij ingeklapt */
+    padding: 0;
     border-top: 1px solid #444455;
 }
 
 .extensions-content,
-.vehicles-content {
+.vehicles-content,
+.storage-content {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
     font-family: 'Roboto', sans-serif;
-    font-size: 17px;  /* Grotere letters */
+    font-size: 17px;
     line-height: 1.5;
-    padding: 0 8px;   /* Alleen horizontaal als ingeklapt */
+    padding: 0 8px;
 }
 
 .extensions-content.show,
-.vehicles-content.show {
+.vehicles-content.show,
+.storage-content.show {
     opacity: 1;
-    padding: 6px 8px;  /* Padding terug bij open */
-}
-.vehicles-content {
-    display: flex;
-    flex-wrap: wrap;        /* meerdere voertuigen op dezelfde regel */
-    gap: 12px;              /* ruimte tussen voertuigen */
+    padding: 6px 8px;
 }
 
-.vehicle-item {
+.vehicles-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.vehicle-item,
+.storage-item {
     background-color: #33334a;
     padding: 6px 10px;
     border-radius: 6px;
-    flex: 1 1 150px;        /* breedte van een item, past automatisch */
+    margin-bottom: 6px;
 }
+
 #footer {
     margin-top: 40px;
     padding: 20px;
@@ -217,7 +223,8 @@ const pageTranslations = {
         lastUpdate: "Laatste update",
         tableHeaders: ["ID", "Gebouwnaam", "Credits", "Acties"],
         toggleExtensions: { show: "Toon Uitbreidingen", hide: "Verberg Uitbreidingen" },
-        toggleVehicles: { show: "Toon Voertuigen", hide: "Verberg Voertuigen" }
+        toggleVehicles: { show: "Toon Voertuigen", hide: "Verberg Voertuigen" },
+        toggleStorage: { show: "Toon Opslag", hide: "Verberg Opslag" }
     },
     de: {
         title: "Gebäude",
@@ -228,7 +235,8 @@ const pageTranslations = {
         lastUpdate: "Letzte Aktualisierung",
         tableHeaders: ["ID", "Gebäude", "Credits", "Aktionen"],
         toggleExtensions: { show: "Erweiterungen anzeigen", hide: "Erweiterungen verbergen" },
-        toggleVehicles: { show: "Fahrzeuge anzeigen", hide: "Fahrzeuge verbergen" }
+        toggleVehicles: { show: "Fahrzeuge anzeigen", hide: "Fahrzeuge verbergen" },
+        toggleStorage: { show: "Speicher anzeigen", hide: "Speicher verbergen" }
     },
     en: {
         title: "Buildings",
@@ -239,7 +247,8 @@ const pageTranslations = {
         lastUpdate: "Last update",
         tableHeaders: ["ID", "Building Name", "Credits", "Actions"],
         toggleExtensions: { show: "Show Extensions", hide: "Hide Extensions" },
-        toggleVehicles: { show: "Show Vehicles", hide: "Hide Vehicles" }
+        toggleVehicles: { show: "Show Vehicles", hide: "Hide Vehicles" },
+        toggleStorage: { show: "Show Storage", hide: "Hide Storage" }
     }
 };
 
@@ -304,6 +313,7 @@ async function initBuildings() {
 
         const hasExtensions = b.extensions && b.extensions.length > 0;
         const hasVehicles = Object.values(vehicles).some(v => (v.possibleBuildings || []).includes(Number(key)));
+        const hasStorage = b.storageUpgrades && Object.keys(b.storageUpgrades).length > 0;
 
         const row = document.createElement('tr');
         row.innerHTML = `<td>${key}</td>
@@ -312,6 +322,7 @@ async function initBuildings() {
                          <td>
                             ${hasExtensions ? `<button class="button-toggle ext-btn">${pageTranslations[currentLang].toggleExtensions.show}</button>` : ''}
                             ${hasVehicles ? `<button class="button-toggle veh-btn">${pageTranslations[currentLang].toggleVehicles.show}</button>` : ''}
+                            ${hasStorage ? `<button class="button-toggle stor-btn">${pageTranslations[currentLang].toggleStorage.show}</button>` : ''}
                          </td>`;
         tbody.appendChild(row);
 
@@ -364,18 +375,20 @@ async function initBuildings() {
             div.className = 'vehicles-content';
 
             Object.keys(vehicles).forEach(vID => {
-    const v = vehicles[vID];
-    if ((v.possibleBuildings || []).includes(Number(key))) {
-        const item = document.createElement('div');
-        item.className = 'vehicle-item';
-        item.innerHTML = `
-            <strong>${v.caption}</strong> (ID: ${vID})<br>
-            Credits: ${v.credits}<br>
-            Personeel: Min - Max ${v.staff?.min || 0} - ${v.staff?.max || 0}
-        `;
-        div.appendChild(item);
-    }
-});
+                const v = vehicles[vID];
+                if ((v.possibleBuildings || []).includes(Number(key))) {
+                    const item = document.createElement('div');
+                    item.className = 'vehicle-item';
+                    item.innerHTML = `
+                        <strong>${v.caption}</strong> (ID: ${vID})<br>
+                        Credits: ${v.credits}<br>
+                        Personeel: Min - Max ${v.staff?.min || 0} - ${v.staff?.max || 0}<br>
+                        Max opslag: ${v.equipmentCapacity || 0}
+                    `;
+                    div.appendChild(item);
+                }
+            });
+
             td.appendChild(div);
             vehRow.appendChild(td);
             tbody.appendChild(vehRow);
@@ -387,6 +400,44 @@ async function initBuildings() {
                 toggleBtn.textContent = open
                     ? pageTranslations[currentLang].toggleVehicles.hide
                     : pageTranslations[currentLang].toggleVehicles.show;
+            };
+        }
+
+        // Storage
+        if (hasStorage) {
+            const storRow = document.createElement('tr');
+            storRow.className = 'storage-row';
+            const td = document.createElement('td');
+            td.colSpan = 4;
+
+            const div = document.createElement('div');
+            div.className = 'storage-content';
+
+            Object.keys(b.storageUpgrades).forEach(sKey => {
+                const s = b.storageUpgrades[sKey];
+                div.innerHTML += `
+                    <div class="storage-item">
+                        <strong>${s.caption}</strong><br>
+                        Credits: ${s.credits}<br>
+                        Coins: ${s.coins || 0}<br>
+                        Bouwduur: ${s.duration}<br>
+                        Extra opslag: ${s.additionalStorage}<br>
+                        Vereist: ${(s.requiredStorageUpgrades || []).join(', ') || 'Geen'}<br>
+                    </div>
+                `;
+            });
+
+            td.appendChild(div);
+            storRow.appendChild(td);
+            tbody.appendChild(storRow);
+
+            const toggleBtn = row.querySelector('.stor-btn');
+            toggleBtn.onclick = () => {
+                const open = div.classList.toggle('show');
+                div.style.maxHeight = open ? div.scrollHeight + 'px' : null;
+                toggleBtn.textContent = open
+                    ? pageTranslations[currentLang].toggleStorage.hide
+                    : pageTranslations[currentLang].toggleStorage.show;
             };
         }
     });

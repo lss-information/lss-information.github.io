@@ -966,6 +966,7 @@
         "duration": "7 Dagen",
         "isVehicleExtension": true,
         "givesParkingLots": 3,
+        "requiredExtensions": [2],
         "unlocksVehicleTypes": [40],
         "parkingLotReservations": [
           [40],

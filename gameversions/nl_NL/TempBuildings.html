@@ -276,45 +276,49 @@ async function initBuildings() {
     Object.keys(buildings).forEach(key => {
         const b = buildings[key];
 
+        const hasExtensions = b.extensions && b.extensions.length > 0;
+
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>${key}</td>
             <td>${b.caption}</td>
             <td>${b.credits}</td>
-            <td><button class="button-toggle">${pageTranslations[currentLang].toggle.show}</button></td>
+            <td>${hasExtensions ? `<button class="button-toggle">${pageTranslations[currentLang].toggle.show}</button>` : ''}</td>
         `;
         tbody.appendChild(row);
 
-        const extRow = document.createElement('tr');
-        extRow.className = 'extensions-row';
-        const td = document.createElement('td');
-        td.colSpan = 4;
+        if (hasExtensions) {
+            const extRow = document.createElement('tr');
+            extRow.className = 'extensions-row';
+            const td = document.createElement('td');
+            td.colSpan = 4;
 
-        const div = document.createElement('div');
-        div.className = 'extensions-content';
+            const div = document.createElement('div');
+            div.className = 'extensions-content';
 
-        (b.extensions || []).forEach(ext => {
-            const vehicleNames = (ext.unlocksVehicleTypes || []).map(vID => vehicles[vID]?.caption || vID).join(', ');
-            div.innerHTML += `
-                <strong>${ext.caption}</strong><br>
-                Credits: ${ext.credits}<br>
-                Duration: ${ext.duration}<br>
-                Unlocks Vehicles: ${vehicleNames}<br><br>
-            `;
-        });
+            b.extensions.forEach(ext => {
+                const vehicleNames = (ext.unlocksVehicleTypes || []).map(vID => vehicles[vID]?.caption || vID).join(', ');
+                div.innerHTML += `
+                    <strong>${ext.caption}</strong><br>
+                    Credits: ${ext.credits}<br>
+                    Duration: ${ext.duration}<br>
+                    Unlocks Vehicles: ${vehicleNames || 'Geen'}<br><br>
+                `;
+            });
 
-        td.appendChild(div);
-        extRow.appendChild(td);
-        tbody.appendChild(extRow);
+            td.appendChild(div);
+            extRow.appendChild(td);
+            tbody.appendChild(extRow);
 
-        const toggleBtn = row.querySelector('.button-toggle');
-        toggleBtn.onclick = () => {
-            const open = div.classList.toggle('show');
-            div.style.maxHeight = open ? div.scrollHeight + 'px' : null;
-            toggleBtn.textContent = open
-                ? pageTranslations[currentLang].toggle.hide
-                : pageTranslations[currentLang].toggle.show;
-        };
+            const toggleBtn = row.querySelector('.button-toggle');
+            toggleBtn.onclick = () => {
+                const open = div.classList.toggle('show');
+                div.style.maxHeight = open ? div.scrollHeight + 'px' : null;
+                toggleBtn.textContent = open
+                    ? pageTranslations[currentLang].toggle.hide
+                    : pageTranslations[currentLang].toggle.show;
+            };
+        }
     });
 
     table.appendChild(tbody);

@@ -123,6 +123,8 @@ main {
     <li><img src="images/flag_nl.gif" onclick="changeLanguage('nl')"></li>
     <li><img src="images/flag_de.gif" onclick="changeLanguage('de')"></li>
     <li><img src="images/flag_uk.gif" onclick="changeLanguage('en')"></li>
+    <li><img src="images/flag_us.gif" onclick="changeLanguage('en')"></li>
+    <li><img src="images/flag_au.gif" onclick="changeLanguage('en')"></li>
 </ul>
 
 <main>
@@ -147,7 +149,7 @@ main {
         <p id="about-text">
             Deze website biedt overzichtelijke informatie en tools voor verschillende
             spelversies van het Meldkamerspel. Je vindt hier gestructureerde data,
-            actuele overzichten en handige navigatie per versie.
+            actuele overzichten en handige navigatie per versie. Voor vragen kunt u een bericht sturen naar \"jr04.\" op Discord.
         </p>
     </div>
 </main>
@@ -182,7 +184,7 @@ function changeLanguage(lang) {
         document.getElementById("time-label").textContent = "Tijd:";
         document.getElementById("about-title").textContent = "Waar is deze site voor?";
         document.getElementById("about-text").textContent =
-            "Deze website biedt overzichtelijke informatie en tools voor verschillende spelversies van het Meldkamerspel.";
+            "Deze website biedt overzichtelijke informatie en tools voor verschillende spelversies van het Meldkamerspel. Voor vragen kunt u een bericht sturen naar \"jr04.\" op Discord.";
         locale = "nl-NL";
     }
 
@@ -196,7 +198,7 @@ function changeLanguage(lang) {
         document.getElementById("time-label").textContent = "Uhrzeit:";
         document.getElementById("about-title").textContent = "Wofür ist diese Seite?";
         document.getElementById("about-text").textContent =
-            "Diese Website bietet strukturierte Informationen und Übersichten für verschiedene Spielversionen.";
+            "Diese Website bietet strukturierte Informationen und Übersichten für verschiedene Spielversionen. Bei Fragen können Sie eine Nachricht an \"jr04.\" auf Discord senden.";
         locale = "de-DE";
     }
 
@@ -210,7 +212,7 @@ function changeLanguage(lang) {
         document.getElementById("time-label").textContent = "Time:";
         document.getElementById("about-title").textContent = "What is this site for?";
         document.getElementById("about-text").textContent =
-            "This website provides structured information and overviews for different game versions.";
+            "This website provides structured information and overviews for different game versions. For questions, please send a message to \"jr04.\" on Discord.";
         locale = "en-GB";
     }
 

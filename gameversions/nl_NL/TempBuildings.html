@@ -342,12 +342,18 @@ async function initBuildings() {
                     .map(vID => vehicles[vID]?.caption || vID)
                     .join(', ');
 
-                div.innerHTML += `
-                    <strong>${ext.caption}</strong><br>
-                    Credits: ${ext.credits}<br>
-                    Bouwduur: ${ext.duration}<br>
-                    Voertuigen: ${vehicleNames || 'Geen'}<br><br>
-                `;
+                // Determine required extensions captions
+const requiredExtCaptions = (ext.requiredExtensions || [])
+    .map(idx => b.extensions[idx]?.caption || idx)
+    .join(', ') || 'Geen';
+
+div.innerHTML += `
+    <strong>${ext.caption}</strong><br>
+    Credits: ${ext.credits}<br>
+    Bouwduur: ${ext.duration}<br>
+    Vereist: ${requiredExtCaptions}<br>
+    Voertuigen: ${vehicleNames || 'Geen'}<br><br>
+`;
             });
 
             td.appendChild(div);

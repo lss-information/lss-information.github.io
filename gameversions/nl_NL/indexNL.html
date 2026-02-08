@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=1200, initial-scale=0.4, maximum-scale=1.0">
-<title>Overzichten – Meldkamerspel (NL)</title>
+<title>Meldkamerspel (DE)</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 
@@ -186,18 +186,18 @@ function changeLanguage(lang) {
             vehicle: "Voertuig ID's",
             mission: "Melding ID's",
             pois: "POI's",
-            page: "Overzichten – Meldkamerspel (NL)"
+            page: "Meldkamerspel (NL)"
         };
     } else if (lang === "de") {
         t = {
             title: "Willkommen",
-            info: "Wählen Sie unten eine Schaltfläche, um zu den Übersichten zu gelangen.",
+            info: "Wählen Sie unten eine Knopf, um zu den Übersichten zu gelangen.",
             home: "Zurück zur Startseite",
             building: "Gebäude-IDs",
             vehicle: "Fahrzeug-IDs",
             mission: "Einsatz-IDs",
             pois: "POIs",
-            page: "Übersichten – Leitstellenspiel"
+            page: "Meldkamerspel (NL)"
         };
     } else {
         t = {
@@ -208,7 +208,7 @@ function changeLanguage(lang) {
             vehicle: "Vehicle IDs",
             mission: "Mission IDs",
             pois: "POIs",
-            page: "Overviews – Dispatch Game"
+            page: "Meldkamerspel (NL)"
         };
     }
 
@@ -221,6 +221,9 @@ function changeLanguage(lang) {
     document.getElementById('mission-ids').textContent = t.mission;
     document.getElementById('pois').textContent = t.pois;
 }
+    document.addEventListener("DOMContentLoaded", () => {
+    changeLanguage("nl");
+});
 </script>
 
 </body>

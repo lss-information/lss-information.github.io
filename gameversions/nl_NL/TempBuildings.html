@@ -104,11 +104,11 @@ thead th {
 }
 
 tbody td {
-    padding: 10px;
+    padding: 12px;
     border-bottom: 1px solid #444455;
     color: #dddddd;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 16px;  /* Vergroot lettertype */
 }
 
 tbody tr:hover {
@@ -127,26 +127,33 @@ tbody tr:hover {
     font-family: 'Orbitron', sans-serif;
 }
 
-.extensions-row td, .vehicles-row td {
+/* Extensions & Vehicles Rows */
+.extensions-row td,
+.vehicles-row td {
     background-color: #262632;
     text-align: left;
     font-size: 14px;
     color: #cccccc;
+    padding: 0;  /* Kleine padding bij ingeklapt */
+    border-top: 1px solid #444455;
 }
 
-.extensions-content, .vehicles-content {
+.extensions-content,
+.vehicles-content {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
+    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
     font-family: 'Roboto', sans-serif;
-    font-size: 13px;
+    font-size: 15px;  /* Grotere letters */
     line-height: 1.5;
-    padding: 6px 8px;
+    padding: 0 8px;   /* Alleen horizontaal als ingeklapt */
 }
 
-.extensions-content.show, .vehicles-content.show {
+.extensions-content.show,
+.vehicles-content.show {
     opacity: 1;
+    padding: 6px 8px;  /* Padding terug bij open */
 }
 
 #footer {

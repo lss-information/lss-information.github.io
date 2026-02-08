@@ -1,266 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Missionchief (en_UK)</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200, initial-scale=0.4, maximum-scale=1.0">
+<title>Missionchief (UK)</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+<style>
+/* BASE */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #1e1e28;
+    color: #dddddd;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* HEADER & FOOTER */
+header, footer {
+    background-color: #2a2a3a;
+    padding: 20px;
+    border-bottom: 2px solid #555566;
+}
+
+footer {
+    border-top: 2px solid #555566;
+    margin-top: auto;
+    font-size: 12px;
+    color: #aaaaaa;
+}
+
+/* TITLES */
+h1 {
+    margin: 10px 0;
+    font-size: 32px;
+    color: #eeeeee;
+}
+
+p {
+    margin: 5px auto 0;
+    font-size: 14px;
+    color: #cccccc;
+}
+
+/* LANGUAGE SELECTOR */
+.language-selector {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    padding: 0;
+}
+
+.language-selector img {
+    height: 24px;
+    width: auto;
+    cursor: pointer;
+    border: 2px solid #555566;
+    border-radius: 4px;
+    transition: transform 0.2s;
+}
+
+.language-selector img:hover {
+    transform: scale(1.1);
+}
+
+/* MAIN */
+main {
+    padding: 50px 20px;
+}
+
+/* CARD */
+.card {
+    background-color: #2a2a3a;
+    border: 2px solid #555566;
+    border-radius: 18px;
+    padding: 45px 40px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* BUTTONS */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    background-color: #2c2c3c;
+    color: #dddddd;
+    border: 2px solid #555566;
+    padding: 18px 26px;
+    margin: 12px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    max-width: 460px;
+    transition: background-color 0.2s, transform 0.2s, color 0.2s;
+}
+
+.button:hover {
+    background-color: #444456;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* ===== MOBILE FIX ===== */
+@media (max-width: 600px) {
 
     body {
-      margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
-      color: #00ffe0;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      overflow-x: hidden;
-    }
-
-    header, footer {
-      text-align: center;
-      padding: 1rem;
-      background: rgba(0, 0, 0, 0.8);
-      border-bottom: 2px solid #00ffe0;
-      box-shadow: 0 0 20px #00ffe088;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      text-shadow: 0 0 10px #00ffe0;
-    }
-
-    .language-selector {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      gap: 0.5rem; /* vlaggen dichter bij elkaar */
-      align-items: center;
-    }
-
-    .language-selector li::before {
-      content: "•";
-      color: #00ffe0;
-      font-size: 2.2rem;  /* grotere punt */
-      margin-right: 0.4rem;
-    }
-
-    .language-selector li:first-child::before {
-      content: "";
-    }
-
-    .language-selector img {
-      width: 40px;
-      height: 28px;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .language-selector img:hover {
-      transform: scale(1.2);
-      box-shadow: 0 0 10px #00ffe0;
+        min-height: auto;       /* voorkomt leeg vak */
     }
 
     main {
-      flex: 1;
-      text-align: center;
-      padding: 2rem;
-      position: relative;
+        padding: 20px 10px;
     }
 
- .neon-box {
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px solid #00ffe0;
-            box-shadow: 0 0 20px #00ffe0;
-            border-radius: 15px;
-            padding: 2rem;
-            max-width: 600px;
-            margin: auto;
-        }
-
-        .button-container {
-            max-width: 100%;
-            padding: 1rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 12px 24px;
-            margin: 10px;
-            font-size: 16px;
-            color: #00ffe0;
-            background-color: transparent;
-            border: 2px solid #00ffe0;
-            border-radius: 12px;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: bold;
-            transition: background 0.3s, color 0.3s, transform 0.2s;
-        }
-
-    .button:hover {
-      background-color: #00ffe0;
-      color: #0f0f0f;
-      transform: scale(1.05);
+    .card {
+        padding: 25px 20px;
     }
 
     footer {
-      font-size: 0.8rem;
-      border-top: 2px solid #00ffe0;
+        margin-top: 20px;       /* footer volgt content */
     }
-
-    .shape-bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      overflow: hidden;
-      z-index: -1;
-    }
-
-    .shape-bg div {
-      position: absolute;
-      border: 2px solid #00ffe055;
-      border-radius: 50%;
-      animation: float 20s infinite linear;
-    }
-
-    .shape1 {
-      width: 200px;
-      height: 200px;
-      top: 10%;
-      left: 10%;
-    }
-
-    .shape2 {
-      width: 300px;
-      height: 300px;
-      bottom: 10%;
-      right: 15%;
-    }
-
-    @keyframes float {
-      0% { transform: rotate(0deg) scale(1); }
-      50% { transform: rotate(180deg) scale(1.2); }
-      100% { transform: rotate(360deg) scale(1); }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1 id="welcome-title">Welcome</h1>
-    <p id="select-info">Select a button below to go to the overviews.</p>
-  </header>
-
-  <ul class="language-selector" aria-label="Taal selecteren">
-    <li><img src="/images/flag_nl.gif" alt="Nederlands" onclick="changeLanguage('nl')" /></li>
-    <li><img src="/images/flag_de.gif" alt="Deutsch" onclick="changeLanguage('de')" /></li>
-    <li><img src="/images/flag_uk.gif" alt="English (UK)" onclick="changeLanguage('en-uk')" /></li>
-    <li><img src="/images/flag_us.gif" alt="English (US)" onclick="changeLanguage('en-us')" /></li>
-    <li><img src="/images/flag_au.gif" alt="English (AU)" onclick="changeLanguage('en-au')" /></li>
-  </ul>
-
-  <main>
-    <div class="shape-bg">
-      <div class="shape1"></div>
-      <div class="shape2"></div>
-    </div>
-
-<div class="neon-box">
-
-      <!-- Toegevoegde knoppen onder elkaar -->
-      <div class="button-container">
-        <a class="button" id="back-to-home" href="../../index">Back to homepage</a>
-        <a class="button" id="building-ids" href="/gameversions/en_UK/building_ids">Building IDs</a>
-        <a class="button" id="vehicle-ids" href="/gameversions/en_UK/vehicle_ids">Vehicle IDs</a>
-        <a class="button" id="mission-ids" href="/gameversions/en_UK/mission_ids">Mission IDs</a>
-      </div>
-    </div>
-  </main>
-
-  <footer id="footer">
-    &copy; <span id="year"></span> JR04. All rights reserved.
-  </footer>
-
-  <script>
-    const startYear = 2024;
-    const currentYear = new Date().getFullYear();
-    document.getElementById('year').textContent = `${startYear} - ${currentYear}`;
-
-   
-    updateDateTime();
-    setInterval(updateDateTime, 1000);
-
-    <!-- Vervang in jouw script-gedeelte deze functie: -->
-function changeLanguage(lang) {
-  let footerText = '';
-  let buttonTexts = {
-    home: '',
-    building: '',
-    vehicle: '',
-    mission: ''
-  };
-
-  switch (lang) {
-    case "nl":
-      document.getElementById('welcome-title').textContent = "Welkom";
-      document.getElementById('select-info').textContent = "Selecteer hieronder een knop om naar de overzichten te gaan.";
-      footerText = `&copy; ${startYear} - ${currentYear} JR04. Alle rechten voorbehouden.`;
-      buttonTexts = {
-        home: "Terug naar de startpagina",
-        building: "Gebouw ID's",
-        vehicle: "Voertuig ID's",
-        mission: "Melding ID's"
-      };
-      document.title = "Overzichten JR04";
-      break;
-    case "de":
-      document.getElementById('welcome-title').textContent = "Willkommen";
-      document.getElementById('select-info').textContent = "Wählen Sie unten einen Knopf, um zu den Übersichten zu gelangen.";
-      footerText = `&copy; ${startYear} - ${currentYear} JR04. Alle Rechte vorbehalten.`;
-      buttonTexts = {
-        home: "Zurück zur Startseite",
-        building: "Gebäude-IDs",
-        vehicle: "Fahrzeug-IDs",
-        mission: "Einsatz-IDs"
-      };
-      document.title = "Übersichten JR04";
-      break;
-    case "en-uk":
-    case "en-us":
-    case "en-au":
-      document.getElementById('welcome-title').textContent = "Welcome";
-      document.getElementById('select-info').textContent = "Select a button below to go to the overviews.";
-      footerText = `&copy; ${startYear} - ${currentYear} JR04. All rights reserved.`;
-      buttonTexts = {
-        home: "Back to homepage",
-        building: "Building IDs",
-        vehicle: "Vehicle IDs",
-        mission: "Mission IDs"
-      };
-      document.title = "Overviews JR04";
-      break;
-  }
-
-  document.getElementById('footer').innerHTML = footerText;
-  document.getElementById('back-to-home').textContent = buttonTexts.home;
-  document.getElementById('building-ids').textContent = buttonTexts.building;
-  document.getElementById('vehicle-ids').textContent = buttonTexts.vehicle;
-  document.getElementById('mission-ids').textContent = buttonTexts.mission;
 }
-  </script>
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1 id="welcome-title">Welkom</h1>
+    <p id="select-info">Selecteer hieronder een knop om naar de overzichten te gaan.</p>
+</header>
+
+<ul class="language-selector">
+    <li><img src="/images/flag_nl.gif" alt="Nederlands" onclick="changeLanguage('nl')"></li>
+    <li><img src="/images/flag_de.gif" alt="Deutsch" onclick="changeLanguage('de')"></li>
+    <li><img src="/images/flag_uk.gif" alt="English" onclick="changeLanguage('en')"></li>
+    <li><img src="/images/flag_us.gif" alt="English" onclick="changeLanguage('en')"></li>
+</ul>
+
+<main>
+    <div class="card">
+        <div class="button-container">
+            <a class="button" id="back-to-home" href="../../index">Terug naar de startpagina</a>
+            <a class="button" id="building-ids" href="/gameversions/en_UK/building_ids">Gebouw ID's</a>
+            <a class="button" id="vehicle-ids" href="/gameversions/en_UK/vehicle_ids">Voertuig ID's</a>
+            <a class="button" id="mission-ids" href="/gameversions/en_UK/mission_ids">Melding ID's</a>
+        </div>
+    </div>
+</main>
+
+<footer id="footer">
+    &copy; <span id="year"></span> JR04. Alle rechten voorbehouden.
+</footer>
+
+<script>
+const startYear = 2024;
+const currentYear = new Date().getFullYear();
+document.getElementById('year').textContent =
+    startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
+
+function changeLanguage(lang) {
+    let t;
+
+    if (lang === "nl") {
+        t = {
+            title: "Welkom",
+            info: "Selecteer hieronder een knop om naar de overzichten te gaan.",
+            home: "Terug naar de startpagina",
+            building: "Gebouw ID's",
+            vehicle: "Voertuig ID's",
+            mission: "Melding ID's",
+            pois: "POI's",
+            page: "Missionchief (UK)"
+        };
+    } else if (lang === "de") {
+        t = {
+            title: "Willkommen",
+            info: "Wählen Sie unten eine Knopf, um zu den Übersichten zu gelangen.",
+            home: "Zurück zur Startseite",
+            building: "Gebäude-IDs",
+            vehicle: "Fahrzeug-IDs",
+            mission: "Einsatz-IDs",
+            pois: "POIs",
+            page: "Missionchief (UK)"
+        };
+    } else {
+        t = {
+            title: "Welcome",
+            info: "Select a button below to go to the overviews.",
+            home: "Back to homepage",
+            building: "Building IDs",
+            vehicle: "Vehicle IDs",
+            mission: "Mission IDs",
+            pois: "POIs",
+            page: "Missionchief (UK)"
+        };
+    }
+
+    document.title = t.page;
+    document.getElementById('welcome-title').textContent = t.title;
+    document.getElementById('select-info').textContent = t.info;
+    document.getElementById('back-to-home').textContent = t.home;
+    document.getElementById('building-ids').textContent = t.building;
+    document.getElementById('vehicle-ids').textContent = t.vehicle;
+    document.getElementById('mission-ids').textContent = t.mission;
+    document.getElementById('pois').textContent = t.pois;
+}
+    document.addEventListener("DOMContentLoaded", () => {
+    changeLanguage("en");
+});
+</script>
+
 </body>
 </html>

@@ -91,14 +91,22 @@ jobs:
       - name: Update NL timestamp
         if: steps.changes.outputs.changed == 'true'
         run: |
-          date -u +"%Y-%m-%dT%H:%M:%SZ" > gameversions/nl_NL/nl_NL-Data/last_update.txt
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > gameversions/nl_NL/nl_NL-Data/last_update_buildings.txt
 
       - name: Update US timestamp
         if: steps.changes.outputs.changed == 'true'
         run: |
-          date -u +"%Y-%m-%dT%H:%M:%SZ" > gameversions/en_US/en_US-Data/last_update.txt
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > gameversions/en_US/en_US-Data/last_update_buildings.txt
 
+      - name: Update UK timestamp
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > gameversions/en_UK/en_UK-Data/last_update_buildings.txt
 
+      - name: Update AU timestamp
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > gameversions/en_AU/en_AU-Data/last_update_buildings.txt
 
       # =====================
       # COMMIT (ONLY IF CHANGED)

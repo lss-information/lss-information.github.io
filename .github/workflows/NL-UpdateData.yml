@@ -54,7 +54,7 @@ jobs:
           mkdir -p gameversions/en_UK/en_UK-Data
           curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_GB/vehicles.json \
             -o gameversions/en_UK/en_UK-Data/vehicles.json
-          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_UB/buildings.json \
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_GB/buildings.json \
             -o gameversions/en_UK/en_UK-Data/buildings.json
           curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_GB/pois.json \
             -o gameversions/en_UK/en_UK-Data/pois.json

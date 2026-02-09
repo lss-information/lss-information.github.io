@@ -51,7 +51,7 @@ jobs:
       # =====================
       - name: Download UK data
         run: |
-          mkdir -p gameversions/en_US/en_US-Data
+          mkdir -p gameversions/en_UK/en_UK-Data
           curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_GB/vehicles.json \
             -o gameversions/en_UK/en_UK-Data/vehicles.json
           curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_UB/buildings.json \

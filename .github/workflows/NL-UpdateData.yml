@@ -47,7 +47,7 @@ jobs:
             
             
        # =====================
-      # US DATA
+      # UK DATA
       # =====================
       - name: Download UK data
         run: |
@@ -58,6 +58,20 @@ jobs:
             -o gameversions/en_UK/en_UK-Data/buildings.json
           curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_GB/pois.json \
             -o gameversions/en_UK/en_UK-Data/pois.json
+
+      # =====================
+      # AU DATA
+      # =====================
+      - name: Download AU data
+        run: |
+          mkdir -p gameversions/en_AU/en_AU-Data
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_AU/vehicles.json \
+            -o gameversions/en_AU/en_AU-Data/vehicles.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_AU/buildings.json \
+            -o gameversions/en_AU/en_AU-Data/buildings.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_AU/pois.json \
+            -o gameversions/en_AU/en_AU-Data/pois.json
+
 
       # =====================
       # CHECK FOR CHANGES
@@ -83,6 +97,8 @@ jobs:
         if: steps.changes.outputs.changed == 'true'
         run: |
           date -u +"%Y-%m-%dT%H:%M:%SZ" > gameversions/en_US/en_US-Data/last_update.txt
+
+
 
       # =====================
       # COMMIT (ONLY IF CHANGED)

@@ -38,7 +38,7 @@ jobs:
       - name: Download US data
         run: |
           mkdir -p gameversions/en_US/en_US-Data
-          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_US/vehicles.json \
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_US/Vehicles.json \
             -o gameversions/en_US/en_US-Data/vehicles.json
           curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_US/buildings.json \
             -o gameversions/en_US/en_US-Data/buildings.json

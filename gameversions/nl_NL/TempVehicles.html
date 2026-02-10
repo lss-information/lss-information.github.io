@@ -144,9 +144,9 @@ tbody tr:hover {
 <body>
 
 <ul class="language-selector">
-    <li><img src="../../images/flag_nl.gif" onclick="changeLanguage('nl')"></li>
-    <li><img src="../../images/flag_de.gif" onclick="changeLanguage('de')"></li>
-    <li><img src="../../images/flag_uk.gif" onclick="changeLanguage('en')"></li>
+    <li><img src="../../images/flag_nl.gif" alt="NL" onclick="changeLanguage('nl')"></li>
+    <li><img src="../../images/flag_de.gif" alt="DE" onclick="changeLanguage('de')"></li>
+    <li><img src="../../images/flag_uk.gif" alt="EN" onclick="changeLanguage('en')"></li>
 
     <li><a class="button" id="game-button" href="/index">Startpagina</a></li>
     <li><a class="button" id="contact-button" href="/gameversions/contact">Contact</a></li>
@@ -166,9 +166,9 @@ tbody tr:hover {
 </footer>
 
 <script>
-const dataFile = 'nl_NL-Data/Vehicles.json';
+const dataFile = 'nl_NL-Data/vehicles.json';
 const buildingsFile = 'nl_NL-Data/buildings.json';
-const lastUpdateFile = 'nl_NL-Data/last_update_buildings.txt';
+const lastUpdateFile = 'nl_NL-Data/last_update.txt';
 
 const pageTranslations = {
     nl: {
@@ -212,6 +212,7 @@ function changeLanguage(lang) {
     currentLang = lang;
     const t = pageTranslations[lang];
 
+    document.title = t.title;
     document.getElementById('page-title').textContent = t.title;
     document.getElementById('page-message').textContent = t.message;
     document.getElementById('game-button').textContent = t.gameButton;
@@ -226,9 +227,11 @@ async function loadLastUpdate() {
     try {
         const res = await fetch(lastUpdateFile);
         const date = new Date((await res.text()).trim());
-        last-update.textContent = `${pageTranslations[currentLang].lastUpdate}: ${date.toLocaleString()}`;
+        document.getElementById('last-update').textContent =
+            `${pageTranslations[currentLang].lastUpdate}: ${date.toLocaleString()}`;
     } catch {
-        last-update.textContent = `${pageTranslations[currentLang].lastUpdate}: onbekend`;
+        document.getElementById('last-update').textContent =
+            `${pageTranslations[currentLang].lastUpdate}: onbekend`;
     }
 }
 
@@ -258,7 +261,9 @@ async function initVehicles() {
     const tbody = document.createElement('tbody');
 
     Object.entries(vehicles).forEach(([id, v]) => {
-        const buildingsTxt = (v.possibleBuildings || []).map(b => buildingMap[b] || b).join(', ');
+        const buildingNames = (v.possibleBuildings || [])
+            .map(b => buildingMap[b] || b)
+            .join(', ');
 
         const row = document.createElement('tr');
         row.innerHTML = `
@@ -267,7 +272,7 @@ async function initVehicles() {
             <td>${v.credits}</td>
             <td>${v.coins}</td>
             <td>${v.staff.min}-${v.staff.max}</td>
-            <td>${buildingsTxt}</td>
+            <td>${buildingNames}</td>
             <td><button class="button-toggle">${pageTranslations[currentLang].toggle.show}</button></td>
         `;
         tbody.appendChild(row);
@@ -280,9 +285,7 @@ async function initVehicles() {
 
         const div = document.createElement('div');
         div.className = 'details-content';
-        div.innerHTML = `
-            ${pageTranslations[currentLang].storage}: ${v.equipmentCapacity ?? 0}
-        `;
+        div.textContent = `${pageTranslations[currentLang].storage}: ${v.equipmentCapacity ?? 0}`;
 
         td.appendChild(div);
         detailsRow.appendChild(td);
@@ -302,7 +305,7 @@ async function initVehicles() {
     container.appendChild(table);
 }
 
-footer-year.textContent = new Date().getFullYear();
+document.getElementById('footer-year').textContent = new Date().getFullYear();
 window.addEventListener('DOMContentLoaded', () => changeLanguage(currentLang));
 </script>
 

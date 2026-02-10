@@ -212,12 +212,11 @@ function changeLanguage(lang) {
     currentLang = lang;
     const t = pageTranslations[lang];
 
-    document.title = t.title;
-    page-title.textContent = t.title;
-    page-message.textContent = t.message;
-    game-button.textContent = t.gameButton;
-    contact-button.textContent = t.contactButton;
-    back-button.textContent = t.backButton;
+    document.getElementById('page-title').textContent = t.title;
+    document.getElementById('page-message').textContent = t.message;
+    document.getElementById('game-button').textContent = t.gameButton;
+    document.getElementById('contact-button').textContent = t.contactButton;
+    document.getElementById('back-button').textContent = t.backButton;
 
     loadLastUpdate();
     initVehicles();

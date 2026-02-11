@@ -180,11 +180,12 @@ const pageTranslations = {
         backButton: "Terug",
         lastUpdate: "Laatste update",
         tableHeaders: ["ID", "Naam", "Credits", "Coins", "Personeel", "Gebouwen", "Details"],
-        toggle: { show: "Toon opslag", hide: "Verberg opslag" },
+        toggle: { show: "Toon Details", hide: "Verberg Details" },
         extraLabels: {
             schooling: "Opleiding",
             waterTank: "Watertank",
             foamTank: "Schuimtank",
+            waterBonus: "Waterbonus",
             equipmentCapacity: "Opslagcapaciteit",
             special: "Bijzonderheden"
         }
@@ -197,12 +198,13 @@ const pageTranslations = {
         backButton: "Zurück",
         lastUpdate: "Letzte Aktualisierung",
         tableHeaders: ["ID", "Name", "Credits", "Coins", "Personal", "Gebäude", "Details"],
-        toggle: { show: "Lager anzeigen", hide: "Lager verbergen" },
+        toggle: { show: "Details anzeigen", hide: "Details verbergen" },
         extraLabels: {
             schooling: "Ausbildung",
-            waterTank: "Wassertank",
+            waterTank: "Wassermenge",
             foamTank: "Schaumtank",
-            equipmentCapacity: "Lagermenge",
+            waterBonus: "Wasserbonus",
+            equipmentCapacity: "Sonderlösmittelmenge",
             special: "Besonderheiten"
         }
     },
@@ -214,11 +216,12 @@ const pageTranslations = {
         backButton: "Back",
         lastUpdate: "Last update",
         tableHeaders: ["ID", "Name", "Credits", "Coins", "Staff", "Buildings", "Details"],
-        toggle: { show: "Show storage", hide: "Hide storage" },
+        toggle: { show: "Show Detials", hide: "Hide Details" },
         extraLabels: {
             schooling: "Training",
             waterTank: "Water tank",
             foamTank: "Foam tank",
+            waterBonus: "Water Bonus",
             equipmentCapacity: "Storage capacity",
             special: "Special notes"
         }
@@ -321,6 +324,7 @@ async function initVehicles() {
         // Tanks
         const waterTank = v.waterTank ?? 0;
         const foamTank = v.foamTank ?? 0;
+        const waterBonus = v.waterBonus ?? 0;
 
         // Opslag
         const equipment = v.equipmentCapacity ?? 0;
@@ -330,8 +334,9 @@ async function initVehicles() {
 
         div.textContent =
             (schoolingText ? `${labels.schooling}: ${schoolingText}` : '') +
-            `\n${labels.waterTank}: ${waterTank}` +
-            `\n${labels.foamTank}: ${foamTank}` +
+            `\n${labels.waterTank}: ${waterTank} L` +
+            `\n${labels.foamTank}: ${foamTank} L` +
+            `\n${labels.waterBonus}: ${waterBonus} %` +
             `\n${labels.equipmentCapacity}: ${equipment}` +
             (special ? `\n${labels.special}: ${special}` : '');
 

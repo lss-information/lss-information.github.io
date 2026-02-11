@@ -16,55 +16,6 @@ body {
     text-align: center;
 }
 
-.language-selector {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin: 20px auto;
-    padding: 0;
-}
-
-.button {
-    background-color: #2c2c3c; 
-    color: #dddddd;
-    border: 2px solid #555566;
-    padding: 8px 16px;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.2s, transform 0.2s, color 0.2s;
-    font-size: 12px;
-}
-
-.button:hover {
-    background-color: #444456;
-    color: #ffffff;
-    transform: scale(1.05);
-}
-
-/* TITLES */
-h1 {
-    margin: 30px 0 10px;
-    font-size: 32px;
-    color: #eeeeee;
-    text-shadow: 0 0 5px rgba(0,0,0,0.5);
-}
-
-p {
-    max-width: 800px;
-    margin: 0 auto 10px;
-    font-size: 15px;
-    color: #cccccc;
-}
-
-#last-update {
-    font-size: 13px;
-    color: #aaaaaa;
-}
-
-/* TABLE */
 .table-wrapper {
     width: 100%;
     overflow-x: auto;
@@ -72,7 +23,7 @@ p {
 
 table {
     width: 95%;
-    min-width: 900px;
+    min-width: 600px;
     max-width: 1200px;
     margin: 20px auto;
     border-collapse: collapse;
@@ -101,7 +52,6 @@ tbody tr:hover {
     background-color: #3c3c4c;
 }
 
-/* REQUIREMENTS */
 .button-toggle {
     background-color: #2c2c3c;
     color: #dddddd;
@@ -110,6 +60,7 @@ tbody tr:hover {
     cursor: pointer;
     border-radius: 4px;
     font-size: 12px;
+    margin-top: 5px;
 }
 
 .requirements-row td {
@@ -135,128 +86,24 @@ tbody tr:hover {
     opacity: 1;
     padding: 6px 8px;
 }
-
-/* FOOTER */
-#footer {
-    margin-top: 40px;
-    padding: 20px;
-    font-size: 12px;
-    color: #888888;
-}
-
-.language-selector img {
-    height: 24px;
-    width: auto;
-    cursor: pointer;
-    transition: transform 0.2s, border 0.2s;
-    border: 2px solid #555566;
-    border-radius: 4px;
-}
-
-.language-selector img:hover {
-    transform: scale(1.1);
-}
-
-/* MOBILE FLAGS */
-@media (max-width: 600px) {
-    .language-selector img {
-        height: 22px;
-        width: auto;
-    }
-}
 </style>
 </head>
 
 <body>
 
-<ul class="language-selector">
-    <li><img src="../../images/flag_nl.gif" alt="Nederlands" onclick="changeLanguage('nl')"></li>
-    <li><img src="../../images/flag_de.gif" alt="Deutsch" onclick="changeLanguage('de')"></li>
-    <li><img src="../../images/flag_uk.gif" alt="English" onclick="changeLanguage('en')"></li>
-    <li><img src="../../images/flag_us.gif" alt="English" onclick="changeLanguage('en')"></li>
-    <li><img src="../../images/flag_au.gif" alt="English" onclick="changeLanguage('en')"></li>
-    
-    <li><a class="button" id="game-button" href="/index">Startpagina</a></li>
-    <li><a class="button" id="contact-button" href="/gameversions/contact">Contact</a></li>
-    <li><a class="button" id="back-button" href="/gameversions/nl_NL/indexNL">Terug</a></li>
-</ul>
-
-<h1 id="page-title"></h1>
-<p id="page-message"></p>
-<p id="last-update"></p>
-
-<div id="swipe-hint"></div>
-
 <div class="table-wrapper">
     <div id="sheet-data"></div>
 </div>
 
-<footer id="footer">
-    &copy; <span id="footer-year"></span> JR04. Alle rechten voorbehouden.
-</footer>
-
 <script>
 const eventsFile = 'nl_NL-Data/alliance_event_types.json';
 const einsaetzeFile = 'nl_NL-Data/einsaetze.json';
-const lastUpdateFile = 'nl_NL-Data/last_update.txt';
-
-const pageTranslations = {
-    nl: {
-        title: "Melding IDs",
-        message: "Overzicht van alle meldingen in Meldkamerspel (NL).",
-        lastUpdate: "Laatste update",
-        tableHeaders: ["ID", "Naam", "Mission Types"],
-    },
-    de: {
-        title: "Einsätze IDs",
-        message: "Hier finden Sie eine Übersicht aller Einsätze (NL).",
-        lastUpdate: "Letzte Aktualisierung",
-        tableHeaders: ["ID", "Name", "Mission Types"],
-    },
-    en: {
-        title: "Mission IDs",
-        message: "Overview of all event missions (NL).",
-        lastUpdate: "Last update",
-        tableHeaders: ["ID", "Name", "Mission Types"],
-    }
-};
-
-let currentLang = 'nl';
-
-function changeLanguage(lang) {
-    currentLang = lang;
-    const t = pageTranslations[lang];
-
-    document.title = t.title;
-    document.getElementById('page-title').textContent = t.title;
-    document.getElementById('page-message').textContent = t.message;
-
-    const startYear = 2024;
-    const currentYear = new Date().getFullYear();
-    document.getElementById('footer-year').textContent =
-        startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
-
-    loadLastUpdate();
-    initMissions();
-}
-
-async function loadLastUpdate() {
-    try {
-        const res = await fetch(lastUpdateFile);
-        const date = new Date((await res.text()).trim());
-        document.getElementById('last-update').textContent =
-            `${pageTranslations[currentLang].lastUpdate}: ${date.toLocaleString()}`;
-    } catch {
-        document.getElementById('last-update').textContent =
-            `${pageTranslations[currentLang].lastUpdate}: onbekend`;
-    }
-}
 
 async function initMissions() {
     const events = await (await fetch(eventsFile)).json();
     const einsaetze = await (await fetch(einsaetzeFile)).json();
 
-    // Map: ID → naam
+    // Map van ID → naam van einsaetze
     const einsaetzeMap = {};
     einsaetze.forEach(e => { einsaetzeMap[e.id] = e.name; });
 
@@ -265,45 +112,49 @@ async function initMissions() {
 
     const table = document.createElement('table');
     const thead = document.createElement('thead');
-    const tr = document.createElement('tr');
-
-    pageTranslations[currentLang].tableHeaders.forEach(h => {
+    const trHead = document.createElement('tr');
+    ['ID', 'Naam'].forEach(h => {
         const th = document.createElement('th');
         th.textContent = h;
-        tr.appendChild(th);
+        trHead.appendChild(th);
     });
-    thead.appendChild(tr);
+    thead.appendChild(trHead);
     table.appendChild(thead);
 
     const tbody = document.createElement('tbody');
 
     events.forEach(ev => {
         const row = document.createElement('tr');
-
-        // mission_type_ids → captions uit einsaetze
-        const missionCaptions = (ev.mission_type_ids || []).map(id => {
-            return einsaetzeMap[id] ? `${id} - ${einsaetzeMap[id]}` : id;
-        }).join(', ');
-
         row.innerHTML = `
             <td>${ev.id}</td>
             <td>${ev.caption}</td>
-            <td>${missionCaptions}</td>
         `;
-
         tbody.appendChild(row);
 
-        // Requirements (optioneel toggle)
+        // Requirements / Mission Types dropdown row
         const reqRow = document.createElement('tr');
         reqRow.className = 'requirements-row';
         const td = document.createElement('td');
-        td.colSpan = 3;
+        td.colSpan = 2;
 
         const div = document.createElement('div');
         div.className = 'requirements-content';
 
-        for (const k in ev.requirements || {}) {
-            div.innerHTML += `${k}: ${ev.requirements[k]}<br>`;
+        // Mission Types
+        if(ev.mission_type_ids && ev.mission_type_ids.length > 0) {
+            div.innerHTML += '<b>Mission Types:</b> ';
+            div.innerHTML += ev.mission_type_ids.map(id => {
+                return einsaetzeMap[id] ? `${id} - ${einsaetzeMap[id]}` : id;
+            }).join(', ');
+            div.innerHTML += '<br>';
+        }
+
+        // Requirements
+        if(ev.requirements) {
+            div.innerHTML += '<b>Benodigdheden:</b><br>';
+            for(const k in ev.requirements) {
+                div.innerHTML += `${k}: ${ev.requirements[k]}<br>`;
+            }
         }
 
         td.appendChild(div);
@@ -314,8 +165,8 @@ async function initMissions() {
         const toggleBtn = document.createElement('button');
         toggleBtn.className = 'button-toggle';
         toggleBtn.textContent = "Toon Benodigdheden";
-        row.cells[2].appendChild(document.createElement('br'));
-        row.cells[2].appendChild(toggleBtn);
+        row.cells[1].appendChild(document.createElement('br'));
+        row.cells[1].appendChild(toggleBtn);
 
         toggleBtn.onclick = () => {
             const open = div.classList.toggle('show');
@@ -328,8 +179,7 @@ async function initMissions() {
     container.appendChild(table);
 }
 
-document.getElementById('footer-year').textContent = new Date().getFullYear();
-window.addEventListener('DOMContentLoaded', () => { changeLanguage(currentLang); });
+window.addEventListener('DOMContentLoaded', () => { initMissions(); });
 </script>
 
 </body>

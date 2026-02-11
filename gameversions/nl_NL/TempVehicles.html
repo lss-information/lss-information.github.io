@@ -118,6 +118,7 @@ tbody tr:hover {
     padding: 0 8px;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
+    white-space: pre-line; /* Zorgt dat nieuwe regels zichtbaar zijn */
 }
 
 .details-content.show {
@@ -180,7 +181,13 @@ const pageTranslations = {
         lastUpdate: "Laatste update",
         tableHeaders: ["ID", "Naam", "Credits", "Coins", "Personeel", "Gebouwen", "Details"],
         toggle: { show: "Toon opslag", hide: "Verberg opslag" },
-        storage: "Opslagcapaciteit"
+        extraLabels: {
+            schooling: "Opleiding",
+            waterTank: "Watertank",
+            foamTank: "Schuimtank",
+            equipmentCapacity: "Opslagcapaciteit",
+            special: "Bijzonderheden"
+        }
     },
     de: {
         title: "Fahrzeuge",
@@ -191,7 +198,13 @@ const pageTranslations = {
         lastUpdate: "Letzte Aktualisierung",
         tableHeaders: ["ID", "Name", "Credits", "Coins", "Personal", "Gebäude", "Details"],
         toggle: { show: "Lager anzeigen", hide: "Lager verbergen" },
-        storage: "Lagermenge"
+        extraLabels: {
+            schooling: "Ausbildung",
+            waterTank: "Wassertank",
+            foamTank: "Schaumtank",
+            equipmentCapacity: "Lagermenge",
+            special: "Besonderheiten"
+        }
     },
     en: {
         title: "Vehicles",
@@ -202,7 +215,13 @@ const pageTranslations = {
         lastUpdate: "Last update",
         tableHeaders: ["ID", "Name", "Credits", "Coins", "Staff", "Buildings", "Details"],
         toggle: { show: "Show storage", hide: "Hide storage" },
-        storage: "Storage capacity"
+        extraLabels: {
+            schooling: "Training",
+            waterTank: "Water tank",
+            foamTank: "Foam tank",
+            equipmentCapacity: "Storage capacity",
+            special: "Special notes"
+        }
     }
 };
 
@@ -285,7 +304,36 @@ async function initVehicles() {
 
         const div = document.createElement('div');
         div.className = 'details-content';
-        div.textContent = `${pageTranslations[currentLang].storage}: ${v.equipmentCapacity ?? 0}`;
+
+        // Labels voor de huidige taal
+        const labels = pageTranslations[currentLang].extraLabels;
+
+        // Opleiding ophalen
+        let schoolingText = '';
+        if (v.schooling) {
+            Object.entries(v.schooling).forEach(([discipline, positions]) => {
+                Object.keys(positions).forEach(pos => {
+                    schoolingText += `${discipline} - ${pos}\n`;
+                });
+            });
+        }
+
+        // Tanks
+        const waterTank = v.waterTank ?? 0;
+        const foamTank = v.foamTank ?? 0;
+
+        // Opslag
+        const equipment = v.equipmentCapacity ?? 0;
+
+        // Bijzonderheden
+        const special = v.special ?? '';
+
+        div.textContent =
+            (schoolingText ? `${labels.schooling}: ${schoolingText}` : '') +
+            `\n${labels.waterTank}: ${waterTank}` +
+            `\n${labels.foamTank}: ${foamTank}` +
+            `\n${labels.equipmentCapacity}: ${equipment}` +
+            (special ? `\n${labels.special}: ${special}` : '');
 
         td.appendChild(div);
         detailsRow.appendChild(td);

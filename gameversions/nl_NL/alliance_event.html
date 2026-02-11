@@ -145,6 +145,8 @@ tbody tr:hover {
     <li><img src="../../images/flag_nl.gif" alt="Nederlands" onclick="changeLanguage('nl')"></li>
     <li><img src="../../images/flag_de.gif" alt="Deutsch" onclick="changeLanguage('de')"></li>
     <li><img src="../../images/flag_uk.gif" alt="English" onclick="changeLanguage('en')"></li>
+    <li><img src="../../images/flag_us.gif" alt="English" onclick="changeLanguage('en')"></li>
+    <li><img src="../../images/flag_au.gif" alt="English" onclick="changeLanguage('en')"></li>
     <li><a class="button" id="game-button" href="/index">Startpagina</a></li>
     <li><a class="button" id="contact-button" href="/gameversions/contact">Contact</a></li>
     <li><a class="button" id="back-button" href="/gameversions/nl_NL/indexNL">Terug</a></li>
@@ -169,20 +171,20 @@ const translationsFile = 'translations.json';
 const pageTranslations = {
     nl: {
         title: "Meldingen Meldkamerspel",
-        message: "Overzicht van alle meldingen in Meldkamerspel (NL).",
-        toggle: { show: "Toon Benodigdheden", hide: "Verberg Benodigdheden" },
+        message: "Overzicht van allea event meldingen in Meldkamerspel (NL).",
+        toggle: { show: "Toon Meldingen", hide: "Verberg Meldingen" },
         tableHeaders: ["ID", "Naam"]
     },
     de: {
         title: "Einsätze Meldkamerspiel",
-        message: "Übersicht aller Einsätze im Meldkamerspiel (NL).",
-        toggle: { show: "Benötigte Fahrzeuge anzeigen", hide: "Benötigte Fahrzeuge verbergen" },
+        message: "Übersicht aller event Einsätze im Meldkamerspiel (NL).",
+        toggle: { show: "Einsätze anzeigen", hide: "Einsätze verbergen" },
         tableHeaders: ["ID", "Name"]
     },
     en: {
         title: "Missions Control Center",
-        message: "Overview of all missions in Control Center (NL).",
-        toggle: { show: "Show Requirements", hide: "Hide Requirements" },
+        message: "Overview of all event missions in Meldkamerspel (NL).",
+        toggle: { show: "Show Missions", hide: "Hide Missions" },
         tableHeaders: ["ID", "Name"]
     }
 };
@@ -238,7 +240,7 @@ async function initMissions() {
         const reqRow = document.createElement('tr');
         reqRow.className = 'requirements-row';
         const td = document.createElement('td');
-        td.colSpan = 2;
+        td.colSpan = 3;
 
         const div = document.createElement('div');
         div.className = 'requirements-content';
@@ -250,7 +252,7 @@ async function initMissions() {
         }
 
         if(ev.requirements){
-            div.innerHTML += '<b>Benodigdheden:</b><br>';
+            div.innerHTML += '<b>Meldingen:</b><br>';
             for(const k in ev.requirements){
                 div.innerHTML += `${k}: ${ev.requirements[k]}<br>`;
             }

@@ -11,9 +11,11 @@
     "icon": "shuttle-van",
     "possibleBuildings": [0, 17],
     "waterTank": 500,
+    "pumpCapacity": 250,
     "minPersonnel": 1,
     "maxPersonnel": 2,
     "wtank": 500,
+    "pumpcap": 250,
     "schooling": null
   },
   "1": {
@@ -28,9 +30,11 @@
     "icon": "truck-moving",
     "possibleBuildings": [0, 17],
     "waterTank": 2000,
+    "pumpCapacity": 2000,
     "minPersonnel": 1,
     "maxPersonnel": 9,
     "wtank": 2000,
+    "pumpcap": 2000,
     "schooling": null
   },
   "2": {
@@ -109,9 +113,11 @@
     "icon": "truck-moving",
     "possibleBuildings": [0, 17],
     "waterTank": 3000,
+    "pumpCapacity": 2500,
     "minPersonnel": 1,
     "maxPersonnel": 9,
     "wtank": 3000,
+    "pumpcap": 3000,
     "schooling": null
   },
   "7": {
@@ -126,9 +132,11 @@
     "icon": "truck-moving",
     "possibleBuildings": [0, 17],
     "waterTank": 3000,
+    "pumpCapacity": 1800,
     "minPersonnel": 1,
     "maxPersonnel": 7,
     "wtank": 3000,
+    "pumpcap": 1800,
     "schooling": null
   },
   "8": {
@@ -143,9 +151,11 @@
     "icon": "truck-moving",
     "possibleBuildings": [0, 17],
     "waterTank": 2000,
+    "pumpCapacity": 1000,
     "minPersonnel": 1,
     "maxPersonnel": 5,
     "wtank": 2000,
+    "pumpcap": 1000,
     "schooling": null
   },
   "9": {
@@ -160,9 +170,11 @@
     "icon": "truck-moving",
     "possibleBuildings": [0, 17],
     "waterTank": 1500,
+    "pumpCapacity": 800,
     "minPersonnel": 1,
     "maxPersonnel": 5,
     "wtank": 1500,
+    "pumpcap": 800,
     "schooling": null
   },
   "10": {
@@ -176,6 +188,7 @@
     },
     "icon": "truck-moving",
     "possibleBuildings": [0, 17],
+    "waterBonus": 15,
     "special": "Benodigd vanaf 7 brandweerposten. De slangenwagen zorgt dat de aanwezige waterhoeveelheid wordt verhoogd met 15%",
     "minPersonnel": 1,
     "maxPersonnel": 9,
@@ -222,9 +235,11 @@
     "icon": "truck-moving",
     "possibleBuildings": [0, 17],
     "waterTank": 4000,
+    "pumpCapacity": 3500,
     "minPersonnel": 1,
     "maxPersonnel": 9,
     "wtank": 4000,
+    "pumpcap": 3500,
     "schooling": null
   },
   "14": {
@@ -239,9 +254,11 @@
     "icon": "truck-moving",
     "possibleBuildings": [0, 17],
     "waterTank": 4000,
+    "pumpCapacity": 2000,
     "minPersonnel": 1,
     "maxPersonnel": 7,
     "wtank": 4000,
+    "pumpcap": 2000,
     "schooling": null
   },
   "15": {
@@ -256,9 +273,11 @@
     "icon": "truck-moving",
     "possibleBuildings": [0, 17],
     "waterTank": 4000,
+    "pumpCapacity": 1500,
     "minPersonnel": 1,
     "maxPersonnel": 5,
     "wtank": 4000,
+    "pumpcap": 1500,
     "schooling": null
   },
   "16": {
@@ -288,9 +307,11 @@
     "icon": "truck-moving",
     "possibleBuildings": [0, 17],
     "waterTank": 2000,
+    "pumpCapacity": 1500,
     "minPersonnel": 1,
     "maxPersonnel": 7,
     "wtank": 2000,
+    "pumpcap": 1500,
     "schooling": null
   },
   "18": {
@@ -646,10 +667,12 @@
     "icon": "truck-moving",
     "possibleBuildings": [0, 17],
     "waterTank": 15000,
+    "pumpCapacity": 1000,
     "special": "Benodigd vanaf 7 brandweerposten.",
     "minPersonnel": 1,
     "maxPersonnel": 3,
     "wtank": 15000,
+    "pumpcap": 1000,
     "schooling": null
   },
   "35": {
@@ -829,11 +852,13 @@
     "icon": "truck-moving",
     "possibleBuildings": [0, 17],
     "waterTank": 13300,
+    "pumpCapacity": 8000,
     "foamTank": 1600,
     "minPersonnel": 2,
     "maxPersonnel": 3,
     "wtank": 13300,
     "ftank": 1600,
+    "pumpcap": 8000,
     "schooling": {
       "Brandweer": {
         "Vliegtuigbrandbestrijding": {
@@ -861,11 +886,13 @@
     "icon": "truck-moving",
     "possibleBuildings": [0, 17],
     "waterTank": 10000,
+    "pumpCapacity": 6000,
     "foamTank": 1300,
     "minPersonnel": 2,
     "maxPersonnel": 3,
     "wtank": 10000,
     "ftank": 1300,
+    "pumpcap": 6000,
     "schooling": {
       "Brandweer": {
         "Vliegtuigbrandbestrijding": {
@@ -893,11 +920,13 @@
     "icon": "truck-moving",
     "possibleBuildings": [0, 17],
     "waterTank": 6000,
+    "pumpCapacity": 3000,
     "foamTank": 500,
     "minPersonnel": 2,
     "maxPersonnel": 3,
     "wtank": 6000,
     "ftank": 500,
+    "pumpcap": 3000,
     "schooling": {
       "Brandweer": {
         "Vliegtuigbrandbestrijding": {
@@ -945,6 +974,7 @@
     },
     "icon": "square",
     "possibleBuildings": [0, 17],
+    "waterBonus": 25,
     "special": "Haakarmvoertuig benodigd. Deze haakarmbak zorgt dat de aanwezige waterhoeveelheid wordt verhoogd met 25%",
     "minPersonnel": 0,
     "maxPersonnel": 0,
@@ -1082,9 +1112,11 @@
     "icon": "truck-moving",
     "possibleBuildings": [0, 17],
     "waterTank": 2000,
+    "pumpCapacity": 1500,
     "minPersonnel": 4,
     "maxPersonnel": 9,
     "wtank": 2000,
+    "pumpcap": 1500,
     "schooling": {
       "Brandweer": {
         "Oppervlakteredder": {
@@ -1336,6 +1368,7 @@
     },
     "icon": "square",
     "possibleBuildings": [0, 17],
+    "waterBonus": 15,
     "special": "Haakarmvoertuig benodigd. Deze haakarmbak zorgt dat de aanwezige waterhoeveelheid wordt verhoogd met 15%",
     "minPersonnel": 0,
     "maxPersonnel": 0,
@@ -1353,10 +1386,12 @@
     "icon": "truck-moving",
     "possibleBuildings": [0, 17],
     "waterTank": 2000,
+    "pumpCapacity": 1500,
     "special": "Per 10 brandweerposten kan één TS-HV gekocht worden.",
     "minPersonnel": 3,
     "maxPersonnel": 7,
     "wtank": 2000,
+    "pumpcap": 1500,
     "schooling": null
   },
   "63": {
@@ -1493,11 +1528,13 @@
     "icon": "truck-moving",
     "possibleBuildings": [0, 17],
     "waterTank": 10000,
+    "pumpCapacity": 1000,
     "foamTank": 1000,
     "minPersonnel": 2,
     "maxPersonnel": 3,
     "wtank": 10000,
     "ftank": 1000,
+    "pumpcap": 1000,
     "schooling": {
       "Brandweer": {
         "Brandweerchauffeur-zwaar": {
@@ -1518,11 +1555,13 @@
     "icon": "square",
     "possibleBuildings": [0, 17],
     "waterTank": 8000,
+    "pumpCapacity": 1000,
     "foamTank": 1000,
     "minPersonnel": 0,
     "maxPersonnel": 0,
     "wtank": 8000,
     "ftank": 1000,
+    "pumpcap": 1000,
     "schooling": null
   },
   "70": {
@@ -1536,11 +1575,13 @@
     },
     "icon": "trailer",
     "possibleBuildings": [0, 17],
+    "pumpCapacity": 1000,
     "foamTank": 500,
     "special": "Het gaat hier om een aanhanger dat een trekkend voertuig nodig heeft. (SI-2, TS 8/9, TS-OR, PM-OR, TS-HV, TS 4/5, TS 6/7, HV, AB, SL, DA, DB-K, TST 4/5, TST 6/7, TST 8/9, TST-NB 4/5, TST-NB 6/7, TST-NB 8/9, DB-VEB)",
     "minPersonnel": 0,
     "maxPersonnel": 0,
     "ftank": 500,
+    "pumpcap": 1000,
     "schooling": null
   },
   "71": {
@@ -1554,9 +1595,12 @@
     },
     "icon": "trailer",
     "possibleBuildings": [0, 17],
+    "waterBonus": 5,
+    "pumpCapacity": 1000,
     "special": "Het gaat hier om een aanhanger dat een trekkend voertuig nodig heeft. (SI-2, TS 8/9, TS-OR, PM-OR, TS-HV, TS 4/5, TS 6/7, HV, AB, SL, DA, DB-K, TST 4/5, TST 6/7, TST 8/9, TST-NB 4/5, TST-NB 6/7, TST-NB 8/9, DB-VEB). Deze aanhanger zorgt dat de aanwezige waterhoeveelheid wordt verhoogd met 5%",
     "minPersonnel": 0,
     "maxPersonnel": 0,
+    "pumpcap": 1000,
     "schooling": null
   },
   "72": {
@@ -1570,9 +1614,12 @@
     },
     "icon": "trailer",
     "possibleBuildings": [0, 17],
+    "waterBonus": 10, 
+    "pumpCapacity": 2500,
     "special": "Het gaat hier om een aanhanger dat een trekkend voertuig nodig heeft. (SI-2, TS 8/9, TS-OR, PM-OR, TS-HV, TS 4/5, TS 6/7, HV, AB, SL, DA, DB-K, TST 4/5, TST 6/7, TST 8/9, TST-NB 4/5, TST-NB 6/7, TST-NB 8/9, DB-VEB). Deze aanhanger zorgt dat de aanwezige waterhoeveelheid wordt verhoogd met 10%",
     "minPersonnel": 0,
     "maxPersonnel": 0,
+    "pumpcap": 2500,
     "schooling": null
   },
   "73": {
@@ -2054,9 +2101,11 @@
     "icon": "truck-moving",
     "possibleBuildings": [0, 17],
     "waterTank": 2000,
+    "pumpCapacity": 2000,
     "minPersonnel": 7,
     "maxPersonnel": 7,
     "wtank": 2000,
+    "pumpcap": 2000,
     "schooling": {
       "Brandweer": {
         "Teamleider STH": {
@@ -2130,9 +2179,11 @@
     "icon": "truck-moving",
     "possibleBuildings": [0, 17],
     "waterTank": 2000,
+    "pumpCapacity": 2000,
     "minPersonnel": 4,
     "maxPersonnel": 9,
     "wtank": 2000,
+    "pumpcap": 2000,
     "schooling": {
       "Brandweer": {
         "Teamlid USAR": {

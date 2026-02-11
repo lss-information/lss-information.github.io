@@ -186,6 +186,7 @@ const pageTranslations = {
             waterTank: "Watertank",
             foamTank: "Schuimtank",
             waterBonus: "Waterbonus",
+            pumpCapacity: "Pompcapaciteit";
             equipmentCapacity: "Opslagcapaciteit",
             special: "Bijzonderheden"
         }
@@ -204,6 +205,7 @@ const pageTranslations = {
             waterTank: "Wassermenge",
             foamTank: "Schaumtank",
             waterBonus: "Wasserbonus",
+            pumpCapacity: "Pumpenleistung",
             equipmentCapacity: "Sonderlösmittelmenge",
             special: "Besonderheiten"
         }
@@ -222,6 +224,7 @@ const pageTranslations = {
             waterTank: "Water tank",
             foamTank: "Foam tank",
             waterBonus: "Water Bonus",
+            pumpCapacity: "Pump Capacity",
             equipmentCapacity: "Storage capacity",
             special: "Special notes"
         }
@@ -325,6 +328,7 @@ async function initVehicles() {
         const waterTank = v.waterTank ?? 0;
         const foamTank = v.foamTank ?? 0;
         const waterBonus = v.waterBonus ?? 0;
+        const pumpCapacity = v.pumpCapacity ?? 0;
 
         // Opslag
         const equipment = v.equipmentCapacity ?? 0;
@@ -334,9 +338,10 @@ async function initVehicles() {
 
         div.textContent =
             (schoolingText ? `${labels.schooling}: ${schoolingText}` : '') +
-            `\n${labels.waterTank}: ${waterTank} L` +
-            `\n${labels.foamTank}: ${foamTank} L` +
+            `\n${labels.waterTank}: ${waterTank} l` +
+            `\n${labels.foamTank}: ${foamTank} l` +
             `\n${labels.waterBonus}: ${waterBonus} %` +
+            `\n${labels.pumpCapacity}: ${pumpCapacity} l/min` +
             `\n${labels.equipmentCapacity}: ${equipment}` +
             (special ? `\n${labels.special}: ${special}` : '');
 

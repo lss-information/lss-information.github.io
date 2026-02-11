@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=1200, initial-scale=0.4, maximum-scale=1.0">
-<title>Event Meldingen Meldkamerspel (NL)</title>
+<title>Meldingen Meldkamerspel (NL)</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 <style>
@@ -62,16 +62,6 @@ p {
 #last-update {
     font-size: 13px;
     color: #aaaaaa;
-}
-
-/* SWIPE HINT */
-#swipe-hint {
-    display: none;
-    font-size: 12px;
-    color: #bbbbbb;
-    margin: 8px auto 5px;
-    text-align: center;
-    opacity: 0.9;
 }
 
 /* TABLE */
@@ -186,7 +176,6 @@ tbody tr:hover {
     <li><img src="../../images/flag_us.gif" alt="English" onclick="changeLanguage('en')"></li>
     <li><img src="../../images/flag_au.gif" alt="English" onclick="changeLanguage('en')"></li>
     
-
     <li><a class="button" id="game-button" href="/index">Startpagina</a></li>
     <li><a class="button" id="contact-button" href="/gameversions/contact">Contact</a></li>
     <li><a class="button" id="back-button" href="/gameversions/nl_NL/indexNL">Terug</a></li>
@@ -207,43 +196,28 @@ tbody tr:hover {
 </footer>
 
 <script>
-const dataFile = 'nl_NL-Data/alliance_event_types.json';
-const translationsFile = 'translations.json';
+const eventsFile = 'nl_NL-Data/alliance_event_types.json';
+const einsaetzeFile = 'nl_NL-Data/einsaetze.json';
 const lastUpdateFile = 'nl_NL-Data/last_update.txt';
 
 const pageTranslations = {
     nl: {
         title: "Melding IDs",
-        message: "Overzicht van alle Event meldingen in Meldkamerspel (NL).",
-        gameButton: "Startpagina",
-        contactButton: "Contact",
-        backButton: "Terug",
+        message: "Overzicht van alle meldingen in Meldkamerspel (NL).",
         lastUpdate: "Laatste update",
-        swipeHint: "← swipe naar links of rechts om de tabel te bekijken →",
-        tableHeaders: ["ID", "Naam", "MeldingIDs"],
-        toggle: { show: "Toon Benodigdheden", hide: "Verberg Benodigdheden" }
+        tableHeaders: ["ID", "Naam", "Mission Types"],
     },
     de: {
         title: "Einsätze IDs",
-        message: "Hier finden Sie eine Übersicht aller Event Einsätze (NL).",
-        gameButton: "Startseite",
-        contactButton: "Kontakt",
-        backButton: "Zurück",
+        message: "Hier finden Sie eine Übersicht aller Einsätze (NL).",
         lastUpdate: "Letzte Aktualisierung",
-        swipeHint: "← nach links oder rechts wischen, um die Tabelle zu sehen →",
-        tableHeaders: ["ID", "Name", "Einsätze IDs"],
-        toggle: { show: "Fahrzeuge anzeigen", hide: "Fahrzeuge verbergen" }
+        tableHeaders: ["ID", "Name", "Mission Types"],
     },
     en: {
         title: "Mission IDs",
-        message: "Here you can find an overview of all event missions (NL).",
-        gameButton: "Homepage",
-        contactButton: "Contact",
-        backButton: "Back",
+        message: "Overview of all event missions (NL).",
         lastUpdate: "Last update",
-        swipeHint: "← swipe left or right to view the table →",
-        tableHeaders: ["ID", "Name", "Mission IDs"],
-        toggle: { show: "Show Requirements", hide: "Hide Requirements" }
+        tableHeaders: ["ID", "Name", "Mission Types"],
     }
 };
 
@@ -256,15 +230,11 @@ function changeLanguage(lang) {
     document.title = t.title;
     document.getElementById('page-title').textContent = t.title;
     document.getElementById('page-message').textContent = t.message;
-    document.getElementById('game-button').textContent = t.gameButton;
-    document.getElementById('contact-button').textContent = t.contactButton;
-    document.getElementById('back-button').textContent = t.backButton;
-    document.getElementById('swipe-hint').textContent = t.swipeHint;
 
     const startYear = 2024;
     const currentYear = new Date().getFullYear();
     document.getElementById('footer-year').textContent =
-    startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
+        startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
 
     loadLastUpdate();
     initMissions();
@@ -283,8 +253,12 @@ async function loadLastUpdate() {
 }
 
 async function initMissions() {
-    const missions = await (await fetch(dataFile)).json();
-    const translations = await (await fetch(translationsFile)).json();
+    const events = await (await fetch(eventsFile)).json();
+    const einsaetze = await (await fetch(einsaetzeFile)).json();
+
+    // Map: ID → naam
+    const einsaetzeMap = {};
+    einsaetze.forEach(e => { einsaetzeMap[e.id] = e.name; });
 
     const container = document.getElementById('sheet-data');
     container.innerHTML = '';
@@ -298,39 +272,56 @@ async function initMissions() {
         th.textContent = h;
         tr.appendChild(th);
     });
-
     thead.appendChild(tr);
     table.appendChild(thead);
 
     const tbody = document.createElement('tbody');
 
-    missions.forEach(m => {
+    events.forEach(ev => {
         const row = document.createElement('tr');
+
+        // mission_type_ids → captions uit einsaetze
+        const missionCaptions = (ev.mission_type_ids || []).map(id => {
+            return einsaetzeMap[id] ? `${id} - ${einsaetzeMap[id]}` : id;
+        }).join(', ');
+
         row.innerHTML = `
-            <td>${m.id}</td>
-            <td>${m.caption}</td>
-            <td>${(m.mission_type_ids || []).join(', ')}</td>
+            <td>${ev.id}</td>
+            <td>${ev.caption}</td>
+            <td>${missionCaptions}</td>
         `;
+
         tbody.appendChild(row);
 
+        // Requirements (optioneel toggle)
         const reqRow = document.createElement('tr');
         reqRow.className = 'requirements-row';
         const td = document.createElement('td');
-        td.colSpan = 5;
+        td.colSpan = 3;
 
         const div = document.createElement('div');
         div.className = 'requirements-content';
 
-        for (const k in m.requirements || {}) {
-            div.innerHTML += `${translations[k] || k}: ${m.requirements[k]}<br>`;
+        for (const k in ev.requirements || {}) {
+            div.innerHTML += `${k}: ${ev.requirements[k]}<br>`;
         }
 
         td.appendChild(div);
         reqRow.appendChild(td);
         tbody.appendChild(reqRow);
 
-        const toggleBtn = row.querySelector('.button-toggle');
+        // Toggle knop
+        const toggleBtn = document.createElement('button');
+        toggleBtn.className = 'button-toggle';
+        toggleBtn.textContent = "Toon Benodigdheden";
+        row.cells[2].appendChild(document.createElement('br'));
+        row.cells[2].appendChild(toggleBtn);
 
+        toggleBtn.onclick = () => {
+            const open = div.classList.toggle('show');
+            div.style.maxHeight = open ? div.scrollHeight + 'px' : null;
+            toggleBtn.textContent = open ? "Verberg Benodigdheden" : "Toon Benodigdheden";
+        };
     });
 
     table.appendChild(tbody);
@@ -338,10 +329,7 @@ async function initMissions() {
 }
 
 document.getElementById('footer-year').textContent = new Date().getFullYear();
-
-window.addEventListener('DOMContentLoaded', () => {
-    changeLanguage(currentLang);
-});
+window.addEventListener('DOMContentLoaded', () => { changeLanguage(currentLang); });
 </script>
 
 </body>

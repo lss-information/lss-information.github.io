@@ -330,15 +330,6 @@ async function initMissions() {
         tbody.appendChild(reqRow);
 
         const toggleBtn = row.querySelector('.button-toggle');
-        
-        toggleBtn.onclick = () => {
-            const open = div.classList.toggle('show');
-            div.style.maxHeight = open ? div.scrollHeight + 'px' : null;
-        
-            toggleBtn.textContent = open
-                ? pageTranslations[currentLang].toggle.hide
-                : pageTranslations[currentLang].toggle.show;
-        };
 
     });
 

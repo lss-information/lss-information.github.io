@@ -298,22 +298,17 @@ document.addEventListener('input', function(e) {
     const search = e.target.value.toLowerCase();
     const rows = document.querySelectorAll('#sheet-data table tbody tr');
 
-    for (let i = 0; i < rows.length; i += 2) {
-        const mainRow = rows[i];
-        const detailsRow = rows[i + 1];
-
-        const text = mainRow.textContent.toLowerCase();
+    rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
 
         if (text.includes(search)) {
-            mainRow.style.display = '';
-            if (detailsRow) detailsRow.style.display = '';
+            row.style.display = '';
         } else {
-            mainRow.style.display = 'none';
-            if (detailsRow) detailsRow.style.display = 'none';
+            row.style.display = 'none';
         }
-    }
+    });
 });
-    
+
 document.getElementById('footer-year').textContent = new Date().getFullYear();
 window.addEventListener('DOMContentLoaded', () => changeLanguage(currentLang));
 </script>

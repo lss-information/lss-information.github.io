@@ -237,7 +237,7 @@ function changeLanguage(lang) {
     document.getElementById('contact-button').textContent = t.contactButton;
     document.getElementById('back-button').textContent = t.backButton;
     document.getElementById('swipe-hint').textContent = t.swipeHint;
-    document.getElementById('vehicle-search').placeholder = t.searchPlaceholder;
+    document.getElementById('mission-search').placeholder = t.searchPlaceholder;
 
     loadLastUpdate();
     initMissions();
@@ -293,7 +293,7 @@ async function initMissions() {
 
 // Zoekfunctie
 document.addEventListener('input', function(e) {
-    if (e.target.id !== 'vehicle-search') return;
+    if (e.target.id !== 'mission-search') return;
 
     const search = e.target.value.toLowerCase();
     const rows = document.querySelectorAll('#sheet-data table tbody tr');

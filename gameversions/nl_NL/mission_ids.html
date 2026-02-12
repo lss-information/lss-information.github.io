@@ -377,16 +377,27 @@ document.addEventListener('input', function(e) {
     const search = e.target.value.toLowerCase();
     const rows = document.querySelectorAll('#sheet-data table tbody tr');
 
-    rows.forEach(row => {
-        const text = row.textContent.toLowerCase();
+    for (let i = 0; i < rows.length; i++) {
+        const row = rows[i];
+        const isRequirements = row.classList.contains('requirements-row');
 
-        if (text.includes(search)) {
-            row.style.display = '';
-        } else {
-            row.style.display = 'none';
+        if (isRequirements) {
+            // dropdown volgt op hoofdregel; display matcht gewoon de hoofdregel
+            continue;
         }
-    });
+
+        const text = row.textContent.toLowerCase();
+        const show = text.includes(search);
+        row.style.display = show ? '' : 'none';
+
+        // verberg of toon direct de volgende requirements-row
+        const nextRow = row.nextElementSibling;
+        if (nextRow && nextRow.classList.contains('requirements-row')) {
+            nextRow.style.display = show ? '' : 'none';
+        }
+    }
 });
+
 
     
 document.getElementById('footer-year').textContent = new Date().getFullYear();

@@ -156,23 +156,22 @@ tbody tr:hover {
 <p id="page-message"></p>
 <p id="last-update"></p>
 
-document.addEventListener('input', function(e) {
-    if (e.target.id !== 'mission-search') return;
-
-    const search = e.target.value.toLowerCase();
-    const rows = document.querySelectorAll('#sheet-data table tbody tr');
-
-    rows.forEach(row => {
-        const text = row.textContent.toLowerCase();
-
-        if (text.includes(search)) {
-            row.style.display = '';
-        } else {
-            row.style.display = 'none';
-        }
-    });
-});
-
+<div style="margin: 20px;">
+    <input 
+        type="text" 
+        id="mission-search" 
+        placeholder="Melding zoeken..." 
+        style="
+            padding:8px 12px;
+            width:300px;
+            border-radius:6px;
+            border:1px solid #555566;
+            background-color:#2c2c3c;
+            color:#dddddd;
+            font-family:'Orbitron', sans-serif;
+        "
+    >
+</div>
 
     
 <div id="swipe-hint"></div>

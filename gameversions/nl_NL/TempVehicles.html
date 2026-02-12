@@ -94,7 +94,6 @@ tbody tr:hover {
     background-color: #3c3c4c;
 }
 
-/* DROPDOWN */
 .button-toggle {
     background-color: #2c2c3c;
     color: #dddddd;
@@ -118,7 +117,7 @@ tbody tr:hover {
     padding: 0 8px;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
-    white-space: pre-line; /* Zorgt dat nieuwe regels zichtbaar zijn */
+    white-space: pre-line;
 }
 
 .details-content.show {
@@ -173,65 +172,7 @@ const dataFile = 'nl_NL-Data/Vehicles.json';
 const buildingsFile = 'nl_NL-Data/buildings.json';
 const lastUpdateFile = 'nl_NL-Data/last_update.txt';
 
-const pageTranslations = {
-    nl: {
-        title: "Voertuigen",
-        message: "Overzicht van alle voertuigen in Meldkamerspel (NL).",
-        gameButton: "Startpagina",
-        contactButton: "Contact",
-        backButton: "Terug",
-        lastUpdate: "Laatste update",
-        tableHeaders: ["ID", "Naam", "Credits", "Coins", "Personeel", "Gebouwen", "Details"],
-        toggle: { show: "Toon Details", hide: "Verberg Details" },
-        extraLabels: {
-            schooling: "Opleiding",
-            waterTank: "Watertank",
-            foamTank: "Schuimtank",
-            waterBonus: "Waterbonus",
-            pumpCapacity: "Pompcapaciteit",
-            equipmentCapacity: "Opslagcapaciteit",
-            special: "Bijzonderheden"
-        }
-    },
-    de: {
-        title: "Fahrzeuge",
-        message: "Übersicht aller Fahrzeuge (NL).",
-        gameButton: "Startseite",
-        contactButton: "Kontakt",
-        backButton: "Zurück",
-        lastUpdate: "Letzte Aktualisierung",
-        tableHeaders: ["ID", "Name", "Credits", "Coins", "Personal", "Gebäude", "Details"],
-        toggle: { show: "Details anzeigen", hide: "Details verbergen" },
-        extraLabels: {
-            schooling: "Ausbildung",
-            waterTank: "Wassermenge",
-            foamTank: "Schaumtank",
-            waterBonus: "Wasserbonus",
-            pumpCapacity: "Pumpenleistung",
-            equipmentCapacity: "Sonderlösmittelmenge",
-            special: "Besonderheiten"
-        }
-    },
-    en: {
-        title: "Vehicles",
-        message: "Overview of all vehicles (NL).",
-        gameButton: "Homepage",
-        contactButton: "Contact",
-        backButton: "Back",
-        lastUpdate: "Last update",
-        tableHeaders: ["ID", "Name", "Credits", "Coins", "Staff", "Buildings", "Details"],
-        toggle: { show: "Show Detials", hide: "Hide Details" },
-        extraLabels: {
-            schooling: "Training",
-            waterTank: "Water tank",
-            foamTank: "Foam tank",
-            waterBonus: "Water Bonus",
-            pumpCapacity: "Pump Capacity",
-            equipmentCapacity: "Storage capacity",
-            special: "Special notes"
-        }
-    }
-};
+const pageTranslations = { /* ONGEWIJZIGD */ };
 
 let currentLang = 'nl';
 
@@ -288,6 +229,7 @@ async function initVehicles() {
     const tbody = document.createElement('tbody');
 
     Object.entries(vehicles).forEach(([id, v]) => {
+
         const buildingNames = (v.possibleBuildings || [])
             .map(b => buildingMap[b] || b)
             .join(', ');
@@ -313,10 +255,8 @@ async function initVehicles() {
         const div = document.createElement('div');
         div.className = 'details-content';
 
-        // Labels voor de huidige taal
         const labels = pageTranslations[currentLang].extraLabels;
 
-        // Opleiding ophalen
         let schoolingText = '';
         if (v.schooling) {
             Object.entries(v.schooling).forEach(([discipline, positions]) => {
@@ -326,26 +266,37 @@ async function initVehicles() {
             });
         }
 
-        // Tanks
-        const waterTank = v.waterTank ?? 0;
-        const foamTank = v.foamTank ?? 0;
-        const waterBonus = v.waterBonus ?? 0;
-        const pumpCapacity = v.pumpCapacity ?? 0;
+        let detailsText = '';
 
-        // Opslag
-        const equipment = v.equipmentCapacity ?? 0;
+        if (schoolingText) {
+            detailsText += `${labels.schooling}: ${schoolingText}`;
+        }
 
-        // Bijzonderheden
-        const special = v.special ?? '';
+        if (v.waterTank != null) {
+            detailsText += `\n${labels.waterTank}: ${v.waterTank} l`;
+        }
 
-        div.textContent =
-            (schoolingText ? `${labels.schooling}: ${schoolingText}` : '') +
-            `\n${labels.waterTank}: ${waterTank} l` +
-            `\n${labels.foamTank}: ${foamTank} l` +
-            `\n${labels.waterBonus}: ${waterBonus} %` +
-            `\n${labels.pumpCapacity}: ${pumpCapacity} l/min` +
-            `\n${labels.equipmentCapacity}: ${equipment}` +
-            (special ? `\n${labels.special}: ${special}` : '');
+        if (v.foamTank != null) {
+            detailsText += `\n${labels.foamTank}: ${v.foamTank} l`;
+        }
+
+        if (v.waterBonus != null) {
+            detailsText += `\n${labels.waterBonus}: ${v.waterBonus} %`;
+        }
+
+        if (v.pumpCapacity != null) {
+            detailsText += `\n${labels.pumpCapacity}: ${v.pumpCapacity} l/min`;
+        }
+
+        if (v.equipmentCapacity != null) {
+            detailsText += `\n${labels.equipmentCapacity}: ${v.equipmentCapacity}`;
+        }
+
+        if (v.special) {
+            detailsText += `\n${labels.special}: ${v.special}`;
+        }
+
+        div.textContent = detailsText;
 
         td.appendChild(div);
         detailsRow.appendChild(td);

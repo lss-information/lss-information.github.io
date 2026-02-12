@@ -346,8 +346,21 @@ async function initMissions() {
         div.className = 'requirements-content';
 
         for (const k in m.requirements || {}) {
-            div.innerHTML += `${translations[k] || k}: ${m.requirements[k]}<br>`;
+            let value = m.requirements[k];
+
+            if (typeof value === 'object' && value !== null) {
+                // nested object → elke entry op aparte regel met label
+                value = Object.entries(value)
+                    .map(([subKey, subValue]) => `${translations[k] || k}: ${subValue}x ${translations[subKey] || subKey}`)
+                    .join('<br>'); // nieuwe regel
+            } else {
+                // gewone waarde
+                value = `${translations[k] || k}: ${value}`;
+            }
+        
+            div.innerHTML += `${value}<br>`;
         }
+
 
         td.appendChild(div);
         reqRow.appendChild(td);

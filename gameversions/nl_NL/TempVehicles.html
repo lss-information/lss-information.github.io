@@ -159,6 +159,25 @@ tbody tr:hover {
 <p id="page-message"></p>
 <p id="last-update"></p>
 
+<div style="margin: 20px;">
+    <input 
+        type="text" 
+        id="vehicle-search" 
+        placeholder="Zoek voertuig..." 
+        style="
+            padding:8px 12px;
+            width:300px;
+            border-radius:6px;
+            border:1px solid #555566;
+            background-color:#2c2c3c;
+            color:#dddddd;
+            font-family:'Orbitron', sans-serif;
+        "
+    >
+</div>
+
+
+    
 <div class="table-wrapper">
     <div id="sheet-data"></div>
 </div>
@@ -374,6 +393,28 @@ async function initVehicles() {
     table.appendChild(tbody);
     container.appendChild(table);
 }
+// Zoekfunctie
+document.addEventListener('input', function(e) {
+    if (e.target.id !== 'vehicle-search') return;
+
+    const search = e.target.value.toLowerCase();
+    const rows = document.querySelectorAll('#sheet-data table tbody tr');
+
+    for (let i = 0; i < rows.length; i += 2) {
+        const mainRow = rows[i];
+        const detailsRow = rows[i + 1];
+
+        const text = mainRow.textContent.toLowerCase();
+
+        if (text.includes(search)) {
+            mainRow.style.display = '';
+            if (detailsRow) detailsRow.style.display = '';
+        } else {
+            mainRow.style.display = 'none';
+            if (detailsRow) detailsRow.style.display = 'none';
+        }
+    }
+});
 
 document.getElementById('footer-year').textContent = new Date().getFullYear();
 window.addEventListener('DOMContentLoaded', () => changeLanguage(currentLang));

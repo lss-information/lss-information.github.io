@@ -115476,7 +115476,7 @@
     "name": "Paar hat zu viel Schokolade gegessen",
     "place": "",
     "place_array": [],
-    "average_credits": 500,
+    "average_credits": null,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -115517,7 +115517,7 @@
     "name": "Schmetterlinge im Bauch",
     "place": "",
     "place_array": [],
-    "average_credits": 500,
+    "average_credits": null,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -115558,7 +115558,7 @@
     "name": "Schock durch Heiratsantrag",
     "place": "",
     "place_array": [],
-    "average_credits": 500,
+    "average_credits": null,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -115599,7 +115599,7 @@
     "name": "Gebrochenes Herz",
     "place": "",
     "place_array": [],
-    "average_credits": 500,
+    "average_credits": null,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -182087,7 +182087,7 @@
     "name": "Vergiftete Pralinen",
     "place": "",
     "place_array": [],
-    "average_credits": 500,
+    "average_credits": null,
     "generated_by": "",
     "icons": [
       "/images/bar_cocktail_gruen.png",

@@ -11335,7 +11335,7 @@
     "name": "Pareja con empacho por comer mucho chocolate",
     "place": "",
     "place_array": [],
-    "average_credits": 500,
+    "average_credits": null,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -11377,7 +11377,7 @@
     "name": "Mariposas en el estómago",
     "place": "",
     "place_array": [],
-    "average_credits": 500,
+    "average_credits": null,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -11419,7 +11419,7 @@
     "name": "Ataque al corazón tras petición de matrimonio",
     "place": "",
     "place_array": [],
-    "average_credits": 500,
+    "average_credits": null,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",
@@ -11461,7 +11461,7 @@
     "name": "Corazón roto",
     "place": "",
     "place_array": [],
-    "average_credits": 500,
+    "average_credits": null,
     "generated_by": "",
     "icons": [
       "/images/medicalstore_gruen.png",

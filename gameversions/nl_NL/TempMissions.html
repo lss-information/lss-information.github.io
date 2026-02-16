@@ -11,8 +11,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Orbitron', sans-serif;
-    background-color: #1e1e28; 
-    color: #dddddd; 
+    background-color: #1e1e28;
+    color: #dddddd;
     text-align: center;
 }
 
@@ -27,34 +27,40 @@ body {
     padding: 0;
 }
 
+.language-selector img {
+    height: 24px;
+    cursor: pointer;
+    border: 2px solid #555566;
+    border-radius: 4px;
+}
+
+.language-selector img:hover {
+    transform: scale(1.1);
+}
+
 .button {
-    background-color: #2c2c3c; 
+    background-color: #2c2c3c;
     color: #dddddd;
     border: 2px solid #555566;
     padding: 8px 16px;
     text-decoration: none;
     border-radius: 8px;
-    transition: background-color 0.2s, transform 0.2s, color 0.2s;
     font-size: 12px;
 }
 
 .button:hover {
     background-color: #444456;
-    color: #ffffff;
-    transform: scale(1.05);
 }
 
 h1 {
     margin: 30px 0 10px;
     font-size: 32px;
-    color: #eeeeee;
 }
 
 p {
     max-width: 800px;
     margin: 0 auto 10px;
     font-size: 15px;
-    color: #cccccc;
 }
 
 #last-update {
@@ -73,27 +79,19 @@ table {
     max-width: 1200px;
     margin: 20px auto;
     border-collapse: collapse;
-    background-color: #2a2a3a; 
-    border-radius: 10px;
+    background-color: #2a2a3a;
 }
 
 thead th {
     background-color: #3a3a4a;
     padding: 12px;
-    border-bottom: 2px solid #555566;
-    color: #eeeeee;
     font-size: 18px;
 }
 
 tbody td {
     padding: 12px;
     border-bottom: 1px solid #444455;
-    color: #dddddd;
     font-size: 18px;
-}
-
-tbody tr:hover {
-    background-color: #3c3c4c;
 }
 
 .button-toggle {
@@ -102,53 +100,63 @@ tbody tr:hover {
     border: 1px solid #555566;
     padding: 6px 16px;
     cursor: pointer;
-    border-radius: 4px;
-    font-size: 12px;
 }
 
 .requirements-row td {
     background-color: #262632;
     text-align: left;
-    font-size: 17px;
-    color: #cccccc;
 }
 
 .requirements-content {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
-    padding: 0 8px;
-    font-size: 17px;
-    line-height: 1.5;
+    transition: 0.3s;
 }
 
 .requirements-content.show {
     opacity: 1;
-    padding: 6px 8px;
 }
 
 #footer {
     margin-top: 40px;
-    padding: 20px;
     font-size: 12px;
-    color: #888888;
 }
 </style>
 </head>
 
 <body>
 
+<ul class="language-selector">
+    <li><img src="../../images/flag_nl.gif" onclick="changeLanguage('nl')"></li>
+    <li><img src="../../images/flag_de.gif" onclick="changeLanguage('de')"></li>
+    <li><img src="../../images/flag_uk.gif" onclick="changeLanguage('en')"></li>
+    <li><img src="../../images/flag_us.gif" onclick="changeLanguage('en')"></li>
+    <li><img src="../../images/flag_au.gif" onclick="changeLanguage('en')"></li>
+
+    <li><a class="button" id="game-button" href="/index">Startpagina</a></li>
+    <li><a class="button" id="contact-button" href="/gameversions/contact">Contact</a></li>
+    <li><a class="button" id="back-button" href="/gameversions/nl_NL/indexNL">Terug</a></li>
+</ul>
+
 <h1 id="page-title"></h1>
 <p id="page-message"></p>
 <p id="last-update"></p>
+
+<div style="margin:20px;">
+    <input
+        type="text"
+        id="mission-search"
+        placeholder="Melding zoeken..."
+        style="padding:8px;width:300px;background:#2c2c3c;color:#ddd;border:1px solid #555;">
+</div>
 
 <div class="table-wrapper">
     <div id="sheet-data"></div>
 </div>
 
 <footer id="footer">
-    &copy; <span id="footer-year"></span> JR04. Alle rechten voorbehouden.
+    &copy; <span id="footer-year"></span> JR04
 </footer>
 
 <script>
@@ -207,28 +215,21 @@ async function initMissions() {
         const div = document.createElement('div');
         div.className = 'requirements-content';
 
-        /* REQUIREMENTS */
         for (const k in m.requirements || {}) {
-            const label = translations[k] || k;
-            div.innerHTML += `${label}: ${m.requirements[k]}<br>`;
+            div.innerHTML += `${translations[k] || k}: ${m.requirements[k]}<br>`;
         }
 
-        /* POSSIBLE PATIENT (NIEUW) */
         if (m.additional && typeof m.additional.possible_patient !== 'undefined') {
-            div.innerHTML += `<strong>Possible Patient:</strong> ${m.additional.possible_patient > 0 ? 'Ja' : 'Nee'}<br>`;
+            div.innerHTML += `<strong>Possible Patient:</strong> ${m.additional.possible_patient}<br>`;
         }
 
         td.appendChild(div);
         reqRow.appendChild(td);
         tbody.appendChild(reqRow);
 
-        const toggleBtn = row.querySelector('.button-toggle');
-        toggleBtn.onclick = () => {
-            const open = div.classList.toggle('show');
-            div.style.maxHeight = open ? div.scrollHeight + 'px' : null;
-            toggleBtn.textContent = open
-                ? pageTranslations[currentLang].toggle.hide
-                : pageTranslations[currentLang].toggle.show;
+        row.querySelector('.button-toggle').onclick = () => {
+            div.classList.toggle('show');
+            div.style.maxHeight = div.classList.contains('show') ? div.scrollHeight + 'px' : null;
         };
     });
 

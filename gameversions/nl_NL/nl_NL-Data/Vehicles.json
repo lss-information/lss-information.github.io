@@ -1,3 +1,4 @@
+
 {
   "0": {
     "caption": "SI-2",
@@ -3078,5 +3079,61 @@
     "minPersonnel": 0,
     "maxPersonnel": 0,
     "schooling": null
+  },
+  "128": {
+    "caption": "DB-DRONE",
+    "credits": 60000,
+    "coins": 28,
+    "staff": {
+      "min": 3,
+      "max": 3,
+      "training": {
+        "Politie": {
+          "drone_police": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      11
+    ],
+    "minPersonnel": 3,
+    "maxPersonnel": 3,
+    "schooling": {
+      "Politie": {
+        "Drone Flightcrew": {
+          "all": true
+        }
+      }
+    }
+  },
+  "129": {
+    "caption": "DB-TDV",
+    "credits": 60000,
+    "coins": 28,
+    "staff": {
+      "min": 3,
+      "max": 3,
+      "training": {
+        "Brandweer": {
+          "drone_fire": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0
+    ],
+    "minPersonnel": 3,
+    "maxPersonnel": 3,
+    "schooling": {
+      "Brandweer": {
+        "TDV Drone Flightcrew": {
+          "all": true
+        }
+      }
+    }
   }
 }

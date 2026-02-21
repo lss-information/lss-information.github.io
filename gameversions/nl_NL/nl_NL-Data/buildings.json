@@ -1294,6 +1294,15 @@
         "unlocksVehicleTypes": [16, 30, 52, 63]
       },
       {
+        "caption": "Team Digitale Verkenning",
+        "credits": 100000,
+        "coins": 10,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [129]
+      },
+      {
         "caption": "Haakarmbak parkeerplaats",
         "credits": 100000,
         "coins": 20,

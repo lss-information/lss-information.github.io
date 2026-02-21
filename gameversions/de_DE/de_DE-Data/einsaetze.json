@@ -4357,13 +4357,13 @@
       "/images/cat_rot.png"
     ],
     "requirements": {
-      "platform_trucks": 1,
-      "firetrucks": 1
+      "platform_trucks": 1
     },
     "chances": {
       "platform_trucks": 20
     },
     "additional": {
+      "average_min_fire_personnel": 3,
       "filter_id": "firehouse_missions"
     },
     "prerequisites": {
@@ -27193,47 +27193,6 @@
     ]
   },
   {
-    "id": "234/e",
-    "name": "Entschärfung von Weltkriegsbombe",
-    "place": "",
-    "place_array": [],
-    "average_credits": 9490,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "oneof_police_patrol_or_motorcycle": 5,
-      "disaster_response_technology_equipment": 1,
-      "disaster_response_technology_crew": 1,
-      "disaster_response_technology_trailer": 1,
-      "firetrucks": 10
-    },
-    "chances": {},
-    "additional": {
-      "duration_text": "2 Stunden",
-      "duration": 7200,
-      "guard_mission": true,
-      "filter_id": "firehouse_missions"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 4,
-      "disaster_response_technology": 1,
-      "fire_stations": 10
-    },
-    "overlay_index": null,
-    "base_mission_id": 234,
-    "additive_overlays": "e",
-    "mission_categories": [
-      "fire"
-    ]
-  },
-  {
     "id": "234/ab",
     "name": "Entschärfung von Weltkriegsbombe",
     "place": "",
@@ -27358,49 +27317,6 @@
     ]
   },
   {
-    "id": "234/ae",
-    "name": "Entschärfung von Weltkriegsbombe",
-    "place": "",
-    "place_array": [],
-    "average_credits": 11090,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "police_service_group_leader": 1,
-      "oneof_police_patrol_or_motorcycle": 5,
-      "disaster_response_technology_equipment": 1,
-      "disaster_response_technology_crew": 1,
-      "disaster_response_technology_trailer": 1,
-      "firetrucks": 10
-    },
-    "chances": {},
-    "additional": {
-      "duration_text": "2 Stunden",
-      "duration": 7200,
-      "guard_mission": true,
-      "filter_id": "firehouse_missions"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 7,
-      "police_service_group_leader": 5,
-      "disaster_response_technology": 1,
-      "fire_stations": 10
-    },
-    "overlay_index": null,
-    "base_mission_id": 234,
-    "additive_overlays": "ae",
-    "mission_categories": [
-      "fire"
-    ]
-  },
-  {
     "id": "234/bc",
     "name": "Entschärfung von Weltkriegsbombe",
     "place": "",
@@ -27484,49 +27400,6 @@
     ]
   },
   {
-    "id": "234/be",
-    "name": "Entschärfung von Weltkriegsbombe",
-    "place": "",
-    "place_array": [],
-    "average_credits": 11090,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "energy_supply": 1,
-      "oneof_police_patrol_or_motorcycle": 5,
-      "disaster_response_technology_equipment": 1,
-      "disaster_response_technology_crew": 1,
-      "disaster_response_technology_trailer": 1,
-      "firetrucks": 10
-    },
-    "chances": {},
-    "additional": {
-      "duration_text": "2 Stunden",
-      "duration": 7200,
-      "guard_mission": true,
-      "filter_id": "firehouse_missions"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 4,
-      "energy_supply": 5,
-      "disaster_response_technology": 1,
-      "fire_stations": 10
-    },
-    "overlay_index": null,
-    "base_mission_id": 234,
-    "additive_overlays": "be",
-    "mission_categories": [
-      "fire"
-    ]
-  },
-  {
     "id": "234/cd",
     "name": "Entschärfung von Weltkriegsbombe",
     "place": "",
@@ -27564,93 +27437,6 @@
     "overlay_index": null,
     "base_mission_id": 234,
     "additive_overlays": "cd",
-    "mission_categories": [
-      "fire"
-    ]
-  },
-  {
-    "id": "234/ce",
-    "name": "Entschärfung von Weltkriegsbombe",
-    "place": "",
-    "place_array": [],
-    "average_credits": 9800,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "oneof_police_patrol_or_motorcycle": 5,
-      "disaster_response_technology_equipment": 1,
-      "disaster_response_technology_crew": 1,
-      "disaster_response_technology_trailer": 1,
-      "firetrucks": 10
-    },
-    "chances": {},
-    "additional": {
-      "duration_text": "2 Stunden",
-      "duration": 7200,
-      "guard_mission": true,
-      "filter_id": "firehouse_missions",
-      "care_affected_people_min": 25,
-      "care_affected_people_max": 100
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 4,
-      "care_service": 1,
-      "disaster_response_technology": 1,
-      "fire_stations": 10
-    },
-    "overlay_index": null,
-    "base_mission_id": 234,
-    "additive_overlays": "ce",
-    "mission_categories": [
-      "fire"
-    ]
-  },
-  {
-    "id": "234/de",
-    "name": "Entschärfung von Weltkriegsbombe",
-    "place": "",
-    "place_array": [],
-    "average_credits": 11090,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "oneof_police_patrol_or_motorcycle": 5,
-      "police_speaker": 1,
-      "disaster_response_technology_equipment": 1,
-      "disaster_response_technology_crew": 1,
-      "disaster_response_technology_trailer": 1,
-      "firetrucks": 10
-    },
-    "chances": {},
-    "additional": {
-      "duration_text": "2 Stunden",
-      "duration": 7200,
-      "guard_mission": true,
-      "filter_id": "firehouse_missions"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 4,
-      "police_speaker": 1,
-      "disaster_response_technology": 1,
-      "fire_stations": 10
-    },
-    "overlay_index": null,
-    "base_mission_id": 234,
-    "additive_overlays": "de",
     "mission_categories": [
       "fire"
     ]
@@ -27743,51 +27529,6 @@
     ]
   },
   {
-    "id": "234/abe",
-    "name": "Entschärfung von Weltkriegsbombe",
-    "place": "",
-    "place_array": [],
-    "average_credits": 12690,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "police_service_group_leader": 1,
-      "energy_supply": 1,
-      "oneof_police_patrol_or_motorcycle": 5,
-      "disaster_response_technology_equipment": 1,
-      "disaster_response_technology_crew": 1,
-      "disaster_response_technology_trailer": 1,
-      "firetrucks": 10
-    },
-    "chances": {},
-    "additional": {
-      "duration_text": "2 Stunden",
-      "duration": 7200,
-      "guard_mission": true,
-      "filter_id": "firehouse_missions"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 7,
-      "police_service_group_leader": 5,
-      "energy_supply": 5,
-      "disaster_response_technology": 1,
-      "fire_stations": 10
-    },
-    "overlay_index": null,
-    "base_mission_id": 234,
-    "additive_overlays": "abe",
-    "mission_categories": [
-      "fire"
-    ]
-  },
-  {
     "id": "234/acd",
     "name": "Entschärfung von Weltkriegsbombe",
     "place": "",
@@ -27827,97 +27568,6 @@
     "overlay_index": null,
     "base_mission_id": 234,
     "additive_overlays": "acd",
-    "mission_categories": [
-      "fire"
-    ]
-  },
-  {
-    "id": "234/ace",
-    "name": "Entschärfung von Weltkriegsbombe",
-    "place": "",
-    "place_array": [],
-    "average_credits": 11400,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "police_service_group_leader": 1,
-      "oneof_police_patrol_or_motorcycle": 5,
-      "disaster_response_technology_equipment": 1,
-      "disaster_response_technology_crew": 1,
-      "disaster_response_technology_trailer": 1,
-      "firetrucks": 10
-    },
-    "chances": {},
-    "additional": {
-      "duration_text": "2 Stunden",
-      "duration": 7200,
-      "guard_mission": true,
-      "filter_id": "firehouse_missions",
-      "care_affected_people_min": 25,
-      "care_affected_people_max": 100
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 7,
-      "police_service_group_leader": 5,
-      "care_service": 1,
-      "disaster_response_technology": 1,
-      "fire_stations": 10
-    },
-    "overlay_index": null,
-    "base_mission_id": 234,
-    "additive_overlays": "ace",
-    "mission_categories": [
-      "fire"
-    ]
-  },
-  {
-    "id": "234/ade",
-    "name": "Entschärfung von Weltkriegsbombe",
-    "place": "",
-    "place_array": [],
-    "average_credits": 12690,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "police_service_group_leader": 1,
-      "oneof_police_patrol_or_motorcycle": 5,
-      "police_speaker": 1,
-      "disaster_response_technology_equipment": 1,
-      "disaster_response_technology_crew": 1,
-      "disaster_response_technology_trailer": 1,
-      "firetrucks": 10
-    },
-    "chances": {},
-    "additional": {
-      "duration_text": "2 Stunden",
-      "duration": 7200,
-      "guard_mission": true,
-      "filter_id": "firehouse_missions"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 7,
-      "police_service_group_leader": 5,
-      "police_speaker": 1,
-      "disaster_response_technology": 1,
-      "fire_stations": 10
-    },
-    "overlay_index": null,
-    "base_mission_id": 234,
-    "additive_overlays": "ade",
     "mission_categories": [
       "fire"
     ]
@@ -27967,143 +27617,6 @@
     ]
   },
   {
-    "id": "234/bce",
-    "name": "Entschärfung von Weltkriegsbombe",
-    "place": "",
-    "place_array": [],
-    "average_credits": 11400,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "energy_supply": 1,
-      "oneof_police_patrol_or_motorcycle": 5,
-      "disaster_response_technology_equipment": 1,
-      "disaster_response_technology_crew": 1,
-      "disaster_response_technology_trailer": 1,
-      "firetrucks": 10
-    },
-    "chances": {},
-    "additional": {
-      "duration_text": "2 Stunden",
-      "duration": 7200,
-      "guard_mission": true,
-      "filter_id": "firehouse_missions",
-      "care_affected_people_min": 25,
-      "care_affected_people_max": 100
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 4,
-      "energy_supply": 5,
-      "care_service": 1,
-      "disaster_response_technology": 1,
-      "fire_stations": 10
-    },
-    "overlay_index": null,
-    "base_mission_id": 234,
-    "additive_overlays": "bce",
-    "mission_categories": [
-      "fire"
-    ]
-  },
-  {
-    "id": "234/bde",
-    "name": "Entschärfung von Weltkriegsbombe",
-    "place": "",
-    "place_array": [],
-    "average_credits": 12690,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "energy_supply": 1,
-      "oneof_police_patrol_or_motorcycle": 5,
-      "police_speaker": 1,
-      "disaster_response_technology_equipment": 1,
-      "disaster_response_technology_crew": 1,
-      "disaster_response_technology_trailer": 1,
-      "firetrucks": 10
-    },
-    "chances": {},
-    "additional": {
-      "duration_text": "2 Stunden",
-      "duration": 7200,
-      "guard_mission": true,
-      "filter_id": "firehouse_missions"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 4,
-      "energy_supply": 5,
-      "police_speaker": 1,
-      "disaster_response_technology": 1,
-      "fire_stations": 10
-    },
-    "overlay_index": null,
-    "base_mission_id": 234,
-    "additive_overlays": "bde",
-    "mission_categories": [
-      "fire"
-    ]
-  },
-  {
-    "id": "234/cde",
-    "name": "Entschärfung von Weltkriegsbombe",
-    "place": "",
-    "place_array": [],
-    "average_credits": 11400,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "oneof_police_patrol_or_motorcycle": 5,
-      "police_speaker": 1,
-      "disaster_response_technology_equipment": 1,
-      "disaster_response_technology_crew": 1,
-      "disaster_response_technology_trailer": 1,
-      "firetrucks": 10
-    },
-    "chances": {},
-    "additional": {
-      "duration_text": "2 Stunden",
-      "duration": 7200,
-      "guard_mission": true,
-      "filter_id": "firehouse_missions",
-      "care_affected_people_min": 25,
-      "care_affected_people_max": 100
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 4,
-      "care_service": 1,
-      "police_speaker": 1,
-      "disaster_response_technology": 1,
-      "fire_stations": 10
-    },
-    "overlay_index": null,
-    "base_mission_id": 234,
-    "additive_overlays": "cde",
-    "mission_categories": [
-      "fire"
-    ]
-  },
-  {
     "id": "234/abcd",
     "name": "Entschärfung von Weltkriegsbombe",
     "place": "",
@@ -28145,247 +27658,6 @@
     "overlay_index": null,
     "base_mission_id": 234,
     "additive_overlays": "abcd",
-    "mission_categories": [
-      "fire"
-    ]
-  },
-  {
-    "id": "234/abce",
-    "name": "Entschärfung von Weltkriegsbombe",
-    "place": "",
-    "place_array": [],
-    "average_credits": 13000,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "police_service_group_leader": 1,
-      "energy_supply": 1,
-      "oneof_police_patrol_or_motorcycle": 5,
-      "disaster_response_technology_equipment": 1,
-      "disaster_response_technology_crew": 1,
-      "disaster_response_technology_trailer": 1,
-      "firetrucks": 10
-    },
-    "chances": {},
-    "additional": {
-      "duration_text": "2 Stunden",
-      "duration": 7200,
-      "guard_mission": true,
-      "filter_id": "firehouse_missions",
-      "care_affected_people_min": 25,
-      "care_affected_people_max": 100
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 7,
-      "police_service_group_leader": 5,
-      "energy_supply": 5,
-      "care_service": 1,
-      "disaster_response_technology": 1,
-      "fire_stations": 10
-    },
-    "overlay_index": null,
-    "base_mission_id": 234,
-    "additive_overlays": "abce",
-    "mission_categories": [
-      "fire"
-    ]
-  },
-  {
-    "id": "234/abde",
-    "name": "Entschärfung von Weltkriegsbombe",
-    "place": "",
-    "place_array": [],
-    "average_credits": 14290,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "police_service_group_leader": 1,
-      "energy_supply": 1,
-      "oneof_police_patrol_or_motorcycle": 5,
-      "police_speaker": 1,
-      "disaster_response_technology_equipment": 1,
-      "disaster_response_technology_crew": 1,
-      "disaster_response_technology_trailer": 1,
-      "firetrucks": 10
-    },
-    "chances": {},
-    "additional": {
-      "duration_text": "2 Stunden",
-      "duration": 7200,
-      "guard_mission": true,
-      "filter_id": "firehouse_missions"
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 7,
-      "police_service_group_leader": 5,
-      "energy_supply": 5,
-      "police_speaker": 1,
-      "disaster_response_technology": 1,
-      "fire_stations": 10
-    },
-    "overlay_index": null,
-    "base_mission_id": 234,
-    "additive_overlays": "abde",
-    "mission_categories": [
-      "fire"
-    ]
-  },
-  {
-    "id": "234/acde",
-    "name": "Entschärfung von Weltkriegsbombe",
-    "place": "",
-    "place_array": [],
-    "average_credits": 13000,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "police_service_group_leader": 1,
-      "oneof_police_patrol_or_motorcycle": 5,
-      "police_speaker": 1,
-      "disaster_response_technology_equipment": 1,
-      "disaster_response_technology_crew": 1,
-      "disaster_response_technology_trailer": 1,
-      "firetrucks": 10
-    },
-    "chances": {},
-    "additional": {
-      "duration_text": "2 Stunden",
-      "duration": 7200,
-      "guard_mission": true,
-      "filter_id": "firehouse_missions",
-      "care_affected_people_min": 25,
-      "care_affected_people_max": 100
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 7,
-      "police_service_group_leader": 5,
-      "care_service": 1,
-      "police_speaker": 1,
-      "disaster_response_technology": 1,
-      "fire_stations": 10
-    },
-    "overlay_index": null,
-    "base_mission_id": 234,
-    "additive_overlays": "acde",
-    "mission_categories": [
-      "fire"
-    ]
-  },
-  {
-    "id": "234/bcde",
-    "name": "Entschärfung von Weltkriegsbombe",
-    "place": "",
-    "place_array": [],
-    "average_credits": 13000,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "energy_supply": 1,
-      "oneof_police_patrol_or_motorcycle": 5,
-      "police_speaker": 1,
-      "disaster_response_technology_equipment": 1,
-      "disaster_response_technology_crew": 1,
-      "disaster_response_technology_trailer": 1,
-      "firetrucks": 10
-    },
-    "chances": {},
-    "additional": {
-      "duration_text": "2 Stunden",
-      "duration": 7200,
-      "guard_mission": true,
-      "filter_id": "firehouse_missions",
-      "care_affected_people_min": 25,
-      "care_affected_people_max": 100
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 4,
-      "energy_supply": 5,
-      "care_service": 1,
-      "police_speaker": 1,
-      "disaster_response_technology": 1,
-      "fire_stations": 10
-    },
-    "overlay_index": null,
-    "base_mission_id": 234,
-    "additive_overlays": "bcde",
-    "mission_categories": [
-      "fire"
-    ]
-  },
-  {
-    "id": "234/abcde",
-    "name": "Entschärfung von Weltkriegsbombe",
-    "place": "",
-    "place_array": [],
-    "average_credits": 14600,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": {
-      "battalion_chief_vehicles": 1,
-      "mobile_command_vehicles": 1,
-      "police_service_group_leader": 1,
-      "energy_supply": 1,
-      "oneof_police_patrol_or_motorcycle": 5,
-      "police_speaker": 1,
-      "disaster_response_technology_equipment": 1,
-      "disaster_response_technology_crew": 1,
-      "disaster_response_technology_trailer": 1,
-      "firetrucks": 10
-    },
-    "chances": {},
-    "additional": {
-      "duration_text": "2 Stunden",
-      "duration": 7200,
-      "guard_mission": true,
-      "filter_id": "firehouse_missions",
-      "care_affected_people_min": 25,
-      "care_affected_people_max": 100
-    },
-    "prerequisites": {
-      "main_building": 0,
-      "police_stations": 7,
-      "police_service_group_leader": 5,
-      "energy_supply": 5,
-      "care_service": 1,
-      "police_speaker": 1,
-      "disaster_response_technology": 1,
-      "fire_stations": 10
-    },
-    "overlay_index": null,
-    "base_mission_id": 234,
-    "additive_overlays": "abcde",
     "mission_categories": [
       "fire"
     ]
@@ -48993,6 +48265,9 @@
     },
     "chances": {},
     "additional": {
+      "expansion_missions_ids": [
+        332
+      ],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": {
@@ -49029,6 +48304,9 @@
     },
     "chances": {},
     "additional": {
+      "expansion_missions_ids": [
+        332
+      ],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": {
@@ -49064,6 +48342,9 @@
     },
     "chances": {},
     "additional": {
+      "expansion_missions_ids": [
+        333
+      ],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": {
@@ -49100,6 +48381,9 @@
     },
     "chances": {},
     "additional": {
+      "expansion_missions_ids": [
+        333
+      ],
       "filter_id": "firehouse_missions"
     },
     "prerequisites": {
@@ -85867,6 +85151,80 @@
     ]
   },
   {
+    "id": "505/f",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 11400,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "f",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
     "id": "505/ab",
     "name": "Hochwasserschadenslage",
     "place": "See",
@@ -86179,6 +85537,82 @@
     ]
   },
   {
+    "id": "505/af",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 12200,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "af",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
     "id": "505/bc",
     "name": "Hochwasserschadenslage",
     "place": "See",
@@ -86415,6 +85849,82 @@
     ]
   },
   {
+    "id": "505/bf",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 11800,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "drone": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "drone": 1,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "bf",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
     "id": "505/cd",
     "name": "Hochwasserschadenslage",
     "place": "See",
@@ -86577,6 +86087,84 @@
     ]
   },
   {
+    "id": "505/cf",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 15750,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "care_service": 2,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "cf",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
     "id": "505/de",
     "name": "Hochwasserschadenslage",
     "place": "See",
@@ -86654,6 +86242,164 @@
     "overlay_index": null,
     "base_mission_id": 505,
     "additive_overlays": "de",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/df",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 13800,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "thw_command": 1,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "df",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/ef",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 13580,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "ef",
     "mission_categories": [
       "water_rescue"
     ]
@@ -86901,6 +86647,84 @@
     ]
   },
   {
+    "id": "505/abf",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 12600,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "drone": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "drone": 1,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "abf",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
     "id": "505/acd",
     "name": "Hochwasserschadenslage",
     "place": "See",
@@ -87067,6 +86891,86 @@
     ]
   },
   {
+    "id": "505/acf",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 16750,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "care_service": 2,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "acf",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
     "id": "505/ade",
     "name": "Hochwasserschadenslage",
     "place": "See",
@@ -87146,6 +87050,168 @@
     "overlay_index": null,
     "base_mission_id": 505,
     "additive_overlays": "ade",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/adf",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 14600,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "thw_command": 1,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "adf",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/aef",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 14380,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "aef",
     "mission_categories": [
       "water_rescue"
     ]
@@ -87317,6 +87383,86 @@
     ]
   },
   {
+    "id": "505/bcf",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 16250,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "drone": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "drone": 1,
+      "care_service": 2,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "bcf",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
     "id": "505/bde",
     "name": "Hochwasserschadenslage",
     "place": "See",
@@ -87396,6 +87542,168 @@
     "overlay_index": null,
     "base_mission_id": 505,
     "additive_overlays": "bde",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/bdf",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 14200,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "drone": 1,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "drone": 1,
+      "thw_command": 1,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "bdf",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/bef",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 13980,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "drone": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "drone": 1,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "bef",
     "mission_categories": [
       "water_rescue"
     ]
@@ -87482,6 +87790,256 @@
     "overlay_index": null,
     "base_mission_id": 505,
     "additive_overlays": "cde",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/cdf",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 18750,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "care_service": 2,
+      "thw_command": 1,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "cdf",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/cef",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 18475,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "care_service": 2,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "cef",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/def",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 15980,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "thw_command": 1,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "def",
     "mission_categories": [
       "water_rescue"
     ]
@@ -87657,6 +88215,88 @@
     ]
   },
   {
+    "id": "505/abcf",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 17250,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "drone": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "drone": 1,
+      "care_service": 2,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "abcf",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
     "id": "505/abde",
     "name": "Hochwasserschadenslage",
     "place": "See",
@@ -87738,6 +88378,172 @@
     "overlay_index": null,
     "base_mission_id": 505,
     "additive_overlays": "abde",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/abdf",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 15000,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "drone": 1,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "drone": 1,
+      "thw_command": 1,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "abdf",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/abef",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 14780,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "drone": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "drone": 1,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "abef",
     "mission_categories": [
       "water_rescue"
     ]
@@ -87831,6 +88637,262 @@
     ]
   },
   {
+    "id": "505/acdf",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 19750,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "care_service": 2,
+      "thw_command": 1,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "acdf",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/acef",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 19475,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "care_service": 2,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "acef",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/adef",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 16780,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "thw_command": 1,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "adef",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
     "id": "505/bcde",
     "name": "Hochwasserschadenslage",
     "place": "See",
@@ -87914,6 +88976,350 @@
     "overlay_index": null,
     "base_mission_id": 505,
     "additive_overlays": "bcde",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/bcdf",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 19250,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "drone": 1,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "drone": 1,
+      "care_service": 2,
+      "thw_command": 1,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "bcdf",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/bcef",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 18975,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "drone": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "drone": 1,
+      "care_service": 2,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "bcef",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/bdef",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 16380,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "drone": 1,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "drone": 1,
+      "thw_command": 1,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "bdef",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/cdef",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 21475,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "care_service": 2,
+      "thw_command": 1,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "cdef",
     "mission_categories": [
       "water_rescue"
     ]
@@ -88004,6 +89410,540 @@
     "overlay_index": null,
     "base_mission_id": 505,
     "additive_overlays": "abcde",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/abcdf",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 20250,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "drone": 1,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "drone": 1,
+      "care_service": 2,
+      "thw_command": 1,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "abcdf",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/abcef",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 19975,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "drone": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "drone": 1,
+      "care_service": 2,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "abcef",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/abdef",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 17180,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "drone": 1,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "drone": 1,
+      "thw_command": 1,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "abdef",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/acdef",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 22475,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "care_service": 2,
+      "thw_command": 1,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "acdef",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/bcdef",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 21975,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "drone": 1,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "drone": 1,
+      "care_service": 2,
+      "thw_command": 1,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "bcdef",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "505/abcdef",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See",
+    "place_array": [
+      "See"
+    ],
+    "average_credits": 22975,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "drone": 1,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        244,
+        298,
+        273,
+        497,
+        253,
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "drone": 1,
+      "care_service": 2,
+      "thw_command": 1,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 505,
+    "additive_overlays": "abcdef",
     "mission_categories": [
       "water_rescue"
     ]
@@ -88403,6 +90343,75 @@
     ]
   },
   {
+    "id": "507/e",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "Fluss",
+    "place_array": [
+      "Fluss"
+    ],
+    "average_credits": 11400,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 507,
+    "additive_overlays": "e",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
     "id": "507/ab",
     "name": "Hochwasserschadenslage",
     "place": "Fluss",
@@ -88624,6 +90633,77 @@
     ]
   },
   {
+    "id": "507/ae",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "Fluss",
+    "place_array": [
+      "Fluss"
+    ],
+    "average_credits": 12200,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 507,
+    "additive_overlays": "ae",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
     "id": "507/bc",
     "name": "Hochwasserschadenslage",
     "place": "Fluss",
@@ -88776,6 +90856,79 @@
     ]
   },
   {
+    "id": "507/be",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "Fluss",
+    "place_array": [
+      "Fluss"
+    ],
+    "average_credits": 15750,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "care_service": 2,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 507,
+    "additive_overlays": "be",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
     "id": "507/cd",
     "name": "Hochwasserschadenslage",
     "place": "Fluss",
@@ -88848,6 +91001,154 @@
     "overlay_index": null,
     "base_mission_id": 507,
     "additive_overlays": "cd",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "507/ce",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "Fluss",
+    "place_array": [
+      "Fluss"
+    ],
+    "average_credits": 13800,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "thw_command": 1,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 507,
+    "additive_overlays": "ce",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "507/de",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "Fluss",
+    "place_array": [
+      "Fluss"
+    ],
+    "average_credits": 13580,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 507,
+    "additive_overlays": "de",
     "mission_categories": [
       "water_rescue"
     ]
@@ -89009,6 +91310,81 @@
     ]
   },
   {
+    "id": "507/abe",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "Fluss",
+    "place_array": [
+      "Fluss"
+    ],
+    "average_credits": 16750,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "care_service": 2,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 507,
+    "additive_overlays": "abe",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
     "id": "507/acd",
     "name": "Hochwasserschadenslage",
     "place": "Fluss",
@@ -89083,6 +91459,158 @@
     "overlay_index": null,
     "base_mission_id": 507,
     "additive_overlays": "acd",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "507/ace",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "Fluss",
+    "place_array": [
+      "Fluss"
+    ],
+    "average_credits": 14600,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "thw_command": 1,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 507,
+    "additive_overlays": "ace",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "507/ade",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "Fluss",
+    "place_array": [
+      "Fluss"
+    ],
+    "average_credits": 14380,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 507,
+    "additive_overlays": "ade",
     "mission_categories": [
       "water_rescue"
     ]
@@ -89169,6 +91697,241 @@
     ]
   },
   {
+    "id": "507/bce",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "Fluss",
+    "place_array": [
+      "Fluss"
+    ],
+    "average_credits": 18750,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "care_service": 2,
+      "thw_command": 1,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 507,
+    "additive_overlays": "bce",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "507/bde",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "Fluss",
+    "place_array": [
+      "Fluss"
+    ],
+    "average_credits": 18475,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "care_service": 2,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 507,
+    "additive_overlays": "bde",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "507/cde",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "Fluss",
+    "place_array": [
+      "Fluss"
+    ],
+    "average_credits": 15980,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "thw_command": 1,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 507,
+    "additive_overlays": "cde",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
     "id": "507/abcd",
     "name": "Hochwasserschadenslage",
     "place": "Fluss",
@@ -89247,6 +92010,415 @@
     "overlay_index": null,
     "base_mission_id": 507,
     "additive_overlays": "abcd",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "507/abce",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "Fluss",
+    "place_array": [
+      "Fluss"
+    ],
+    "average_credits": 19750,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "care_service": 2,
+      "thw_command": 1,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 507,
+    "additive_overlays": "abce",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "507/abde",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "Fluss",
+    "place_array": [
+      "Fluss"
+    ],
+    "average_credits": 19475,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "care_service": 2,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 507,
+    "additive_overlays": "abde",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "507/acde",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "Fluss",
+    "place_array": [
+      "Fluss"
+    ],
+    "average_credits": 16780,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "thw_command": 1,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 507,
+    "additive_overlays": "acde",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "507/bcde",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "Fluss",
+    "place_array": [
+      "Fluss"
+    ],
+    "average_credits": 21475,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "care_service": 2,
+      "thw_command": 1,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 507,
+    "additive_overlays": "bcde",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "507/abcde",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "Fluss",
+    "place_array": [
+      "Fluss"
+    ],
+    "average_credits": 22475,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 2,
+      "disaster_response_technology_crew": 2,
+      "disaster_response_technology_trailer": 2,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "police_service_group_leader": 10,
+      "care_service": 2,
+      "thw_command": 1,
+      "lift": 1,
+      "disaster_response_technology": 2,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 507,
+    "additive_overlays": "abcde",
     "mission_categories": [
       "water_rescue"
     ]
@@ -124599,6 +127771,78 @@
     ]
   },
   {
+    "id": "664/e",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See\nFluss",
+    "place_array": [
+      "See",
+      "Fluss"
+    ],
+    "average_credits": 13400,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "pump": 3,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "water_damage_pump_count": 2,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 664,
+    "additive_overlays": "e",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
     "id": "664/ab",
     "name": "Hochwasserschadenslage",
     "place": "See\nFluss",
@@ -124828,6 +128072,80 @@
     ]
   },
   {
+    "id": "664/ae",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See\nFluss",
+    "place_array": [
+      "See",
+      "Fluss"
+    ],
+    "average_credits": 14200,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "pump": 3,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "water_damage_pump_count": 2,
+      "police_service_group_leader": 10,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 664,
+    "additive_overlays": "ae",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
     "id": "664/bc",
     "name": "Hochwasserschadenslage",
     "place": "See\nFluss",
@@ -124984,6 +128302,81 @@
     ]
   },
   {
+    "id": "664/be",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See\nFluss",
+    "place_array": [
+      "See",
+      "Fluss"
+    ],
+    "average_credits": 14900,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "pump": 3,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "water_damage_pump_count": 2,
+      "care_service": 2,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 664,
+    "additive_overlays": "be",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
     "id": "664/cd",
     "name": "Hochwasserschadenslage",
     "place": "See\nFluss",
@@ -125059,6 +128452,160 @@
     "overlay_index": null,
     "base_mission_id": 664,
     "additive_overlays": "cd",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "664/ce",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See\nFluss",
+    "place_array": [
+      "See",
+      "Fluss"
+    ],
+    "average_credits": 15800,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "pump": 3,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "water_damage_pump_count": 2,
+      "thw_command": 1,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 664,
+    "additive_overlays": "ce",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "664/de",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See\nFluss",
+    "place_array": [
+      "See",
+      "Fluss"
+    ],
+    "average_credits": 16670,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "pump": 3,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 3,
+      "disaster_response_technology_crew": 3,
+      "disaster_response_technology_trailer": 3,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "water_damage_pump_count": 2,
+      "lift": 1,
+      "disaster_response_technology": 3,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 664,
+    "additive_overlays": "de",
     "mission_categories": [
       "water_rescue"
     ]
@@ -125224,6 +128771,83 @@
     ]
   },
   {
+    "id": "664/abe",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See\nFluss",
+    "place_array": [
+      "See",
+      "Fluss"
+    ],
+    "average_credits": 15700,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "pump": 3,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "water_damage_pump_count": 2,
+      "police_service_group_leader": 10,
+      "care_service": 2,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 664,
+    "additive_overlays": "abe",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
     "id": "664/acd",
     "name": "Hochwasserschadenslage",
     "place": "See\nFluss",
@@ -125301,6 +128925,164 @@
     "overlay_index": null,
     "base_mission_id": 664,
     "additive_overlays": "acd",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "664/ace",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See\nFluss",
+    "place_array": [
+      "See",
+      "Fluss"
+    ],
+    "average_credits": 16600,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "pump": 3,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "water_damage_pump_count": 2,
+      "police_service_group_leader": 10,
+      "thw_command": 1,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 664,
+    "additive_overlays": "ace",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "664/ade",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See\nFluss",
+    "place_array": [
+      "See",
+      "Fluss"
+    ],
+    "average_credits": 17470,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "pump": 3,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 3,
+      "disaster_response_technology_crew": 3,
+      "disaster_response_technology_trailer": 3,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "water_damage_pump_count": 2,
+      "police_service_group_leader": 10,
+      "lift": 1,
+      "disaster_response_technology": 3,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 664,
+    "additive_overlays": "ade",
     "mission_categories": [
       "water_rescue"
     ]
@@ -125389,6 +129171,248 @@
     ]
   },
   {
+    "id": "664/bce",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See\nFluss",
+    "place_array": [
+      "See",
+      "Fluss"
+    ],
+    "average_credits": 17300,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "pump": 3,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "water_damage_pump_count": 2,
+      "care_service": 2,
+      "thw_command": 1,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 664,
+    "additive_overlays": "bce",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "664/bde",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See\nFluss",
+    "place_array": [
+      "See",
+      "Fluss"
+    ],
+    "average_credits": 18170,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "pump": 3,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 3,
+      "disaster_response_technology_crew": 3,
+      "disaster_response_technology_trailer": 3,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "water_damage_pump_count": 2,
+      "care_service": 2,
+      "lift": 1,
+      "disaster_response_technology": 3,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 664,
+    "additive_overlays": "bde",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "664/cde",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See\nFluss",
+    "place_array": [
+      "See",
+      "Fluss"
+    ],
+    "average_credits": 19070,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "pump": 3,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 3,
+      "disaster_response_technology_crew": 3,
+      "disaster_response_technology_trailer": 3,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "water_damage_pump_count": 2,
+      "thw_command": 1,
+      "lift": 1,
+      "disaster_response_technology": 3,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 664,
+    "additive_overlays": "cde",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
     "id": "664/abcd",
     "name": "Hochwasserschadenslage",
     "place": "See\nFluss",
@@ -125469,6 +129493,426 @@
     "overlay_index": null,
     "base_mission_id": 664,
     "additive_overlays": "abcd",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "664/abce",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See\nFluss",
+    "place_array": [
+      "See",
+      "Fluss"
+    ],
+    "average_credits": 18100,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "pump": 3,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "water_damage_pump_count": 2,
+      "police_service_group_leader": 10,
+      "care_service": 2,
+      "thw_command": 1,
+      "lift": 1,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 664,
+    "additive_overlays": "abce",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "664/abde",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See\nFluss",
+    "place_array": [
+      "See",
+      "Fluss"
+    ],
+    "average_credits": 18970,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "pump": 3,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 3,
+      "disaster_response_technology_crew": 3,
+      "disaster_response_technology_trailer": 3,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "water_damage_pump_count": 2,
+      "police_service_group_leader": 10,
+      "care_service": 2,
+      "lift": 1,
+      "disaster_response_technology": 3,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 664,
+    "additive_overlays": "abde",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "664/acde",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See\nFluss",
+    "place_array": [
+      "See",
+      "Fluss"
+    ],
+    "average_credits": 19870,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "pump": 3,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 3,
+      "disaster_response_technology_crew": 3,
+      "disaster_response_technology_trailer": 3,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "water_damage_pump_count": 2,
+      "police_service_group_leader": 10,
+      "thw_command": 1,
+      "lift": 1,
+      "disaster_response_technology": 3,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 664,
+    "additive_overlays": "acde",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "664/bcde",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See\nFluss",
+    "place_array": [
+      "See",
+      "Fluss"
+    ],
+    "average_credits": 20570,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "pump": 3,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 3,
+      "disaster_response_technology_crew": 3,
+      "disaster_response_technology_trailer": 3,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 6,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "water_damage_pump_count": 2,
+      "care_service": 2,
+      "thw_command": 1,
+      "lift": 1,
+      "disaster_response_technology": 3,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 664,
+    "additive_overlays": "bcde",
+    "mission_categories": [
+      "water_rescue"
+    ]
+  },
+  {
+    "id": "664/abcde",
+    "name": "Hochwasserschadenslage (Windenrettung)",
+    "place": "See\nFluss",
+    "place_array": [
+      "See",
+      "Fluss"
+    ],
+    "average_credits": 21370,
+    "generated_by": "",
+    "icons": [
+      "/images/river_gruen.png",
+      "/images/river_gelb.png",
+      "/images/river_rot.png"
+    ],
+    "requirements": {
+      "boats": 3,
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 1,
+      "fwk": 2,
+      "water_tankers": 4,
+      "diver_units": 2,
+      "police_service_group_leader": 2,
+      "pump": 3,
+      "heavy_rescue_vehicles": 5,
+      "thw_gkw": 4,
+      "thw_mtwtz": 3,
+      "thw_mzkw": 3,
+      "water_damage_pump": 2,
+      "thw_command": 1,
+      "thw_command_2": 1,
+      "thw_command_3": 1,
+      "thw_command_4": 1,
+      "thw_command_trailer": 1,
+      "lift": 1,
+      "oneof_police_patrol_or_motorcycle": 8,
+      "disaster_response_technology_equipment": 3,
+      "disaster_response_technology_crew": 3,
+      "disaster_response_technology_trailer": 3,
+      "firetrucks": 28
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 17,
+      "followup_missions_ids": [
+        942
+      ],
+      "filter_id": "water_watch_missions",
+      "pump_water_amount": 100000,
+      "care_affected_people_min": 100,
+      "care_affected_people_max": 500,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 15,
+      "wasserrettung": 5,
+      "police_stations": 15,
+      "thw": 3,
+      "thw_bergung_count": 3,
+      "thw_zugtrupp_count": 3,
+      "thw_gkw_count": 4,
+      "water_damage_pump_count": 2,
+      "police_service_group_leader": 10,
+      "care_service": 2,
+      "thw_command": 1,
+      "lift": 1,
+      "disaster_response_technology": 3,
+      "fire_stations": 15
+    },
+    "overlay_index": null,
+    "base_mission_id": 664,
+    "additive_overlays": "abcde",
     "mission_categories": [
       "water_rescue"
     ]

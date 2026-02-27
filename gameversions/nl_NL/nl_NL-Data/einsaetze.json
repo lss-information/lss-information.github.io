@@ -8580,7 +8580,7 @@
       "main_building": -1,
       "wasserrettung": 1,
       "rescue_stations": 1,
-      "police_stations": 1,
+      "police_stations": 2,
       "drone_police": 1,
       "fire_stations": 6
     },
@@ -8691,7 +8691,7 @@
       "main_building": -1,
       "wasserrettung": 1,
       "rescue_stations": 1,
-      "police_stations": 1,
+      "police_stations": 2,
       "tow_trucks": 2,
       "drone_police": 1,
       "fire_stations": 6
@@ -9505,7 +9505,7 @@
     },
     "prerequisites": {
       "main_building": 5,
-      "police_stations": 1,
+      "police_stations": 5,
       "drone_police": 1,
       "fire_stations": 11
     },
@@ -9762,7 +9762,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 2,
       "drone_police": 1,
       "fire_stations": 14
     },
@@ -12181,7 +12181,7 @@
     },
     "prerequisites": {
       "main_building": 5,
-      "police_stations": 1,
+      "police_stations": 2,
       "drone_police": 1
     },
     "overlay_index": null,
@@ -12400,7 +12400,7 @@
     },
     "prerequisites": {
       "main_building": 11,
-      "police_stations": 1,
+      "police_stations": 5,
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 2,
       "riot_unit_count": 2,
@@ -12784,7 +12784,7 @@
       "wasserrettung": 3,
       "water_rescue_2": 2,
       "rescue_stations": 10,
-      "police_stations": 1,
+      "police_stations": 2,
       "drone_police": 1,
       "fire_stations": 6
     },
@@ -12913,7 +12913,7 @@
       "wasserrettung": 3,
       "water_rescue_2": 2,
       "rescue_stations": 10,
-      "police_stations": 1,
+      "police_stations": 2,
       "tow_trucks_large": 1,
       "drone_police": 1,
       "fire_stations": 6
@@ -13913,7 +13913,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 5,
       "bereitschaftspolizei": 1,
       "airport": 1,
       "drone_police": 1,
@@ -15712,7 +15712,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 5,
       "bereitschaftspolizei": 1,
       "technical_aid": 3,
       "drone_police": 1,
@@ -15827,7 +15827,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 6,
       "bereitschaftspolizei": 1,
       "traffic_police": 1,
       "technical_aid": 3,
@@ -15953,7 +15953,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 33,
-      "police_stations": 1,
+      "police_stations": 10,
       "bereitschaftspolizei": 1,
       "mass_casualty_count": 1,
       "technical_aid": 3,
@@ -16082,7 +16082,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 33,
-      "police_stations": 1,
+      "police_stations": 11,
       "bereitschaftspolizei": 1,
       "mass_casualty_count": 1,
       "traffic_police": 1,
@@ -18905,7 +18905,7 @@
     },
     "prerequisites": {
       "main_building": 11,
-      "police_stations": 1,
+      "police_stations": 2,
       "bereitschaftspolizei": 1,
       "hondengeleider": 1,
       "drone_police": 1
@@ -21012,7 +21012,7 @@
       "main_building": -1,
       "wasserrettung": 4,
       "rescue_stations": 1,
-      "police_stations": 1,
+      "police_stations": 2,
       "drone_police": 1,
       "fire_stations": 14
     },
@@ -27022,7 +27022,7 @@
     },
     "prerequisites": {
       "main_building": 5,
-      "police_stations": 1,
+      "police_stations": 5,
       "bereitschaftspolizei": 1,
       "drone_police": 1,
       "fire_stations": 11
@@ -28576,7 +28576,7 @@
     },
     "prerequisites": {
       "main_building": 11,
-      "police_stations": 1,
+      "police_stations": 5,
       "bereitschaftspolizei": 3,
       "riot_unit_count": 2,
       "detention_unit_count": 1,
@@ -28665,7 +28665,7 @@
     },
     "prerequisites": {
       "main_building": 11,
-      "police_stations": 1,
+      "police_stations": 5,
       "bereitschaftspolizei": 4,
       "riot_unit_count": 2,
       "detention_unit_count": 1,
@@ -28755,7 +28755,7 @@
     },
     "prerequisites": {
       "main_building": 11,
-      "police_stations": 1,
+      "police_stations": 5,
       "bereitschaftspolizei": 1,
       "riot_unit_count": 2,
       "detention_unit_count": 1,
@@ -28848,7 +28848,7 @@
     },
     "prerequisites": {
       "main_building": 11,
-      "police_stations": 1,
+      "police_stations": 5,
       "bereitschaftspolizei": 4,
       "riot_unit_count": 2,
       "detention_unit_count": 1,
@@ -29321,7 +29321,7 @@
       "main_building": -1,
       "wasserrettung": 3,
       "rescue_stations": 10,
-      "police_stations": 1,
+      "police_stations": 3,
       "drone_police": 1,
       "fire_stations": 6
     },
@@ -29590,7 +29590,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 3,
       "technical_aid": 2,
       "drone_police": 1,
       "fire_stations": 6
@@ -29707,7 +29707,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 6,
       "traffic_police": 1,
       "technical_aid": 2,
       "drone_police": 1,
@@ -29830,7 +29830,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 10,
-      "police_stations": 1,
+      "police_stations": 5,
       "bereitschaftspolizei": 1,
       "technical_aid": 2,
       "drone_police": 1,
@@ -33395,7 +33395,7 @@
     "prerequisites": {
       "main_building": 11,
       "rescue_stations": 1,
-      "police_stations": 1,
+      "police_stations": 5,
       "bereitschaftspolizei": 2,
       "at": 1,
       "hondengeleider": 1,
@@ -35838,7 +35838,7 @@
     },
     "prerequisites": {
       "main_building": 11,
-      "police_stations": 1,
+      "police_stations": 5,
       "bereitschaftspolizei": 1,
       "at": 1,
       "drone_police": 1,
@@ -36336,7 +36336,7 @@
     },
     "prerequisites": {
       "main_building": 11,
-      "police_stations": 1,
+      "police_stations": 5,
       "bereitschaftspolizei": 1,
       "hondengeleider": 1,
       "drone_police": 1
@@ -37980,7 +37980,7 @@
     },
     "prerequisites": {
       "main_building": 5,
-      "police_stations": 1,
+      "police_stations": 5,
       "personnel_educations": {
         "police_motorcycle": 6
       },
@@ -38214,7 +38214,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 10,
-      "police_stations": 1,
+      "police_stations": 5,
       "drone_police": 1,
       "fire_stations": 14
     },
@@ -38365,7 +38365,7 @@
     },
     "prerequisites": {
       "main_building": 5,
-      "police_stations": 1,
+      "police_stations": 6,
       "drone_police": 1
     },
     "overlay_index": null,
@@ -41005,7 +41005,7 @@
     },
     "prerequisites": {
       "main_building": 11,
-      "police_stations": 1,
+      "police_stations": 13,
       "bereitschaftspolizei": 5,
       "riot_unit_count": 2,
       "detention_unit_count": 1,
@@ -41714,7 +41714,7 @@
     },
     "prerequisites": {
       "main_building": 5,
-      "police_stations": 1,
+      "police_stations": 2,
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1,
       "hondengeleider": 1,
@@ -43065,7 +43065,7 @@
     },
     "prerequisites": {
       "main_building": 11,
-      "police_stations": 1,
+      "police_stations": 6,
       "bereitschaftspolizei": 2,
       "riot_unit_count": 2,
       "drone_police": 1
@@ -43185,7 +43185,7 @@
     "prerequisites": {
       "main_building": 11,
       "rescue_stations": 1,
-      "police_stations": 1,
+      "police_stations": 10,
       "bereitschaftspolizei": 6,
       "riot_unit_count": 3,
       "detention_unit_count": 1,
@@ -43310,7 +43310,7 @@
     "prerequisites": {
       "main_building": 11,
       "rescue_stations": 1,
-      "police_stations": 1,
+      "police_stations": 8,
       "bereitschaftspolizei": 4,
       "riot_unit_count": 2,
       "detention_unit_count": 1,
@@ -43397,7 +43397,7 @@
     },
     "prerequisites": {
       "main_building": 11,
-      "police_stations": 1,
+      "police_stations": 6,
       "bereitschaftspolizei": 1,
       "riot_unit_count": 1,
       "drone_police": 1
@@ -43478,7 +43478,7 @@
     },
     "prerequisites": {
       "main_building": 11,
-      "police_stations": 1,
+      "police_stations": 7,
       "bereitschaftspolizei": 2,
       "riot_unit_count": 2,
       "detention_unit_count": 1,
@@ -45364,7 +45364,7 @@
       "main_building": 16,
       "water_rescue_2": 4,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 2,
       "drone_police": 1
     },
     "overlay_index": null,
@@ -45462,7 +45462,7 @@
       "main_building": 16,
       "water_rescue_2": 5,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 3,
       "drone_police": 1
     },
     "overlay_index": null,
@@ -45606,7 +45606,7 @@
       "main_building": 16,
       "water_rescue_2": 2,
       "rescue_stations": 1,
-      "police_stations": 1,
+      "police_stations": 2,
       "police_helicopter_stations": 1,
       "drone_police": 1
     },
@@ -47737,7 +47737,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 10,
-      "police_stations": 1,
+      "police_stations": 7,
       "bereitschaftspolizei": 1,
       "technical_aid": 2,
       "drone_police": 1,
@@ -47796,7 +47796,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 10,
-      "police_stations": 1,
+      "police_stations": 7,
       "bereitschaftspolizei": 1,
       "technical_aid": 2,
       "tow_trucks": 2,
@@ -47973,7 +47973,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 10,
-      "police_stations": 1,
+      "police_stations": 7,
       "bereitschaftspolizei": 1,
       "technical_aid": 2,
       "drone_police": 1,
@@ -48034,7 +48034,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 10,
-      "police_stations": 1,
+      "police_stations": 7,
       "bereitschaftspolizei": 1,
       "technical_aid": 2,
       "tow_trucks": 2,
@@ -48813,7 +48813,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 5,
       "bereitschaftspolizei": 1,
       "drone_police": 1,
       "fire_stations": 14
@@ -48965,7 +48965,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 63,
-      "police_stations": 1,
+      "police_stations": 16,
       "bereitschaftspolizei": 1,
       "mass_casualty_count": 2,
       "airport": 1,
@@ -49122,7 +49122,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 90,
-      "police_stations": 1,
+      "police_stations": 20,
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 2,
       "riot_unit_count": 2,
@@ -50294,7 +50294,7 @@
     "prerequisites": {
       "main_building": 3,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 2,
       "drone_police": 1,
       "fire_stations": 4
     },
@@ -50342,7 +50342,7 @@
     "prerequisites": {
       "main_building": 3,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 2,
       "tow_trucks_large": 1,
       "drone_police": 1,
       "fire_stations": 4
@@ -53453,7 +53453,7 @@
     "prerequisites": {
       "main_building": 11,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 20,
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 9,
       "riot_unit_count": 3,
@@ -53580,7 +53580,7 @@
     "prerequisites": {
       "main_building": 11,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 20,
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 9,
       "riot_unit_count": 3,
@@ -53708,7 +53708,7 @@
     "prerequisites": {
       "main_building": 11,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 20,
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 11,
       "riot_unit_count": 3,
@@ -53839,7 +53839,7 @@
     "prerequisites": {
       "main_building": 11,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 20,
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 11,
       "riot_unit_count": 3,
@@ -54003,7 +54003,7 @@
     "prerequisites": {
       "main_building": 3,
       "rescue_stations": 12,
-      "police_stations": 1,
+      "police_stations": 10,
       "drone_police": 1,
       "fire_stations": 17
     },
@@ -54152,7 +54152,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 10,
-      "police_stations": 1,
+      "police_stations": 5,
       "drone_police": 1,
       "fire_stations": 6
     },
@@ -54284,7 +54284,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 10,
-      "police_stations": 1,
+      "police_stations": 8,
       "drone_police": 1,
       "fire_stations": 14
     },
@@ -54428,7 +54428,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 12,
-      "police_stations": 1,
+      "police_stations": 14,
       "drone_police": 1,
       "fire_stations": 20
     },
@@ -54577,7 +54577,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 12,
-      "police_stations": 1,
+      "police_stations": 14,
       "fire_support_count": 1,
       "drone_police": 1,
       "fire_stations": 20
@@ -57192,7 +57192,7 @@
       "wasserrettung": 2,
       "water_rescue_2": 2,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 5,
       "bereitschaftspolizei": 1,
       "drone_police": 1,
       "fire_stations": 6
@@ -57253,7 +57253,7 @@
       "wasserrettung": 2,
       "water_rescue_2": 2,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 5,
       "bereitschaftspolizei": 1,
       "tow_trucks_large": 1,
       "drone_police": 1,
@@ -57441,7 +57441,7 @@
       "wasserrettung": 2,
       "water_rescue_2": 2,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 5,
       "bereitschaftspolizei": 1,
       "drone_police": 1,
       "fire_stations": 6
@@ -57505,7 +57505,7 @@
       "wasserrettung": 2,
       "water_rescue_2": 2,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 5,
       "bereitschaftspolizei": 1,
       "tow_trucks_large": 1,
       "drone_police": 1,
@@ -57699,7 +57699,7 @@
       "wasserrettung": 2,
       "water_rescue_2": 2,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 5,
       "bereitschaftspolizei": 1,
       "drone_police": 1,
       "fire_stations": 6
@@ -57765,7 +57765,7 @@
       "wasserrettung": 2,
       "water_rescue_2": 2,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 5,
       "bereitschaftspolizei": 1,
       "tow_trucks_large": 1,
       "drone_police": 1,
@@ -59352,7 +59352,7 @@
     },
     "prerequisites": {
       "main_building": 11,
-      "police_stations": 1,
+      "police_stations": 6,
       "bereitschaftspolizei": 2,
       "police_horse": 1,
       "hondengeleider": 1,
@@ -60028,7 +60028,7 @@
     "prerequisites": {
       "main_building": 11,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 9,
       "bereitschaftspolizei": 5,
       "riot_unit_count": 2,
       "detention_unit_count": 1,
@@ -60570,7 +60570,7 @@
     "prerequisites": {
       "main_building": 3,
       "rescue_stations": 1,
-      "police_stations": 1,
+      "police_stations": 3,
       "drone_police": 1
     },
     "overlay_index": null,
@@ -61251,7 +61251,7 @@
     "prerequisites": {
       "main_building": 11,
       "rescue_stations": 1,
-      "police_stations": 1,
+      "police_stations": 10,
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 6,
       "riot_unit_count": 1,
@@ -61395,7 +61395,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 10,
-      "police_stations": 1,
+      "police_stations": 5,
       "bereitschaftspolizei": 1,
       "airport": 1,
       "drone_police": 1,
@@ -61875,7 +61875,7 @@
     "prerequisites": {
       "main_building": 11,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 18,
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 10,
       "riot_unit_count": 2,
@@ -62505,7 +62505,7 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 8,
-      "police_stations": 1,
+      "police_stations": 10,
       "bereitschaftspolizei": 1,
       "drone_police": 1,
       "fire_stations": 18
@@ -62657,7 +62657,6 @@
       ],
       "filter_id": "coastal_rescue_missions",
       "vehicle_groups": [
-        "default",
         "ocean_missions"
       ],
       "patient_specialization_ids": [
@@ -62721,7 +62720,6 @@
       ],
       "filter_id": "coastal_rescue_missions",
       "vehicle_groups": [
-        "default",
         "ocean_missions"
       ],
       "patient_specialization_ids": [
@@ -63664,7 +63662,7 @@
     "prerequisites": {
       "main_building": 11,
       "rescue_stations": 33,
-      "police_stations": 1,
+      "police_stations": 24,
       "police_helicopter_stations": 2,
       "bereitschaftspolizei": 4,
       "mass_casualty_count": 1,
@@ -64562,7 +64560,7 @@
     "prerequisites": {
       "main_building": 11,
       "rescue_stations": 10,
-      "police_stations": 1,
+      "police_stations": 7,
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 2,
       "at": 1,

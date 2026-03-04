@@ -9256,7 +9256,10 @@
         513,
         162
       ],
-      "filter_id": "technical_aid_organization_missions"
+      "filter_id": "technical_aid_organization_missions",
+      "subsequent_missions_ids": [
+        962
+      ]
     },
     "prerequisites": {
       "main_building": 9,
@@ -9299,7 +9302,10 @@
         513,
         162
       ],
-      "filter_id": "technical_aid_organization_missions"
+      "filter_id": "technical_aid_organization_missions",
+      "subsequent_missions_ids": [
+        962
+      ]
     },
     "prerequisites": {
       "main_building": 9,
@@ -9344,7 +9350,10 @@
         513,
         162
       ],
-      "filter_id": "technical_aid_organization_missions"
+      "filter_id": "technical_aid_organization_missions",
+      "subsequent_missions_ids": [
+        962
+      ]
     },
     "prerequisites": {
       "main_building": 9,
@@ -9388,7 +9397,10 @@
         513,
         162
       ],
-      "filter_id": "technical_aid_organization_missions"
+      "filter_id": "technical_aid_organization_missions",
+      "subsequent_missions_ids": [
+        962
+      ]
     },
     "prerequisites": {
       "main_building": 9,
@@ -9432,7 +9444,10 @@
         513,
         162
       ],
-      "filter_id": "technical_aid_organization_missions"
+      "filter_id": "technical_aid_organization_missions",
+      "subsequent_missions_ids": [
+        962
+      ]
     },
     "prerequisites": {
       "main_building": 9,
@@ -9477,7 +9492,10 @@
         513,
         162
       ],
-      "filter_id": "technical_aid_organization_missions"
+      "filter_id": "technical_aid_organization_missions",
+      "subsequent_missions_ids": [
+        962
+      ]
     },
     "prerequisites": {
       "main_building": 9,
@@ -9524,7 +9542,10 @@
         513,
         162
       ],
-      "filter_id": "technical_aid_organization_missions"
+      "filter_id": "technical_aid_organization_missions",
+      "subsequent_missions_ids": [
+        962
+      ]
     },
     "prerequisites": {
       "main_building": 9,
@@ -9571,7 +9592,10 @@
         513,
         162
       ],
-      "filter_id": "technical_aid_organization_missions"
+      "filter_id": "technical_aid_organization_missions",
+      "subsequent_missions_ids": [
+        962
+      ]
     },
     "prerequisites": {
       "main_building": 9,
@@ -9617,7 +9641,10 @@
         513,
         162
       ],
-      "filter_id": "technical_aid_organization_missions"
+      "filter_id": "technical_aid_organization_missions",
+      "subsequent_missions_ids": [
+        962
+      ]
     },
     "prerequisites": {
       "main_building": 9,
@@ -9663,7 +9690,10 @@
         513,
         162
       ],
-      "filter_id": "technical_aid_organization_missions"
+      "filter_id": "technical_aid_organization_missions",
+      "subsequent_missions_ids": [
+        962
+      ]
     },
     "prerequisites": {
       "main_building": 9,
@@ -9709,7 +9739,10 @@
         513,
         162
       ],
-      "filter_id": "technical_aid_organization_missions"
+      "filter_id": "technical_aid_organization_missions",
+      "subsequent_missions_ids": [
+        962
+      ]
     },
     "prerequisites": {
       "main_building": 9,
@@ -9756,7 +9789,10 @@
         513,
         162
       ],
-      "filter_id": "technical_aid_organization_missions"
+      "filter_id": "technical_aid_organization_missions",
+      "subsequent_missions_ids": [
+        962
+      ]
     },
     "prerequisites": {
       "main_building": 9,
@@ -9805,7 +9841,10 @@
         513,
         162
       ],
-      "filter_id": "technical_aid_organization_missions"
+      "filter_id": "technical_aid_organization_missions",
+      "subsequent_missions_ids": [
+        962
+      ]
     },
     "prerequisites": {
       "main_building": 9,
@@ -9853,7 +9892,10 @@
         513,
         162
       ],
-      "filter_id": "technical_aid_organization_missions"
+      "filter_id": "technical_aid_organization_missions",
+      "subsequent_missions_ids": [
+        962
+      ]
     },
     "prerequisites": {
       "main_building": 9,
@@ -9901,7 +9943,10 @@
         513,
         162
       ],
-      "filter_id": "technical_aid_organization_missions"
+      "filter_id": "technical_aid_organization_missions",
+      "subsequent_missions_ids": [
+        962
+      ]
     },
     "prerequisites": {
       "main_building": 9,
@@ -9950,7 +9995,10 @@
         513,
         162
       ],
-      "filter_id": "technical_aid_organization_missions"
+      "filter_id": "technical_aid_organization_missions",
+      "subsequent_missions_ids": [
+        962
+      ]
     },
     "prerequisites": {
       "main_building": 9,
@@ -84746,6 +84794,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -84819,6 +84871,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -84893,6 +84949,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -84966,6 +85026,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -85047,6 +85111,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -85123,6 +85191,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -85197,6 +85269,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -85272,6 +85348,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -85347,6 +85427,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -85430,6 +85514,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -85508,6 +85596,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -85584,6 +85676,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -85659,6 +85755,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -85742,6 +85842,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -85820,6 +85924,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -85896,6 +86004,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -85975,6 +86087,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -86055,6 +86171,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -86133,6 +86253,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -86218,6 +86342,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -86298,6 +86426,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -86376,6 +86508,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -86452,6 +86588,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -86537,6 +86677,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -86617,6 +86761,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -86695,6 +86843,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -86776,6 +86928,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -86858,6 +87014,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -86938,6 +87098,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -87025,6 +87189,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -87107,6 +87275,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -87187,6 +87359,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -87268,6 +87444,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -87350,6 +87530,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -87430,6 +87614,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -87517,6 +87705,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -87599,6 +87791,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -87679,6 +87875,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -87762,6 +87962,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -87846,6 +88050,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -87928,6 +88136,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -88015,6 +88227,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -88097,6 +88313,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -88181,6 +88401,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -88263,6 +88487,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -88352,6 +88580,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -88436,6 +88668,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -88518,6 +88754,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -88603,6 +88843,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -88689,6 +88933,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -88773,6 +89021,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -88862,6 +89114,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -88947,6 +89203,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -89033,6 +89293,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -89117,6 +89381,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -89206,6 +89474,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -89291,6 +89563,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -89380,6 +89656,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -89468,6 +89748,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -89554,6 +89838,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -89645,6 +89933,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "patient_specialization_ids": [
         0
@@ -89732,6 +90024,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -89822,6 +90118,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -89913,6 +90213,10 @@
         942
       ],
       "filter_id": "water_watch_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 100000,
       "care_includes_staff_members": true,
       "care_affected_people_min": 100,
@@ -125024,6 +125328,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission"
     },
@@ -125084,6 +125392,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission"
     },
@@ -125145,6 +125457,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission"
     },
@@ -125205,6 +125521,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission",
       "care_includes_staff_members": true,
@@ -125273,6 +125593,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission"
     },
@@ -125336,6 +125660,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission"
     },
@@ -125398,6 +125726,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission"
     },
@@ -125460,6 +125792,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission",
       "care_includes_staff_members": true,
@@ -125530,6 +125866,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission"
     },
@@ -125595,6 +125935,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission"
     },
@@ -125657,6 +126001,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission",
       "care_includes_staff_members": true,
@@ -125727,6 +126075,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission"
     },
@@ -125792,6 +126144,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission"
     },
@@ -125858,6 +126214,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission",
       "care_includes_staff_members": true,
@@ -125925,6 +126285,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission",
       "care_includes_staff_members": true,
@@ -125997,6 +126361,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission"
     },
@@ -126060,6 +126428,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission",
       "care_includes_staff_members": true,
@@ -126132,6 +126504,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission"
     },
@@ -126199,6 +126575,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission"
     },
@@ -126267,6 +126647,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission",
       "care_includes_staff_members": true,
@@ -126336,6 +126720,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission",
       "care_includes_staff_members": true,
@@ -126410,6 +126798,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission"
     },
@@ -126478,6 +126870,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission",
       "care_includes_staff_members": true,
@@ -126547,6 +126943,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission",
       "care_includes_staff_members": true,
@@ -126621,6 +127021,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission"
     },
@@ -126691,6 +127095,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission",
       "care_includes_staff_members": true,
@@ -126763,6 +127171,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission",
       "care_includes_staff_members": true,
@@ -126834,6 +127246,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission",
       "care_includes_staff_members": true,
@@ -126910,6 +127326,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission"
     },
@@ -126982,6 +127402,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission",
       "care_includes_staff_members": true,
@@ -127057,6 +127481,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission",
       "care_includes_staff_members": true,
@@ -127133,6 +127561,10 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "pump_water_amount": 500000,
       "pump_mission_mode": "before_mission",
       "care_includes_staff_members": true,
@@ -169629,6 +170061,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -169703,6 +170138,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -169777,6 +170215,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -169851,6 +170292,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -169925,6 +170369,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -169998,6 +170445,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -170077,6 +170527,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -170153,6 +170606,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -170230,6 +170686,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -170307,6 +170766,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -170383,6 +170845,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -170465,6 +170930,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -170541,6 +171009,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -170617,6 +171088,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -170692,6 +171166,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -170773,6 +171250,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -170849,6 +171329,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -170924,6 +171407,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -171005,6 +171491,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -171080,6 +171569,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -171161,6 +171653,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -171238,6 +171733,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -171319,6 +171817,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -171398,6 +171899,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -171476,6 +171980,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -171560,6 +172067,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -171639,6 +172149,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -171717,6 +172230,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -171801,6 +172317,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -171879,6 +172398,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -171963,6 +172485,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -172043,6 +172568,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -172124,6 +172652,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -172201,6 +172732,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -172284,6 +172818,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -172361,6 +172898,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -172444,6 +172984,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -172523,6 +173066,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -172603,6 +173149,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -172686,6 +173235,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -172765,6 +173317,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -172847,6 +173402,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -172930,6 +173488,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -173010,6 +173571,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -173096,6 +173660,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -173176,6 +173743,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -173262,6 +173832,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -173344,6 +173917,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -173427,6 +174003,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -173513,6 +174092,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -173595,6 +174177,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -173680,6 +174265,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -173762,6 +174350,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -173847,6 +174438,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -173928,6 +174522,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -174012,6 +174609,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -174096,6 +174696,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -174180,6 +174783,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -174268,6 +174874,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -174352,6 +174961,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -174439,6 +175051,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -174526,6 +175141,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -174612,6 +175230,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -174700,6 +175321,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 50,
@@ -174781,6 +175405,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -174855,6 +175482,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -174929,6 +175559,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -175003,6 +175636,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -175077,6 +175713,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -175150,6 +175789,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -175229,6 +175871,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -175307,6 +175952,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -175383,6 +176031,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -175460,6 +176111,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -175537,6 +176191,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -175613,6 +176270,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -175695,6 +176355,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -175776,6 +176439,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -175852,6 +176518,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -175928,6 +176597,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -176003,6 +176675,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -176084,6 +176759,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -176164,6 +176842,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -176240,6 +176921,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -176315,6 +176999,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -176396,6 +177083,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -176476,6 +177166,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -176551,6 +177244,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -176632,6 +177328,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -176712,6 +177411,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -176789,6 +177491,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -176871,6 +177576,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -176956,6 +177664,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -177034,6 +177745,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -177113,6 +177827,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -177191,6 +177908,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -177275,6 +177995,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -177358,6 +178081,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -177437,6 +178163,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -177515,6 +178244,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -177599,6 +178331,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -177682,6 +178417,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -177760,6 +178498,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -177844,6 +178585,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -177927,6 +178671,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -178007,6 +178754,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -178092,6 +178842,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -178180,6 +178933,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -178258,6 +179014,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -178335,6 +179094,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -178418,6 +179180,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -178500,6 +179265,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -178577,6 +179345,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -178660,6 +179431,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -178742,6 +179516,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -178821,6 +179598,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -178905,6 +179685,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -178992,6 +179775,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -179069,6 +179855,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -179152,6 +179941,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -179234,6 +180026,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -179313,6 +180108,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -179397,6 +180195,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -179484,6 +180285,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -179563,6 +180367,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -179647,6 +180454,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -179734,6 +180544,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -179817,6 +180630,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -179900,6 +180716,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -179980,6 +180799,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -180066,6 +180888,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -180151,6 +180976,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -180231,6 +181059,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -180317,6 +181148,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -180402,6 +181236,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -180484,6 +181321,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -180571,6 +181411,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -180661,6 +181504,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -180741,6 +181587,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -180827,6 +181676,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -180912,6 +181764,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -180994,6 +181849,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -181081,6 +181939,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -181171,6 +182032,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -181253,6 +182117,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -181340,6 +182207,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -181430,6 +182300,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -181516,6 +182389,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -181598,6 +182474,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -181683,6 +182562,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -181767,6 +182649,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -181848,6 +182733,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -181934,6 +182822,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -182023,6 +182914,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -182104,6 +182998,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -182190,6 +183087,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -182279,6 +183179,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -182364,6 +183267,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -182448,6 +183354,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -182534,6 +183443,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -182623,6 +183535,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -182708,6 +183623,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -182796,6 +183714,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -182880,6 +183801,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -182968,6 +183892,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -183055,6 +183982,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -183139,6 +184069,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -183228,6 +184161,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -183320,6 +184256,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -183404,6 +184343,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -183493,6 +184435,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -183585,6 +184530,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -183673,6 +184621,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -183760,6 +184711,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -183849,6 +184803,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -183941,6 +184898,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -184029,6 +184989,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -184120,6 +185083,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -184206,6 +185172,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -184294,6 +185263,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -184385,6 +185357,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -184472,6 +185447,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -184562,6 +185540,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -184652,6 +185633,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -184740,6 +185724,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -184831,6 +185818,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -184925,6 +185915,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "patient_specialization_ids": [
         4
@@ -185015,6 +186008,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -185108,6 +186104,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -185201,6 +186200,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -185293,6 +186295,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -185387,6 +186392,9 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        963
+      ],
       "max_police_motorcycle_replacing_police_cars": 2,
       "care_includes_staff_members": true,
       "care_affected_people_min": 80,
@@ -193291,6 +194299,10 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "patient_specialization_ids": [
         4
       ],
@@ -193349,6 +194361,10 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "patient_specialization_ids": [
         4
       ],
@@ -193408,6 +194424,10 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "patient_specialization_ids": [
         4
       ],
@@ -193468,6 +194488,10 @@
         942
       ],
       "filter_id": "firehouse_missions",
+      "subsequent_missions_ids": [
+        962,
+        963
+      ],
       "patient_specialization_ids": [
         4
       ],
@@ -200350,80 +201374,250 @@
   },
   {
     "id": "962",
-    "name": "Brennender Blumenladen",
+    "name": "Errichtung einer Behelfsbrücke (klein)",
     "place": "",
     "place_array": [],
-    "average_credits": 2000,
+    "average_credits": 2530,
     "generated_by": "",
     "icons": [
-      "/images/fire_gruen.png",
-      "/images/fire_gelb.png",
-      "/images/fire_rot.png"
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
     ],
     "requirements": {
-      "platform_trucks": 1,
-      "battalion_chief_vehicles": 1,
-      "firetrucks": 3
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "oneof_police_patrol_or_motorcycle": 2,
+      "thw_bridge_construction_equipment": 1,
+      "thw_bridge_construction_crane": 1,
+      "thw_bridge_construction_trailer": 1
     },
-    "chances": {
-      "platform_trucks": 50,
-      "battalion_chief_vehicles": 70
-    },
+    "chances": {},
     "additional": {
-      "filter_id": "firehouse_missions",
-      "date_start": "2026-02-06T10:00:00Z",
-      "date_end": "2026-02-15T23:59:59+01:00"
+      "filter_id": "technical_aid_organization_missions",
+      "subsequent_mission_only": true
     },
     "prerequisites": {
-      "main_building": 0,
-      "fire_stations": 4
+      "main_building": 9,
+      "police_stations": 2,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_bridge_construction": 1
     },
     "overlay_index": null,
     "base_mission_id": 962,
     "additive_overlays": "",
     "mission_categories": [
-      "fire"
+      "thw"
+    ]
+  },
+  {
+    "id": "962/a",
+    "name": "Errichtung einer Behelfsbrücke (klein)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3162,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "oneof_police_patrol_or_motorcycle": 2,
+      "thw_bridge_construction_equipment": 1,
+      "thw_bridge_construction_crane": 1,
+      "thw_bridge_construction_trailer": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "technical_aid_organization_missions",
+      "subsequent_mission_only": true,
+      "care_includes_staff_members": true
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "police_stations": 2,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "fire_care_service": 1,
+      "thw_bridge_construction": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 962,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "thw"
     ]
   },
   {
     "id": "963",
-    "name": "Person auf Rosenblättern ausgerutscht",
+    "name": "Errichtung einer Behelfsbrücke (groß)",
     "place": "",
     "place_array": [],
-    "average_credits": 500,
+    "average_credits": 4735,
     "generated_by": "",
     "icons": [
-      "/images/medicalstore_gruen.png",
-      "/images/medicalstore_gelb.png",
-      "/images/medicalstore_rot.png"
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
     ],
-    "requirements": {},
-    "chances": {
-      "patient_transport": 45
+    "requirements": {
+      "thw_gkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "oneof_police_patrol_or_motorcycle": 3,
+      "thw_bridge_construction_equipment": 2,
+      "thw_bridge_construction_crane": 2,
+      "thw_bridge_construction_trailer": 2
     },
+    "chances": {},
     "additional": {
-      "possible_patient": 1,
-      "possible_patient_min": 1,
-      "filter_id": "ambulance_station_missions",
-      "date_start": "2026-02-06T10:00:00Z",
-      "date_end": "2026-02-15T23:59:59+01:00",
-      "patient_specialization_ids": [
-        1
-      ],
-      "patient_specialization_captions": [
-        "Allgemeine Chirurgie"
-      ],
-      "patient_specializations": "Allgemeine Chirurgie"
+      "filter_id": "technical_aid_organization_missions",
+      "subsequent_mission_only": true
     },
     "prerequisites": {
-      "main_building": 2,
-      "rescue_stations": 1
+      "main_building": 9,
+      "police_stations": 3,
+      "thw": 2,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "thw_bridge_construction": 2
     },
     "overlay_index": null,
     "base_mission_id": 963,
     "additive_overlays": "",
     "mission_categories": [
-      "ambulance"
+      "thw"
+    ]
+  },
+  {
+    "id": "963/a",
+    "name": "Errichtung einer Behelfsbrücke (groß)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 5918,
+    "generated_by": "",
+    "icons": [
+      "/images/constructioncrane_gruen.png",
+      "/images/constructioncrane_gelb.png",
+      "/images/constructioncrane_rot.png"
+    ],
+    "requirements": {
+      "thw_gkw": 2,
+      "thw_mtwtz": 2,
+      "thw_mzkw": 2,
+      "oneof_police_patrol_or_motorcycle": 3,
+      "thw_bridge_construction_equipment": 2,
+      "thw_bridge_construction_crane": 2,
+      "thw_bridge_construction_trailer": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "technical_aid_organization_missions",
+      "subsequent_mission_only": true,
+      "care_includes_staff_members": true
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "police_stations": 3,
+      "thw": 2,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 2,
+      "fire_care_service": 1,
+      "thw_bridge_construction": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 963,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "thw"
+    ]
+  },
+  {
+    "id": "964",
+    "name": "Tragwerkssicherung (Brücke)",
+    "place": "Brücke",
+    "place_array": [
+      "Brücke"
+    ],
+    "average_credits": 890,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "technical_aid_organization_missions",
+      "subsequent_missions_ids": [
+        962
+      ]
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "thw": 3,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 964,
+    "additive_overlays": "",
+    "mission_categories": [
+      "thw"
+    ]
+  },
+  {
+    "id": "964/a",
+    "name": "Tragwerkssicherung (Brücke)",
+    "place": "Brücke",
+    "place_array": [
+      "Brücke"
+    ],
+    "average_credits": 1290,
+    "generated_by": "",
+    "icons": [
+      "/images/fallingrocks_gruen.png",
+      "/images/fallingrocks_gelb.png",
+      "/images/fallingrocks_rot.png"
+    ],
+    "requirements": {
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "heavy_rescue": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "technical_aid_organization_missions",
+      "subsequent_missions_ids": [
+        962
+      ]
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "thw": 3,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "heavy_rescue": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 964,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "thw"
     ]
   }
 ]

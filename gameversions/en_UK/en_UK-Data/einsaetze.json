@@ -48689,17 +48689,18 @@
       "/images/fire_rot.png"
     ],
     "requirements": {
-      "platform_trucks": 3,
+      "platform_trucks": 1,
       "battalion_chief_vehicles": 3,
       "mobile_command_vehicles": 1,
       "foam": 1,
       "mobile_air_vehicles": 2,
       "hazmat_vehicles": 1,
-      "water_tankers": 4,
-      "firetrucks": 4,
+      "water_tankers": 2,
+      "firetrucks": 7,
       "police_cars": 5
     },
     "chances": {
+      "hazmat_vehicles": 50,
       "patient_transport": 30
     },
     "additional": {

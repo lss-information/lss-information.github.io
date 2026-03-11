@@ -299,9 +299,11 @@ async function loadLastUpdate() {
     }
 }
 
+let translations = {}; // globale vertalingen
+
 async function initMissions() {
     missions = await (await fetch(dataFile)).json();
-    const translations = await (await fetch(translationsFile)).json();
+    translations = await (await fetch(translationsFile)).json(); // nu globaal
 
     const container = document.getElementById('sheet-data');
     container.innerHTML = '';
@@ -340,18 +342,7 @@ async function initMissions() {
         const div = document.createElement('div');
         div.className = 'requirements-content';
 
-        for (const k in m.requirements || {}) {
-            let value = m.requirements[k];
-
-            if (typeof value === 'object' && value !== null) {
-                value = Object.entries(value)
-                    .map(([subKey, subValue]) => `${translations[k] || k}: ${subValue}x ${translations[subKey] || subKey}`)
-                    .join('<br>');
-            } else {
-                value = `${translations[k] || k}: ${value}`;
-            }
-            div.innerHTML += `${value}<br>`;
-        }
+        div.innerHTML = formatRequirements(m.requirements); // gebruik vertalingen
 
         td.appendChild(div);
         reqRow.appendChild(td);
@@ -387,6 +378,19 @@ async function initMissions() {
         option2.textContent = `${m.id} - ${m.name}`;
         select2.appendChild(option2);
     });
+}
+
+// Hulpfunctie om requirements netjes te tonen met vertalingen
+function formatRequirements(req) {
+    if (!req) return '-';
+    return Object.entries(req).map(([k,v]) => {
+        if (typeof v === 'object' && v !== null) {
+            return Object.entries(v)
+                .map(([subK, subV]) => `${translations[k] || k}: ${subV}x ${translations[subK] || subK}`)
+                .join('<br>');
+        }
+        return `${translations[k] || k}: ${v}`;
+    }).join('<br>');
 }
 
 // Zoekfunctie

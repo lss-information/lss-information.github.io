@@ -239,6 +239,7 @@ tbody tr:hover {
 </footer>
 
 <script>
+let missions = []; // Globale opslag van alle meldingen
 const dataFile = 'nl_NL-Data/einsaetze.json';
 const translationsFile = 'translations.json';
 const lastUpdateFile = 'nl_NL-Data/last_update.txt';
@@ -302,7 +303,9 @@ function changeLanguage(lang) {
     startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
 
     loadLastUpdate();
-    initMissions();
+    async function initMissions() {
+    missions = await (await fetch(dataFile)).json(); // vul de globale variabele
+    const translations = await (await fetch(translationsFile)).json();
 }
 
 // Vul compare dropdowns

@@ -55635,8 +55635,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-03-28T10:00:00Z",
-      "date_end": "2025-06-20T22:00:00Z",
+      "date_start": "2026-03-13T10:00:00Z",
+      "date_end": "2026-06-19T22:00:00Z",
       "patient_specialization_ids": [
         7
       ],
@@ -55677,8 +55677,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-03-28T10:00:00Z",
-      "date_end": "2025-06-20T22:00:00Z",
+      "date_start": "2026-03-13T10:00:00Z",
+      "date_end": "2026-06-19T22:00:00Z",
       "patient_specialization_ids": [
         7
       ],
@@ -55720,8 +55720,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-03-28T10:00:00Z",
-      "date_end": "2025-06-20T22:00:00Z",
+      "date_start": "2026-03-13T10:00:00Z",
+      "date_end": "2026-06-19T22:00:00Z",
       "patient_specialization_ids": [
         4
       ],
@@ -55765,8 +55765,8 @@
       "possible_patient": 3,
       "possible_patient_min": 1,
       "filter_id": "police_station_missions",
-      "date_start": "2025-03-28T10:00:00Z",
-      "date_end": "2025-06-20T22:00:00Z",
+      "date_start": "2026-03-13T10:00:00Z",
+      "date_end": "2026-06-19T22:00:00Z",
       "patient_specialization_ids": [
         4
       ],
@@ -55811,8 +55811,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-03-28T10:00:00Z",
-      "date_end": "2025-06-20T22:00:00Z",
+      "date_start": "2026-03-13T10:00:00Z",
+      "date_end": "2026-06-19T22:00:00Z",
       "patient_specialization_ids": [
         1
       ],
@@ -55853,8 +55853,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2025-03-28T10:00:00Z",
-      "date_end": "2025-06-20T22:00:00Z"
+      "date_start": "2026-03-13T10:00:00Z",
+      "date_end": "2026-06-19T22:00:00Z"
     },
     "prerequisites": {
       "main_building": 0,
@@ -55894,8 +55894,8 @@
         927,
         928
       ],
-      "date_start": "2025-03-28T10:00:00Z",
-      "date_end": "2025-06-20T22:00:00Z"
+      "date_start": "2026-03-13T10:00:00Z",
+      "date_end": "2026-06-19T22:00:00Z"
     },
     "prerequisites": {
       "main_building": 5,
@@ -55906,91 +55906,6 @@
     "additive_overlays": "",
     "mission_categories": [
       "police"
-    ]
-  },
-  {
-    "id": "927",
-    "name": "Koeien dief op de vlucht",
-    "place": "Bos",
-    "place_array": [
-      "Bos"
-    ],
-    "average_credits": 2180,
-    "generated_by": "",
-    "icons": [
-      "/images/climbing_gruen.png",
-      "/images/climbing_gelb.png",
-      "/images/climbing_rot.png"
-    ],
-    "requirements": {
-      "police_helicopters": 1,
-      "police_cars": 5
-    },
-    "chances": {},
-    "additional": {
-      "max_possible_prisoners": 1,
-      "filter_id": "police_station_missions",
-      "subsequent_mission_only": true,
-      "date_start": "2025-03-28T10:00:00Z",
-      "date_end": "2025-06-20T22:00:00Z"
-    },
-    "prerequisites": {
-      "main_building": 5,
-      "police_stations": 4,
-      "police_helicopter_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 927,
-    "additive_overlays": "",
-    "mission_categories": [
-      "police"
-    ]
-  },
-  {
-    "id": "928",
-    "name": "Dief aangevallen door een koe",
-    "place": "Boerderij",
-    "place_array": [
-      "Boerderij"
-    ],
-    "average_credits": 500,
-    "generated_by": "",
-    "icons": [
-      "/images/ambulance_gruen.png",
-      "/images/ambulance_gelb.png",
-      "/images/ambulance_rot.png"
-    ],
-    "requirements": {
-      "police_cars": 1
-    },
-    "chances": {
-      "patient_transport": 35
-    },
-    "additional": {
-      "possible_patient": 1,
-      "possible_patient_min": 1,
-      "filter_id": "ambulance_station_missions",
-      "subsequent_mission_only": true,
-      "date_start": "2025-03-28T10:00:00Z",
-      "date_end": "2025-06-20T22:00:00Z",
-      "patient_specialization_ids": [
-        0
-      ],
-      "patient_specialization_captions": [
-        "Interne Geneeskunde"
-      ],
-      "patient_specializations": "Interne Geneeskunde"
-    },
-    "prerequisites": {
-      "main_building": 3,
-      "rescue_stations": 1,
-      "police_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 928,
-    "additive_overlays": "",
-    "mission_categories": [
-      "ambulance"
     ]
   },
   {
@@ -66530,8 +66445,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2025-03-28T10:00:00Z",
-      "date_end": "2025-06-20T22:00:00Z"
+      "date_start": "2026-03-13T10:00:00Z",
+      "date_end": "2026-06-19T22:00:00Z"
     },
     "prerequisites": {
       "main_building": 0,
@@ -66571,8 +66486,8 @@
       "possible_patient": 2,
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
-      "date_start": "2025-03-28T10:00:00Z",
-      "date_end": "2025-06-20T22:00:00Z",
+      "date_start": "2026-03-13T10:00:00Z",
+      "date_end": "2026-06-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -66615,8 +66530,8 @@
       "min_possible_prisoners": 1,
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
-      "date_start": "2025-03-28T10:00:00Z",
-      "date_end": "2025-06-20T22:00:00Z"
+      "date_start": "2026-03-13T10:00:00Z",
+      "date_end": "2026-06-19T22:00:00Z"
     },
     "prerequisites": {
       "main_building": 5,

@@ -11182,8 +11182,8 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "date_start": "2025-03-17T07:00:00Z",
-      "date_end": "2025-03-21T13:00:00Z"
+      "date_start": "2026-03-17T11:00:00+11:00",
+      "date_end": "2026-03-20T23:59:59+11:00"
     },
     "prerequisites": {
       "main_building": 6,
@@ -11217,8 +11217,8 @@
     "additional": {
       "possible_patient": 1,
       "filter_id": "police_station_missions",
-      "date_start": "2025-03-17T07:00:00Z",
-      "date_end": "2025-03-21T13:00:00Z",
+      "date_start": "2026-03-17T11:00:00+11:00",
+      "date_end": "2026-03-20T23:59:59+11:00",
       "patient_specialization_ids": [
         0
       ],
@@ -11259,8 +11259,8 @@
     },
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2025-03-17T07:00:00Z",
-      "date_end": "2025-03-21T13:00:00Z"
+      "date_start": "2026-03-17T11:00:00+11:00",
+      "date_end": "2026-03-20T23:59:59+11:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -11297,8 +11297,8 @@
       "average_min_police_personnel": 12,
       "guard_mission": true,
       "filter_id": "police_station_missions",
-      "date_start": "2025-03-17T07:00:00Z",
-      "date_end": "2025-03-21T13:00:00Z"
+      "date_start": "2026-03-17T11:00:00+11:00",
+      "date_end": "2026-03-20T23:59:59+11:00"
     },
     "prerequisites": {
       "main_building": 6,
@@ -11337,8 +11337,8 @@
       "duration": 3600,
       "guard_mission": true,
       "filter_id": "police_station_missions",
-      "date_start": "2025-03-17T07:00:00Z",
-      "date_end": "2025-03-21T13:00:00Z"
+      "date_start": "2026-03-17T11:00:00+11:00",
+      "date_end": "2026-03-20T23:59:59+11:00"
     },
     "prerequisites": {
       "main_building": 6,
@@ -11373,8 +11373,8 @@
       "possible_patient": 4,
       "possible_patient_min": 3,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-03-17T07:00:00Z",
-      "date_end": "2025-03-21T13:00:00Z",
+      "date_start": "2026-03-17T11:00:00+11:00",
+      "date_end": "2026-03-20T23:59:59+11:00",
       "patient_specialization_ids": [
         0
       ],
@@ -33085,8 +33085,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2025-03-17T07:00:00Z",
-      "date_end": "2025-03-21T13:00:00Z"
+      "date_start": "2026-03-17T11:00:00+11:00",
+      "date_end": "2026-03-20T23:59:59+11:00"
     },
     "prerequisites": {
       "main_building": 0,

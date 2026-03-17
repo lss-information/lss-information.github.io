@@ -201643,7 +201643,7 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "fire_stations": 2
+      "fire_stations": 1
     },
     "overlay_index": null,
     "base_mission_id": 965,

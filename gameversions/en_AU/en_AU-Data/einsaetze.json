@@ -35543,8 +35543,10 @@
   {
     "id": "819",
     "name": "Fire in stables",
-    "place": "",
-    "place_array": [],
+    "place": "Farm",
+    "place_array": [
+      "Farm"
+    ],
     "average_credits": 4500,
     "generated_by": "",
     "icons": [

@@ -12968,7 +12968,6 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "rescue_stations": 9,
       "police_stations": 9,
       "fire_stations": 18
     },
@@ -13013,7 +13012,6 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "rescue_stations": 9,
       "police_stations": 9,
       "ventilation": 1,
       "fire_stations": 18
@@ -78305,7 +78303,6 @@
     },
     "prerequisites": {
       "main_building": 11,
-      "rescue_stations": 11,
       "police_stations": 4,
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1,
@@ -78348,7 +78345,6 @@
     },
     "prerequisites": {
       "main_building": 11,
-      "rescue_stations": 11,
       "police_stations": 7,
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1,
@@ -194873,7 +194869,6 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "rescue_stations": 2,
       "police_stations": 2,
       "fire_stations": 4
     },
@@ -194914,7 +194909,6 @@
     },
     "prerequisites": {
       "main_building": 0,
-      "rescue_stations": 2,
       "police_stations": 2,
       "drone": 1,
       "fire_stations": 4

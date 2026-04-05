@@ -383,7 +383,7 @@ async function initMissions() {
 // Hulpfunctie om requirements netjes te tonen met vertalingen
 function formatRequirements(req) {
     if (!req) return '-';
-    return Object.entries(req).map(([k,v]) => {
+    return Object.entries(req).map(([k, v]) => {
         if (typeof v === 'object' && v !== null) {
             return Object.entries(v)
                 .map(([subK, subV]) => `${translations[k] || k}: ${subV}x ${translations[subK] || subK}`)

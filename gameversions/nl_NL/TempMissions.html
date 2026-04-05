@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=1200, initial-scale=0.4, maximum-scale=1.0">
 <title>Meldingen Meldkamerspel (NL)</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 <style>
 body {
     margin: 0;
     padding: 0;
     font-family: 'Orbitron', sans-serif;
-    background-color: #1e1e28; 
-    color: #dddddd; 
+    background-color: #1e1e28;
+    color: #dddddd;
     text-align: center;
 }
 
@@ -28,7 +28,7 @@ body {
 }
 
 .button {
-    background-color: #2c2c3c; 
+    background-color: #2c2c3c;
     color: #dddddd;
     border: 2px solid #555566;
     padding: 8px 16px;
@@ -83,7 +83,7 @@ table {
     max-width: 1200px;
     margin: 20px auto;
     border-collapse: collapse;
-    background-color: #2a2a3a; 
+    background-color: #2a2a3a;
     border-radius: 10px;
 }
 
@@ -179,7 +179,7 @@ tbody tr:hover {
     <li><img src="../../images/flag_uk.gif" alt="English" onclick="changeLanguage('en')"></li>
     <li><img src="../../images/flag_us.gif" alt="English" onclick="changeLanguage('en')"></li>
     <li><img src="../../images/flag_au.gif" alt="English" onclick="changeLanguage('en')"></li>
-    
+
     <li><a class="button" id="game-button" href="/index">Startpagina</a></li>
     <li><a class="button" id="contact-button" href="/gameversions/contact">Contact</a></li>
     <li><a class="button" id="back-button" href="/gameversions/nl_NL/indexNL">Terug</a></li>
@@ -190,10 +190,10 @@ tbody tr:hover {
 <p id="last-update"></p>
 
 <div style="margin: 20px;">
-    <input 
-        type="text" 
-        id="mission-search" 
-        placeholder="Melding zoeken..." 
+    <input
+        type="text"
+        id="mission-search"
+        placeholder="Melding zoeken..."
         style="padding:8px 12px; width:300px; border-radius:6px; border:1px solid #555566; background-color:#2c2c3c; color:#dddddd; font-family:'Orbitron', sans-serif;">
 </div>
 
@@ -220,7 +220,7 @@ tbody tr:hover {
 </footer>
 
 <script>
-let missions = []; // globale opslag
+let missions = [];
 const dataFile = 'nl_NL-Data/einsaetze.json';
 const translationsFile = 'translations.json';
 const lastUpdateFile = 'nl_NL-Data/last_update.txt';
@@ -265,26 +265,15 @@ const pageTranslations = {
 };
 
 let currentLang = 'nl';
+let translations = {};
 
-function changeLanguage(lang) {
-    currentLang = lang;
-    const t = pageTranslations[lang];
-
-    document.title = t.title;
-    document.getElementById('page-title').textContent = t.title;
-    document.getElementById('page-message').textContent = t.message;
-    document.getElementById('game-button').textContent = t.gameButton;
-    document.getElementById('contact-button').textContent = t.contactButton;
-    document.getElementById('back-button').textContent = t.backButton;
-    document.getElementById('swipe-hint').textContent = t.swipeHint;
-
-    const startYear = 2024;
-    const currentYear = new Date().getFullYear();
-    document.getElementById('footer-year').textContent =
-        startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
-
-    loadLastUpdate();
-    initMissions();
+async function loadTranslations() {
+    try {
+        const response = await fetch(translationsFile);
+        translations = await response.json();
+    } catch (error) {
+        console.error("Fout bij het laden van vertalingen:", error);
+    }
 }
 
 async function loadLastUpdate() {
@@ -299,11 +288,21 @@ async function loadLastUpdate() {
     }
 }
 
-let translations = {}; // globale vertalingen
+function formatRequirements(req) {
+    if (!req) return '-';
+    return Object.entries(req).map(([k, v]) => {
+        if (typeof v === 'object' && v !== null) {
+            return Object.entries(v)
+                .map(([subK, subV]) => `${translations[k] || k}: ${subV}x ${translations[subK] || subK}`)
+                .join('<br>');
+        }
+        return `${translations[k] || k}: ${v}`;
+    }).join('<br>');
+}
 
 async function initMissions() {
     missions = await (await fetch(dataFile)).json();
-    translations = await (await fetch(translationsFile)).json(); // nu globaal
+    await loadTranslations();
 
     const container = document.getElementById('sheet-data');
     container.innerHTML = '';
@@ -341,8 +340,7 @@ async function initMissions() {
 
         const div = document.createElement('div');
         div.className = 'requirements-content';
-
-        div.innerHTML = formatRequirements(m.requirements); // gebruik vertalingen
+        div.innerHTML = formatRequirements(m.requirements);
 
         td.appendChild(div);
         reqRow.appendChild(td);
@@ -361,7 +359,6 @@ async function initMissions() {
     table.appendChild(tbody);
     container.appendChild(table);
 
-    // Vul compare dropdowns
     const select1 = document.getElementById('compare-mission-1');
     const select2 = document.getElementById('compare-mission-2');
     select1.innerHTML = '<option value="">Selecteer eerste melding</option>';
@@ -380,20 +377,28 @@ async function initMissions() {
     });
 }
 
-// Hulpfunctie om requirements netjes te tonen met vertalingen
-function formatRequirements(req) {
-    if (!req) return '-';
-    return Object.entries(req).map(([k, v]) => {
-        if (typeof v === 'object' && v !== null) {
-            return Object.entries(v)
-                .map(([subK, subV]) => `${translations[k] || k}: ${subV}x ${translations[subK] || subK}`)
-                .join('<br>');
-        }
-        return `${translations[k] || k}: ${v}`;
-    }).join('<br>');
+function changeLanguage(lang) {
+    currentLang = lang;
+    const t = pageTranslations[lang];
+
+    document.title = t.title;
+    document.getElementById('page-title').textContent = t.title;
+    document.getElementById('page-message').textContent = t.message;
+    document.getElementById('game-button').textContent = t.gameButton;
+    document.getElementById('contact-button').textContent = t.contactButton;
+    document.getElementById('back-button').textContent = t.backButton;
+    document.getElementById('swipe-hint').textContent = t.swipeHint;
+    document.getElementById('mission-search').placeholder = t.searchPlaceholder;
+
+    const startYear = 2024;
+    const currentYear = new Date().getFullYear();
+    document.getElementById('footer-year').textContent =
+        startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
+
+    loadLastUpdate();
+    initMissions();
 }
 
-// Zoekfunctie
 document.addEventListener('input', function(e) {
     if (e.target.id !== 'mission-search') return;
 
@@ -417,7 +422,6 @@ document.addEventListener('input', function(e) {
     }
 });
 
-// Compare button
 document.getElementById('compare-button').addEventListener('click', () => {
     const id1 = document.getElementById('compare-mission-1').value;
     const id2 = document.getElementById('compare-mission-2').value;
@@ -449,15 +453,6 @@ document.getElementById('compare-button').addEventListener('click', () => {
         </table>
     `;
 });
-function formatRequirements(req) {
-    if (!req) return '-';
-    return Object.entries(req).map(([k,v]) => {
-        if (typeof v === 'object' && v !== null) {
-            return Object.entries(v).map(([subK, subV]) => `${k}: ${subV}x ${subK}`).join('<br>');
-        }
-        return `${k}: ${v}`;
-    }).join('<br>');
-}
 
 document.getElementById('footer-year').textContent = new Date().getFullYear();
 

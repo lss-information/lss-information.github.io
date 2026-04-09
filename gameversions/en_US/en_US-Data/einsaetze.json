@@ -772,6 +772,7 @@
     "mission_categories": [
       "fire",
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -899,6 +900,7 @@
     "mission_categories": [
       "fire",
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -4377,7 +4379,8 @@
     "mission_categories": [
       "fire",
       "urban",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -4428,7 +4431,8 @@
     "mission_categories": [
       "fire",
       "urban",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -4489,7 +4493,8 @@
     "mission_categories": [
       "fire",
       "urban",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -4540,7 +4545,8 @@
     "mission_categories": [
       "fire",
       "urban",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -4603,7 +4609,8 @@
     "mission_categories": [
       "fire",
       "urban",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -4656,7 +4663,8 @@
     "mission_categories": [
       "fire",
       "urban",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -4719,7 +4727,8 @@
     "mission_categories": [
       "fire",
       "urban",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -4784,7 +4793,8 @@
     "mission_categories": [
       "fire",
       "urban",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -10107,7 +10117,8 @@
       "fire",
       "urban",
       "rural",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -10166,7 +10177,8 @@
       "fire",
       "urban",
       "rural",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -10222,7 +10234,8 @@
     "additive_overlays": "",
     "mission_categories": [
       "water_rescue",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -10282,7 +10295,8 @@
     "additive_overlays": "a",
     "mission_categories": [
       "water_rescue",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -10340,7 +10354,8 @@
     "additive_overlays": "b",
     "mission_categories": [
       "water_rescue",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -10402,7 +10417,8 @@
     "additive_overlays": "ab",
     "mission_categories": [
       "water_rescue",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -10459,7 +10475,8 @@
     "additive_overlays": "",
     "mission_categories": [
       "water_rescue",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -10520,7 +10537,8 @@
     "additive_overlays": "a",
     "mission_categories": [
       "water_rescue",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -10579,7 +10597,8 @@
     "additive_overlays": "b",
     "mission_categories": [
       "water_rescue",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -10642,7 +10661,8 @@
     "additive_overlays": "ab",
     "mission_categories": [
       "water_rescue",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -10699,7 +10719,8 @@
     "additive_overlays": "",
     "mission_categories": [
       "water_rescue",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -10760,7 +10781,8 @@
     "additive_overlays": "a",
     "mission_categories": [
       "water_rescue",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -10820,7 +10842,8 @@
     "additive_overlays": "b",
     "mission_categories": [
       "water_rescue",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -10886,7 +10909,8 @@
     "additive_overlays": "c",
     "mission_categories": [
       "water_rescue",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -10950,7 +10974,8 @@
     "additive_overlays": "ab",
     "mission_categories": [
       "water_rescue",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -11020,7 +11045,8 @@
     "additive_overlays": "ac",
     "mission_categories": [
       "water_rescue",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -11089,7 +11115,8 @@
     "additive_overlays": "bc",
     "mission_categories": [
       "water_rescue",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -11162,7 +11189,8 @@
     "additive_overlays": "abc",
     "mission_categories": [
       "water_rescue",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -11616,7 +11644,8 @@
       "fire",
       "urban",
       "rural",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -11679,7 +11708,8 @@
       "fire",
       "urban",
       "rural",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -24874,6 +24904,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -24918,6 +24949,7 @@
     "additive_overlays": "a",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -24969,6 +25001,7 @@
     "additive_overlays": "b",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -25022,6 +25055,7 @@
     "additive_overlays": "ab",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -25065,6 +25099,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -25110,6 +25145,7 @@
     "additive_overlays": "a",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -25162,6 +25198,7 @@
     "additive_overlays": "b",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -25208,6 +25245,7 @@
     "additive_overlays": "c",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -25253,6 +25291,7 @@
     "additive_overlays": "d",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -25307,6 +25346,7 @@
     "additive_overlays": "ab",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -25355,6 +25395,7 @@
     "additive_overlays": "ac",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -25402,6 +25443,7 @@
     "additive_overlays": "ad",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -25457,6 +25499,7 @@
     "additive_overlays": "bc",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -25511,6 +25554,7 @@
     "additive_overlays": "bd",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -25559,6 +25603,7 @@
     "additive_overlays": "cd",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -25616,6 +25661,7 @@
     "additive_overlays": "abc",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -25672,6 +25718,7 @@
     "additive_overlays": "abd",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -25722,6 +25769,7 @@
     "additive_overlays": "acd",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -25779,6 +25827,7 @@
     "additive_overlays": "bcd",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -25838,6 +25887,7 @@
     "additive_overlays": "abcd",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -25880,6 +25930,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -25924,6 +25975,7 @@
     "additive_overlays": "a",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -25969,6 +26021,7 @@
     "additive_overlays": "b",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -26020,6 +26073,7 @@
     "additive_overlays": "c",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -26064,6 +26118,7 @@
     "additive_overlays": "d",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -26108,6 +26163,7 @@
     "additive_overlays": "e",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -26155,6 +26211,7 @@
     "additive_overlays": "ab",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -26208,6 +26265,7 @@
     "additive_overlays": "ac",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -26254,6 +26312,7 @@
     "additive_overlays": "ad",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -26300,6 +26359,7 @@
     "additive_overlays": "ae",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -26354,6 +26414,7 @@
     "additive_overlays": "bc",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -26401,6 +26462,7 @@
     "additive_overlays": "bd",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -26448,6 +26510,7 @@
     "additive_overlays": "be",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -26501,6 +26564,7 @@
     "additive_overlays": "cd",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -26554,6 +26618,7 @@
     "additive_overlays": "ce",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -26600,6 +26665,7 @@
     "additive_overlays": "de",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -26656,6 +26722,7 @@
     "additive_overlays": "abc",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -26705,6 +26772,7 @@
     "additive_overlays": "abd",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -26754,6 +26822,7 @@
     "additive_overlays": "abe",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -26809,6 +26878,7 @@
     "additive_overlays": "acd",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -26864,6 +26934,7 @@
     "additive_overlays": "ace",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -26912,6 +26983,7 @@
     "additive_overlays": "ade",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -26968,6 +27040,7 @@
     "additive_overlays": "bcd",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -27024,6 +27097,7 @@
     "additive_overlays": "bce",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -27073,6 +27147,7 @@
     "additive_overlays": "bde",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -27128,6 +27203,7 @@
     "additive_overlays": "cde",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -27186,6 +27262,7 @@
     "additive_overlays": "abcd",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -27244,6 +27321,7 @@
     "additive_overlays": "abce",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -27295,6 +27373,7 @@
     "additive_overlays": "abde",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -27352,6 +27431,7 @@
     "additive_overlays": "acde",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -27410,6 +27490,7 @@
     "additive_overlays": "bcde",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -27470,6 +27551,7 @@
     "additive_overlays": "abcde",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -27510,6 +27592,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -27548,6 +27631,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -27583,6 +27667,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -27624,6 +27709,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -27791,6 +27877,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -28328,6 +28415,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -28583,6 +28671,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -28658,6 +28747,7 @@
     "additive_overlays": "a",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -28729,6 +28819,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -28802,6 +28893,7 @@
     "additive_overlays": "a",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -28845,6 +28937,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -28890,6 +28983,7 @@
     "additive_overlays": "a",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -28942,6 +29036,7 @@
     "additive_overlays": "b",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -28996,6 +29091,7 @@
     "additive_overlays": "ab",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -29041,6 +29137,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -29088,6 +29185,7 @@
     "additive_overlays": "a",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -29142,6 +29240,7 @@
     "additive_overlays": "b",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -29189,6 +29288,7 @@
     "additive_overlays": "c",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -29245,6 +29345,7 @@
     "additive_overlays": "ab",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -29294,6 +29395,7 @@
     "additive_overlays": "ac",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -29350,6 +29452,7 @@
     "additive_overlays": "bc",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -29408,6 +29511,7 @@
     "additive_overlays": "abc",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -29455,6 +29559,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -29504,6 +29609,7 @@
     "additive_overlays": "a",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -29560,6 +29666,7 @@
     "additive_overlays": "b",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -29609,6 +29716,7 @@
     "additive_overlays": "c",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -29658,6 +29766,7 @@
     "additive_overlays": "d",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -29716,6 +29825,7 @@
     "additive_overlays": "ab",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -29767,6 +29877,7 @@
     "additive_overlays": "ac",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -29818,6 +29929,7 @@
     "additive_overlays": "ad",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -29876,6 +29988,7 @@
     "additive_overlays": "bc",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -29934,6 +30047,7 @@
     "additive_overlays": "bd",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -29985,6 +30099,7 @@
     "additive_overlays": "cd",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -30045,6 +30160,7 @@
     "additive_overlays": "abc",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -30105,6 +30221,7 @@
     "additive_overlays": "abd",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -30158,6 +30275,7 @@
     "additive_overlays": "acd",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -30218,6 +30336,7 @@
     "additive_overlays": "bcd",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -30280,6 +30399,7 @@
     "additive_overlays": "abcd",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -30317,6 +30437,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -32532,6 +32653,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -32575,6 +32697,7 @@
     "additive_overlays": "a",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -32615,6 +32738,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -34339,6 +34463,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -34373,6 +34498,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -34416,6 +34542,7 @@
     "additive_overlays": "a",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -34451,6 +34578,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -34495,6 +34623,7 @@
     "additive_overlays": "a",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -34531,6 +34660,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -34576,6 +34706,7 @@
     "additive_overlays": "a",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -38323,6 +38454,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -38364,6 +38496,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -38410,6 +38543,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -42320,7 +42454,8 @@
       "fire",
       "urban",
       "rural",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -42378,7 +42513,8 @@
       "fire",
       "urban",
       "rural",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -42432,7 +42568,8 @@
       "fire",
       "urban",
       "rural",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -42490,7 +42627,8 @@
       "fire",
       "urban",
       "rural",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {
@@ -56912,7 +57050,8 @@
       "water_rescue",
       "fire",
       "rural",
-      "forestry"
+      "forestry",
+      "forestry_specialization"
     ]
   },
   {
@@ -56998,7 +57137,8 @@
       "water_rescue",
       "fire",
       "rural",
-      "forestry"
+      "forestry",
+      "forestry_specialization"
     ]
   },
   {
@@ -57043,6 +57183,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "urban",
       "rural"
     ]
@@ -57098,6 +57239,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -57155,6 +57297,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -57215,6 +57358,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -57273,6 +57417,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -57404,6 +57549,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -61020,6 +61166,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "water_damage_and_flood",
+      "water_damage_and_flood_specialization",
       "urban",
       "rural"
     ]
@@ -61059,6 +61206,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "water_damage_and_flood",
+      "water_damage_and_flood_specialization",
       "urban",
       "rural"
     ]
@@ -61100,6 +61248,7 @@
     "additive_overlays": "a",
     "mission_categories": [
       "water_damage_and_flood",
+      "water_damage_and_flood_specialization",
       "urban",
       "rural"
     ]
@@ -61139,6 +61288,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "water_damage_and_flood",
+      "water_damage_and_flood_specialization",
       "urban",
       "rural"
     ]
@@ -61180,6 +61330,7 @@
     "additive_overlays": "a",
     "mission_categories": [
       "water_damage_and_flood",
+      "water_damage_and_flood_specialization",
       "urban",
       "rural"
     ]
@@ -61221,6 +61372,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "water_damage_and_flood",
+      "water_damage_and_flood_specialization",
       "urban",
       "rural"
     ]
@@ -61265,6 +61417,7 @@
     "additive_overlays": "a",
     "mission_categories": [
       "water_damage_and_flood",
+      "water_damage_and_flood_specialization",
       "urban",
       "rural"
     ]
@@ -61310,6 +61463,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "water_damage_and_flood",
+      "water_damage_and_flood_specialization",
       "urban",
       "rural"
     ]
@@ -61358,6 +61512,7 @@
     "additive_overlays": "a",
     "mission_categories": [
       "water_damage_and_flood",
+      "water_damage_and_flood_specialization",
       "urban",
       "rural"
     ]
@@ -61412,6 +61567,7 @@
     "additive_overlays": "b",
     "mission_categories": [
       "water_damage_and_flood",
+      "water_damage_and_flood_specialization",
       "urban",
       "rural"
     ]
@@ -61469,6 +61625,7 @@
     "additive_overlays": "ab",
     "mission_categories": [
       "water_damage_and_flood",
+      "water_damage_and_flood_specialization",
       "urban",
       "rural"
     ]
@@ -61510,6 +61667,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "water_damage_and_flood",
+      "water_damage_and_flood_specialization",
       "urban",
       "rural"
     ]
@@ -61554,6 +61712,7 @@
     "additive_overlays": "a",
     "mission_categories": [
       "water_damage_and_flood",
+      "water_damage_and_flood_specialization",
       "urban",
       "rural"
     ]
@@ -61604,6 +61763,7 @@
     "additive_overlays": "b",
     "mission_categories": [
       "water_damage_and_flood",
+      "water_damage_and_flood_specialization",
       "urban",
       "rural"
     ]
@@ -61657,6 +61817,7 @@
     "additive_overlays": "ab",
     "mission_categories": [
       "water_damage_and_flood",
+      "water_damage_and_flood_specialization",
       "urban",
       "rural"
     ]
@@ -61700,6 +61861,7 @@
     "additive_overlays": "",
     "mission_categories": [
       "water_damage_and_flood",
+      "water_damage_and_flood_specialization",
       "urban"
     ]
   },
@@ -68735,7 +68897,8 @@
     "additive_overlays": "",
     "mission_categories": [
       "fire",
-      "water_damage_and_flood"
+      "water_damage_and_flood",
+      "water_damage_and_flood_specialization"
     ]
   },
   {

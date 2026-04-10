@@ -424,44 +424,55 @@ function buildMedicalBlock(mission) {
     const chances = mission.chances;
     const add = mission.additional;
 
-    if (!chances && !add) return '';
+    let html = '';
 
-    let html = `<strong>Medische Informatie</strong><br>`;
+    let hasContent = false;
 
     // =========================
     // CHANCES
     // =========================
-    if (chances) {
-        html += `<em>Kansen:</em><br>`;
+    let chanceHtml = '';
+    if (chances && Object.keys(chances).length > 0) {
         for (const [key, value] of Object.entries(chances)) {
-            html += `• ${translations[key] || key}: ${value}%<br>`;
+            chanceHtml += `• ${translations[key] || key}: ${value}%<br>`;
         }
+    }
+
+    if (chanceHtml) {
+        html += `<strong>${translations.chances || 'Kansen'}</strong><br>`;
+        html += chanceHtml + '<br>';
+        hasContent = true;
     }
 
     // =========================
     // ADDITIONAL
     // =========================
+    let addHtml = '';
+
     if (add) {
-        html += `<em>Patiënt info:</em><br>`;
+        if (add.possible_patient !== undefined || add.possible_patient_min !== undefined || add.patient_specialization_captions?.length) {
 
-        if (add.possible_patient !== undefined) {
-            html += `• Mogelijke patiënten: ${add.possible_patient}<br>`;
-        }
+            if (add.possible_patient !== undefined) {
+                addHtml += `• ${translations.possible_patient || 'Mogelijke patiënten'}: ${add.possible_patient}<br>`;
+            }
 
-        if (add.possible_patient_min !== undefined) {
-            html += `• Min. patiënten: ${add.possible_patient_min}<br>`;
-        }
+            if (add.possible_patient_min !== undefined) {
+                addHtml += `• ${translations.possible_patient_min || 'Min. patiënten'}: ${add.possible_patient_min}<br>`;
+            }
 
-        if (add.patient_specialization_captions?.length) {
-            html += `• Specialisaties: ${add.patient_specialization_captions.join(', ')}<br>`;
-        }
-
-        if (add.filter_id) {
-            html += `• Filter: ${add.filter_id}<br>`;
+            if (add.patient_specialization_captions?.length) {
+                addHtml += `• ${translations.patient_specializations || 'Specialisaties'}: ${add.patient_specialization_captions.join(', ')}<br>`;
+            }
         }
     }
 
-    return html;
+    if (addHtml) {
+        html += `<strong>${translations.patient_info || 'Patiënt info'}</strong><br>`;
+        html += addHtml;
+        hasContent = true;
+    }
+
+    return hasContent ? html : '';
 }
     
 function changeLanguage(lang) {

@@ -343,7 +343,7 @@ async function initMissions() {
             <td>${m.id}</td>
             <td>${m.name}</td>
             <td>${(m.place_array || []).join(', ')}</td>
-            <td>${m.average_credits}</td>
+            <td>${m.average_credits ?? (pageTranslations[currentLang].unknown || 'Ambu Inzet / Onbekend')}</td>
             <td><button class="button-toggle">${pageTranslations[currentLang].toggle.show}</button></td>
         `;
         tbody.appendChild(row);

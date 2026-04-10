@@ -207,6 +207,7 @@ tbody tr:hover {
         <option value="">Selecteer tweede melding</option>
     </select>
     <button class="button" id="compare-button">Vergelijk</button>
+    <button class="button" id="clear-compare">Wis selectie</button>
 </div>
 
 <div id="compare-result" style="margin:20px; text-align:center;"></div>
@@ -422,6 +423,12 @@ document.addEventListener('input', function(e) {
     }
 });
 
+document.getElementById('clear-compare').addEventListener('click', () => {
+    document.getElementById('compare-mission-1').value = '';
+    document.getElementById('compare-mission-2').value = '';
+    document.getElementById('compare-result').innerHTML = '';
+});
+    
 document.getElementById('compare-button').addEventListener('click', () => {
     const id1 = document.getElementById('compare-mission-1').value;
     const id2 = document.getElementById('compare-mission-2').value;

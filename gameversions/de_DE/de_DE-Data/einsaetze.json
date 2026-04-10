@@ -201723,5 +201723,441 @@
     "mission_categories": [
       "ambulance"
     ]
+  },
+  {
+    "id": "968",
+    "name": "Brand im Fahrsilo",
+    "place": "Bauernhof\nBiogasanlage",
+    "place_array": [
+      "Bauernhof",
+      "Biogasanlage"
+    ],
+    "average_credits": 3940,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "gwmess": 1,
+      "heavy_rescue_vehicles": 2,
+      "water_needed": 35000,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "firetrucks": 1
+    },
+    "chances": {
+      "mobile_command_vehicles": 75
+    },
+    "additional": {
+      "expansion_missions_ids": [
+        348,
+        205,
+        206
+      ],
+      "average_min_fire_personnel": 90,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 968,
+    "additive_overlays": "",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "968/a",
+    "name": "Brand im Fahrsilo",
+    "place": "Bauernhof\nBiogasanlage",
+    "place_array": [
+      "Bauernhof",
+      "Biogasanlage"
+    ],
+    "average_credits": 4340,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "gwmess": 1,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 2,
+      "water_needed": 35000,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "firetrucks": 1
+    },
+    "chances": {
+      "mobile_command_vehicles": 75
+    },
+    "additional": {
+      "expansion_missions_ids": [
+        348,
+        205,
+        206
+      ],
+      "average_min_fire_personnel": 90,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "police_service_group_leader": 5,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 968,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "968/b",
+    "name": "Brand im Fahrsilo",
+    "place": "Bauernhof\nBiogasanlage",
+    "place_array": [
+      "Bauernhof",
+      "Biogasanlage"
+    ],
+    "average_credits": 4340,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "gwmess": 1,
+      "heavy_rescue_vehicles": 2,
+      "water_needed": 35000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "firetrucks": 1
+    },
+    "chances": {
+      "mobile_command_vehicles": 75
+    },
+    "additional": {
+      "expansion_missions_ids": [
+        348,
+        205,
+        206
+      ],
+      "average_min_fire_personnel": 90,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "drone": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 968,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "968/c",
+    "name": "Brand im Fahrsilo",
+    "place": "Bauernhof\nBiogasanlage",
+    "place_array": [
+      "Bauernhof",
+      "Biogasanlage"
+    ],
+    "average_credits": 4570,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "gwmess": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_lkw": 1,
+      "water_needed": 35000,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "firetrucks": 1
+    },
+    "chances": {
+      "mobile_command_vehicles": 75
+    },
+    "additional": {
+      "expansion_missions_ids": [
+        348,
+        205,
+        206
+      ],
+      "average_min_fire_personnel": 90,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "thw_fg_raeumen_count": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 968,
+    "additive_overlays": "c",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "968/ab",
+    "name": "Brand im Fahrsilo",
+    "place": "Bauernhof\nBiogasanlage",
+    "place_array": [
+      "Bauernhof",
+      "Biogasanlage"
+    ],
+    "average_credits": 4740,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "gwmess": 1,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 2,
+      "water_needed": 35000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "firetrucks": 1
+    },
+    "chances": {
+      "mobile_command_vehicles": 75
+    },
+    "additional": {
+      "expansion_missions_ids": [
+        348,
+        205,
+        206
+      ],
+      "average_min_fire_personnel": 90,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 968,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "968/ac",
+    "name": "Brand im Fahrsilo",
+    "place": "Bauernhof\nBiogasanlage",
+    "place_array": [
+      "Bauernhof",
+      "Biogasanlage"
+    ],
+    "average_credits": 4970,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "gwmess": 1,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_lkw": 1,
+      "water_needed": 35000,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "firetrucks": 1
+    },
+    "chances": {
+      "mobile_command_vehicles": 75
+    },
+    "additional": {
+      "expansion_missions_ids": [
+        348,
+        205,
+        206
+      ],
+      "average_min_fire_personnel": 90,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 968,
+    "additive_overlays": "ac",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "968/bc",
+    "name": "Brand im Fahrsilo",
+    "place": "Bauernhof\nBiogasanlage",
+    "place_array": [
+      "Bauernhof",
+      "Biogasanlage"
+    ],
+    "average_credits": 4970,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "gwmess": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_lkw": 1,
+      "water_needed": 35000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "firetrucks": 1
+    },
+    "chances": {
+      "mobile_command_vehicles": 75
+    },
+    "additional": {
+      "expansion_missions_ids": [
+        348,
+        205,
+        206
+      ],
+      "average_min_fire_personnel": 90,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "thw_fg_raeumen_count": 1,
+      "drone": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 968,
+    "additive_overlays": "bc",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "968/abc",
+    "name": "Brand im Fahrsilo",
+    "place": "Bauernhof\nBiogasanlage",
+    "place_array": [
+      "Bauernhof",
+      "Biogasanlage"
+    ],
+    "average_credits": 5370,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 1,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "gwmess": 1,
+      "police_service_group_leader": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 1,
+      "thw_lkw": 1,
+      "water_needed": 35000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "firetrucks": 1
+    },
+    "chances": {
+      "mobile_command_vehicles": 75
+    },
+    "additional": {
+      "expansion_missions_ids": [
+        348,
+        205,
+        206
+      ],
+      "average_min_fire_personnel": 90,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 4,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "fire_stations": 12
+    },
+    "overlay_index": null,
+    "base_mission_id": 968,
+    "additive_overlays": "abc",
+    "mission_categories": [
+      "fire"
+    ]
   }
 ]

@@ -289,16 +289,30 @@ async function loadLastUpdate() {
     }
 }
 
-function formatRequirements(req) {
-    if (!req) return '-';
-    return Object.entries(req).map(([k, v]) => {
+function formatRequirements(req, categories) {
+    let html = '';
+
+    // 1. CATEGORIEËN (NIEUW)
+    if (categories && categories.length > 0) {
+        html += `<strong>${translations.mission_categories || 'Meldingscategorie'}</strong><br>`;
+        html += categories.map(cat => translations[cat] || cat).join(', ') + '<br><br>';
+    }
+
+    // 2. REQUIREMENTS (BESTAAND)
+    if (!req) return html || '-';
+
+    html += Object.entries(req).map(([k, v]) => {
         if (typeof v === 'object' && v !== null) {
             return Object.entries(v)
-                .map(([subK, subV]) => `${translations[k] || k}: ${subV}x ${translations[subK] || subK}`)
+                .map(([subK, subV]) =>
+                    `${translations[k] || k}: ${subV}x ${translations[subK] || subK}`
+                )
                 .join('<br>');
         }
         return `${translations[k] || k}: ${v}`;
     }).join('<br>');
+
+    return html;
 }
 
 async function initMissions() {
@@ -341,7 +355,7 @@ async function initMissions() {
 
         const div = document.createElement('div');
         div.className = 'requirements-content';
-        div.innerHTML = formatRequirements(m.requirements);
+        div.innerHTML = formatRequirements(m.requirements, m.mission_categories);
 
         td.appendChild(div);
         reqRow.appendChild(td);

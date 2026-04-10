@@ -292,30 +292,53 @@ async function loadLastUpdate() {
     }
 }
 
-function formatRequirements(req, categories) {
+function formatRequirements(req, categories, mission) {
     let html = '';
 
-    // 1. CATEGORIEËN (NIEUW)
+    const isAmbulance =
+        (categories || []).includes('ambulance');
+
+    const medicalBlock = buildMedicalBlock(mission);
+
+    // =========================
+    // 1. CATEGORIES
+    // =========================
     if (categories && categories.length > 0) {
         html += `<strong>${translations.mission_categories || 'Meldingscategorie'}</strong><br>`;
         html += categories.map(cat => translations[cat] || cat).join(', ') + '<br><br>';
     }
 
-    // 2. REQUIREMENTS (BESTAAND)
-    if (!req) return html || '-';
+    // =========================
+    // 2. AMBULANCE ABOVE VEHICLES
+    // =========================
+    if (isAmbulance && medicalBlock) {
+        html += medicalBlock + '<br>';
+    }
 
-    html += Object.entries(req).map(([k, v]) => {
-        if (typeof v === 'object' && v !== null) {
-            return Object.entries(v)
-                .map(([subK, subV]) =>
-                    `${translations[k] || k}: ${subV}x ${translations[subK] || subK}`
-                )
-                .join('<br>');
-        }
-        return `${translations[k] || k}: ${v}`;
-    }).join('<br>');
+    // =========================
+    // 3. VEHICLES / REQUIREMENTS
+    // =========================
+    if (req && Object.keys(req).length > 0) {
+        html += Object.entries(req).map(([k, v]) => {
+            if (typeof v === 'object' && v !== null) {
+                return Object.entries(v)
+                    .map(([subK, subV]) =>
+                        `${translations[k] || k}: ${subV}x ${translations[subK] || subK}`
+                    )
+                    .join('<br>');
+            }
+            return `${translations[k] || k}: ${v}`;
+        }).join('<br>');
+    }
 
-    return html;
+    // =========================
+    // 4. NON-AMBULANCE MEDICAL BELOW VEHICLES
+    // =========================
+    if (!isAmbulance && medicalBlock) {
+        html += '<br>' + medicalBlock;
+    }
+
+    return html || '-';
 }
 
 async function initMissions() {
@@ -358,7 +381,7 @@ async function initMissions() {
 
         const div = document.createElement('div');
         div.className = 'requirements-content';
-        div.innerHTML = formatRequirements(m.requirements, m.mission_categories);
+        div.innerHTML = formatRequirements(m.requirements, m.mission_categories, m);
 
         td.appendChild(div);
         reqRow.appendChild(td);
@@ -395,6 +418,52 @@ async function initMissions() {
     });
 }
 
+function buildMedicalBlock(mission) {
+    if (!mission) return '';
+
+    const chances = mission.chances;
+    const add = mission.additional;
+
+    if (!chances && !add) return '';
+
+    let html = `<strong>Medische Informatie</strong><br>`;
+
+    // =========================
+    // CHANCES
+    // =========================
+    if (chances) {
+        html += `<em>Kansen:</em><br>`;
+        for (const [key, value] of Object.entries(chances)) {
+            html += `• ${translations[key] || key}: ${value}%<br>`;
+        }
+    }
+
+    // =========================
+    // ADDITIONAL
+    // =========================
+    if (add) {
+        html += `<em>Patiënt info:</em><br>`;
+
+        if (add.possible_patient !== undefined) {
+            html += `• Mogelijke patiënten: ${add.possible_patient}<br>`;
+        }
+
+        if (add.possible_patient_min !== undefined) {
+            html += `• Min. patiënten: ${add.possible_patient_min}<br>`;
+        }
+
+        if (add.patient_specialization_captions?.length) {
+            html += `• Specialisaties: ${add.patient_specialization_captions.join(', ')}<br>`;
+        }
+
+        if (add.filter_id) {
+            html += `• Filter: ${add.filter_id}<br>`;
+        }
+    }
+
+    return html;
+}
+    
 function changeLanguage(lang) {
     currentLang = lang;
     const t = pageTranslations[lang];

@@ -74154,6 +74154,19 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "mountain_missions",
+      "patient_us_code_possible": [
+        "17-D-1G",
+        "17-D-2G",
+        "17-D-3G",
+        "17-D-4G",
+        "17-D-5G",
+        "17-B-1G",
+        "17-B-2G",
+        "17-B-3G",
+        "17-A-1G",
+        "17-A-2G",
+        "17-A-3G"
+      ],
       "vehicle_groups": [
         "mountain_missions"
       ],
@@ -74206,6 +74219,19 @@
       "possible_patient": 2,
       "possible_patient_min": 1,
       "filter_id": "mountain_missions",
+      "patient_us_code_possible": [
+        "17-D-1G",
+        "17-D-2G",
+        "17-D-3G",
+        "17-D-4G",
+        "17-D-5G",
+        "17-B-1G",
+        "17-B-2G",
+        "17-B-3G",
+        "17-A-1G",
+        "17-A-2G",
+        "17-A-3G"
+      ],
       "vehicle_groups": [
         "mountain_missions"
       ],
@@ -74257,6 +74283,19 @@
       "possible_patient": 4,
       "possible_patient_min": 4,
       "filter_id": "mountain_missions",
+      "patient_us_code_possible": [
+        "17-D-1G",
+        "17-D-2G",
+        "17-D-3G",
+        "17-D-4G",
+        "17-D-5G",
+        "17-B-1G",
+        "17-B-2G",
+        "17-B-3G",
+        "17-A-1G",
+        "17-A-2G",
+        "17-A-3G"
+      ],
       "vehicle_groups": [
         "mountain_missions"
       ],
@@ -74300,16 +74339,29 @@
       "mountain_rescue_dogs": 2,
       "mountain_snow": 1,
       "mountain_lift": 1,
-      "mountain_lift_2": 1
+      "mountain_lift_2": 1,
+      "mountain_atv_tractive": 2
     },
     "chances": {
-      "patient_transport": 25,
-      "patient_critical_care": 0
+      "patient_transport": 25
     },
     "additional": {
       "possible_patient": 6,
       "possible_patient_min": 1,
       "filter_id": "mountain_missions",
+      "patient_us_code_possible": [
+        "17-D-1G",
+        "17-D-2G",
+        "17-D-3G",
+        "17-D-4G",
+        "17-D-5G",
+        "17-B-1G",
+        "17-B-2G",
+        "17-B-3G",
+        "17-A-1G",
+        "17-A-2G",
+        "17-A-3G"
+      ],
       "vehicle_groups": [
         "mountain_missions"
       ],
@@ -74361,6 +74413,19 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "mountain_missions",
+      "patient_us_code_possible": [
+        "17-D-1G",
+        "17-D-2G",
+        "17-D-3G",
+        "17-D-4G",
+        "17-D-5G",
+        "17-B-1G",
+        "17-B-2G",
+        "17-B-3G",
+        "17-A-1G",
+        "17-A-2G",
+        "17-A-3G"
+      ],
       "vehicle_groups": [
         "mountain_missions"
       ],
@@ -74454,6 +74519,23 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "mountain_missions",
+      "patient_us_code_possible": [
+        "17-D-1G",
+        "17-D-2G",
+        "17-D-3G",
+        "17-D-4G",
+        "17-D-5G",
+        "17-B-1G",
+        "17-B-2G",
+        "17-B-3G",
+        "17-A-1G",
+        "17-A-2G",
+        "17-A-3G"
+      ],
+      "vehicle_groups": [
+        "default",
+        "mountain_missions"
+      ],
       "uses_custom_spawn_area": true,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [
@@ -74473,7 +74555,9 @@
     "overlay_index": null,
     "base_mission_id": 1124,
     "additive_overlays": "",
-    "mission_categories": []
+    "mission_categories": [
+      "mountain"
+    ]
   },
   {
     "id": "1125",
@@ -74498,13 +74582,25 @@
       "mountain_lift_2": 2
     },
     "chances": {
-      "patient_transport": 100,
-      "patient_critical_care": 25
+      "patient_transport": 100
     },
     "additional": {
       "possible_patient": 6,
       "possible_patient_min": 5,
       "filter_id": "mountain_missions",
+      "patient_us_code_possible": [
+        "17-D-1G",
+        "17-D-2G",
+        "17-D-3G",
+        "17-D-4G",
+        "17-D-5G",
+        "17-B-1G",
+        "17-B-2G",
+        "17-B-3G",
+        "17-A-1G",
+        "17-A-2G",
+        "17-A-3G"
+      ],
       "vehicle_groups": [
         "mountain_missions"
       ],
@@ -74556,6 +74652,19 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "mountain_missions",
+      "patient_us_code_possible": [
+        "17-D-1G",
+        "17-D-2G",
+        "17-D-3G",
+        "17-D-4G",
+        "17-D-5G",
+        "17-B-1G",
+        "17-B-2G",
+        "17-B-3G",
+        "17-A-1G",
+        "17-A-2G",
+        "17-A-3G"
+      ],
       "vehicle_groups": [
         "mountain_missions"
       ],

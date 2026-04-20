@@ -189,12 +189,16 @@ tbody tr:hover {
 <p id="page-message"></p>
 <p id="last-update"></p>
 
-<div style="margin: 20px;">
-    <input
-        type="text"
-        id="mission-search"
-        placeholder="Melding zoeken..."
+<div style="margin: 20px; display: flex; justify-content: center; gap: 10px;">
+    <input 
+        type="text" 
+        id="mission-search" 
+        placeholder="Melding zoeken..." 
         style="padding:8px 12px; width:300px; border-radius:6px; border:1px solid #555566; background-color:#2c2c3c; color:#dddddd; font-family:'Orbitron', sans-serif;">
+    
+    <button id="export-excel" class="button" style="background-color: #2e7d32; border-color: #1b5e20;">
+        Exporteer naar Excel (CSV)
+    </button>
 </div>
 
 <div id="swipe-hint"></div>
@@ -460,7 +464,42 @@ document.getElementById('compare-button').addEventListener('click', () => {
         </table>
     `;
 });
+document.getElementById('export-excel').addEventListener('click', () => {
+    // Definieer de headers voor het CSV bestand
+    const headers = ["ID", "Naam", "POI", "Gemiddelde Credits", "Benodigdheden"];
+    
+    const rows = missions.map(m => {
+        // Maak de requirements tekstvriendelijk voor één Excel-cel
+        // We vervangen <br> door een spatie of komma
+        const reqText = formatRequirements(m.requirements)
+            .replace(/<br>/g, ' | ') // Gebruik een 'pipe' | als scheidingsteken binnen de cel
+            .replace(/"/g, '""');    // Escaping voor CSV
+            
+        return [
+            m.id,
+            `"${m.name.replace(/"/g, '""')}"`,
+            `"${(m.place_array || []).join(', ').replace(/"/g, '""')}"`,
+            m.average_credits,
+            `"${reqText}"`
+        ].join(',');
+    });
 
+    // Voeg headers en data samen
+    const csvContent = "\uFEFF" + [headers.join(','), ...rows].join('\n');
+    
+    // Maak de download link
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.setAttribute("href", url);
+    link.setAttribute("download", `Meldkamerspel_Export_${new Date().toLocaleDateString()}.csv`);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
+
+
+    
 document.getElementById('footer-year').textContent = new Date().getFullYear();
 
 window.addEventListener('DOMContentLoaded', () => {

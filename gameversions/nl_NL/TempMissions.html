@@ -6,6 +6,8 @@
 <title>Meldingen Meldkamerspel (NL)</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
 <style>
 body {
     margin: 0;
@@ -36,6 +38,7 @@ body {
     border-radius: 8px;
     transition: background-color 0.2s, transform 0.2s, color 0.2s;
     font-size: 12px;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -142,6 +145,49 @@ tbody tr:hover {
     padding: 6px 8px;
 }
 
+/* Modal Styles */
+#exportModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #2a2a3a;
+    padding: 25px;
+    border-radius: 12px;
+    border: 2px solid #555566;
+    max-width: 600px;
+    width: 90%;
+    max-height: 85vh;
+    overflow-y: auto;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.category-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #dddddd;
+    font-size: 14px;
+    cursor: pointer;
+}
+
 #footer {
     margin-top: 40px;
     padding: 20px;
@@ -166,6 +212,9 @@ tbody tr:hover {
     .language-selector img {
         height: 22px;
         width: auto;
+    }
+    .category-grid {
+        grid-template-columns: 1fr;
     }
 }
 </style>
@@ -197,6 +246,11 @@ tbody tr:hover {
         style="padding:8px 12px; width:300px; border-radius:6px; border:1px solid #555566; background-color:#2c2c3c; color:#dddddd; font-family:'Orbitron', sans-serif;">
 </div>
 
+<div style="margin: 20px; display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
+    <button class="button" onclick="exportAllToExcel()" style="background-color: #2e7d32; border-color: #1b5e20;">Download Alles (.xlsx)</button>
+    <button class="button" onclick="openExportModal()" style="background-color: #1565c0; border-color: #0d47a1;">Selecteer Types & Download</button>
+</div>
+
 <div id="swipe-hint"></div>
 
 <div style="margin: 20px; display:flex; justify-content:center; gap:10px; align-items:center; flex-wrap:wrap;">
@@ -214,6 +268,21 @@ tbody tr:hover {
 
 <div class="table-wrapper">
     <div id="sheet-data"></div>
+</div>
+
+<div id="exportModal">
+    <div class="modal-content">
+        <h2 style="color:#eeeeee; margin-top:0; font-family:'Orbitron', sans-serif; font-size: 20px;">Filter Categorieën</h2>
+        <p style="font-size:13px; margin-bottom:15px;">Vink de types aan die je wilt opnemen in de export.</p>
+        
+        <div id="category-list" class="category-grid">
+            </div>
+
+        <div style="display:flex; gap:10px; justify-content:flex-end; border-top: 1px solid #444; pt-15px; margin-top:10px;">
+            <button class="button" onclick="closeExportModal()">Annuleren</button>
+            <button class="button" onclick="processCategoryExport()" style="background-color:#2e7d32;">Exporteer naar Excel</button>
+        </div>
+    </div>
 </div>
 
 <footer id="footer">
@@ -297,28 +366,18 @@ function formatRequirements(req, categories, mission) {
     const isAmbulance = (categories || []).includes('ambulance');
     const medicalBlock = buildMedicalBlock(mission);
 
-    // =========================
-    // 1. CATEGORIEËN
-    // =========================
     if (categories && categories.length > 0) {
         html += `<strong>${translations.mission_categories || 'Meldingscategorie'}</strong><br>`;
         html += categories.map(cat => {
-            // Dwing de zoekopdracht naar de 'cat_' prefix voor de hoofdcategorieën
             const catKey = 'cat_' + cat;
             return translations[catKey] || translations[cat] || cat;
         }).join(', ') + '<br><br>';
     }
 
-    // =========================
-    // 2. MEDISCH (Bovenaan bij ambulance)
-    // =========================
     if (isAmbulance && medicalBlock) {
         html += medicalBlock + '<br>';
     }
 
-    // =========================
-    // 3. VOERTUIGEN
-    // =========================
     if (req && Object.keys(req).length > 0) {
         const vehicleHtml = Object.entries(req).map(([k, v]) => {
             if (typeof v === 'object' && v !== null) {
@@ -336,9 +395,6 @@ function formatRequirements(req, categories, mission) {
         }
     }
 
-    // =========================
-    // 4. MEDISCH (Onderaan bij rest)
-    // =========================
     if (!isAmbulance && medicalBlock) {
         if (req && Object.keys(req).length > 0) html += '<br>';
         html += medicalBlock;
@@ -346,8 +402,6 @@ function formatRequirements(req, categories, mission) {
 
     return html || '-';
 }
-
-
 
 async function initMissions() {
     missions = await (await fetch(dataFile)).json();
@@ -428,22 +482,16 @@ async function initMissions() {
 
 function buildMedicalBlock(mission) {
     if (!mission) return '';
-
     const chances = mission.chances;
     const add = mission.additional;
     let html = '';
     let hasContent = false;
 
-    // =========================
-    // KANSEN (CHANCES)
-    // =========================
     let chanceHtml = '';
     if (chances && Object.keys(chances).length > 0) {
         for (const [key, value] of Object.entries(chances)) {
-            // Fix: Als het een voertuig-vertaling is met "Benodigde", haal dat woord weg voor de Kansen-lijst
             let label = translations[key] || key;
             label = label.replace('Benodigde ', ''); 
-            
             chanceHtml += `• ${label}: ${value}%<br>`;
         }
     }
@@ -454,26 +502,13 @@ function buildMedicalBlock(mission) {
         hasContent = true;
     }
 
-    // =========================
-    // PATIËNT INFO (ADDITIONAL)
-    // =========================
     let addHtml = '';
     if (add) {
         if (add.possible_patient !== undefined || add.possible_patient_min !== undefined || add.patient_specialization_captions?.length) {
-            
-            if (add.possible_patient !== undefined) {
-                addHtml += `• ${translations.possible_patient || 'Mogelijke patiënten'}: ${add.possible_patient}<br>`;
-            }
-            if (add.possible_patient_min !== undefined) {
-                addHtml += `• ${translations.possible_patient_min || 'Min. patiënten'}: ${add.possible_patient_min}<br>`;
-            }
-            // Fix: Vervoer kans (patient_transport)
-            if (add.patient_transport !== undefined) {
-                addHtml += `• ${translations.patient_transport || 'Patiëntenvervoer'}: ${add.patient_transport}%<br>`;
-            }
-            if (add.patient_specialization_captions?.length) {
-                addHtml += `• ${translations.patient_specializations || 'Specialisaties'}: ${add.patient_specialization_captions.join(', ')}<br>`;
-            }
+            if (add.possible_patient !== undefined) addHtml += `• ${translations.possible_patient || 'Mogelijke patiënten'}: ${add.possible_patient}<br>`;
+            if (add.possible_patient_min !== undefined) addHtml += `• ${translations.possible_patient_min || 'Min. patiënten'}: ${add.possible_patient_min}<br>`;
+            if (add.patient_transport !== undefined) addHtml += `• ${translations.patient_transport || 'Patiëntenvervoer'}: ${add.patient_transport}%<br>`;
+            if (add.patient_specialization_captions?.length) addHtml += `• ${translations.patient_specializations || 'Specialisaties'}: ${add.patient_specialization_captions.join(', ')}<br>`;
         }
     }
 
@@ -482,15 +517,81 @@ function buildMedicalBlock(mission) {
         html += addHtml;
         hasContent = true;
     }
-
     return hasContent ? html : '';
 }
 
+// =========================
+// EXPORT LOGICA
+// =========================
+function openExportModal() {
+    const modal = document.getElementById('exportModal');
+    const list = document.getElementById('category-list');
+    list.innerHTML = ''; 
+
+    const allCats = new Set();
+    missions.forEach(m => {
+        if (m.mission_categories) {
+            m.mission_categories.forEach(c => allCats.add(c));
+        }
+    });
+
+    Array.from(allCats).sort().forEach(cat => {
+        const labelText = translations['cat_' + cat] || translations[cat] || cat;
+        list.innerHTML += `
+            <label class="category-item">
+                <input type="checkbox" value="${cat}" class="cat-checkbox"> ${labelText}
+            </label>
+        `;
+    });
+
+    modal.style.display = 'flex';
+}
+
+function closeExportModal() {
+    document.getElementById('exportModal').style.display = 'none';
+}
+
+function processCategoryExport() {
+    const selectedCats = Array.from(document.querySelectorAll('.cat-checkbox:checked')).map(cb => cb.value);
+    if (selectedCats.length === 0) return alert("Selecteer minimaal één categorie.");
+
+    const filteredData = missions.filter(m => 
+        m.mission_categories && m.mission_categories.some(c => selectedCats.includes(c))
+    );
+    generateXlsx(filteredData, "Meldkamerspel_Selectie");
+    closeExportModal();
+}
+
+function exportAllToExcel() {
+    generateXlsx(missions, "Meldkamerspel_Alle_Meldingen");
+}
+
+function generateXlsx(dataArray, fileName) {
+    const dataToExport = dataArray.map(m => {
+        const rawReqs = formatRequirements(m.requirements, m.mission_categories, m);
+        const cleanReqs = rawReqs.replace(/<br>/g, '\n').replace(/<\/?[^>]+(>|$)/g, "");
+
+        return {
+            "ID": m.id,
+            "Naam": m.name,
+            "Categorieën": (m.mission_categories || []).map(cat => translations['cat_' + cat] || translations[cat] || cat).join(', '),
+            "Locatie (POI)": (m.place_array || []).join(', '),
+            "Credits": m.average_credits || 'Onbekend',
+            "Benodigdheden & Info": cleanReqs
+        };
+    });
+
+    const worksheet = XLSX.utils.json_to_sheet(dataToExport);
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, "Meldingen");
     
+    worksheet['!cols'] = [{wch:10}, {wch:45}, {wch:35}, {wch:25}, {wch:15}, {wch:70}];
+    XLSX.writeFile(workbook, `${fileName}.xlsx`);
+}
+
 function changeLanguage(lang) {
     currentLang = lang;
     const t = pageTranslations[lang];
-
     document.title = t.title;
     document.getElementById('page-title').textContent = t.title;
     document.getElementById('page-message').textContent = t.message;
@@ -499,36 +600,22 @@ function changeLanguage(lang) {
     document.getElementById('back-button').textContent = t.backButton;
     document.getElementById('swipe-hint').textContent = t.swipeHint;
     document.getElementById('mission-search').placeholder = t.searchPlaceholder;
-
-    const startYear = 2024;
-    const currentYear = new Date().getFullYear();
-    document.getElementById('footer-year').textContent =
-        startYear === currentYear ? currentYear : `${startYear} - ${currentYear}`;
-
     loadLastUpdate();
     initMissions();
 }
 
 document.addEventListener('input', function(e) {
     if (e.target.id !== 'mission-search') return;
-
     const search = e.target.value.toLowerCase();
     const rows = document.querySelectorAll('#sheet-data table tbody tr');
-
     for (let i = 0; i < rows.length; i++) {
         const row = rows[i];
-        const isRequirements = row.classList.contains('requirements-row');
-
-        if (isRequirements) continue;
-
+        if (row.classList.contains('requirements-row')) continue;
         const text = row.textContent.toLowerCase();
         const show = text.includes(search);
         row.style.display = show ? '' : 'none';
-
         const nextRow = row.nextElementSibling;
-        if (nextRow && nextRow.classList.contains('requirements-row')) {
-            nextRow.style.display = show ? '' : 'none';
-        }
+        if (nextRow && nextRow.classList.contains('requirements-row')) nextRow.style.display = show ? '' : 'none';
     }
 });
 
@@ -541,40 +628,29 @@ document.getElementById('clear-compare').addEventListener('click', () => {
 document.getElementById('compare-button').addEventListener('click', () => {
     const id1 = document.getElementById('compare-mission-1').value;
     const id2 = document.getElementById('compare-mission-2').value;
-
-    if (!id1 || !id2) return alert('Selecteer beide meldingen om te vergelijken.');
+    if (!id1 || !id2) return alert('Selecteer beide meldingen.');
     if (id1 === id2) return alert('Selecteer twee verschillende meldingen.');
-
     const m1 = missions.find(m => m.id == id1);
     const m2 = missions.find(m => m.id == id2);
-    if (!m1 || !m2) return;
-
     const resultDiv = document.getElementById('compare-result');
     resultDiv.innerHTML = `
         <table style="margin:0 auto; min-width:700px; border-collapse:collapse; background-color:#2a2a3a; border-radius:10px;">
             <thead>
-                <tr>
-                    <th style="padding:8px; border-bottom:1px solid #555566;">Eigenschap</th>
-                    <th style="padding:8px; border-bottom:1px solid #555566;">${m1.name} (${m1.id})</th>
-                    <th style="padding:8px; border-bottom:1px solid #555566;">${m2.name} (${m2.id})</th>
-                </tr>
+                <tr><th>Eigenschap</th><th>${m1.name} (${m1.id})</th><th>${m2.name} (${m2.id})</th></tr>
             </thead>
             <tbody>
                 <tr><td>ID</td><td>${m1.id}</td><td>${m2.id}</td></tr>
                 <tr><td>Naam</td><td>${m1.name}</td><td>${m2.name}</td></tr>
                 <tr><td>POI</td><td>${(m1.place_array||[]).join(', ')}</td><td>${(m2.place_array||[]).join(', ')}</td></tr>
-                <tr><td>Gemiddelde Credits</td><td>${m1.average_credits}</td><td>${m2.average_credits}</td></tr>
-                <tr><td>Benodigdheden</td><td>${formatRequirements(m1.requirements)}</td><td>${formatRequirements(m2.requirements)}</td></tr>
+                <tr><td>Credits</td><td>${m1.average_credits}</td><td>${m2.average_credits}</td></tr>
+                <tr><td>Benodigdheden</td><td>${formatRequirements(m1.requirements, m1.mission_categories, m1)}</td><td>${formatRequirements(m2.requirements, m2.mission_categories, m2)}</td></tr>
             </tbody>
         </table>
     `;
 });
 
 document.getElementById('footer-year').textContent = new Date().getFullYear();
-
-window.addEventListener('DOMContentLoaded', () => {
-    changeLanguage(currentLang);
-});
+window.addEventListener('DOMContentLoaded', () => changeLanguage(currentLang));
 </script>
 
 </body>

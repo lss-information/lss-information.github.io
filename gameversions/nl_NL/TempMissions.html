@@ -366,6 +366,9 @@ function formatRequirements(req, categories, mission) {
     const isAmbulance = (categories || []).includes('ambulance');
     const medicalBlock = buildMedicalBlock(mission);
 
+    // =========================
+    // 1. CATEGORIEËN
+    // =========================
     if (categories && categories.length > 0) {
         html += `<strong>${translations.mission_categories || 'Meldingscategorie'}</strong><br>`;
         html += categories.map(cat => {
@@ -374,20 +377,36 @@ function formatRequirements(req, categories, mission) {
         }).join(', ') + '<br><br>';
     }
 
+    // =========================
+    // 2. MEDISCH (Bovenaan bij ambulance)
+    // =========================
     if (isAmbulance && medicalBlock) {
         html += medicalBlock + '<br>';
     }
 
+    // =========================
+    // 3. VOERTUIGEN
+    // =========================
     if (req && Object.keys(req).length > 0) {
-        const vehicleHtml = Object.entries(req).map(([k, v]) => {
+        const vehicleEntries = Object.entries(req);
+        const vehicleHtml = vehicleEntries.map(([k, v], index) => {
+            let line = '';
             if (typeof v === 'object' && v !== null) {
-                return Object.entries(v)
+                line = Object.entries(v)
                     .map(([subK, subV]) =>
                         `${translations[k] || k}: ${subV}x ${translations[subK] || subK}`
                     )
                     .join('<br>');
+            } else {
+                line = `${translations[k] || k}: ${v}`;
             }
-            return `${translations[k] || k}: ${v}`;
+
+            // Voeg een komma toe als het NIET de laatste regel is
+            // OF als er na dit blok nog een medisch blok komt
+            const isLastOfVehicles = (index === vehicleEntries.length - 1);
+            const hasMedicalAfter = (!isAmbulance && medicalBlock);
+            
+            return line + (isLastOfVehicles && !hasMedicalAfter ? '' : ',');
         }).join('<br>');
 
         if (vehicleHtml) {
@@ -395,6 +414,9 @@ function formatRequirements(req, categories, mission) {
         }
     }
 
+    // =========================
+    // 4. MEDISCH (Onderaan bij rest)
+    // =========================
     if (!isAmbulance && medicalBlock) {
         if (req && Object.keys(req).length > 0) html += '<br>';
         html += medicalBlock;
@@ -402,6 +424,7 @@ function formatRequirements(req, categories, mission) {
 
     return html || '-';
 }
+
 
 async function initMissions() {
     missions = await (await fetch(dataFile)).json();

@@ -294,8 +294,6 @@ async function loadLastUpdate() {
 
 function formatRequirements(req, categories, mission) {
     let html = '';
-
-    // Check of het een ambulance-melding is voor de volgorde van weergave
     const isAmbulance = (categories || []).includes('ambulance');
     const medicalBlock = buildMedicalBlock(mission);
 
@@ -305,25 +303,24 @@ function formatRequirements(req, categories, mission) {
     if (categories && categories.length > 0) {
         html += `<strong>${translations.mission_categories || 'Meldingscategorie'}</strong><br>`;
         html += categories.map(cat => {
-            // Fix: Zoek eerst naar 'cat_naam', dan naar de normale naam
-            return translations['cat_' + cat] || translations[cat] || cat;
+            // Dwing de zoekopdracht naar de 'cat_' prefix voor de hoofdcategorieën
+            const catKey = 'cat_' + cat;
+            return translations[catKey] || translations[cat] || cat;
         }).join(', ') + '<br><br>';
     }
 
     // =========================
-    // 2. MEDISCH (Bovenaan bij ambulance-meldingen)
+    // 2. MEDISCH (Bovenaan bij ambulance)
     // =========================
     if (isAmbulance && medicalBlock) {
         html += medicalBlock + '<br>';
     }
 
     // =========================
-    // 3. VOERTUIGEN / BENODIGDHEDEN
+    // 3. VOERTUIGEN
     // =========================
     if (req && Object.keys(req).length > 0) {
-        // We tonen de titel alleen als er echt voertuigeisen zijn
         const vehicleHtml = Object.entries(req).map(([k, v]) => {
-            // Voor geneste objecten (zoals bijv. personeel in voertuigen)
             if (typeof v === 'object' && v !== null) {
                 return Object.entries(v)
                     .map(([subK, subV]) =>
@@ -331,7 +328,6 @@ function formatRequirements(req, categories, mission) {
                     )
                     .join('<br>');
             }
-            // Normale weergave: "Naam voertuig: Aantal"
             return `${translations[k] || k}: ${v}`;
         }).join('<br>');
 
@@ -341,19 +337,16 @@ function formatRequirements(req, categories, mission) {
     }
 
     // =========================
-    // 4. MEDISCH (Onderaan bij overige meldingen)
+    // 4. MEDISCH (Onderaan bij rest)
     // =========================
     if (!isAmbulance && medicalBlock) {
-        // Extra witregel toevoegen als er ook voertuigen boven staan
-        if (req && Object.keys(req).length > 0) {
-            html += '<br>';
-        }
+        if (req && Object.keys(req).length > 0) html += '<br>';
         html += medicalBlock;
     }
 
-    // Als er helemaal niets is gevonden, toon een streepje
     return html || '-';
 }
+
 
 
 async function initMissions() {

@@ -431,18 +431,20 @@ function buildMedicalBlock(mission) {
 
     const chances = mission.chances;
     const add = mission.additional;
-
     let html = '';
-
     let hasContent = false;
 
     // =========================
-    // CHANCES
+    // KANSEN (CHANCES)
     // =========================
     let chanceHtml = '';
     if (chances && Object.keys(chances).length > 0) {
         for (const [key, value] of Object.entries(chances)) {
-            chanceHtml += `• ${translations[key] || key}: ${value}%<br>`;
+            // Fix: Als het een voertuig-vertaling is met "Benodigde", haal dat woord weg voor de Kansen-lijst
+            let label = translations[key] || key;
+            label = label.replace('Benodigde ', ''); 
+            
+            chanceHtml += `• ${label}: ${value}%<br>`;
         }
     }
 
@@ -453,21 +455,22 @@ function buildMedicalBlock(mission) {
     }
 
     // =========================
-    // ADDITIONAL
+    // PATIËNT INFO (ADDITIONAL)
     // =========================
     let addHtml = '';
-
     if (add) {
         if (add.possible_patient !== undefined || add.possible_patient_min !== undefined || add.patient_specialization_captions?.length) {
-
+            
             if (add.possible_patient !== undefined) {
                 addHtml += `• ${translations.possible_patient || 'Mogelijke patiënten'}: ${add.possible_patient}<br>`;
             }
-
             if (add.possible_patient_min !== undefined) {
                 addHtml += `• ${translations.possible_patient_min || 'Min. patiënten'}: ${add.possible_patient_min}<br>`;
             }
-
+            // Fix: Vervoer kans (patient_transport)
+            if (add.patient_transport !== undefined) {
+                addHtml += `• ${translations.patient_transport || 'Patiëntenvervoer'}: ${add.patient_transport}%<br>`;
+            }
             if (add.patient_specialization_captions?.length) {
                 addHtml += `• ${translations.patient_specializations || 'Specialisaties'}: ${add.patient_specialization_captions.join(', ')}<br>`;
             }
@@ -482,6 +485,7 @@ function buildMedicalBlock(mission) {
 
     return hasContent ? html : '';
 }
+
     
 function changeLanguage(lang) {
     currentLang = lang;

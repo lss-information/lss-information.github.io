@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: auctions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -28,12 +28,9 @@ jobs:
       - name: Download NL data
         run: |
           mkdir -p gameversions/nl_NL/nl_NL-Data
-          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/nl_NL/Vehicles.json \
-            -o gameversions/nl_NL/nl_NL-Data/Vehicles.json
-          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/nl_NL/buildings.json \
-            -o gameversions/nl_NL/nl_NL-Data/buildings.json
-          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/nl_NL/pois.json \
-            -o gameversions/nl_NL/nl_NL-Data/pois.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/nl_NL/Vehicles.json -o gameversions/nl_NL/nl_NL-Data/Vehicles.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/nl_NL/buildings.json -o gameversions/nl_NL/nl_NL-Data/buildings.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/nl_NL/pois.json -o gameversions/nl_NL/nl_NL-Data/pois.json
 
       # =====================
       # US DATA
@@ -41,12 +38,9 @@ jobs:
       - name: Download US data
         run: |
           mkdir -p gameversions/en_US/en_US-Data
-          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_US/Vehicles.json \
-            -o gameversions/en_US/en_US-Data/Vehicles.json
-          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_US/buildings.json \
-            -o gameversions/en_US/en_US-Data/buildings.json
-          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_US/pois.json \
-            -o gameversions/en_US/en_US-Data/pois.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_US/Vehicles.json -o gameversions/en_US/en_US-Data/Vehicles.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_US/buildings.json -o gameversions/en_US/en_US-Data/buildings.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_US/pois.json -o gameversions/en_US/en_US-Data/pois.json
 
       # =====================
       # UK DATA
@@ -54,12 +48,9 @@ jobs:
       - name: Download UK data
         run: |
           mkdir -p gameversions/en_UK/en_UK-Data
-          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_GB/vehicles.json \
-            -o gameversions/en_UK/en_UK-Data/vehicles.json
-          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_GB/buildings.json \
-            -o gameversions/en_UK/en_UK-Data/buildings.json
-          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_GB/pois.json \
-            -o gameversions/en_UK/en_UK-Data/pois.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_GB/vehicles.json -o gameversions/en_UK/en_UK-Data/vehicles.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_GB/buildings.json -o gameversions/en_UK/en_UK-Data/buildings.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_GB/pois.json -o gameversions/en_UK/en_UK-Data/pois.json
 
       # =====================
       # AU DATA
@@ -67,12 +58,9 @@ jobs:
       - name: Download AU data
         run: |
           mkdir -p gameversions/en_AU/en_AU-Data
-          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_AU/vehicles.json \
-            -o gameversions/en_AU/en_AU-Data/vehicles.json
-          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_AU/buildings.json \
-            -o gameversions/en_AU/en_AU-Data/buildings.json
-          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_AU/pois.json \
-            -o gameversions/en_AU/en_AU-Data/pois.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_AU/vehicles.json -o gameversions/en_AU/en_AU-Data/vehicles.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_AU/buildings.json -o gameversions/en_AU/en_AU-Data/buildings.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/en_AU/pois.json -o gameversions/en_AU/en_AU-Data/pois.json
 
       # =====================
       # ES DATA
@@ -80,25 +68,20 @@ jobs:
       - name: Download ES data
         run: |
           mkdir -p gameversions/es_ES/es_ES-Data
-          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/es_ES/vehicles.json \
-            -o gameversions/es_ES/es_ES-Data/vehicles.json
-          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/es_ES/buildings.json \
-            -o gameversions/es_ES/es_ES-Data/buildings.json
-          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/es_ES/pois.json \
-            -o gameversions/es_ES/es_ES-Data/pois.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/es_ES/vehicles.json -o gameversions/es_ES/es_ES-Data/vehicles.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/es_ES/buildings.json -o gameversions/es_ES/es_ES-Data/buildings.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/es_ES/pois.json -o gameversions/es_ES/es_ES-Data/pois.json
 
       # =====================
-      # DE DATA
+      # DE DATA (Gefixed met User-Agent)
       # =====================
       - name: Download DE data
         run: |
           mkdir -p gameversions/de_DE/de_DE-Data
-          curl -f -sSL https://api.lss-manager.de/de_DE/vehicles \
-            -o gameversions/de_DE/de_DE-Data/Vehicles.json
-          curl -f -sSL https://api.lss-manager.de/de_DE/buildings \
-            -o gameversions/de_DE/de_DE-Data/buildings.json
-          curl -f -sSL https://api.lss-manager.de/de_DE/pois \
-            -o gameversions/de_DE/de_DE-Data/pois.json
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+          curl -f -sSL -H "User-Agent: $UA" https://api.lss-manager.de/de_DE/vehicles -o gameversions/de_DE/de_DE-Data/Vehicles.json
+          curl -f -sSL -H "User-Agent: $UA" https://api.lss-manager.de/de_DE/buildings -o gameversions/de_DE/de_DE-Data/buildings.json
+          curl -f -sSL -H "User-Agent: $UA" https://api.lss-manager.de/de_DE/pois -o gameversions/de_DE/de_DE-Data/pois.json
 
       # =====================
       # DETECT DATA CHANGES
@@ -119,62 +102,38 @@ jobs:
         if: steps.changes_data.outputs.changed == 'true'
         run: |
           TS=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-
-          echo "$TS" > gameversions/nl_NL/nl_NL-Data/last_update_buildings.txt
-          echo "$TS" > gameversions/en_US/en_US-Data/last_update_buildings.txt
-          echo "$TS" > gameversions/en_UK/en_UK-Data/last_update_buildings.txt
-          echo "$TS" > gameversions/en_AU/en_AU-Data/last_update_buildings.txt
-          echo "$TS" > gameversions/es_ES/es_ES-Data/last_update_buildings.txt
-          echo "$TS" > gameversions/de_DE/de_DE-Data/last_update_buildings.txt
+          for lang in nl_NL en_US en_UK en_AU es_ES de_DE; do
+            echo "$TS" > "gameversions/$lang/${lang}-Data/last_update_buildings.txt"
+          done
 
       # =====================
-      # EINSAETZE
+      # EINSAETZE & EVENT TYPES
       # =====================
-      - name: Download einsaetze (all regions)
+      - name: Download einsaetze & event_types
         run: |
           set -e
-
-          download() {
-            URL=$1
-            DIR=$2
-            mkdir -p "$DIR"
-            curl -f -s -L "$URL" | jq '.' > "$DIR/einsaetze.json"
-          }
-
-          download "https://www.meldkamerspel.com/einsaetze.json" "gameversions/nl_NL/nl_NL-Data"
-          download "https://www.leitstellenspiel.de/einsaetze.json" "gameversions/de_DE/de_DE-Data"
-          download "https://www.missionchief.co.uk/einsaetze.json" "gameversions/en_UK/en_UK-Data"
-          download "https://www.missionchief.com/einsaetze.json" "gameversions/en_US/en_US-Data"
-          download "https://www.missionchief-australia.com/einsaetze.json" "gameversions/en_AU/en_AU-Data"
-          download "https://www.centro-de-mando.es/einsaetze.json" "gameversions/es_ES/es_ES-Data"
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
           
-      # =====================
-      # Event_Types
-      # =====================
-      - name: Download Event_Types (all regions)
-        run: |
-          set -e
-
-          download() {
-            URL=$1
+          download_all() {
+            URL_BASE=$1
             DIR=$2
             mkdir -p "$DIR"
-            curl -f -s -L "$URL" | jq '.' > "$DIR/alliance_event_types.json"
+            curl -f -sSL -H "User-Agent: $UA" "$URL_BASE/einsaetze.json" | jq '.' > "$DIR/einsaetze.json"
+            curl -f -sSL -H "User-Agent: $UA" "$URL_BASE/alliance_event_types.json" | jq '.' > "$DIR/alliance_event_types.json"
           }
 
-          download "https://www.meldkamerspel.com/alliance_event_types.json" "gameversions/nl_NL/nl_NL-Data"
-          download "https://www.leitstellenspiel.de/alliance_event_types.json" "gameversions/de_DE/de_DE-Data"
-          download "https://www.missionchief.co.uk/alliance_event_types.json" "gameversions/en_UK/en_UK-Data"
-          download "https://www.missionchief.com/alliance_event_types.json" "gameversions/en_US/en_US-Data"
-          download "https://www.missionchief-australia.com/alliance_event_types.json" "gameversions/en_AU/en_AU-Data"
-          download "https://www.centro-de-mando.es/alliance_event_types.json" "gameversions/es_ES/es_ES-Data"
-                    
+          download_all "https://www.meldkamerspel.com" "gameversions/nl_NL/nl_NL-Data"
+          download_all "https://www.leitstellenspiel.de" "gameversions/de_DE/de_DE-Data"
+          download_all "https://www.missionchief.co.uk" "gameversions/en_UK/en_UK-Data"
+          download_all "https://www.missionchief.com" "gameversions/en_US/en_US-Data"
+          download_all "https://www.missionchief-australia.com" "gameversions/en_AU/en_AU-Data"
+          download_all "https://www.centro-de-mando.es" "gameversions/es_ES/es_ES-Data"
 
       # =====================
       # DETECT EINSAETZE CHANGES
       # =====================
-      - name: Detect einsaetze changes
-        id: changes_einsaetze
+      - name: Detect final changes
+        id: changes_final
         run: |
           if [[ -n "$(git status --porcelain)" ]]; then
             echo "changed=true" >> $GITHUB_OUTPUT
@@ -183,31 +142,24 @@ jobs:
           fi
 
       # =====================
-      # UPDATE EINSAETZE TIMESTAMPS
+      # UPDATE FINAL TIMESTAMPS
       # =====================
-      - name: Update einsaetze timestamps
-        if: steps.changes_einsaetze.outputs.changed == 'true'
+      - name: Update final timestamps
+        if: steps.changes_final.outputs.changed == 'true'
         run: |
           TS=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-
-          echo "$TS" > gameversions/nl_NL/nl_NL-Data/last_update.txt
-          echo "$TS" > gameversions/en_US/en_US-Data/last_update.txt
-          echo "$TS" > gameversions/en_UK/en_UK-Data/last_update.txt
-          echo "$TS" > gameversions/en_AU/en_AU-Data/last_update.txt
-          echo "$TS" > gameversions/es_ES/es_ES-Data/last_update.txt
-          echo "$TS" > gameversions/de_DE/de_DE-Data/last_update.txt
+          for lang in nl_NL en_US en_UK en_AU es_ES de_DE; do
+            echo "$TS" > "gameversions/$lang/${lang}-Data/last_update.txt"
+          done
 
       # =====================
       # COMMIT
       # =====================
       - name: Commit if changed
-        if: |
-          steps.changes_data.outputs.changed == 'true' ||
-          steps.changes_einsaetze.outputs.changed == 'true'
+        if: steps.changes_final.outputs.changed == 'true'
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-
           git add gameversions/
-          git commit -m "Sync game data (buildings & einsaetze)"
+          git commit -m "Sync game data (buildings, einsaetze & events)"
           git push origin main

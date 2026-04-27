@@ -73,15 +73,27 @@ jobs:
           curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/es_ES/pois.json -o gameversions/es_ES/es_ES-Data/pois.json
 
       # =====================
-      # DE DATA (Gefixed met User-Agent)
+      # DE DATA (Gefixed met uitgebreide Headers)
       # =====================
       - name: Download DE data
         run: |
           mkdir -p gameversions/de_DE/de_DE-Data
-          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-          curl -f -sSL -H "User-Agent: $UA" https://api.lss-manager.de/de_DE/vehicles -o gameversions/de_DE/de_DE-Data/Vehicles.json
-          curl -f -sSL -H "User-Agent: $UA" https://api.lss-manager.de/de_DE/buildings -o gameversions/de_DE/de_DE-Data/buildings.json
-          curl -f -sSL -H "User-Agent: $UA" https://api.lss-manager.de/de_DE/pois -o gameversions/de_DE/de_DE-Data/pois.json
+          # Gebruik een uitgebreide set headers om een echte browser te simuleren
+          curl -f -sSL \
+            -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
+            -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8" \
+            -H "Accept-Language: en-US,en;q=0.9" \
+            https://api.lss-manager.de/de_DE/vehicles -o gameversions/de_DE/de_DE-Data/Vehicles.json
+          
+          curl -f -sSL \
+            -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
+            -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8" \
+            https://api.lss-manager.de/de_DE/buildings -o gameversions/de_DE/de_DE-Data/buildings.json
+          
+          curl -f -sSL \
+            -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
+            -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8" \
+            https://api.lss-manager.de/de_DE/pois -o gameversions/de_DE/de_DE-Data/pois.json
 
       # =====================
       # UPDATE BUILDINGS TIMESTAMPS
@@ -107,8 +119,9 @@ jobs:
             URL_BASE=$1
             DIR=$2
             mkdir -p "$DIR"
-            curl -f -sSL -H "User-Agent: $UA" "$URL_BASE/einsaetze.json" | jq '.' > "$DIR/einsaetze.json"
-            curl -f -sSL -H "User-Agent: $UA" "$URL_BASE/alliance_event_types.json" | jq '.' > "$DIR/alliance_event_types.json"
+            # We gebruiken hier ook de extra headers voor de zekerheid
+            curl -f -sSL -H "User-Agent: $UA" -H "Accept: application/json" "$URL_BASE/einsaetze.json" | jq '.' > "$DIR/einsaetze.json"
+            curl -f -sSL -H "User-Agent: $UA" -H "Accept: application/json" "$URL_BASE/alliance_event_types.json" | jq '.' > "$DIR/alliance_event_types.json"
           }
 
           download_all "https://www.meldkamerspel.com" "gameversions/nl_NL/nl_NL-Data"

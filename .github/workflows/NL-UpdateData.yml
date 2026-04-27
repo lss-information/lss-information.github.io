@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: auctions/checkout@v4
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -84,27 +84,16 @@ jobs:
           curl -f -sSL -H "User-Agent: $UA" https://api.lss-manager.de/de_DE/pois -o gameversions/de_DE/de_DE-Data/pois.json
 
       # =====================
-      # DETECT DATA CHANGES
-      # =====================
-      - name: Detect building/data changes
-        id: changes_data
-        run: |
-          if [[ -n "$(git status --porcelain)" ]]; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-          else
-            echo "changed=false" >> $GITHUB_OUTPUT
-          fi
-
-      # =====================
       # UPDATE BUILDINGS TIMESTAMPS
       # =====================
       - name: Update buildings timestamps
-        if: steps.changes_data.outputs.changed == 'true'
         run: |
-          TS=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-          for lang in nl_NL en_US en_UK en_AU es_ES de_DE; do
-            echo "$TS" > "gameversions/$lang/${lang}-Data/last_update_buildings.txt"
-          done
+          if [[ -n "$(git status --porcelain)" ]]; then
+            TS=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+            for lang in nl_NL en_US en_UK en_AU es_ES de_DE; do
+              echo "$TS" > "gameversions/$lang/${lang}-Data/last_update_buildings.txt"
+            done
+          fi
 
       # =====================
       # EINSAETZE & EVENT TYPES
@@ -130,33 +119,26 @@ jobs:
           download_all "https://www.centro-de-mando.es" "gameversions/es_ES/es_ES-Data"
 
       # =====================
-      # DETECT EINSAETZE CHANGES
+      # UPDATE FINAL TIMESTAMPS
       # =====================
-      - name: Detect final changes
-        id: changes_final
+      - name: Update final timestamps
+        id: changes_check
         run: |
           if [[ -n "$(git status --porcelain)" ]]; then
+            TS=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+            for lang in nl_NL en_US en_UK en_AU es_ES de_DE; do
+              echo "$TS" > "gameversions/$lang/${lang}-Data/last_update.txt"
+            done
             echo "changed=true" >> $GITHUB_OUTPUT
           else
             echo "changed=false" >> $GITHUB_OUTPUT
           fi
 
       # =====================
-      # UPDATE FINAL TIMESTAMPS
-      # =====================
-      - name: Update final timestamps
-        if: steps.changes_final.outputs.changed == 'true'
-        run: |
-          TS=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-          for lang in nl_NL en_US en_UK en_AU es_ES de_DE; do
-            echo "$TS" > "gameversions/$lang/${lang}-Data/last_update.txt"
-          done
-
-      # =====================
       # COMMIT
       # =====================
       - name: Commit if changed
-        if: steps.changes_final.outputs.changed == 'true'
+        if: steps.changes_check.outputs.changed == 'true'
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"

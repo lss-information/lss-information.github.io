@@ -73,42 +73,20 @@ jobs:
           curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/es_ES/pois.json -o gameversions/es_ES/es_ES-Data/pois.json
 
       # =====================
-      # DE DATA (Gefixed met uitgebreide Headers)
-      # =====================
-      - name: Download DE data
-        run: |
-          mkdir -p gameversions/de_DE/de_DE-Data
-          # Gebruik een uitgebreide set headers om een echte browser te simuleren
-          curl -f -sSL \
-            -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
-            -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8" \
-            -H "Accept-Language: en-US,en;q=0.9" \
-            https://api.lss-manager.de/de_DE/vehicles -o gameversions/de_DE/de_DE-Data/Vehicles.json
-          
-          curl -f -sSL \
-            -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
-            -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8" \
-            https://api.lss-manager.de/de_DE/buildings -o gameversions/de_DE/de_DE-Data/buildings.json
-          
-          curl -f -sSL \
-            -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
-            -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8" \
-            https://api.lss-manager.de/de_DE/pois -o gameversions/de_DE/de_DE-Data/pois.json
-
-      # =====================
       # UPDATE BUILDINGS TIMESTAMPS
       # =====================
       - name: Update buildings timestamps
         run: |
           if [[ -n "$(git status --porcelain)" ]]; then
             TS=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-            for lang in nl_NL en_US en_UK en_AU es_ES de_DE; do
+            # DE hier overgeslagen omdat we daar geen gebouwdata meer van downloaden
+            for lang in nl_NL en_US en_UK en_AU es_ES; do
               echo "$TS" > "gameversions/$lang/${lang}-Data/last_update_buildings.txt"
             done
           fi
 
       # =====================
-      # EINSAETZE & EVENT TYPES
+      # EINSAETZE & EVENT TYPES (Inclusief DE)
       # =====================
       - name: Download einsaetze & event_types
         run: |
@@ -119,7 +97,6 @@ jobs:
             URL_BASE=$1
             DIR=$2
             mkdir -p "$DIR"
-            # We gebruiken hier ook de extra headers voor de zekerheid
             curl -f -sSL -H "User-Agent: $UA" -H "Accept: application/json" "$URL_BASE/einsaetze.json" | jq '.' > "$DIR/einsaetze.json"
             curl -f -sSL -H "User-Agent: $UA" -H "Accept: application/json" "$URL_BASE/alliance_event_types.json" | jq '.' > "$DIR/alliance_event_types.json"
           }
@@ -156,5 +133,5 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add gameversions/
-          git commit -m "Sync game data (buildings, einsaetze & events)"
+          git commit -m "Sync game data (buildings, einsaetze & events) - DE buildings skipped due to 403"
           git push origin main

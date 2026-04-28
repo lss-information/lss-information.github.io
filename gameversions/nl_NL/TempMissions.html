@@ -4,516 +4,203 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=1200, initial-scale=0.4, maximum-scale=1.0">
 <title>Meldingen Meldkamerspel (NL)</title>
-
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 
 <style>
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Orbitron', sans-serif;
-    background-color: #1e1e28;
-    color: #dddddd;
-    text-align: center;
-}
+    body { margin: 0; padding: 0; font-family: 'Orbitron', sans-serif; background-color: #1e1e28; color: #dddddd; text-align: center; }
+    .button { background-color: #2c2c3c; color: #dddddd; border: 2px solid #555566; padding: 8px 16px; text-decoration: none; border-radius: 8px; transition: 0.2s; font-size: 12px; cursor: pointer; }
+    .button:hover { background-color: #444456; color: #ffffff; }
+    
+    .filter-section { background-color: #252535; margin: 20px auto; padding: 15px; border-radius: 12px; max-width: 900px; border: 1px solid #444455; }
+    .search-container { display: flex; justify-content: center; gap: 10px; align-items: center; flex-wrap: wrap; }
+    
+    #extra-filters { display: none; padding-top: 15px; margin-top: 15px; border-top: 1px solid #444455; justify-content: center; gap: 15px; flex-wrap: wrap; }
+    .filter-input, .filter-select { padding: 8px 12px; border-radius: 6px; border: 1px solid #555566; background-color: #2c2c3c; color: #dddddd; font-family: 'Orbitron', sans-serif; }
 
-.language-selector {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin: 20px auto;
-    padding: 0;
-}
+    table { width: 95%; max-width: 1200px; margin: 20px auto; border-collapse: collapse; background-color: #2a2a3a; border-radius: 10px; overflow: hidden; }
+    thead th { background-color: #3a3a4a; padding: 12px; border-bottom: 2px solid #555566; color: #eeeeee; font-family: 'Roboto', sans-serif; }
+    tbody td { padding: 10px; border-bottom: 1px solid #444455; font-family: 'Roboto', sans-serif; font-size: 16px; }
+    
+    .requirements-row { display: none; background-color: #232330; }
+    .requirements-row.active { display: table-row; }
+    .requirements-content { padding: 15px; text-align: left; line-height: 1.6; }
 
-.button {
-    background-color: #2c2c3c;
-    color: #dddddd;
-    border: 2px solid #555566;
-    padding: 8px 16px;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.2s, transform 0.2s, color 0.2s;
-    font-size: 12px;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: #444456;
-    color: #ffffff;
-    transform: scale(1.05);
-}
-
-h1 {
-    margin: 30px 0 10px;
-    font-size: 32px;
-    color: #eeeeee;
-    text-shadow: 0 0 5px rgba(0,0,0,0.5);
-}
-
-p {
-    max-width: 800px;
-    margin: 0 auto 10px;
-    font-size: 15px;
-    color: #cccccc;
-}
-
-#last-update {
-    font-size: 13px;
-    color: #aaaaaa;
-}
-
-.filter-section {
-    background-color: #252535;
-    margin: 20px auto;
-    padding: 15px;
-    border-radius: 12px;
-    max-width: 800px;
-    border: 1px solid #444455;
-}
-
-.search-container {
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    align-items: center;
-}
-
-/* De box voor de extra filters */
-#extra-filters {
-    display: none; /* Standaard verborgen */
-    padding-top: 15px;
-    margin-top: 15px;
-    border-top: 1px solid #444455;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.filter-input, .filter-select {
-    padding: 8px 12px;
-    border-radius: 6px;
-    border: 1px solid #555566;
-    background-color: #2c2c3c;
-    color: #dddddd;
-    font-family: 'Orbitron', sans-serif;
-}
-
-.table-wrapper {
-    width: 100%;
-    overflow-x: auto;
-}
-
-table {
-    width: 95%;
-    min-width: 900px;
-    max-width: 1200px;
-    margin: 20px auto;
-    border-collapse: collapse;
-    background-color: #2a2a3a;
-    border-radius: 10px;
-}
-
-thead th {
-    background-color: #3a3a4a;
-    padding: 12px;
-    border-bottom: 2px solid #555566;
-    color: #eeeeee;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-}
-
-tbody td {
-    padding: 12px;
-    border-bottom: 1px solid #444455;
-    color: #dddddd;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-}
-
-tbody tr:hover {
-    background-color: #3c3c4c;
-}
-
-.button-toggle {
-    background-color: #2c2c3c;
-    color: #dddddd;
-    border: 1px solid #555566;
-    padding: 6px 16px;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 12px;
-}
-
-.requirements-row td {
-    background-color: #262632;
-    text-align: left;
-    font-size: 17px;
-    color: #cccccc;
-    font-family: 'Roboto', sans-serif;
-}
-
-.requirements-content {
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
-    padding: 0 8px;
-}
-
-.requirements-content.show {
-    opacity: 1;
-    padding: 6px 8px;
-}
-
-#exportModal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.8);
-    align-items: center;
-    justify-content: center;
-}
-
-.modal-content {
-    background-color: #2a2a3a;
-    padding: 25px;
-    border-radius: 12px;
-    border: 2px solid #555566;
-    max-width: 600px;
-    width: 90%;
-    max-height: 85vh;
-    overflow-y: auto;
-    text-align: left;
-}
-
-.category-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin: 20px 0;
-}
-
-.category-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #dddddd;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-#footer {
-    margin-top: 40px;
-    padding: 20px;
-    font-size: 12px;
-    color: #888888;
-}
-
-.language-selector img {
-    height: 24px;
-    width: auto;
-    cursor: pointer;
-    border: 2px solid #555566;
-    border-radius: 4px;
-}
+    /* Loading indicator */
+    #loading { font-size: 20px; margin: 50px; color: #ffcc00; }
+    .hidden { display: none !important; }
 </style>
 </head>
-
 <body>
 
-<ul class="language-selector">
-    <li><img src="../../images/flag_nl.gif" alt="Nederlands" onclick="changeLanguage('nl')"></li>
-    <li><img src="../../images/flag_de.gif" alt="Deutsch" onclick="changeLanguage('de')"></li>
-    <li><img src="../../images/flag_uk.gif" alt="English" onclick="changeLanguage('en')"></li>
-    <li><img src="../../images/flag_us.gif" alt="English" onclick="changeLanguage('en')"></li>
-    <li><img src="../../images/flag_au.gif" alt="English" onclick="changeLanguage('en')"></li>
-
-    <li><a class="button" id="game-button" href="/index">Startpagina</a></li>
-    <li><a class="button" id="contact-button" href="/gameversions/contact">Contact</a></li>
-    <li><a class="button" id="back-button" href="/gameversions/nl_NL/indexNL">Terug</a></li>
-</ul>
-
-<h1 id="page-title"></h1>
-<p id="page-message"></p>
-<p id="last-update"></p>
+<h1 id="page-title">Laden...</h1>
 
 <div class="filter-section">
     <div class="search-container">
-        <input
-            type="text"
-            id="mission-search"
-            placeholder="Melding zoeken..."
-            class="filter-input"
-            style="width:300px;">
-        
-        <button class="button" id="toggle-filter-btn" onclick="toggleExtraFilters()">
-            Filters tonen ▼
-        </button>
+        <input type="text" id="mission-search" placeholder="Melding zoeken..." class="filter-input" style="width:300px;">
+        <button class="button" id="toggle-filter-btn" onclick="toggleExtraFilters()">Filters tonen ▼</button>
     </div>
-
     <div id="extra-filters">
-        <div>
-            <label style="display:block; font-size:11px; margin-bottom:4px;">CATEGORIE</label>
-            <select id="category-filter" class="filter-select">
-                <option value="">Alle Categorieën</option>
-            </select>
-        </div>
-        <div>
-            <label style="display:block; font-size:11px; margin-bottom:4px;">LOCATIE (POI)</label>
-            <select id="poi-filter" class="filter-select">
-                <option value="">Alle Locaties (POI)</option>
-            </select>
-        </div>
+        <select id="category-filter" class="filter-select"><option value="">Alle Categorieën</option></select>
+        <select id="poi-filter" class="filter-select"><option value="">Alle Locaties (POI)</option></select>
     </div>
 </div>
 
-<div style="margin: 20px; display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
-    <button class="button" onclick="exportAllToExcel()" style="background-color: #2e7d32; border-color: #1b5e20;">Download Alles (.xlsx)</button>
-    <button class="button" onclick="openExportModal()" style="background-color: #1565c0; border-color: #0d47a1;">Selecteer Types & Download</button>
-</div>
+<div id="loading">Meldingen worden geladen, een moment geduld...</div>
 
 <div class="table-wrapper">
-    <div id="sheet-data"></div>
+    <table id="mission-table" class="hidden">
+        <thead>
+            <tr id="table-head-row"></tr>
+        </thead>
+        <tbody id="mission-body"></tbody>
+    </table>
 </div>
 
-<div style="margin: 40px 20px 20px; border-top: 1px solid #444; padding-top: 20px;">
-    <h3 style="font-size: 16px;">MELDINGEN VERGELIJKEN</h3>
-    <div style="display:flex; justify-content:center; gap:10px; align-items:center; flex-wrap:wrap;">
-        <select id="compare-mission-1" class="filter-select"><option value="">Selecteer eerste</option></select>
-        <select id="compare-mission-2" class="filter-select"><option value="">Selecteer tweede</option></select>
-        <button class="button" id="compare-button">Vergelijk</button>
-        <button class="button" id="clear-compare">Wis</button>
-    </div>
-    <div id="compare-result" style="margin-top:20px;"></div>
-</div>
-
-<div id="exportModal">
-    <div class="modal-content">
-        <h2 style="color:#eeeeee; margin-top:0; font-family:'Orbitron', sans-serif; font-size: 20px;">Filter Categorieën</h2>
-        <div id="category-list" class="category-grid"></div>
-        <div style="display:flex; gap:10px; justify-content:flex-end; border-top: 1px solid #444; padding-top:15px;">
-            <button class="button" onclick="closeExportModal()">Annuleren</button>
-            <button class="button" onclick="processCategoryExport()" style="background-color:#2e7d32;">Exporteer</button>
-        </div>
-    </div>
-</div>
-
-<footer id="footer">
-    &copy; <span id="footer-year"></span> JR04. Alle rechten voorbehouden.
+<footer id="footer" style="margin: 40px 0; font-size: 12px; color: #666;">
+    &copy; <span id="footer-year"></span> JR04 - Data vanuit Meldkamerspel
 </footer>
 
 <script>
 let missions = [];
-const dataFile = 'nl_NL-Data/einsaetze.json';
-const translationsFile = 'translations.json';
-const lastUpdateFile = 'nl_NL-Data/last_update.txt';
+let translations = {};
+let currentLang = 'nl';
 
 const pageTranslations = {
-    nl: {
-        title: "Melding IDs",
-        message: "Overzicht van alle meldingen in Meldkamerspel (NL).",
-        categoryAll: "Alle Categorieën",
-        poiAll: "Alle Locaties (POI)",
-        btnShow: "Filters tonen ▼",
-        btnHide: "Filters verbergen ▲",
-        tableHeaders: ["ID", "Naam", "POI", "Credits", "Actie"],
-        lastUpdate: "Laatste update"
-    },
-    de: {
-        title: "Einsätze IDs",
-        message: "Übersicht aller Einsätze (NL).",
-        categoryAll: "Alle Kategorien",
-        poiAll: "Alle POIs",
-        btnShow: "Filter anzeigen ▼",
-        btnHide: "Filter ausblenden ▲",
-        tableHeaders: ["ID", "Name", "POI", "Credits", "Aktion"],
-        lastUpdate: "Letzte Aktualisierung"
-    },
-    en: {
-        title: "Mission IDs",
-        message: "Overview of all missions (NL).",
-        categoryAll: "All Categories",
-        poiAll: "All POIs",
-        btnShow: "Show Filters ▼",
-        btnHide: "Hide Filters ▲",
-        tableHeaders: ["ID", "Name", "POI", "Credits", "Action"],
-        lastUpdate: "Last update"
-    }
+    nl: { title: "Melding IDs", categoryAll: "Alle Categorieën", poiAll: "Alle Locaties (POI)", btnShow: "Filters tonen ▼", btnHide: "Filters verbergen ▲", headers: ["ID", "Naam", "POI", "Credits", "Info"] },
+    de: { title: "Einsätze IDs", categoryAll: "Alle Kategorien", poiAll: "Alle POIs", btnShow: "Filter anzeigen ▼", btnHide: "Filter ausblenden ▲", headers: ["ID", "Name", "POI", "Credits", "Info"] },
+    en: { title: "Mission IDs", categoryAll: "All Categories", poiAll: "All POIs", btnShow: "Show Filters ▼", btnHide: "Hide Filters ▲", headers: ["ID", "Name", "POI", "Credits", "Info"] }
 };
 
-let currentLang = 'nl';
-let translations = {};
-
-// Toon/Verberg de extra filters
-function toggleExtraFilters() {
-    const filterDiv = document.getElementById('extra-filters');
-    const btn = document.getElementById('toggle-filter-btn');
-    const isHidden = window.getComputedStyle(filterDiv).display === 'none';
-
-    if (isHidden) {
-        filterDiv.style.display = 'flex';
-        btn.textContent = pageTranslations[currentLang].btnHide;
-    } else {
-        filterDiv.style.display = 'none';
-        btn.textContent = pageTranslations[currentLang].btnShow;
+async function fetchData() {
+    try {
+        const [mRes, tRes] = await Promise.all([
+            fetch('nl_NL-Data/einsaetze.json'),
+            fetch('translations.json')
+        ]);
+        missions = await mRes.json();
+        translations = await tRes.json();
+        
+        setupFilters();
+        renderTable();
+        
+        document.getElementById('loading').classList.add('hidden');
+        document.getElementById('mission-table').classList.remove('hidden');
+        document.getElementById('page-title').textContent = pageTranslations[currentLang].title;
+    } catch (e) {
+        document.getElementById('loading').textContent = "Fout bij laden van data. Check of de bestanden bestaan.";
     }
 }
 
-async function loadTranslations() {
-    try {
-        const response = await fetch(translationsFile);
-        translations = await response.json();
-    } catch (e) { console.error("Translations error", e); }
+function setupFilters() {
+    const cats = new Set();
+    const pois = new Set();
+    missions.forEach(m => {
+        if (m.mission_categories) m.mission_categories.forEach(c => cats.add(c));
+        if (m.place_array) m.place_array.forEach(p => { if(p) pois.add(p); });
+    });
+
+    fillSelect('category-filter', cats, 'cat_', pageTranslations[currentLang].categoryAll);
+    fillSelect('poi-filter', pois, '', pageTranslations[currentLang].poiAll);
 }
 
-async function initMissions() {
-    missions = await (await fetch(dataFile)).json();
-    await loadTranslations();
-
-    const container = document.getElementById('sheet-data');
-    container.innerHTML = '';
-    const table = document.createElement('table');
-    const thead = document.createElement('thead');
-    const tr = document.createElement('tr');
-
-    pageTranslations[currentLang].tableHeaders.forEach(h => {
-        const th = document.createElement('th');
-        th.textContent = h;
-        tr.appendChild(th);
+function fillSelect(id, set, prefix, defText) {
+    const s = document.getElementById(id);
+    s.innerHTML = `<option value="">${defText}</option>`;
+    Array.from(set).sort().forEach(v => {
+        const o = document.createElement('option');
+        o.value = v;
+        o.textContent = translations[prefix + v] || translations[v] || v;
+        s.appendChild(o);
     });
-    thead.appendChild(tr);
-    table.appendChild(thead);
+}
 
-    const tbody = document.createElement('tbody');
-    const allCats = new Set();
-    const allPois = new Set();
-
-    missions.forEach(m => {
-        if (m.mission_categories) m.mission_categories.forEach(c => allCats.add(c));
-        if (m.place_array) m.place_array.forEach(p => { if(p) allPois.add(p); });
-
-        const row = document.createElement('tr');
-        row.innerHTML = `
-            <td>${m.id}</td>
-            <td style="text-align:left;">${m.name}</td>
-            <td>${(m.place_array || []).join(', ') || '-'}</td>
-            <td>${m.average_credits ?? '?'}</td>
-            <td><button class="button-toggle">Toon</button></td>
-        `;
-        tbody.appendChild(row);
-
-        const reqRow = document.createElement('tr');
-        reqRow.className = 'requirements-row';
-        reqRow.innerHTML = `<td colspan="5"><div class="requirements-content">${formatRequirements(m.requirements, m.mission_categories, m)}</div></td>`;
-        tbody.appendChild(reqRow);
-
-        row.querySelector('.button-toggle').onclick = (e) => {
-            const content = reqRow.querySelector('.requirements-content');
-            const open = content.classList.toggle('show');
-            content.style.maxHeight = open ? content.scrollHeight + 'px' : null;
-            e.target.textContent = open ? "Verberg" : "Toon";
-        };
-    });
-    table.appendChild(tbody);
-    container.appendChild(table);
-
-    // Vul dropdowns
-    fillDropdown('category-filter', allCats, 'cat_', pageTranslations[currentLang].categoryAll);
-    fillDropdown('poi-filter', allPois, '', pageTranslations[currentLang].poiAll);
+function renderTable() {
+    const tbody = document.getElementById('mission-body');
+    const headRow = document.getElementById('table-head-row');
     
-    // Vergelijker opties
-    const s1 = document.getElementById('compare-mission-1');
-    const s2 = document.getElementById('compare-mission-2');
-    s1.innerHTML = s2.innerHTML = '<option value="">Kies melding...</option>';
+    // Headers
+    headRow.innerHTML = pageTranslations[currentLang].headers.map(h => `<th>${h}</th>`).join('');
+
+    // Rijen (we bouwen één grote string, dit is sneller voor de browser dan duizenden losse elementen)
+    let html = '';
     missions.forEach(m => {
-        const opt = `<option value="${m.id}">${m.id} - ${m.name}</option>`;
-        s1.innerHTML += opt; s2.innerHTML += opt;
+        html += `
+            <tr class="mission-row" data-id="${m.id}">
+                <td>${m.id}</td>
+                <td style="text-align:left;">${m.name}</td>
+                <td>${(m.place_array || []).join(', ') || '-'}</td>
+                <td>${m.average_credits ?? '?'}</td>
+                <td><button class="button" onclick="toggleDetails(${m.id})">Details</button></td>
+            </tr>
+            <tr id="details-${m.id}" class="requirements-row">
+                <td colspan="5">
+                    <div class="requirements-content">
+                        ${formatDetails(m)}
+                    </div>
+                </td>
+            </tr>
+        `;
     });
+    tbody.innerHTML = html;
 }
 
-function fillDropdown(id, set, prefix, defaultText) {
-    const select = document.getElementById(id);
-    select.innerHTML = `<option value="">${defaultText}</option>`;
-    Array.from(set).sort().forEach(val => {
-        const opt = document.createElement('option');
-        opt.value = val;
-        opt.textContent = translations[prefix + val] || translations[val] || val;
-        select.appendChild(opt);
-    });
+function formatDetails(m) {
+    let res = `<strong>Categorie:</strong> ${(m.mission_categories || []).map(c => translations['cat_'+c]||c).join(', ')}<br>`;
+    if (m.requirements) {
+        res += `<strong>Voertuigen:</strong><br>`;
+        for (const [k, v] of Object.entries(m.requirements)) {
+            res += `• ${translations[k] || k}: ${v}<br>`;
+        }
+    }
+    return res;
+}
+
+function toggleDetails(id) {
+    const row = document.getElementById(`details-${id}`);
+    row.classList.toggle('active');
 }
 
 function filterMissions() {
     const search = document.getElementById('mission-search').value.toLowerCase();
     const cat = document.getElementById('category-filter').value;
     const poi = document.getElementById('poi-filter').value;
-    const rows = document.querySelectorAll('#sheet-data table tbody tr:not(.requirements-row)');
+    
+    const rows = document.getElementsByClassName('mission-row');
+    
+    for (let row of rows) {
+        const id = row.getAttribute('data-id');
+        const m = missions.find(x => x.id == id);
+        const detailRow = document.getElementById(`details-${id}`);
 
-    rows.forEach(row => {
-        const id = row.cells[0].textContent;
-        const mission = missions.find(m => m.id == id);
-        
-        const matchText = row.textContent.toLowerCase().includes(search);
-        const matchCat = cat === "" || (mission.mission_categories && mission.mission_categories.includes(cat));
-        const matchPoi = poi === "" || (mission.place_array && mission.place_array.includes(poi));
+        const matchSearch = row.innerText.toLowerCase().includes(search);
+        const matchCat = !cat || (m.mission_categories && m.mission_categories.includes(cat));
+        const matchPoi = !poi || (m.place_array && m.place_array.includes(poi));
 
-        const visible = matchText && matchCat && matchPoi;
-        row.style.display = visible ? '' : 'none';
-        row.nextElementSibling.style.display = visible ? '' : 'none';
-    });
-}
-
-// Hulpmiddelen (credits, medisch etc) - Behoud je bestaande formatRequirements & buildMedicalBlock
-function formatRequirements(req, categories, mission) {
-    let html = '';
-    if (categories && categories.length > 0) {
-        html += `<strong>Categorie:</strong> ` + categories.map(c => translations['cat_'+c] || c).join(', ') + '<br><br>';
-    }
-    if (req) {
-        html += `<strong>Voertuigen:</strong><br>`;
-        for (const [k, v] of Object.entries(req)) {
-            html += `${translations[k] || k}: ${v}<br>`;
+        if (matchSearch && matchCat && matchPoi) {
+            row.style.display = "";
+        } else {
+            row.style.display = "none";
+            detailRow.classList.remove('active');
         }
     }
-    const med = buildMedicalBlock(mission);
-    if(med) html += `<br>` + med;
-    return html || 'Geen extra info.';
 }
 
-function buildMedicalBlock(m) {
-    if(!m.chances && !m.additional) return '';
-    let h = '<strong>Medisch:</strong><br>';
-    if(m.chances) for(const [k,v] of Object.entries(m.chances)) h += `• ${k}: ${v}%<br>`;
-    return h;
+function toggleExtraFilters() {
+    const f = document.getElementById('extra-filters');
+    const b = document.getElementById('toggle-filter-btn');
+    const show = f.style.display === 'flex';
+    f.style.display = show ? 'none' : 'flex';
+    b.textContent = show ? pageTranslations[currentLang].btnShow : pageTranslations[currentLang].btnHide;
 }
 
-function changeLanguage(lang) {
-    currentLang = lang;
-    const t = pageTranslations[lang];
-    document.getElementById('page-title').textContent = t.title;
-    document.getElementById('mission-search').placeholder = t.searchPlaceholder || "Zoeken...";
-    document.getElementById('toggle-filter-btn').textContent = t.btnShow;
-    initMissions();
-}
-
-// Listeners
+// Event Listeners
 document.getElementById('mission-search').addEventListener('input', filterMissions);
 document.getElementById('category-filter').addEventListener('change', filterMissions);
 document.getElementById('poi-filter').addEventListener('change', filterMissions);
 
-window.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('footer-year').textContent = new Date().getFullYear();
-    changeLanguage('nl');
-});
+document.getElementById('footer-year').textContent = new Date().getFullYear();
+fetchData();
 </script>
-
 </body>
 </html>

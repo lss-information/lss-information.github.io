@@ -208,7 +208,6 @@ tbody tr:hover {
     transform: scale(1.1);
 }
 
-/* Custom styles for the search/filter area */
 .filter-container {
     margin: 20px; 
     display: flex; 
@@ -262,10 +261,14 @@ tbody tr:hover {
         id="mission-search"
         placeholder="Melding zoeken..."
         class="filter-input"
-        style="width:300px;">
+        style="width:250px;">
     
     <select id="category-filter" class="filter-select">
         <option value="">Alle Categorieën</option>
+    </select>
+
+    <select id="poi-filter" class="filter-select">
+        <option value="">Alle Locaties (POI)</option>
     </select>
 </div>
 
@@ -327,6 +330,7 @@ const pageTranslations = {
         backButton: "Terug",
         searchPlaceholder: "Melding zoeken...",
         categoryAll: "Alle Categorieën",
+        poiAll: "Alle Locaties (POI)",
         lastUpdate: "Laatste update",
         swipeHint: "← swipe naar links of rechts om de tabel te bekijken →",
         tableHeaders: ["ID", "Naam", "POI", "Gemiddelde Credits", "Benodigdheden"],
@@ -341,6 +345,7 @@ const pageTranslations = {
         backButton: "Zurück",
         searchPlaceholder: "Einsätze suchen...",
         categoryAll: "Alle Kategorien",
+        poiAll: "Alle POIs",
         lastUpdate: "Letzte Aktualisierung",
         swipeHint: "← nach links oder rechts wischen, um die Tabelle zu sehen →",
         tableHeaders: ["ID", "Name", "POI", "Durchschnittliche Credits", "Benötigte Fahrzeuge"],
@@ -355,6 +360,7 @@ const pageTranslations = {
         backButton: "Back",
         searchPlaceholder: "Search mission...",
         categoryAll: "All Categories",
+        poiAll: "All POIs",
         lastUpdate: "Last update",
         swipeHint: "← swipe left or right to view the table →",
         tableHeaders: ["ID", "Name", "POI", "Average Credits", "Requirements"],
@@ -460,13 +466,17 @@ async function initMissions() {
 
     const tbody = document.createElement('tbody');
 
-    // Filter Dropdown vullen
     const categoryFilter = document.getElementById('category-filter');
+    const poiFilter = document.getElementById('poi-filter');
     const allCats = new Set();
+    const allPois = new Set();
     
     missions.forEach(m => {
         if (m.mission_categories) {
             m.mission_categories.forEach(c => allCats.add(c));
+        }
+        if (m.place_array) {
+            m.place_array.forEach(p => { if(p) allPois.add(p); });
         }
 
         const row = document.createElement('tr');
@@ -505,13 +515,21 @@ async function initMissions() {
     table.appendChild(tbody);
     container.appendChild(table);
 
-    // Dropdown opties genereren
+    // Filter Dropdowns vullen
     categoryFilter.innerHTML = `<option value="">${pageTranslations[currentLang].categoryAll}</option>`;
     Array.from(allCats).sort().forEach(cat => {
         const option = document.createElement('option');
         option.value = cat;
         option.textContent = translations['cat_' + cat] || translations[cat] || cat;
         categoryFilter.appendChild(option);
+    });
+
+    poiFilter.innerHTML = `<option value="">${pageTranslations[currentLang].poiAll}</option>`;
+    Array.from(allPois).sort().forEach(poi => {
+        const option = document.createElement('option');
+        option.value = poi;
+        option.textContent = poi;
+        poiFilter.appendChild(option);
     });
 
     const select1 = document.getElementById('compare-mission-1');
@@ -573,25 +591,26 @@ function buildMedicalBlock(mission) {
 }
 
 // =========================
-// FILTER LOGICA
+// GECOMBINEERDE FILTER LOGICA
 // =========================
 function filterMissions() {
     const searchText = document.getElementById('mission-search').value.toLowerCase();
     const selectedCat = document.getElementById('category-filter').value;
+    const selectedPoi = document.getElementById('poi-filter').value;
     const rows = document.querySelectorAll('#sheet-data table tbody tr');
 
     for (let i = 0; i < rows.length; i++) {
         const row = rows[i];
         if (row.classList.contains('requirements-row')) continue;
 
-        // Haal ID op om categorie te checken in de missies array
         const missionId = row.cells[0].textContent;
         const mission = missions.find(m => m.id == missionId);
         
         const textMatch = row.textContent.toLowerCase().includes(searchText);
         const categoryMatch = selectedCat === "" || (mission.mission_categories && mission.mission_categories.includes(selectedCat));
+        const poiMatch = selectedPoi === "" || (mission.place_array && mission.place_array.includes(selectedPoi));
 
-        const isVisible = textMatch && categoryMatch;
+        const isVisible = textMatch && categoryMatch && poiMatch;
 
         row.style.display = isVisible ? '' : 'none';
         const nextRow = row.nextElementSibling;
@@ -684,14 +703,18 @@ function changeLanguage(lang) {
     
     const catFilter = document.getElementById('category-filter');
     if (catFilter.options[0]) catFilter.options[0].textContent = t.categoryAll;
+
+    const pFilter = document.getElementById('poi-filter');
+    if (pFilter.options[0]) pFilter.options[0].textContent = t.poiAll;
     
     loadLastUpdate();
     initMissions();
 }
 
-// Event listeners voor filters
+// Event listeners voor alle filters
 document.getElementById('mission-search').addEventListener('input', filterMissions);
 document.getElementById('category-filter').addEventListener('change', filterMissions);
+document.getElementById('poi-filter').addEventListener('change', filterMissions);
 
 document.getElementById('clear-compare').addEventListener('click', () => {
     document.getElementById('compare-mission-1').value = '';

@@ -474,7 +474,7 @@ function renderTable() {
         td.colSpan = 5;
         const div = document.createElement('div');
         div.className = 'requirements-content';
-        div.innerHTML = formatRequirements(m.requirements, m.mission_categories, m);
+        div.dataset.loaded = "false";
         td.appendChild(div);
         reqRow.appendChild(td);
         tbody.appendChild(reqRow);
@@ -482,8 +482,22 @@ function renderTable() {
         row.querySelector('.button-toggle').onclick = (e) => {
             const btn = e.target;
             const open = div.classList.toggle('show');
+        
+            if (open && div.dataset.loaded === "false") {
+                div.innerHTML = formatRequirements(
+                    m.requirements,
+                    m.mission_categories,
+                    m
+                );
+        
+                div.dataset.loaded = "true";
+            }
+        
             div.style.maxHeight = open ? div.scrollHeight + 'px' : null;
-            btn.textContent = open ? pageTranslations[currentLang].toggle.hide : pageTranslations[currentLang].toggle.show;
+        
+            btn.textContent = open
+                ? pageTranslations[currentLang].toggle.hide
+                : pageTranslations[currentLang].toggle.show;
         };
     });
 

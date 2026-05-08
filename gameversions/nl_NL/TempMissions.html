@@ -454,6 +454,7 @@ function renderTable() {
     table.appendChild(thead);
 
     const tbody = document.createElement('tbody');
+    const fragment = document.createDocumentFragment();
     const filteredMissions = showOnlyEvents ? missions.filter(isMissionActive) : missions;
 
     filteredMissions.forEach(m => {

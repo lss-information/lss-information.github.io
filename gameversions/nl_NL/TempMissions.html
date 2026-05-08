@@ -467,7 +467,7 @@ function renderTable() {
             <td>${m.average_credits ?? pageTranslations[currentLang].unknown}</td>
             <td><button class="button-toggle">${pageTranslations[currentLang].toggle.show}</button></td>
         `;
-        tbody.appendChild(row);
+        fragment.appendChild(row);
 
         const reqRow = document.createElement('tr');
         reqRow.className = 'requirements-row';
@@ -478,7 +478,7 @@ function renderTable() {
         div.dataset.loaded = "false";
         td.appendChild(div);
         reqRow.appendChild(td);
-        tbody.appendChild(reqRow);
+        fragment.appendChild(reqRow);
 
         row.querySelector('.button-toggle').onclick = (e) => {
             const btn = e.target;
@@ -501,7 +501,7 @@ function renderTable() {
                 : pageTranslations[currentLang].toggle.show;
         };
     });
-
+    tbody.appendChild(fragment);
     table.appendChild(tbody);
     container.appendChild(table);
 }

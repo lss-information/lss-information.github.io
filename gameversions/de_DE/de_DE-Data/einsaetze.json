@@ -1918,6 +1918,9 @@
       "water_tankers": 30
     },
     "additional": {
+      "expansion_missions_ids": [
+        969
+      ],
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true
     },
@@ -50249,7 +50252,8 @@
         104,
         105,
         213,
-        214
+        214,
+        969
       ],
       "filter_id": "firehouse_missions"
     },

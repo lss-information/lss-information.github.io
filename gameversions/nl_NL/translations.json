@@ -69,6 +69,12 @@
   "clean_service": "Benodigde Arbeidshygiëne",
   "drone_fire": "Benodigde Droneteams (Brandweer)",
   "care_includes_staff_members": "Verzorging: 1 per 200 hulpverleners",
+  "industrial_response_engine": "Benodigde SB-BA, SB-IB of AS",
+  "industrial_response_fire_engine": "Benodigde TS-IB",
+  "hazard_response_material": "Benodigde GSH, DB-GS of RC-Gevaarlijke Stoffen",
+  "hazard_response_suits": "Benodigde GPH, DB-GP of RC-Gaspakken",
+  "hazard_response_disinfection_large": "Benodigde DB-GO, TS-GO of GOH-DC",
+  "hazard_response_disinfection": "Benodigde DB-BO, TS-BO of BOH-DC",
 
   "car_carrier": "Benodigde Bergingsvoertuig(en)",
 

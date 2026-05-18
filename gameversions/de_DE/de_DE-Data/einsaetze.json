@@ -1919,7 +1919,7 @@
     },
     "additional": {
       "expansion_missions_ids": [
-        969
+        970
       ],
       "filter_id": "firehouse_missions",
       "fire_alarm_system_possible": true
@@ -50253,7 +50253,7 @@
         105,
         213,
         214,
-        969
+        970
       ],
       "filter_id": "firehouse_missions"
     },

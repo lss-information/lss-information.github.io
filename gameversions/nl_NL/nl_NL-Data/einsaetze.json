@@ -1573,7 +1573,7 @@
       "police_stations": 5,
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
-      "fire_stations": 2
+      "fire_stations": 15
     },
     "overlay_index": null,
     "base_mission_id": 36,
@@ -1617,7 +1617,7 @@
       "main_building": 0,
       "police_stations": 5,
       "bereitschaftspolizei": 1,
-      "fire_stations": 1
+      "fire_stations": 14
     },
     "overlay_index": null,
     "base_mission_id": 36,
@@ -1664,7 +1664,7 @@
       "police_stations": 5,
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
-      "fire_stations": 1
+      "fire_stations": 16
     },
     "overlay_index": null,
     "base_mission_id": 36,
@@ -4635,7 +4635,7 @@
       "rescue_stations": 10,
       "police_stations": 5,
       "bereitschaftspolizei": 1,
-      "fire_stations": 1
+      "fire_stations": 15
     },
     "overlay_index": null,
     "base_mission_id": 100,
@@ -4693,7 +4693,7 @@
       "rescue_stations": 10,
       "police_stations": 5,
       "bereitschaftspolizei": 1,
-      "fire_stations": 1
+      "fire_stations": 15
     },
     "overlay_index": null,
     "base_mission_id": 100,
@@ -4751,7 +4751,7 @@
       "rescue_stations": 10,
       "police_stations": 5,
       "bereitschaftspolizei": 1,
-      "fire_stations": 1
+      "fire_stations": 15
     },
     "overlay_index": null,
     "base_mission_id": 100,
@@ -4810,7 +4810,7 @@
       "rescue_stations": 10,
       "police_stations": 5,
       "bereitschaftspolizei": 1,
-      "fire_stations": 1
+      "fire_stations": 16
     },
     "overlay_index": null,
     "base_mission_id": 100,
@@ -4869,7 +4869,7 @@
       "rescue_stations": 10,
       "police_stations": 5,
       "bereitschaftspolizei": 1,
-      "fire_stations": 1
+      "fire_stations": 16
     },
     "overlay_index": null,
     "base_mission_id": 100,
@@ -4928,7 +4928,7 @@
       "rescue_stations": 10,
       "police_stations": 5,
       "bereitschaftspolizei": 1,
-      "fire_stations": 1
+      "fire_stations": 16
     },
     "overlay_index": null,
     "base_mission_id": 100,
@@ -4988,7 +4988,7 @@
       "rescue_stations": 10,
       "police_stations": 5,
       "bereitschaftspolizei": 1,
-      "fire_stations": 1
+      "fire_stations": 17
     },
     "overlay_index": null,
     "base_mission_id": 100,
@@ -13516,7 +13516,7 @@
       "main_building": 0,
       "police_stations": 2,
       "fire_support_count": 1,
-      "fire_stations": 1
+      "fire_stations": 12
     },
     "overlay_index": null,
     "base_mission_id": 255,
@@ -17352,7 +17352,7 @@
       "main_building": 0,
       "rescue_stations": 10,
       "police_stations": 3,
-      "fire_stations": 1
+      "fire_stations": 14
     },
     "overlay_index": null,
     "base_mission_id": 312,
@@ -17413,7 +17413,7 @@
       "main_building": 0,
       "rescue_stations": 10,
       "police_stations": 3,
-      "fire_stations": 1
+      "fire_stations": 14
     },
     "overlay_index": null,
     "base_mission_id": 312,
@@ -17474,7 +17474,7 @@
       "main_building": 0,
       "rescue_stations": 10,
       "police_stations": 3,
-      "fire_stations": 1
+      "fire_stations": 14
     },
     "overlay_index": null,
     "base_mission_id": 312,
@@ -17536,7 +17536,7 @@
       "main_building": 0,
       "rescue_stations": 10,
       "police_stations": 3,
-      "fire_stations": 1
+      "fire_stations": 15
     },
     "overlay_index": null,
     "base_mission_id": 312,
@@ -17598,7 +17598,7 @@
       "main_building": 0,
       "rescue_stations": 10,
       "police_stations": 3,
-      "fire_stations": 1
+      "fire_stations": 15
     },
     "overlay_index": null,
     "base_mission_id": 312,
@@ -17660,7 +17660,7 @@
       "main_building": 0,
       "rescue_stations": 10,
       "police_stations": 3,
-      "fire_stations": 1
+      "fire_stations": 15
     },
     "overlay_index": null,
     "base_mission_id": 312,
@@ -17723,7 +17723,7 @@
       "main_building": 0,
       "rescue_stations": 10,
       "police_stations": 3,
-      "fire_stations": 1
+      "fire_stations": 16
     },
     "overlay_index": null,
     "base_mission_id": 312,
@@ -43862,7 +43862,7 @@
       "rescue_stations": 10,
       "police_stations": 5,
       "bereitschaftspolizei": 1,
-      "fire_stations": 1
+      "fire_stations": 15
     },
     "overlay_index": null,
     "base_mission_id": 762,
@@ -45584,7 +45584,7 @@
       "rescue_stations": 10,
       "police_stations": 5,
       "bereitschaftspolizei": 1,
-      "fire_stations": 1
+      "fire_stations": 12
     },
     "overlay_index": null,
     "base_mission_id": 787,
@@ -45639,7 +45639,7 @@
       "rescue_stations": 10,
       "police_stations": 5,
       "bereitschaftspolizei": 1,
-      "fire_stations": 1
+      "fire_stations": 12
     },
     "overlay_index": null,
     "base_mission_id": 787,
@@ -45694,7 +45694,7 @@
       "rescue_stations": 10,
       "police_stations": 5,
       "bereitschaftspolizei": 1,
-      "fire_stations": 1
+      "fire_stations": 12
     },
     "overlay_index": null,
     "base_mission_id": 787,
@@ -45750,7 +45750,7 @@
       "rescue_stations": 10,
       "police_stations": 5,
       "bereitschaftspolizei": 1,
-      "fire_stations": 1
+      "fire_stations": 13
     },
     "overlay_index": null,
     "base_mission_id": 787,
@@ -45806,7 +45806,7 @@
       "rescue_stations": 10,
       "police_stations": 5,
       "bereitschaftspolizei": 1,
-      "fire_stations": 1
+      "fire_stations": 13
     },
     "overlay_index": null,
     "base_mission_id": 787,
@@ -45862,7 +45862,7 @@
       "rescue_stations": 10,
       "police_stations": 5,
       "bereitschaftspolizei": 1,
-      "fire_stations": 1
+      "fire_stations": 13
     },
     "overlay_index": null,
     "base_mission_id": 787,
@@ -45919,7 +45919,7 @@
       "rescue_stations": 10,
       "police_stations": 5,
       "bereitschaftspolizei": 1,
-      "fire_stations": 1
+      "fire_stations": 14
     },
     "overlay_index": null,
     "base_mission_id": 787,
@@ -53861,7 +53861,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 5,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 108
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -53941,7 +53941,7 @@
       "fire_support_count": 5,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 109
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -54018,7 +54018,7 @@
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
-      "fire_stations": 9
+      "fire_stations": 116
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -54095,7 +54095,7 @@
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1,
       "fire_support_count": 5,
-      "fire_stations": 1
+      "fire_stations": 108
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -54172,7 +54172,7 @@
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1,
       "fire_support_count": 5,
-      "fire_stations": 1
+      "fire_stations": 108
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -54249,7 +54249,7 @@
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1,
       "fire_support_count": 5,
-      "fire_stations": 2
+      "fire_stations": 109
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -54331,7 +54331,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 110
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -54410,7 +54410,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
       "drone_fire": 1,
-      "fire_stations": 9
+      "fire_stations": 117
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -54489,7 +54489,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 5,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 109
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -54568,7 +54568,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 5,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 109
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -54647,7 +54647,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 5,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 110
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -54728,7 +54728,7 @@
       "fire_support_count": 9,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 9
+      "fire_stations": 118
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -54809,7 +54809,7 @@
       "fire_support_count": 5,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 110
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -54890,7 +54890,7 @@
       "fire_support_count": 5,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 110
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -54971,7 +54971,7 @@
       "fire_support_count": 5,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 111
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -55049,7 +55049,7 @@
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
-      "fire_stations": 1
+      "fire_stations": 117
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -55127,7 +55127,7 @@
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
-      "fire_stations": 1
+      "fire_stations": 117
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -55205,7 +55205,7 @@
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
-      "fire_stations": 2
+      "fire_stations": 118
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -55283,7 +55283,7 @@
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1,
       "fire_support_count": 5,
-      "fire_stations": 1
+      "fire_stations": 109
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -55361,7 +55361,7 @@
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1,
       "fire_support_count": 5,
-      "fire_stations": 2
+      "fire_stations": 110
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -55439,7 +55439,7 @@
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1,
       "fire_support_count": 5,
-      "fire_stations": 2
+      "fire_stations": 110
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -55522,7 +55522,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 9
+      "fire_stations": 119
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -55605,7 +55605,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 111
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -55688,7 +55688,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 111
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -55771,7 +55771,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 112
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -55851,7 +55851,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 118
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -55931,7 +55931,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 118
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -56011,7 +56011,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 119
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -56091,7 +56091,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 5,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 110
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -56171,7 +56171,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 5,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 111
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -56251,7 +56251,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 5,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 111
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -56333,7 +56333,7 @@
       "fire_support_count": 9,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 119
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -56415,7 +56415,7 @@
       "fire_support_count": 9,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 119
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -56497,7 +56497,7 @@
       "fire_support_count": 9,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 120
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -56579,7 +56579,7 @@
       "fire_support_count": 5,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 111
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -56661,7 +56661,7 @@
       "fire_support_count": 5,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 112
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -56743,7 +56743,7 @@
       "fire_support_count": 5,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 112
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -56822,7 +56822,7 @@
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
-      "fire_stations": 1
+      "fire_stations": 118
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -56901,7 +56901,7 @@
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
-      "fire_stations": 2
+      "fire_stations": 119
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -56980,7 +56980,7 @@
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
-      "fire_stations": 2
+      "fire_stations": 119
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -57059,7 +57059,7 @@
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1,
       "fire_support_count": 5,
-      "fire_stations": 2
+      "fire_stations": 111
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -57143,7 +57143,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 120
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -57227,7 +57227,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 120
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -57311,7 +57311,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 121
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -57395,7 +57395,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 112
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -57479,7 +57479,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 113
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -57563,7 +57563,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 113
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -57644,7 +57644,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 119
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -57725,7 +57725,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 120
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -57806,7 +57806,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 120
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -57887,7 +57887,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 5,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 112
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -57970,7 +57970,7 @@
       "fire_support_count": 9,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 120
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -58053,7 +58053,7 @@
       "fire_support_count": 9,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 121
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -58136,7 +58136,7 @@
       "fire_support_count": 9,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 121
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -58219,7 +58219,7 @@
       "fire_support_count": 5,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 113
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -58299,7 +58299,7 @@
       "police_helicopter_stations": 1,
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
-      "fire_stations": 2
+      "fire_stations": 120
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -58384,7 +58384,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 121
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -58469,7 +58469,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 122
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -58554,7 +58554,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 122
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -58639,7 +58639,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 114
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -58721,7 +58721,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 121
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -58805,7 +58805,7 @@
       "fire_support_count": 9,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 122
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -58891,7 +58891,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 123
     },
     "overlay_index": null,
     "base_mission_id": 885,
@@ -62369,7 +62369,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 62
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -62447,7 +62447,7 @@
       "fire_support_count": 1,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 63
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -62522,7 +62522,7 @@
       "police_stations": 10,
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
-      "fire_stations": 9
+      "fire_stations": 70
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -62597,7 +62597,7 @@
       "police_stations": 10,
       "bereitschaftspolizei": 1,
       "fire_support_count": 1,
-      "fire_stations": 1
+      "fire_stations": 62
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -62672,7 +62672,7 @@
       "police_stations": 10,
       "bereitschaftspolizei": 1,
       "fire_support_count": 1,
-      "fire_stations": 1
+      "fire_stations": 62
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -62752,7 +62752,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 64
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -62829,7 +62829,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
       "drone_fire": 1,
-      "fire_stations": 9
+      "fire_stations": 71
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -62906,7 +62906,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 63
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -62983,7 +62983,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 63
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -63062,7 +63062,7 @@
       "fire_support_count": 9,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 9
+      "fire_stations": 72
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -63141,7 +63141,7 @@
       "fire_support_count": 1,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 64
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -63220,7 +63220,7 @@
       "fire_support_count": 1,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 64
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -63296,7 +63296,7 @@
       "police_stations": 10,
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
-      "fire_stations": 1
+      "fire_stations": 71
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -63372,7 +63372,7 @@
       "police_stations": 10,
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
-      "fire_stations": 1
+      "fire_stations": 71
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -63448,7 +63448,7 @@
       "police_stations": 10,
       "bereitschaftspolizei": 1,
       "fire_support_count": 1,
-      "fire_stations": 1
+      "fire_stations": 63
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -63529,7 +63529,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 9
+      "fire_stations": 73
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -63610,7 +63610,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 65
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -63691,7 +63691,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 65
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -63769,7 +63769,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 72
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -63847,7 +63847,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 72
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -63925,7 +63925,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 64
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -64005,7 +64005,7 @@
       "fire_support_count": 9,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 73
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -64085,7 +64085,7 @@
       "fire_support_count": 9,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 73
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -64165,7 +64165,7 @@
       "fire_support_count": 1,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 65
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -64242,7 +64242,7 @@
       "police_stations": 10,
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
-      "fire_stations": 1
+      "fire_stations": 72
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -64324,7 +64324,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 74
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -64406,7 +64406,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 74
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -64488,7 +64488,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 66
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -64567,7 +64567,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 9,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 73
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -64648,7 +64648,7 @@
       "fire_support_count": 9,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 74
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -64731,7 +64731,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 75
     },
     "overlay_index": null,
     "base_mission_id": 929,
@@ -72158,7 +72158,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 106
     },
     "overlay_index": null,
     "base_mission_id": 1030,
@@ -72233,7 +72233,7 @@
       "fire_support_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 107
     },
     "overlay_index": null,
     "base_mission_id": 1030,
@@ -72305,7 +72305,7 @@
       "police_stations": 7,
       "bereitschaftspolizei": 1,
       "fire_support_count": 18,
-      "fire_stations": 18
+      "fire_stations": 123
     },
     "overlay_index": null,
     "base_mission_id": 1030,
@@ -72377,7 +72377,7 @@
       "police_stations": 7,
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
-      "fire_stations": 2
+      "fire_stations": 107
     },
     "overlay_index": null,
     "base_mission_id": 1030,
@@ -72454,7 +72454,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 108
     },
     "overlay_index": null,
     "base_mission_id": 1030,
@@ -72528,7 +72528,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 18,
       "drone_fire": 1,
-      "fire_stations": 18
+      "fire_stations": 124
     },
     "overlay_index": null,
     "base_mission_id": 1030,
@@ -72602,7 +72602,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 108
     },
     "overlay_index": null,
     "base_mission_id": 1030,
@@ -72678,7 +72678,7 @@
       "fire_support_count": 18,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 18
+      "fire_stations": 125
     },
     "overlay_index": null,
     "base_mission_id": 1030,
@@ -72754,7 +72754,7 @@
       "fire_support_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 109
     },
     "overlay_index": null,
     "base_mission_id": 1030,
@@ -72827,7 +72827,7 @@
       "police_stations": 7,
       "bereitschaftspolizei": 1,
       "fire_support_count": 18,
-      "fire_stations": 2
+      "fire_stations": 125
     },
     "overlay_index": null,
     "base_mission_id": 1030,
@@ -72905,7 +72905,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 18
+      "fire_stations": 126
     },
     "overlay_index": null,
     "base_mission_id": 1030,
@@ -72983,7 +72983,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 110
     },
     "overlay_index": null,
     "base_mission_id": 1030,
@@ -73058,7 +73058,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 18,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 126
     },
     "overlay_index": null,
     "base_mission_id": 1030,
@@ -73135,7 +73135,7 @@
       "fire_support_count": 18,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 127
     },
     "overlay_index": null,
     "base_mission_id": 1030,
@@ -73214,7 +73214,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 128
     },
     "overlay_index": null,
     "base_mission_id": 1030,
@@ -73493,7 +73493,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 176
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -73572,7 +73572,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 177
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -73648,7 +73648,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 14
+      "fire_stations": 189
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -73724,7 +73724,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 177
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -73800,7 +73800,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 177
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -73876,7 +73876,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 177
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -73952,7 +73952,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 177
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -74028,7 +74028,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 176
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -74109,7 +74109,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 178
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -74187,7 +74187,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 14
+      "fire_stations": 190
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -74265,7 +74265,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 178
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -74343,7 +74343,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 178
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -74421,7 +74421,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 178
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -74499,7 +74499,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 178
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -74577,7 +74577,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 177
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -74657,7 +74657,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 14
+      "fire_stations": 191
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -74737,7 +74737,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 179
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -74817,7 +74817,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 179
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -74897,7 +74897,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 179
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -74977,7 +74977,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 179
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -75057,7 +75057,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 178
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -75134,7 +75134,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 191
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -75211,7 +75211,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 191
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -75288,7 +75288,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 191
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -75365,7 +75365,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 191
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -75442,7 +75442,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 190
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -75519,7 +75519,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 179
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -75596,7 +75596,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 179
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -75673,7 +75673,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 179
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -75750,7 +75750,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 178
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -75827,7 +75827,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 179
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -75904,7 +75904,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 179
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -75981,7 +75981,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 178
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -76058,7 +76058,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 179
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -76135,7 +76135,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 178
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -76212,7 +76212,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 178
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -76294,7 +76294,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 14
+      "fire_stations": 192
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -76376,7 +76376,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 180
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -76458,7 +76458,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 180
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -76540,7 +76540,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 180
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -76622,7 +76622,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 180
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -76704,7 +76704,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 179
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -76783,7 +76783,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 192
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -76862,7 +76862,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 192
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -76941,7 +76941,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 192
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -77020,7 +77020,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 192
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -77099,7 +77099,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 191
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -77178,7 +77178,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 180
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -77257,7 +77257,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 180
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -77336,7 +77336,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 180
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -77415,7 +77415,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 179
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -77494,7 +77494,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 180
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -77573,7 +77573,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 180
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -77652,7 +77652,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 179
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -77731,7 +77731,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 180
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -77810,7 +77810,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 179
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -77889,7 +77889,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 179
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -77970,7 +77970,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 193
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -78051,7 +78051,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 193
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -78132,7 +78132,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 193
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -78213,7 +78213,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 193
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -78294,7 +78294,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 192
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -78375,7 +78375,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 181
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -78456,7 +78456,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 181
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -78537,7 +78537,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 181
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -78618,7 +78618,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 180
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -78699,7 +78699,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 181
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -78780,7 +78780,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 181
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -78861,7 +78861,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 180
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -78942,7 +78942,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 181
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -79023,7 +79023,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 180
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -79104,7 +79104,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 180
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -79182,7 +79182,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 193
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -79260,7 +79260,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 193
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -79338,7 +79338,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 193
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -79416,7 +79416,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 192
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -79494,7 +79494,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 193
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -79572,7 +79572,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 193
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -79650,7 +79650,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 192
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -79728,7 +79728,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 193
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -79806,7 +79806,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 192
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -79884,7 +79884,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 192
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -79962,7 +79962,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 181
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -80040,7 +80040,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 181
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -80118,7 +80118,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 180
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -80196,7 +80196,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 181
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -80274,7 +80274,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 180
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -80352,7 +80352,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 180
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -80430,7 +80430,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 181
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -80508,7 +80508,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 180
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -80586,7 +80586,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 180
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -80664,7 +80664,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 180
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -80747,7 +80747,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 194
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -80830,7 +80830,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 194
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -80913,7 +80913,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 194
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -80996,7 +80996,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 194
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -81079,7 +81079,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 193
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -81162,7 +81162,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 182
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -81245,7 +81245,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 182
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -81328,7 +81328,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 182
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -81411,7 +81411,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 181
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -81494,7 +81494,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 182
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -81577,7 +81577,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 182
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -81660,7 +81660,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 181
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -81743,7 +81743,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 182
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -81826,7 +81826,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 181
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -81909,7 +81909,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 181
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -81989,7 +81989,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 194
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -82069,7 +82069,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 194
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -82149,7 +82149,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 194
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -82229,7 +82229,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 193
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -82309,7 +82309,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 194
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -82389,7 +82389,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 194
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -82469,7 +82469,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 193
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -82549,7 +82549,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 194
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -82629,7 +82629,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 193
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -82709,7 +82709,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 193
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -82789,7 +82789,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 182
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -82869,7 +82869,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 182
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -82949,7 +82949,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 181
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -83029,7 +83029,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 182
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -83109,7 +83109,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 181
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -83189,7 +83189,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 181
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -83269,7 +83269,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 182
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -83349,7 +83349,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 181
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -83429,7 +83429,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 181
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -83509,7 +83509,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 181
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -83591,7 +83591,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 195
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -83673,7 +83673,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 195
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -83755,7 +83755,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 195
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -83837,7 +83837,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 194
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -83919,7 +83919,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 195
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -84001,7 +84001,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 195
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -84083,7 +84083,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 194
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -84165,7 +84165,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 195
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -84247,7 +84247,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 194
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -84329,7 +84329,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 194
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -84411,7 +84411,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 183
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -84493,7 +84493,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 183
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -84575,7 +84575,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 182
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -84657,7 +84657,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 183
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -84739,7 +84739,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 182
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -84821,7 +84821,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 182
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -84903,7 +84903,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 183
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -84985,7 +84985,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 182
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -85067,7 +85067,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 182
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -85149,7 +85149,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 182
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -85228,7 +85228,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 195
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -85307,7 +85307,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 195
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -85386,7 +85386,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 194
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -85465,7 +85465,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 195
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -85544,7 +85544,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 194
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -85623,7 +85623,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 194
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -85702,7 +85702,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 195
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -85781,7 +85781,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 194
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -85860,7 +85860,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 194
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -85939,7 +85939,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 194
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -86018,7 +86018,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 183
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -86097,7 +86097,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 182
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -86176,7 +86176,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 182
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -86255,7 +86255,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 182
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -86334,7 +86334,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 182
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -86418,7 +86418,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 196
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -86502,7 +86502,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 196
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -86586,7 +86586,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 196
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -86670,7 +86670,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 195
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -86754,7 +86754,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 196
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -86838,7 +86838,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 196
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -86922,7 +86922,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 195
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -87006,7 +87006,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 196
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -87090,7 +87090,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 195
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -87174,7 +87174,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 195
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -87258,7 +87258,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 184
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -87342,7 +87342,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 184
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -87426,7 +87426,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 183
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -87510,7 +87510,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 184
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -87594,7 +87594,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 183
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -87678,7 +87678,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 183
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -87762,7 +87762,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 184
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -87846,7 +87846,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 183
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -87930,7 +87930,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 183
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -88014,7 +88014,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 183
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -88095,7 +88095,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 196
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -88176,7 +88176,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 196
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -88257,7 +88257,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 195
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -88338,7 +88338,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 196
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -88419,7 +88419,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 195
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -88500,7 +88500,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 195
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -88581,7 +88581,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 196
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -88662,7 +88662,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 195
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -88743,7 +88743,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 195
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -88824,7 +88824,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 195
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -88905,7 +88905,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 184
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -88986,7 +88986,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 183
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -89067,7 +89067,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 183
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -89148,7 +89148,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 183
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -89229,7 +89229,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 183
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -89312,7 +89312,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 197
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -89395,7 +89395,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 197
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -89478,7 +89478,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 196
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -89561,7 +89561,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 197
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -89644,7 +89644,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 196
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -89727,7 +89727,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 196
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -89810,7 +89810,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 197
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -89893,7 +89893,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 196
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -89976,7 +89976,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 196
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -90059,7 +90059,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 196
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -90142,7 +90142,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 185
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -90225,7 +90225,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 184
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -90308,7 +90308,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 184
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -90391,7 +90391,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 184
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -90474,7 +90474,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 184
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -90554,7 +90554,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 2
+      "fire_stations": 197
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -90634,7 +90634,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 196
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -90714,7 +90714,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 196
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -90794,7 +90794,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 196
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -90874,7 +90874,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 196
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -90954,7 +90954,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 2,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 184
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -91039,7 +91039,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 198
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -91124,7 +91124,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 198
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -91209,7 +91209,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 197
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -91294,7 +91294,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 198
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -91379,7 +91379,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 197
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -91464,7 +91464,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 197
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -91549,7 +91549,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 198
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -91634,7 +91634,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 197
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -91719,7 +91719,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 197
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -91804,7 +91804,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 197
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -91889,7 +91889,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 186
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -91974,7 +91974,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 185
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -92059,7 +92059,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 185
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -92144,7 +92144,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 185
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -92229,7 +92229,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 185
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -92311,7 +92311,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 198
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -92393,7 +92393,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 197
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -92475,7 +92475,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 197
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -92557,7 +92557,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 197
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -92639,7 +92639,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 197
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -92721,7 +92721,7 @@
       "fire_support_count": 2,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 185
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -92805,7 +92805,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 2
+      "fire_stations": 199
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -92889,7 +92889,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 198
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -92973,7 +92973,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 198
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -93057,7 +93057,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 198
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -93141,7 +93141,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 198
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -93225,7 +93225,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 186
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -93306,7 +93306,7 @@
       "bereitschaftspolizei": 1,
       "fire_support_count": 14,
       "mass_casualty_count": 2,
-      "fire_stations": 1
+      "fire_stations": 198
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -93392,7 +93392,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 2
+      "fire_stations": 200
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -93478,7 +93478,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 199
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -93564,7 +93564,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 199
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -93650,7 +93650,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 199
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -93736,7 +93736,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 199
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -93822,7 +93822,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 187
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -93905,7 +93905,7 @@
       "fire_support_count": 14,
       "mass_casualty_count": 2,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 199
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -93990,7 +93990,7 @@
       "mass_casualty_count": 2,
       "care_service": 1,
       "clean_service": 1,
-      "fire_stations": 1
+      "fire_stations": 200
     },
     "overlay_index": null,
     "base_mission_id": 1034,
@@ -94077,7 +94077,7 @@
       "care_service": 1,
       "clean_service": 1,
       "drone_fire": 1,
-      "fire_stations": 1
+      "fire_stations": 201
     },
     "overlay_index": null,
     "base_mission_id": 1034,

@@ -3136,5 +3136,366 @@
         }
       }
     }
+  },
+  "130": {
+    "caption": "SB-BA",
+    "credits": 45000,
+    "coins": 15,
+    "staff": {
+      "min": 2,
+      "max": 3,
+      "training": {
+        "Brandweer": {
+          "wechsellader": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0
+    ],
+    "minPersonnel": 2,
+    "maxPersonnel": 3,
+    "schooling": {
+      "Brandweer": {
+        "Brandweerchauffeur-zwaar": {
+          "all": true
+        }
+      }
+    },
+    "waterTank": 3000,
+    "wtank": 3000,
+    "foamTank": 6000,
+    "ftank": 6000
+  },
+  "131": {
+    "caption": "SB-IB",
+    "credits": 35000,
+    "coins": 10,
+    "staff": {
+      "min": 2,
+      "max": 3,
+      "training": {
+        "Brandweer": {
+          "wechsellader": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0
+    ],
+    "minPersonnel": 2,
+    "maxPersonnel": 3,
+    "schooling": {
+      "Brandweer": {
+        "Brandweerchauffeur-zwaar": {
+          "all": true
+        }
+      }
+    },
+    "waterTank": 20000,
+    "wtank": 20000,
+    "foamTank": 2000,
+    "ftank": 2000
+  },
+  "132": {
+    "caption": "AS",
+    "credits": 35000,
+    "coins": 10,
+    "staff": {
+      "min": 2,
+      "max": 3,
+      "training": {
+        "Brandweer": {
+          "wechsellader": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0
+    ],
+    "minPersonnel": 2,
+    "maxPersonnel": 3,
+    "schooling": {
+      "Brandweer": {
+        "Brandweerchauffeur-zwaar": {
+          "all": true
+        }
+      }
+    },
+    "foamTank": 1000,
+    "ftank": 1000
+  },
+  "133": {
+    "caption": "TS-IB",
+    "credits": 35000,
+    "coins": 10,
+    "staff": {
+      "min": 1,
+      "max": 7,
+      "training": {
+        "Brandweer": {
+          "wechsellader": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 7,
+    "schooling": {
+      "Brandweer": {
+        "Brandweerchauffeur-zwaar": {
+          "all": true
+        }
+      }
+    },
+    "waterTank": 2000,
+    "wtank": 2000,
+    "foamTank": 200,
+    "ftank": 200
+  },
+  "134": {
+    "caption": "GSH",
+    "credits": 12000,
+    "coins": 8,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "possibleBuildings": [
+      0
+    ],
+    "special": "Benodigd een speciale opleiding in het trekkend voertuig. (Gevaarlijke Stoffen Eenheid)",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "135": {
+    "caption": "DB-GS",
+    "credits": 35000,
+    "coins": 10,
+    "staff": {
+      "min": 4,
+      "max": 6,
+      "training": {
+        "Brandweer": {
+          "hazard_material_response": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0
+    ],
+    "minPersonnel": 4,
+    "maxPersonnel": 6,
+    "schooling": {
+      "Brandweer": {
+        "Gevaarlijke Stoffen Eenheid": {
+          "all": true
+        }
+      }
+    }
+  },
+  "136": {
+    "caption": "GPH",
+    "credits": 12000,
+    "coins": 8,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "possibleBuildings": [
+      0
+    ],
+    "special": "Benodigd een speciale opleiding in het trekkend voertuig. (Gevaarlijke Stoffen Eenheid)",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "137": {
+    "caption": "DB-GP",
+    "credits": 35000,
+    "coins": 10,
+    "staff": {
+      "min": 4,
+      "max": 6,
+      "training": {
+        "Brandweer": {
+          "hazard_material_response": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0
+    ],
+    "minPersonnel": 4,
+    "maxPersonnel": 6,
+    "schooling": {
+      "Brandweer": {
+        "Gevaarlijke Stoffen Eenheid": {
+          "all": true
+        }
+      }
+    }
+  },
+  "138": {
+    "caption": "BOH-DC",
+    "credits": 35000,
+    "coins": 8,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "possibleBuildings": [
+      0
+    ],
+    "special": "Benodigd een speciale opleiding in het trekkend voertuig. (Ontsmettings Eenheid)",
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "139": {
+    "caption": "TS-BO",
+    "credits": 35000,
+    "coins": 10,
+    "staff": {
+      "min": 6,
+      "max": 7,
+      "training": {
+        "Brandweer": {
+          "hazard_suits_response": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0
+    ],
+    "minPersonnel": 6,
+    "maxPersonnel": 7,
+    "schooling": {
+      "Brandweer": {
+        "Ontsmettings Eenheid": {
+          "all": true
+        }
+      }
+    },
+    "waterTank": 2000,
+    "wtank": 2000
+  },
+  "140": {
+    "caption": "DB-BO",
+    "credits": 35000,
+    "coins": 10,
+    "staff": {
+      "min": 6,
+      "max": 8,
+      "training": {
+        "Brandweer": {
+          "hazard_suits_response": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0
+    ],
+    "minPersonnel": 6,
+    "maxPersonnel": 8,
+    "schooling": {
+      "Brandweer": {
+        "Ontsmettings Eenheid": {
+          "all": true
+        }
+      }
+    }
+  },
+  "141": {
+    "caption": "GOH-DC",
+    "credits": 35000,
+    "coins": 8,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "possibleBuildings": [
+      0
+    ],
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "142": {
+    "caption": "TS-GO",
+    "credits": 35000,
+    "coins": 10,
+    "staff": {
+      "min": 6,
+      "max": 7,
+      "training": {
+        "Brandweer": {
+          "hazard_suits_response": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0
+    ],
+    "minPersonnel": 6,
+    "maxPersonnel": 7,
+    "schooling": {
+      "Brandweer": {
+        "Ontsmettings Eenheid": {
+          "all": true
+        }
+      }
+    },
+    "waterTank": 2000,
+    "wtank": 2000
+  },
+  "143": {
+    "caption": "DB-GO",
+    "credits": 35000,
+    "coins": 10,
+    "staff": {
+      "min": 4,
+      "max": 6,
+      "training": {
+        "Brandweer": {
+          "hazard_suits_response": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0
+    ],
+    "minPersonnel": 4,
+    "maxPersonnel": 6,
+    "schooling": {
+      "Brandweer": {
+        "Ontsmettings Eenheid": {
+          "all": true
+        }
+      }
+    }
   }
 }

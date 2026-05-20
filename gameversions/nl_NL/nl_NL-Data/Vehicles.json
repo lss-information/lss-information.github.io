@@ -3153,7 +3153,8 @@
       }
     },
     "possibleBuildings": [
-      0
+      0,
+      17
     ],
     "minPersonnel": 2,
     "maxPersonnel": 3,
@@ -3185,7 +3186,8 @@
       }
     },
     "possibleBuildings": [
-      0
+      0,
+      17
     ],
     "minPersonnel": 2,
     "maxPersonnel": 3,
@@ -3217,7 +3219,8 @@
       }
     },
     "possibleBuildings": [
-      0
+      0,
+      17
     ],
     "minPersonnel": 2,
     "maxPersonnel": 3,
@@ -3247,7 +3250,8 @@
       }
     },
     "possibleBuildings": [
-      0
+      0,
+      17
     ],
     "minPersonnel": 1,
     "maxPersonnel": 7,
@@ -3272,7 +3276,8 @@
       "max": 0
     },
     "possibleBuildings": [
-      0
+      0,
+      17
     ],
     "special": "Benodigd een speciale opleiding in het trekkend voertuig. (Gevaarlijke Stoffen Eenheid)",
     "minPersonnel": 0,
@@ -3295,7 +3300,8 @@
       }
     },
     "possibleBuildings": [
-      0
+      0,
+      17
     ],
     "minPersonnel": 4,
     "maxPersonnel": 6,
@@ -3316,7 +3322,8 @@
       "max": 0
     },
     "possibleBuildings": [
-      0
+      0,
+      17
     ],
     "special": "Benodigd een speciale opleiding in het trekkend voertuig. (Gevaarlijke Stoffen Eenheid)",
     "minPersonnel": 0,
@@ -3339,7 +3346,8 @@
       }
     },
     "possibleBuildings": [
-      0
+      0,
+      17
     ],
     "minPersonnel": 4,
     "maxPersonnel": 6,
@@ -3360,7 +3368,8 @@
       "max": 0
     },
     "possibleBuildings": [
-      0
+      0,
+      17
     ],
     "special": "Benodigd een speciale opleiding in het trekkend voertuig. (Ontsmettings Eenheid)",
     "minPersonnel": 0,
@@ -3383,7 +3392,8 @@
       }
     },
     "possibleBuildings": [
-      0
+      0,
+      17
     ],
     "minPersonnel": 6,
     "maxPersonnel": 7,
@@ -3413,7 +3423,8 @@
       }
     },
     "possibleBuildings": [
-      0
+      0,
+      17
     ],
     "minPersonnel": 6,
     "maxPersonnel": 8,
@@ -3434,7 +3445,8 @@
       "max": 0
     },
     "possibleBuildings": [
-      0
+      0,
+      17
     ],
     "minPersonnel": 0,
     "maxPersonnel": 0,
@@ -3456,7 +3468,8 @@
       }
     },
     "possibleBuildings": [
-      0
+      0,
+      17
     ],
     "minPersonnel": 6,
     "maxPersonnel": 7,
@@ -3486,7 +3499,8 @@
       }
     },
     "possibleBuildings": [
-      0
+      0,
+      17
     ],
     "minPersonnel": 4,
     "maxPersonnel": 6,

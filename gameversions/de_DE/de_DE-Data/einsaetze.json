@@ -124435,10 +124435,8 @@
   {
     "id": "652",
     "name": "Aufgeplatzter Asphalt auf Autobahn",
-    "place": "Autobahnauf.- / abfahrt",
-    "place_array": [
-      "Autobahnauf.- / abfahrt"
-    ],
+    "place": "",
+    "place_array": [],
     "average_credits": 600,
     "generated_by": "",
     "icons": [
@@ -124447,29 +124445,21 @@
       "/images/caraccident_rot.png"
     ],
     "requirements": {
-      "oneof_police_patrol_or_motorcycle": 2,
-      "police_cars": 1
+      "highway_police": 2
     },
     "chances": {},
     "additional": {
-      "expansion_missions_ids": [
-        122,
-        123,
-        125,
-        127,
-        394
-      ],
-      "filter_id": "police_station_missions"
+      "filter_id": "highway_police_missions"
     },
     "prerequisites": {
-      "main_building": 6,
-      "police_stations": 2
+      "main_building": 29,
+      "highway_police": 1
     },
     "overlay_index": null,
     "base_mission_id": 652,
     "additive_overlays": "",
     "mission_categories": [
-      "police"
+      "highway_police"
     ]
   },
   {
@@ -224179,6 +224169,1532 @@
     "additive_overlays": "abcdefg",
     "mission_categories": [
       "fire"
+    ]
+  },
+  {
+    "id": "971",
+    "name": "Angefahrene Person auf Autobahn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 300,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 1
+    },
+    "chances": {
+      "patient_transport": 38
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true,
+      "patient_specialization_ids": [
+        4
+      ],
+      "patient_specialization_captions": [
+        "Unfallchirurgie"
+      ],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "rescue_stations": 3,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 971,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "972",
+    "name": "Trunkenheitsfahrt auf Autobahn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 275,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 972,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "973",
+    "name": "Motorradunfall auf Autobahn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "firetrucks": 10,
+      "nef": 70,
+      "patient_transport": 100
+    },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true,
+      "patient_specialization_ids": [
+        4
+      ],
+      "patient_specialization_captions": [
+        "Unfallchirurgie"
+      ],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 973,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "974",
+    "name": "Pannenfahrzeug auf Autobahn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 275,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 974,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "975",
+    "name": "Verkehrsbehinderung auf Autobahn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 275,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 975,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "976",
+    "name": "Wildunfall auf Autobahn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 275,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 976,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "977",
+    "name": "Geisterfahrer auf Autobahn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1000,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 4
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 977,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "977/a",
+    "name": "Geisterfahrer auf Autobahn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1400,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "police_service_group_leader": 1,
+      "highway_police": 4
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "police_stations": 7,
+      "police_service_group_leader": 5,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 977,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "978",
+    "name": "Absicherung Pannen-LKW auf Autobahn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 400,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 978,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "979",
+    "name": "Fahndung auf Autobahn nach KFZ-Diebstahl",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "police_helicopters": 1,
+      "highway_police": 4
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 2,
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "police_helicopter_stations": 1,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 979,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "979/a",
+    "name": "Fahndung auf Autobahn nach KFZ-Diebstahl",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2900,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "police_service_group_leader": 1,
+      "police_helicopters": 1,
+      "highway_police": 4
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 2,
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "police_stations": 7,
+      "police_helicopter_stations": 1,
+      "police_service_group_leader": 5,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 979,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "980",
+    "name": "Fahndung auf Autobahn nach Kraftstoffdiebstahl",
+    "place": "",
+    "place_array": [],
+    "average_credits": 300,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 1,
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 980,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "981",
+    "name": "Ausgelöste Höhenkontrolle auf Autobahn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 405,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 981,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "982",
+    "name": "Verdächtiges Fahrzeug auf Autobahn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 275,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 1
+    },
+    "chances": {},
+    "additional": {
+      "max_possible_prisoners": 2,
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 982,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "983",
+    "name": "Autobahnbereitschaft",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2400,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "thw_mtwtz": 1
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "3 Stunden",
+      "duration": 10800,
+      "guard_mission": true,
+      "filter_id": "technical_aid_organization_missions"
+    },
+    "prerequisites": {
+      "main_building": 9,
+      "thw": 1,
+      "thw_zugtrupp_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 983,
+    "additive_overlays": "",
+    "mission_categories": [
+      "thw"
+    ]
+  },
+  {
+    "id": "984",
+    "name": "Großangelegte LKW-Kontrolle",
+    "place": "",
+    "place_array": [],
+    "average_credits": 30600,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "civil_patrolcar": 2,
+      "k9": 1,
+      "police_motorcycle": 4,
+      "highway_police": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "3 Stunden",
+      "duration": 10800,
+      "guard_mission": true,
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "police_stations": 4,
+      "guard_dog_count": 1,
+      "criminal_investigation_count": 1,
+      "highway_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 984,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "984/a",
+    "name": "Großangelegte LKW-Kontrolle",
+    "place": "",
+    "place_array": [],
+    "average_credits": 33000,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "civil_patrolcar": 2,
+      "k9": 1,
+      "police_motorcycle": 4,
+      "energy_supply": 1,
+      "highway_police": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "3 Stunden",
+      "duration": 10800,
+      "guard_mission": true,
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "police_stations": 4,
+      "guard_dog_count": 1,
+      "criminal_investigation_count": 1,
+      "energy_supply": 1,
+      "highway_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 984,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "984/b",
+    "name": "Großangelegte LKW-Kontrolle",
+    "place": "",
+    "place_array": [],
+    "average_credits": 38250,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "civil_patrolcar": 2,
+      "k9": 1,
+      "police_motorcycle": 4,
+      "highway_police": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "3 Stunden",
+      "duration": 10800,
+      "guard_mission": true,
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true,
+      "care_includes_staff_members": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "police_stations": 4,
+      "guard_dog_count": 1,
+      "criminal_investigation_count": 1,
+      "care_service": 1,
+      "highway_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 984,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "984/ab",
+    "name": "Großangelegte LKW-Kontrolle",
+    "place": "",
+    "place_array": [],
+    "average_credits": 41250,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "civil_patrolcar": 2,
+      "k9": 1,
+      "police_motorcycle": 4,
+      "energy_supply": 1,
+      "highway_police": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "3 Stunden",
+      "duration": 10800,
+      "guard_mission": true,
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true,
+      "care_includes_staff_members": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "police_stations": 4,
+      "guard_dog_count": 1,
+      "criminal_investigation_count": 1,
+      "energy_supply": 1,
+      "care_service": 1,
+      "highway_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 984,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "985",
+    "name": "Großangelegte PKW-Kontrolle",
+    "place": "",
+    "place_array": [],
+    "average_credits": 30600,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "civil_patrolcar": 2,
+      "k9": 1,
+      "police_motorcycle": 4,
+      "highway_police": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "3 Stunden",
+      "duration": 10800,
+      "guard_mission": true,
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "police_stations": 4,
+      "guard_dog_count": 1,
+      "criminal_investigation_count": 1,
+      "highway_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 985,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "985/a",
+    "name": "Großangelegte PKW-Kontrolle",
+    "place": "",
+    "place_array": [],
+    "average_credits": 33000,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "civil_patrolcar": 2,
+      "k9": 1,
+      "police_motorcycle": 4,
+      "energy_supply": 1,
+      "highway_police": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "3 Stunden",
+      "duration": 10800,
+      "guard_mission": true,
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "police_stations": 4,
+      "guard_dog_count": 1,
+      "criminal_investigation_count": 1,
+      "energy_supply": 1,
+      "highway_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 985,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "985/b",
+    "name": "Großangelegte PKW-Kontrolle",
+    "place": "",
+    "place_array": [],
+    "average_credits": 38250,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "civil_patrolcar": 2,
+      "k9": 1,
+      "police_motorcycle": 4,
+      "highway_police": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "3 Stunden",
+      "duration": 10800,
+      "guard_mission": true,
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true,
+      "care_includes_staff_members": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "police_stations": 4,
+      "guard_dog_count": 1,
+      "criminal_investigation_count": 1,
+      "care_service": 1,
+      "highway_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 985,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "985/ab",
+    "name": "Großangelegte PKW-Kontrolle",
+    "place": "",
+    "place_array": [],
+    "average_credits": 41250,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "civil_patrolcar": 2,
+      "k9": 1,
+      "police_motorcycle": 4,
+      "energy_supply": 1,
+      "highway_police": 10
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "3 Stunden",
+      "duration": 10800,
+      "guard_mission": true,
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true,
+      "care_includes_staff_members": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "police_stations": 4,
+      "guard_dog_count": 1,
+      "criminal_investigation_count": 1,
+      "energy_supply": 1,
+      "care_service": 1,
+      "highway_police": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 985,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "986",
+    "name": "Absicherung Schwertransport",
+    "place": "",
+    "place_array": [],
+    "average_credits": 7200,
+    "generated_by": "",
+    "icons": [
+      "/images/clock_gruen.png",
+      "/images/clock_gelb.png",
+      "/images/clock_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 4
+    },
+    "chances": {},
+    "additional": {
+      "duration_text": "3 Stunden",
+      "duration": 10800,
+      "guard_mission": true,
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 986,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "987",
+    "name": "Verkehrsunfall auf Autobahn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 550,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 987,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "988",
+    "name": "Verkehrsunfall auf Autobahn (Person eingeklemmt)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2870,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 2,
+      "highway_police": 4,
+      "firetrucks": 3
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1,
+      "fire_stations": 5
+    },
+    "overlay_index": null,
+    "base_mission_id": 988,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "989",
+    "name": "Verkehrsunfall auf Autobahn (mit Verletzten)",
+    "place": "",
+    "place_array": [],
+    "average_credits": 550,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 2
+    },
+    "chances": {
+      "nef": 10,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 4,
+      "possible_patient_min": 2,
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true,
+      "patient_specialization_ids": [
+        4
+      ],
+      "patient_specialization_captions": [
+        "Unfallchirurgie"
+      ],
+      "patient_specializations": "Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 989,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "990",
+    "name": "Versorgung von Personen im Stau",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1740,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "highway_police": 2
+    },
+    "chances": {},
+    "additional": {
+      "average_min_fire_personnel": 27,
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 990,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "990/a",
+    "name": "Versorgung von Personen im Stau",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2115,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "highway_police": 2
+    },
+    "chances": {},
+    "additional": {
+      "average_min_fire_personnel": 27,
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true,
+      "care_affected_people_min": 50,
+      "care_affected_people_max": 100
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "care_service": 1,
+      "highway_police": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 990,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "990/b",
+    "name": "Versorgung von Personen im Stau",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2140,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "drone": 1,
+      "highway_police": 2
+    },
+    "chances": {},
+    "additional": {
+      "average_min_fire_personnel": 27,
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "drone": 1,
+      "highway_police": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 990,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "990/ab",
+    "name": "Versorgung von Personen im Stau",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2515,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "drone": 1,
+      "highway_police": 2
+    },
+    "chances": {},
+    "additional": {
+      "average_min_fire_personnel": 27,
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true,
+      "care_affected_people_min": 50,
+      "care_affected_people_max": 100
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "drone": 1,
+      "care_service": 1,
+      "highway_police": 1,
+      "fire_stations": 4
+    },
+    "overlay_index": null,
+    "base_mission_id": 990,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "991",
+    "name": "LKW verliert Ladung",
+    "place": "",
+    "place_array": [],
+    "average_credits": 275,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 991,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "992",
+    "name": "Pannenfahrzeug auf Standstreifen",
+    "place": "",
+    "place_array": [],
+    "average_credits": 275,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 992,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "993",
+    "name": "Gegenstand auf Fahrbahn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 275,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 993,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "994",
+    "name": "Person auf Autobahn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 275,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 994,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "995",
+    "name": "Übermüdeter PKW-Fahrer",
+    "place": "",
+    "place_array": [],
+    "average_credits": 275,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 995,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "996",
+    "name": "Übermüdeter LKW-Fahrer",
+    "place": "",
+    "place_array": [],
+    "average_credits": 275,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 996,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "997",
+    "name": "Gefahr auf Autobahn durch Baustelle",
+    "place": "",
+    "place_array": [],
+    "average_credits": 275,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 997,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "998",
+    "name": "Hochzeits-Korso auf Autobahn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1375,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 5
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 998,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "999",
+    "name": "Fan-Korso auf Autobahn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1650,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 6
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 999,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "1000",
+    "name": "Rettungsgasse kontrollieren",
+    "place": "",
+    "place_array": [],
+    "average_credits": 275,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "highway_police": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1000,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "1001",
+    "name": "Ölspur auf Autobahn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1465,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "gwoil": 1,
+      "highway_police": 2,
+      "firetrucks": 2
+    },
+    "chances": {
+      "gwoil": 10
+    },
+    "additional": {
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "highway_police": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 1001,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
+    ]
+  },
+  {
+    "id": "1002",
+    "name": "Ladungsbergung eines LKW auf Autobahn",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2635,
+    "generated_by": "",
+    "icons": [
+      "/images/highway_gruen.png",
+      "/images/highway_gelb.png",
+      "/images/highway_rot.png"
+    ],
+    "requirements": {
+      "heavy_rescue_vehicles": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "highway_police": 2,
+      "firetrucks": 1
+    },
+    "chances": {
+      "thw_brmg_r": 50,
+      "thw_lkw": 50
+    },
+    "additional": {
+      "filter_id": "highway_police_missions",
+      "uses_custom_spawn_area": true
+    },
+    "prerequisites": {
+      "main_building": 29,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "thw_gkw_count": 1,
+      "highway_police": 1,
+      "fire_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1002,
+    "additive_overlays": "",
+    "mission_categories": [
+      "highway_police"
     ]
   }
 ]

@@ -225098,13 +225098,26 @@
       "highway_police": 4,
       "firetrucks": 3
     },
-    "chances": {},
+    "chances": {
+      "nef": 10,
+      "patient_transport": 50
+    },
     "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
       "filter_id": "highway_police_missions",
-      "uses_custom_spawn_area": true
+      "uses_custom_spawn_area": true,
+      "patient_specialization_ids": [
+        4
+      ],
+      "patient_specialization_captions": [
+        "Unfallchirurgie"
+      ],
+      "patient_specializations": "Unfallchirurgie"
     },
     "prerequisites": {
       "main_building": 29,
+      "rescue_stations": 2,
       "highway_police": 1,
       "fire_stations": 5
     },
@@ -225149,6 +225162,7 @@
     },
     "prerequisites": {
       "main_building": 29,
+      "rescue_stations": 4,
       "highway_police": 1
     },
     "overlay_index": null,

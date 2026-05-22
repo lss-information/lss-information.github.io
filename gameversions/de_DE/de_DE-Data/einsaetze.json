@@ -224405,7 +224405,7 @@
     },
     "prerequisites": {
       "main_building": 29,
-      "highway_police": 1
+      "highway_police": 2
     },
     "overlay_index": null,
     "base_mission_id": 977,
@@ -224439,7 +224439,7 @@
       "main_building": 29,
       "police_stations": 7,
       "police_service_group_leader": 5,
-      "highway_police": 1
+      "highway_police": 2
     },
     "overlay_index": null,
     "base_mission_id": 977,
@@ -224504,7 +224504,7 @@
     "prerequisites": {
       "main_building": 29,
       "police_helicopter_stations": 1,
-      "highway_police": 1
+      "highway_police": 2
     },
     "overlay_index": null,
     "base_mission_id": 979,
@@ -224541,7 +224541,7 @@
       "police_stations": 7,
       "police_helicopter_stations": 1,
       "police_service_group_leader": 5,
-      "highway_police": 1
+      "highway_police": 2
     },
     "overlay_index": null,
     "base_mission_id": 979,
@@ -224710,7 +224710,7 @@
       "police_stations": 4,
       "guard_dog_count": 1,
       "criminal_investigation_count": 1,
-      "highway_police": 2
+      "highway_police": 4
     },
     "overlay_index": null,
     "base_mission_id": 984,
@@ -224752,7 +224752,7 @@
       "guard_dog_count": 1,
       "criminal_investigation_count": 1,
       "energy_supply": 1,
-      "highway_police": 2
+      "highway_police": 4
     },
     "overlay_index": null,
     "base_mission_id": 984,
@@ -224794,7 +224794,7 @@
       "guard_dog_count": 1,
       "criminal_investigation_count": 1,
       "care_service": 1,
-      "highway_police": 2
+      "highway_police": 4
     },
     "overlay_index": null,
     "base_mission_id": 984,
@@ -224838,7 +224838,7 @@
       "criminal_investigation_count": 1,
       "energy_supply": 1,
       "care_service": 1,
-      "highway_police": 2
+      "highway_police": 4
     },
     "overlay_index": null,
     "base_mission_id": 984,
@@ -224878,7 +224878,7 @@
       "police_stations": 4,
       "guard_dog_count": 1,
       "criminal_investigation_count": 1,
-      "highway_police": 2
+      "highway_police": 4
     },
     "overlay_index": null,
     "base_mission_id": 985,
@@ -224920,7 +224920,7 @@
       "guard_dog_count": 1,
       "criminal_investigation_count": 1,
       "energy_supply": 1,
-      "highway_police": 2
+      "highway_police": 4
     },
     "overlay_index": null,
     "base_mission_id": 985,
@@ -224962,7 +224962,7 @@
       "guard_dog_count": 1,
       "criminal_investigation_count": 1,
       "care_service": 1,
-      "highway_police": 2
+      "highway_police": 4
     },
     "overlay_index": null,
     "base_mission_id": 985,
@@ -225006,7 +225006,7 @@
       "criminal_investigation_count": 1,
       "energy_supply": 1,
       "care_service": 1,
-      "highway_police": 2
+      "highway_police": 4
     },
     "overlay_index": null,
     "base_mission_id": 985,
@@ -225040,7 +225040,7 @@
     },
     "prerequisites": {
       "main_building": 29,
-      "highway_police": 1
+      "highway_police": 2
     },
     "overlay_index": null,
     "base_mission_id": 986,
@@ -225118,7 +225118,7 @@
     "prerequisites": {
       "main_building": 29,
       "rescue_stations": 2,
-      "highway_police": 1,
+      "highway_police": 2,
       "fire_stations": 5
     },
     "overlay_index": null,
@@ -225557,7 +225557,7 @@
     },
     "prerequisites": {
       "main_building": 29,
-      "highway_police": 1
+      "highway_police": 3
     },
     "overlay_index": null,
     "base_mission_id": 998,
@@ -225588,7 +225588,7 @@
     },
     "prerequisites": {
       "main_building": 29,
-      "highway_police": 1
+      "highway_police": 3
     },
     "overlay_index": null,
     "base_mission_id": 999,

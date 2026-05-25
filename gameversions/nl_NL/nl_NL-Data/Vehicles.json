@@ -834,7 +834,7 @@
       }
     }
   },
-  "41": {
+    "41": {
     "caption": "Crashtender (8x8)",
     "color": "#ad0e0e",
     "credits": 60000,
@@ -868,7 +868,7 @@
       }
     }
   },
-    "42": {
+  "42": {
     "caption": "Crashtender (6x6)",
     "color": "#9c0b0b",
     "credits": 40000,
@@ -964,7 +964,6 @@
       }
     }
   },
-
   "45": {
     "caption": "Dompelpomphaakarmbak",
     "color": "#681212",
@@ -982,6 +981,7 @@
     "maxPersonnel": 0,
     "schooling": null
   },
+
   "46": {
     "caption": "DM-Politie",
     "color": "#0008e7",

@@ -910,7 +910,7 @@
         "isVehicleExtension": true,
         "givesParkingLots": 1,
         "unlocksVehicleTypes": [35],
-        "parkingLotReservations": [35],
+        "parkingLotReservations": [35]
       },
       {
         "caption": "Drone Team Politie",
@@ -920,7 +920,7 @@
         "isVehicleExtension": true,
         "givesParkingLots": 1,
         "unlocksVehicleTypes": [128],
-        "parkingLotReservations": [128],
+        "parkingLotReservations": [128]
       },
       {
         "caption": "Mobiele Eenheid, Sectie",
@@ -930,7 +930,7 @@
         "isVehicleExtension": true,
         "givesParkingLots": 4,
         "unlocksVehicleTypes": [39, 40],
-        "parkingLotReservations": [39, 40, 40, 40],
+        "parkingLotReservations": [39, 40, 40, 40]
       },
       {
         "caption": "Hondenbrigade",
@@ -940,7 +940,7 @@
         "isVehicleExtension": true,
         "givesParkingLots": 4,
         "unlocksVehicleTypes": [47, 48],
-        "parkingLotReservations": [47, 47, 48, 48],
+        "parkingLotReservations": [47, 47, 48, 48]
       },
       {
         "caption": "Arrestatieteam",
@@ -950,7 +950,7 @@
         "isVehicleExtension": true,
         "givesParkingLots": 6,
         "unlocksVehicleTypes": [53, 54, 55],
-        "parkingLotReservations": [53, 54, 54, 54, 54, 55],
+        "parkingLotReservations": [53, 54, 54, 54, 54, 55]
       },
       {
         "caption": "Arrestantenvervoer",
@@ -960,7 +960,7 @@
         "isVehicleExtension": true,
         "givesParkingLots": 2,
         "unlocksVehicleTypes": [58],
-        "parkingLotReservations": [58, 58],
+        "parkingLotReservations": [58, 58]
       },
       {
         "caption": "Mobiele Eenheid, Aanhoudingseenheid",
@@ -970,7 +970,7 @@
         "isVehicleExtension": true,
         "givesParkingLots": 1,
         "unlocksVehicleTypes": [64],
-        "parkingLotReservations": [64],
+        "parkingLotReservations": [64]
       },
       {
         "caption": "Mobiele Eenheid, 2e Sectie",
@@ -991,7 +991,7 @@
         "isVehicleExtension": true,
         "givesParkingLots": 6,
         "unlocksVehicleTypes": [73, 74, 75],
-        "parkingLotReservations": [73, 73, 73, 74, 74, 74, 75, 75, 75],
+        "parkingLotReservations": [73, 73, 73, 74, 74, 74, 75, 75, 75]
       },
       {
         "caption": "Waterwerper Uitbreiding",
@@ -1001,7 +1001,7 @@
         "isVehicleExtension": true,
         "givesParkingLots": 1,
         "unlocksVehicleTypes": [84],
-        "parkingLotReservations": [84],
+        "parkingLotReservations": [84]
       }
     ],
     "levelcost": [],

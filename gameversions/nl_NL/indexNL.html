@@ -161,6 +161,7 @@ main {
             <a class="button" id="vehicle-ids" href="/gameversions/nl_NL/vehicle_ids">Voertuig ID's</a>
             <a class="button" id="mission-ids" href="/gameversions/nl_NL/mission_ids">Melding ID's</a>
             <a class="button" id="pois" href="/gameversions/nl_NL/pois">POI's</a>
+            <a class="button" id="equipments" href="/gameversions/nl_NL/equipments.json">Uitrustingen</a>
         </div>
     </div>
 </main>
@@ -187,6 +188,7 @@ function changeLanguage(lang) {
             vehicle: "Voertuig ID's",
             mission: "Melding ID's",
             pois: "POI's",
+            equipments: "Uitrustingen"
             page: "Meldkamerspel (NL)"
         };
     } else if (lang === "de") {
@@ -198,6 +200,7 @@ function changeLanguage(lang) {
             vehicle: "Fahrzeug-IDs",
             mission: "Einsatz-IDs",
             pois: "POIs",
+            equipments: "Ausrüstung",
             page: "Meldkamerspel (NL)"
         };
     } else {
@@ -209,6 +212,7 @@ function changeLanguage(lang) {
             vehicle: "Vehicle IDs",
             mission: "Mission IDs",
             pois: "POIs",
+            equipments: "Equipments"
             page: "Meldkamerspel (NL)"
         };
     }
@@ -221,6 +225,7 @@ function changeLanguage(lang) {
     document.getElementById('vehicle-ids').textContent = t.vehicle;
     document.getElementById('mission-ids').textContent = t.mission;
     document.getElementById('pois').textContent = t.pois;
+    document.getElementByID('equipments').textContent = t.equipment;
 }
     document.addEventListener("DOMContentLoaded", () => {
     changeLanguage("nl");

@@ -31,6 +31,7 @@ jobs:
           curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/nl_NL/Vehicles.json -o gameversions/nl_NL/nl_NL-Data/Vehicles.json
           curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/nl_NL/buildings.json -o gameversions/nl_NL/nl_NL-Data/buildings.json
           curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/nl_NL/pois.json -o gameversions/nl_NL/nl_NL-Data/pois.json
+          curl -f -sSL https://raw.githubusercontent.com/LSS-Data/LSS-Data/refs/heads/main/nl_NL/Equipments.json -o gameversions/nl_NL/nl_NL-Data/equipments.json
 
       # =====================
       # US DATA

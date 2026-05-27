@@ -1,4 +1,4 @@
-{
+[
     {
     "id": "bomb_disposal_robot",
     "name": "RC-Explosievenrobot",
@@ -77,4 +77,4 @@
     "coins": 10,
     "special": "Deze uitrusting vereist personeel met een opleiding in Gevaarlijke Stoffen Eenheid in het transportvoertuig om te functioneren."
     }
-}
+]

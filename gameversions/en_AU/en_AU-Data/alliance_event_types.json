@@ -1,5 +1,24 @@
 [
   {
+    "caption": "Storm",
+    "mission_type_ids": [
+      12,
+      14,
+      15,
+      18,
+      22,
+      25,
+      29,
+      831,
+      832,
+      833,
+      834,
+      835,
+      836
+    ],
+    "id": 0
+  },
+  {
     "caption": "Bushfire Season",
     "mission_type_ids": [
       322,

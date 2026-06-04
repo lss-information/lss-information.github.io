@@ -32224,14 +32224,12 @@
       "ambulances": 1
     },
     "chances": {
-      "patient_transport": 30,
-      "patient_critical_care": 50
+      "patient_transport": 30
     },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "allow_ktw_instead_of_rtw": true,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [
         0
@@ -32268,14 +32266,12 @@
       "ambulances": 1
     },
     "chances": {
-      "patient_transport": 30,
-      "patient_critical_care": 50
+      "patient_transport": 30
     },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "allow_ktw_instead_of_rtw": true,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [
         0
@@ -32312,14 +32308,12 @@
       "ambulances": 1
     },
     "chances": {
-      "patient_transport": 30,
-      "patient_critical_care": 50
+      "patient_transport": 30
     },
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "allow_ktw_instead_of_rtw": true,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [
         0

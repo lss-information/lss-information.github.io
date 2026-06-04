@@ -74955,9 +74955,7 @@
       "/images/medicalstore_gelb.png",
       "/images/medicalstore_rot.png"
     ],
-    "requirements": {
-      "ambulances": 1
-    },
+    "requirements": {},
     "chances": {
       "patient_transport": 30
     },
@@ -74969,7 +74967,6 @@
         "17-D-1",
         "17-D-3"
       ],
-      "allow_ktw_instead_of_rtw": true,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [
         0
@@ -75002,9 +74999,7 @@
       "/images/medicalstore_gelb.png",
       "/images/medicalstore_rot.png"
     ],
-    "requirements": {
-      "ambulances": 1
-    },
+    "requirements": {},
     "chances": {
       "patient_transport": 30
     },
@@ -75016,7 +75011,6 @@
         "17-D-1",
         "17-D-3"
       ],
-      "allow_ktw_instead_of_rtw": true,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [
         0
@@ -75049,9 +75043,7 @@
       "/images/medicalstore_gelb.png",
       "/images/medicalstore_rot.png"
     ],
-    "requirements": {
-      "ambulances": 1
-    },
+    "requirements": {},
     "chances": {
       "patient_transport": 30
     },
@@ -75063,7 +75055,6 @@
         "17-D-1",
         "17-D-3"
       ],
-      "allow_ktw_instead_of_rtw": true,
       "patient_at_end_of_mission": true,
       "patient_specialization_ids": [
         0

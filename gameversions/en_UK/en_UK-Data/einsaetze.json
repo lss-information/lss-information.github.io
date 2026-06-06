@@ -49677,7 +49677,6 @@
         "C-3"
       ],
       "filter_id": "ambulance_station_missions",
-      "patient_at_end_of_mission": true,
       "patient_specialization_ids": [
         0
       ],
@@ -49721,7 +49720,6 @@
         "C-3"
       ],
       "filter_id": "ambulance_station_missions",
-      "patient_at_end_of_mission": true,
       "patient_specialization_ids": [
         0
       ],
@@ -49765,7 +49763,6 @@
         "C-3"
       ],
       "filter_id": "ambulance_station_missions",
-      "patient_at_end_of_mission": true,
       "patient_specialization_ids": [
         0
       ],

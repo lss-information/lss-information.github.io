@@ -32230,7 +32230,6 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "patient_at_end_of_mission": true,
       "patient_specialization_ids": [
         0
       ],
@@ -32272,7 +32271,6 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "patient_at_end_of_mission": true,
       "patient_specialization_ids": [
         0
       ],
@@ -32314,7 +32312,6 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "patient_at_end_of_mission": true,
       "patient_specialization_ids": [
         0
       ],

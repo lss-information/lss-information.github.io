@@ -55935,8 +55935,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2023-07-20T09:00:00Z",
-      "date_end": "2023-08-20T23:59:59-04:00"
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z"
     },
     "prerequisites": {
       "main_building": 0,
@@ -55969,8 +55969,8 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "date_start": "2023-07-20T09:00:00Z",
-      "date_end": "2023-08-20T23:59:59-04:00"
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z"
     },
     "prerequisites": {
       "main_building": 5,
@@ -56006,8 +56006,8 @@
       "patient_us_code_possible": [
         "29-D-5"
       ],
-      "date_start": "2023-07-20T09:00:00Z",
-      "date_end": "2023-08-20T23:59:59-04:00",
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         1
       ],
@@ -56050,8 +56050,8 @@
       "patient_us_code_possible": [
         "26-A-11"
       ],
-      "date_start": "2023-07-20T09:00:00Z",
-      "date_end": "2023-08-20T23:59:59-04:00",
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         1
       ],
@@ -56090,8 +56090,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2023-07-20T09:00:00Z",
-      "date_end": "2023-08-20T23:59:59-04:00"
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z"
     },
     "prerequisites": {
       "main_building": 0,
@@ -56124,8 +56124,8 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "date_start": "2023-07-20T09:00:00Z",
-      "date_end": "2023-08-20T23:59:59-04:00"
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z"
     },
     "prerequisites": {
       "main_building": 5,
@@ -56163,8 +56163,8 @@
       "patient_us_code_possible": [
         "20-B-1"
       ],
-      "date_start": "2023-07-20T09:00:00Z",
-      "date_end": "2023-08-20T23:59:59-04:00",
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -56209,8 +56209,8 @@
       "patient_us_code_possible": [
         "26-A-1"
       ],
-      "date_start": "2023-07-20T09:00:00Z",
-      "date_end": "2023-08-20T23:59:59-04:00",
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -56251,8 +56251,8 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "date_start": "2023-07-20T09:00:00Z",
-      "date_end": "2023-08-20T23:59:59-04:00"
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z"
     },
     "prerequisites": {
       "main_building": 5,
@@ -56286,8 +56286,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2023-07-20T09:00:00Z",
-      "date_end": "2023-08-20T23:59:59-04:00"
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z"
     },
     "prerequisites": {
       "main_building": 0,

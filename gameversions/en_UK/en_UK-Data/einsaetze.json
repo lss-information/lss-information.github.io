@@ -20908,8 +20908,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2024-06-14T09:00:00Z",
-      "date_end": "2024-07-14T22:00:00Z"
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z"
     },
     "prerequisites": {
       "main_building": 0,
@@ -20942,8 +20942,8 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "date_start": "2024-06-14T09:00:00Z",
-      "date_end": "2024-07-14T22:00:00Z"
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z"
     },
     "prerequisites": {
       "main_building": 6,
@@ -20979,8 +20979,8 @@
         "C-3"
       ],
       "filter_id": "ambulance_station_missions",
-      "date_start": "2024-06-14T09:00:00Z",
-      "date_end": "2024-07-14T22:00:00Z",
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         1
       ],
@@ -21023,8 +21023,8 @@
         "C-3"
       ],
       "filter_id": "ambulance_station_missions",
-      "date_start": "2024-06-14T09:00:00Z",
-      "date_end": "2024-07-14T22:00:00Z",
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         1
       ],
@@ -21063,8 +21063,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2024-06-14T09:00:00Z",
-      "date_end": "2024-07-14T22:00:00Z"
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z"
     },
     "prerequisites": {
       "main_building": 0,
@@ -21097,8 +21097,8 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "date_start": "2024-06-14T09:00:00Z",
-      "date_end": "2024-07-14T22:00:00Z"
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z"
     },
     "prerequisites": {
       "main_building": 6,
@@ -21137,8 +21137,8 @@
         "C-3"
       ],
       "filter_id": "ambulance_station_missions",
-      "date_start": "2024-06-14T09:00:00Z",
-      "date_end": "2024-07-14T22:00:00Z",
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -21183,8 +21183,8 @@
         "C-3"
       ],
       "filter_id": "ambulance_station_missions",
-      "date_start": "2024-06-14T09:00:00Z",
-      "date_end": "2024-07-14T22:00:00Z",
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -21225,8 +21225,8 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "date_start": "2024-06-14T09:00:00Z",
-      "date_end": "2024-07-14T22:00:00Z"
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z"
     },
     "prerequisites": {
       "main_building": 6,
@@ -21260,8 +21260,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2024-06-14T09:00:00Z",
-      "date_end": "2024-07-14T22:00:00Z"
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z"
     },
     "prerequisites": {
       "main_building": 0,
@@ -41525,8 +41525,8 @@
       "max_possible_prisoners": 5,
       "filter_id": "police_station_missions",
       "allow_without_poi": true,
-      "date_start": "2024-06-14T09:00:00Z",
-      "date_end": "2024-07-14T22:00:00Z",
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z",
       "personnel_educations": {
         "Level 2 Public Order Officer": 6,
         "Police Sergeant": 1
@@ -41571,8 +41571,8 @@
         "C-1"
       ],
       "filter_id": "ambulance_station_missions",
-      "date_start": "2024-06-14T09:00:00Z",
-      "date_end": "2024-07-14T22:00:00Z",
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -41617,8 +41617,8 @@
     "additional": {
       "filter_id": "police_station_missions",
       "allow_without_poi": true,
-      "date_start": "2024-06-14T09:00:00Z",
-      "date_end": "2024-07-14T22:00:00Z",
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z",
       "personnel_educations": {
         "Level 2 Public Order Officer": 6,
         "Police Sergeant": 1
@@ -41674,8 +41674,8 @@
       ],
       "filter_id": "firehouse_missions",
       "allow_without_poi": true,
-      "date_start": "2024-06-14T09:00:00Z",
-      "date_end": "2024-07-14T22:00:00Z",
+      "date_start": "2026-06-11T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],

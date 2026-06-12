@@ -162755,7 +162755,7 @@
   },
   {
     "id": "849",
-    "name": "EM Risikospiel Überwachung",
+    "name": "Überwachung Risiko-Länderspiel",
     "place": "Stadion",
     "place_array": [
       "Stadion"
@@ -225766,6 +225766,7 @@
       "police_stations": 4,
       "guard_dog_count": 1,
       "criminal_investigation_count": 1,
+      "police_motorcycle": 2,
       "highway_police": 4
     },
     "overlay_index": null,
@@ -225807,6 +225808,7 @@
       "police_stations": 4,
       "guard_dog_count": 1,
       "criminal_investigation_count": 1,
+      "police_motorcycle": 2,
       "energy_supply": 1,
       "highway_police": 4
     },
@@ -225849,6 +225851,7 @@
       "police_stations": 4,
       "guard_dog_count": 1,
       "criminal_investigation_count": 1,
+      "police_motorcycle": 2,
       "care_service": 1,
       "highway_police": 4
     },
@@ -225892,6 +225895,7 @@
       "police_stations": 4,
       "guard_dog_count": 1,
       "criminal_investigation_count": 1,
+      "police_motorcycle": 2,
       "energy_supply": 1,
       "care_service": 1,
       "highway_police": 4
@@ -225934,6 +225938,7 @@
       "police_stations": 4,
       "guard_dog_count": 1,
       "criminal_investigation_count": 1,
+      "police_motorcycle": 2,
       "highway_police": 4
     },
     "overlay_index": null,
@@ -225975,6 +225980,7 @@
       "police_stations": 4,
       "guard_dog_count": 1,
       "criminal_investigation_count": 1,
+      "police_motorcycle": 2,
       "energy_supply": 1,
       "highway_police": 4
     },
@@ -226017,6 +226023,7 @@
       "police_stations": 4,
       "guard_dog_count": 1,
       "criminal_investigation_count": 1,
+      "police_motorcycle": 2,
       "care_service": 1,
       "highway_police": 4
     },
@@ -226060,6 +226067,7 @@
       "police_stations": 4,
       "guard_dog_count": 1,
       "criminal_investigation_count": 1,
+      "police_motorcycle": 2,
       "energy_supply": 1,
       "care_service": 1,
       "highway_police": 4

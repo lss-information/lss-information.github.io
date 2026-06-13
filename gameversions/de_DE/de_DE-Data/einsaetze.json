@@ -226809,5 +226809,143 @@
     "mission_categories": [
       "police"
     ]
+  },
+  {
+    "id": "1004",
+    "name": "Ausrastenden Trainer unter Kontrolle bringen",
+    "place": "Stadion",
+    "place_array": [
+      "Stadion"
+    ],
+    "average_credits": 2320,
+    "generated_by": "",
+    "icons": [
+      "/images/soccer_gruen.png",
+      "/images/soccer_gelb.png",
+      "/images/soccer_rot.png"
+    ],
+    "requirements": {
+      "fukw": 1,
+      "mek": 4,
+      "police_cars": 2
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 30
+    },
+    "additional": {
+      "possible_patient": 1,
+      "filter_id": "police_station_missions",
+      "patient_at_end_of_mission": true,
+      "date_start": "2026-06-12T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z",
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "mek": 2,
+      "rescue_stations": 1,
+      "police_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1004,
+    "additive_overlays": "",
+    "mission_categories": [
+      "police"
+    ]
+  },
+  {
+    "id": "1005",
+    "name": "Zusammenbruch durch Niederlage",
+    "place": "Stadion",
+    "place_array": [
+      "Stadion"
+    ],
+    "average_credits": null,
+    "generated_by": "",
+    "icons": [
+      "/images/soccer_gruen.png",
+      "/images/soccer_gelb.png",
+      "/images/soccer_rot.png"
+    ],
+    "requirements": {},
+    "chances": {
+      "nef": 10,
+      "patient_other_treatment": 5,
+      "patient_transport": 30
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_allow_first_responder_chance": 60,
+      "date_start": "2026-06-12T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z",
+      "patient_specialization_ids": [
+        0,
+        1,
+        4,
+        7
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere",
+        "Allgemeine Chirurgie",
+        "Unfallchirurgie",
+        "Kardiologie"
+      ],
+      "patient_specializations": "Allgemeine Innere, Allgemeine Chirurgie, Unfallchirurgie, Kardiologie"
+    },
+    "prerequisites": {
+      "main_building": 2,
+      "rescue_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1005,
+    "additive_overlays": "",
+    "mission_categories": [
+      "ambulance"
+    ]
+  },
+  {
+    "id": "1006",
+    "name": "Randalierende Fußballfans",
+    "place": "Stadion",
+    "place_array": [
+      "Stadion"
+    ],
+    "average_credits": 1740,
+    "generated_by": "",
+    "icons": [
+      "/images/soccer_gruen.png",
+      "/images/soccer_gelb.png",
+      "/images/soccer_rot.png"
+    ],
+    "requirements": {
+      "k9": 1,
+      "police_cars": 5
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions",
+      "date_start": "2026-06-12T09:00:00Z",
+      "date_end": "2026-07-19T22:00:00Z"
+    },
+    "prerequisites": {
+      "main_building": 6,
+      "police_stations": 3,
+      "guard_dog_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1006,
+    "additive_overlays": "",
+    "mission_categories": [
+      "police"
+    ]
   }
 ]

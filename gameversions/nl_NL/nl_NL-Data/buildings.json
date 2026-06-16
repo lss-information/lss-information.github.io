@@ -1825,7 +1825,7 @@
         "coins": 15,
         "duration": "5 Dagen",
         "isVehicleExtension": true,
-        "unlocksVehicleTypes": [110, 111, 112]
+        "unlocksVehicleTypes": [113, 114, 115, 116]
       },
       {
         "caption": "Defensie Duikgroep",

@@ -1535,7 +1535,8 @@
     "additive_overlays": "",
     "mission_categories": [
       "fire",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -1581,7 +1582,8 @@
     "additive_overlays": "a",
     "mission_categories": [
       "fire",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -1626,7 +1628,8 @@
     "additive_overlays": "b",
     "mission_categories": [
       "fire",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -1674,7 +1677,8 @@
     "additive_overlays": "ab",
     "mission_categories": [
       "fire",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -4589,7 +4593,9 @@
     "additive_overlays": "",
     "mission_categories": [
       "fire",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -4648,7 +4654,9 @@
     "additive_overlays": "a",
     "mission_categories": [
       "fire",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -4707,7 +4715,9 @@
     "additive_overlays": "b",
     "mission_categories": [
       "fire",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -4766,7 +4776,9 @@
     "additive_overlays": "c",
     "mission_categories": [
       "fire",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -4827,7 +4839,9 @@
     "additive_overlays": "ab",
     "mission_categories": [
       "fire",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -4888,7 +4902,9 @@
     "additive_overlays": "ac",
     "mission_categories": [
       "fire",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -4948,7 +4964,9 @@
     "additive_overlays": "bc",
     "mission_categories": [
       "fire",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -5010,7 +5028,9 @@
     "additive_overlays": "abc",
     "mission_categories": [
       "fire",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -17325,7 +17345,9 @@
     "additive_overlays": "",
     "mission_categories": [
       "fire",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -17387,7 +17409,9 @@
     "additive_overlays": "a",
     "mission_categories": [
       "fire",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -17449,7 +17473,9 @@
     "additive_overlays": "b",
     "mission_categories": [
       "fire",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -17511,7 +17537,9 @@
     "additive_overlays": "c",
     "mission_categories": [
       "fire",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -17575,7 +17603,9 @@
     "additive_overlays": "ab",
     "mission_categories": [
       "fire",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -17639,7 +17669,9 @@
     "additive_overlays": "ac",
     "mission_categories": [
       "fire",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -17702,7 +17734,9 @@
     "additive_overlays": "bc",
     "mission_categories": [
       "fire",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -17767,7 +17801,9 @@
     "additive_overlays": "abc",
     "mission_categories": [
       "fire",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -43563,7 +43599,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -43622,7 +43659,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -45288,7 +45326,9 @@
     "additive_overlays": "",
     "mission_categories": [
       "fire",
-      "rural"
+      "rural",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -45344,7 +45384,9 @@
     "additive_overlays": "a",
     "mission_categories": [
       "fire",
-      "rural"
+      "rural",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -45400,7 +45442,9 @@
     "additive_overlays": "b",
     "mission_categories": [
       "fire",
-      "rural"
+      "rural",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -45456,7 +45500,9 @@
     "additive_overlays": "c",
     "mission_categories": [
       "fire",
-      "rural"
+      "rural",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -45514,7 +45560,9 @@
     "additive_overlays": "ab",
     "mission_categories": [
       "fire",
-      "rural"
+      "rural",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -45572,7 +45620,9 @@
     "additive_overlays": "ac",
     "mission_categories": [
       "fire",
-      "rural"
+      "rural",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -45629,7 +45679,9 @@
     "additive_overlays": "bc",
     "mission_categories": [
       "fire",
-      "rural"
+      "rural",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -45688,7 +45740,9 @@
     "additive_overlays": "abc",
     "mission_categories": [
       "fire",
-      "rural"
+      "rural",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -53553,7 +53607,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -53631,7 +53686,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -53711,7 +53767,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -53788,7 +53845,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -53866,7 +53924,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -53944,7 +54003,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -54022,7 +54082,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -54104,7 +54165,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -54183,7 +54245,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -54263,7 +54326,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -54343,7 +54407,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -54423,7 +54488,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -54504,7 +54570,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -54586,7 +54653,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -54668,7 +54736,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -54750,7 +54819,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -54829,7 +54899,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -54908,7 +54979,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -54987,7 +55059,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -55066,7 +55139,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -55145,7 +55219,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -55224,7 +55299,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -55307,7 +55383,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -55391,7 +55468,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -55475,7 +55553,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -55559,7 +55638,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -55640,7 +55720,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -55721,7 +55802,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -55802,7 +55884,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -55883,7 +55966,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -55964,7 +56048,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -56045,7 +56130,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -56128,7 +56214,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -56211,7 +56298,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -56294,7 +56382,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -56377,7 +56466,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -56460,7 +56550,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -56543,7 +56634,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -56623,7 +56715,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -56703,7 +56796,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -56783,7 +56877,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -56863,7 +56958,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -56948,7 +57044,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -57033,7 +57130,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -57118,7 +57216,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -57203,7 +57302,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -57288,7 +57388,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -57373,7 +57474,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -57455,7 +57557,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -57537,7 +57640,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -57619,7 +57723,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -57701,7 +57806,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -57785,7 +57891,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -57869,7 +57976,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -57953,7 +58061,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -58037,7 +58146,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -58118,7 +58228,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -58204,7 +58315,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -58290,7 +58402,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -58376,7 +58489,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -58462,7 +58576,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -58545,7 +58660,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -58630,7 +58746,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -58717,7 +58834,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -62119,7 +62237,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -62195,7 +62314,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -62273,7 +62393,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -62348,7 +62469,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -62424,7 +62546,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -62500,7 +62623,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -62580,7 +62704,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -62657,7 +62782,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -62735,7 +62861,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -62813,7 +62940,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -62892,7 +63020,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -62972,7 +63101,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -63052,7 +63182,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -63129,7 +63260,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -63206,7 +63338,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -63283,7 +63416,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -63364,7 +63498,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -63446,7 +63581,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -63528,7 +63664,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -63607,7 +63744,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -63686,7 +63824,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -63765,7 +63904,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -63846,7 +63986,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -63927,7 +64068,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -64008,7 +64150,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -64086,7 +64229,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -64169,7 +64313,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -64252,7 +64397,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -64335,7 +64481,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -64415,7 +64562,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -64497,7 +64645,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -64581,7 +64730,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -71935,7 +72085,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -72008,7 +72159,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -72083,7 +72235,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -72155,7 +72308,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -72228,7 +72382,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -72305,7 +72460,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -72379,7 +72535,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -72454,7 +72611,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -72530,7 +72688,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -72607,7 +72766,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -72681,7 +72841,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -72759,7 +72920,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -72838,7 +73000,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -72914,7 +73077,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -72992,7 +73156,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -73072,7 +73237,8 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization"
     ]
   },
   {
@@ -73274,7 +73440,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -73351,7 +73519,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -73430,7 +73600,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -73506,7 +73678,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -73583,7 +73757,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -73660,7 +73836,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -73737,7 +73915,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -73814,7 +73994,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -73891,7 +74073,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -73972,7 +74156,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -74050,7 +74236,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -74129,7 +74317,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -74208,7 +74398,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -74287,7 +74479,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -74366,7 +74560,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -74445,7 +74641,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -74525,7 +74723,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -74606,7 +74806,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -74687,7 +74889,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -74768,7 +74972,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -74849,7 +75055,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -74930,7 +75138,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -75008,7 +75218,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -75086,7 +75298,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -75164,7 +75378,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -75242,7 +75458,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -75320,7 +75538,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -75399,7 +75619,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -75478,7 +75700,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -75557,7 +75781,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -75635,7 +75861,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -75713,7 +75941,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -75791,7 +76021,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -75870,7 +76102,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -75948,7 +76182,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -76027,7 +76263,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -76106,7 +76344,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -76188,7 +76428,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -76271,7 +76513,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -76354,7 +76598,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -76437,7 +76683,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -76520,7 +76768,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -76603,7 +76853,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -76683,7 +76935,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -76763,7 +77017,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -76843,7 +77099,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -76923,7 +77181,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -77003,7 +77263,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -77084,7 +77346,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -77165,7 +77429,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -77246,7 +77512,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -77326,7 +77594,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -77406,7 +77676,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -77486,7 +77758,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -77567,7 +77841,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -77647,7 +77923,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -77728,7 +78006,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -77809,7 +78089,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -77891,7 +78173,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -77973,7 +78257,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -78055,7 +78341,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -78137,7 +78425,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -78219,7 +78509,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -78302,7 +78594,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -78385,7 +78679,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -78468,7 +78764,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -78550,7 +78848,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -78632,7 +78932,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -78714,7 +79016,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -78797,7 +79101,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -78879,7 +79185,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -78962,7 +79270,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -79045,7 +79355,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -79125,7 +79437,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -79205,7 +79519,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -79285,7 +79601,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -79364,7 +79682,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -79443,7 +79763,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -79522,7 +79844,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -79602,7 +79926,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -79681,7 +80007,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -79761,7 +80089,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -79841,7 +80171,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -79921,7 +80253,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -80001,7 +80335,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -80081,7 +80417,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -80161,7 +80499,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -80241,7 +80581,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -80321,7 +80663,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -80400,7 +80744,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -80480,7 +80826,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -80560,7 +80908,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -80640,7 +80990,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -80724,7 +81076,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -80808,7 +81162,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -80892,7 +81248,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -80976,7 +81334,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -81060,7 +81420,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -81145,7 +81507,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -81230,7 +81594,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -81315,7 +81681,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -81399,7 +81767,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -81483,7 +81853,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -81567,7 +81939,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -81652,7 +82026,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -81736,7 +82112,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -81821,7 +82199,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -81906,7 +82286,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -81988,7 +82370,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -82070,7 +82454,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -82152,7 +82538,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -82233,7 +82621,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -82314,7 +82704,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -82395,7 +82787,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -82477,7 +82871,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -82558,7 +82954,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -82640,7 +83038,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -82722,7 +83122,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -82804,7 +83206,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -82886,7 +83290,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -82968,7 +83374,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -83050,7 +83458,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -83132,7 +83542,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -83214,7 +83626,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -83295,7 +83709,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -83377,7 +83793,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -83459,7 +83877,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -83541,7 +83961,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -83625,7 +84047,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -83709,7 +84133,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -83793,7 +84219,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -83876,7 +84304,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -83959,7 +84389,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -84042,7 +84474,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -84126,7 +84560,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -84209,7 +84645,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -84293,7 +84731,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -84377,7 +84817,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -84461,7 +84903,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -84545,7 +84989,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -84629,7 +85075,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -84713,7 +85161,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -84797,7 +85247,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -84881,7 +85333,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -84964,7 +85418,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -85048,7 +85504,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -85132,7 +85590,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -85216,7 +85676,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -85297,7 +85759,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -85378,7 +85842,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -85459,7 +85925,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -85540,7 +86008,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -85621,7 +86091,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -85702,7 +86174,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -85782,7 +86256,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -85863,7 +86339,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -85944,7 +86422,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -86025,7 +86505,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -86106,7 +86588,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -86187,7 +86671,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -86268,7 +86754,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -86349,7 +86837,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -86430,7 +86920,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -86516,7 +87008,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -86602,7 +87096,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -86688,7 +87184,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -86773,7 +87271,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -86858,7 +87358,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -86943,7 +87445,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -87029,7 +87533,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -87114,7 +87620,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -87200,7 +87708,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -87286,7 +87796,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -87372,7 +87884,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -87458,7 +87972,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -87544,7 +88060,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -87630,7 +88148,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -87716,7 +88236,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -87802,7 +88324,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -87887,7 +88411,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -87973,7 +88499,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -88059,7 +88587,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -88145,7 +88675,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -88228,7 +88760,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -88311,7 +88845,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -88394,7 +88930,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -88477,7 +89015,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -88560,7 +89100,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -88643,7 +89185,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -88725,7 +89269,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -88808,7 +89354,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -88891,7 +89439,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -88974,7 +89524,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -89057,7 +89609,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -89140,7 +89694,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -89223,7 +89779,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -89306,7 +89864,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -89389,7 +89949,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -89474,7 +90036,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -89559,7 +90123,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -89644,7 +90210,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -89729,7 +90297,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -89814,7 +90384,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -89899,7 +90471,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -89983,7 +90557,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -90068,7 +90644,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -90153,7 +90731,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -90238,7 +90818,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -90323,7 +90905,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -90408,7 +90992,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -90493,7 +91079,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -90578,7 +91166,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -90663,7 +91253,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -90745,7 +91337,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -90827,7 +91421,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -90909,7 +91505,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -90991,7 +91589,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -91073,7 +91673,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -91155,7 +91757,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -91242,7 +91846,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -91329,7 +91935,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -91416,7 +92024,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -91503,7 +92113,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -91590,7 +92202,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -91677,7 +92291,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -91763,7 +92379,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -91850,7 +92468,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -91937,7 +92557,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -92024,7 +92646,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -92111,7 +92735,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -92198,7 +92824,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -92285,7 +92913,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -92372,7 +93002,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -92459,7 +93091,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -92543,7 +93177,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -92627,7 +93263,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -92711,7 +93349,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -92795,7 +93435,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -92879,7 +93521,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -92963,7 +93607,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -93049,7 +93695,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -93135,7 +93783,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -93221,7 +93871,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -93307,7 +93959,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -93393,7 +94047,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -93479,7 +94135,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -93562,7 +94220,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -93650,7 +94310,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -93738,7 +94400,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -93826,7 +94490,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -93914,7 +94580,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -94002,7 +94670,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -94090,7 +94760,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -94175,7 +94847,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -94262,7 +94936,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {
@@ -94351,7 +95027,9 @@
     "mission_categories": [
       "fire",
       "fire_support_specialization",
-      "urban"
+      "urban",
+      "industrial_response_specialization",
+      "hazard_response_specialization"
     ]
   },
   {

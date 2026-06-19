@@ -32595,8 +32595,8 @@
     "base_mission_id": 716,
     "additive_overlays": "",
     "mission_categories": [
-      "fire",
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -32653,8 +32653,8 @@
     "base_mission_id": 717,
     "additive_overlays": "",
     "mission_categories": [
-      "fire",
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -32711,8 +32711,8 @@
     "base_mission_id": 718,
     "additive_overlays": "",
     "mission_categories": [
-      "fire",
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -32756,8 +32756,8 @@
     "base_mission_id": 719,
     "additive_overlays": "",
     "mission_categories": [
-      "fire",
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -32906,8 +32906,8 @@
     "base_mission_id": 722,
     "additive_overlays": "",
     "mission_categories": [
-      "fire",
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -32965,8 +32965,8 @@
     "base_mission_id": 723,
     "additive_overlays": "",
     "mission_categories": [
-      "fire",
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -33026,8 +33026,8 @@
     "base_mission_id": 723,
     "additive_overlays": "a",
     "mission_categories": [
-      "fire",
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -33076,8 +33076,8 @@
     "base_mission_id": 724,
     "additive_overlays": "",
     "mission_categories": [
-      "fire",
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   },
@@ -33164,8 +33164,8 @@
     "base_mission_id": 726,
     "additive_overlays": "",
     "mission_categories": [
-      "fire",
       "forestry",
+      "forestry_specialization",
       "rural"
     ]
   }

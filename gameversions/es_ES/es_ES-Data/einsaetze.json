@@ -7146,8 +7146,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-06-27T09:00:00Z",
-      "date_end": "2025-09-01T09:00:00Z",
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-21T09:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -7188,8 +7188,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-06-27T09:00:00Z",
-      "date_end": "2025-09-01T09:00:00Z",
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-21T09:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -7230,8 +7230,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-06-27T09:00:00Z",
-      "date_end": "2025-09-01T09:00:00Z",
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-21T09:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -7272,8 +7272,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-06-27T09:00:00Z",
-      "date_end": "2025-09-01T09:00:00Z",
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-21T09:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -7311,8 +7311,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2025-06-27T09:00:00Z",
-      "date_end": "2025-09-01T09:00:00Z"
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-21T09:00:00Z"
     },
     "prerequisites": {
       "main_building": 0,
@@ -13474,45 +13474,6 @@
     ]
   },
   {
-    "id": "300",
-    "name": "Auxiliar un campeonato de natación",
-    "place": "Lago\nRío",
-    "place_array": [
-      "Lago",
-      "Río"
-    ],
-    "average_credits": 2000,
-    "generated_by": "",
-    "icons": [
-      "/images/clock_gruen.png",
-      "/images/clock_gelb.png",
-      "/images/clock_rot.png"
-    ],
-    "requirements": {
-      "ambulances": 2
-    },
-    "chances": {},
-    "additional": {
-      "duration_text": "2 horas",
-      "duration": 7200,
-      "guard_mission": true,
-      "filter_id": "ambulance_station_missions",
-      "allow_ktw_instead_of_rtw": true,
-      "date_start": "2025-06-27T09:00:00Z",
-      "date_end": "2025-09-01T09:00:00Z"
-    },
-    "prerequisites": {
-      "main_building": 2,
-      "rescue_stations": 2
-    },
-    "overlay_index": null,
-    "base_mission_id": 300,
-    "additive_overlays": "",
-    "mission_categories": [
-      "ambulance"
-    ]
-  },
-  {
     "id": "301",
     "name": "Carrito de helados contaminado",
     "place": "",
@@ -13535,8 +13496,8 @@
       "possible_patient": 4,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-06-27T09:00:00Z",
-      "date_end": "2025-09-01T09:00:00Z",
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-21T09:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -13579,8 +13540,8 @@
     "additional": {
       "max_possible_prisoners": 1,
       "filter_id": "firehouse_missions",
-      "date_start": "2025-06-27T09:00:00Z",
-      "date_end": "2025-09-01T09:00:00Z"
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-21T09:00:00Z"
     },
     "prerequisites": {
       "main_building": 0,
@@ -26232,8 +26193,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2025-06-27T09:00:00Z",
-      "date_end": "2025-09-01T09:00:00Z"
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-21T09:00:00Z"
     },
     "prerequisites": {
       "main_building": 0,
@@ -26277,8 +26238,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "firehouse_missions",
-      "date_start": "2025-06-27T09:00:00Z",
-      "date_end": "2025-09-01T09:00:00Z",
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-21T09:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -26322,8 +26283,8 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "date_start": "2025-06-27T09:00:00Z",
-      "date_end": "2025-09-01T09:00:00Z"
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-21T09:00:00Z"
     },
     "prerequisites": {
       "main_building": 6,
@@ -26358,8 +26319,8 @@
       "possible_patient": 1,
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
-      "date_start": "2025-06-27T09:00:00Z",
-      "date_end": "2025-09-01T09:00:00Z",
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-21T09:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -26397,8 +26358,8 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "date_start": "2025-06-27T09:00:00Z",
-      "date_end": "2025-09-01T09:00:00Z"
+      "date_start": "2026-06-26T09:00:00Z",
+      "date_end": "2026-08-21T09:00:00Z"
     },
     "prerequisites": {
       "main_building": 6,

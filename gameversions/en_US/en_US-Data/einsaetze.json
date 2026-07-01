@@ -76129,15 +76129,16 @@
     "prerequisites": {
       "main_building": 0,
       "rescue_stations": 3,
-      "police_stations": 3,
-      "fire_stations": 5
+      "police_stations": 7,
+      "brush_extension": 2,
+      "fire_stations": 7
     },
     "overlay_index": null,
     "base_mission_id": 1153,
     "additive_overlays": "",
     "mission_categories": [
       "fire",
-      "fire_support_specialization"
+      "forestry"
     ]
   },
   {

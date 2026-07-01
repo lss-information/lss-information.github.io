@@ -162850,8 +162850,6 @@
       "possible_patient_min": 10,
       "filter_id": "firehouse_missions",
       "allow_without_poi": true,
-      "date_start": "2026-06-11T09:00:00Z",
-      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -162907,8 +162905,6 @@
       "possible_patient_min": 10,
       "filter_id": "firehouse_missions",
       "allow_without_poi": true,
-      "date_start": "2026-06-11T09:00:00Z",
-      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -162966,8 +162962,6 @@
       "possible_patient_min": 10,
       "filter_id": "firehouse_missions",
       "allow_without_poi": true,
-      "date_start": "2026-06-11T09:00:00Z",
-      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -163024,8 +163018,6 @@
       "possible_patient_min": 10,
       "filter_id": "firehouse_missions",
       "allow_without_poi": true,
-      "date_start": "2026-06-11T09:00:00Z",
-      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -163083,8 +163075,6 @@
       "care_affected_people_min": 40,
       "care_affected_people_max": 80,
       "allow_without_poi": true,
-      "date_start": "2026-06-11T09:00:00Z",
-      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -163143,8 +163133,6 @@
       "possible_patient_min": 10,
       "filter_id": "firehouse_missions",
       "allow_without_poi": true,
-      "date_start": "2026-06-11T09:00:00Z",
-      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -163203,8 +163191,6 @@
       "possible_patient_min": 10,
       "filter_id": "firehouse_missions",
       "allow_without_poi": true,
-      "date_start": "2026-06-11T09:00:00Z",
-      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -163264,8 +163250,6 @@
       "care_affected_people_min": 40,
       "care_affected_people_max": 80,
       "allow_without_poi": true,
-      "date_start": "2026-06-11T09:00:00Z",
-      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -163325,8 +163309,6 @@
       "possible_patient_min": 10,
       "filter_id": "firehouse_missions",
       "allow_without_poi": true,
-      "date_start": "2026-06-11T09:00:00Z",
-      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -163387,8 +163369,6 @@
       "care_affected_people_min": 40,
       "care_affected_people_max": 80,
       "allow_without_poi": true,
-      "date_start": "2026-06-11T09:00:00Z",
-      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -163448,8 +163428,6 @@
       "care_affected_people_min": 40,
       "care_affected_people_max": 80,
       "allow_without_poi": true,
-      "date_start": "2026-06-11T09:00:00Z",
-      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -163510,8 +163488,6 @@
       "possible_patient_min": 10,
       "filter_id": "firehouse_missions",
       "allow_without_poi": true,
-      "date_start": "2026-06-11T09:00:00Z",
-      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -163574,8 +163550,6 @@
       "care_affected_people_min": 40,
       "care_affected_people_max": 80,
       "allow_without_poi": true,
-      "date_start": "2026-06-11T09:00:00Z",
-      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -163637,8 +163611,6 @@
       "care_affected_people_min": 40,
       "care_affected_people_max": 80,
       "allow_without_poi": true,
-      "date_start": "2026-06-11T09:00:00Z",
-      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -163701,8 +163673,6 @@
       "care_affected_people_min": 40,
       "care_affected_people_max": 80,
       "allow_without_poi": true,
-      "date_start": "2026-06-11T09:00:00Z",
-      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],
@@ -163766,8 +163736,6 @@
       "care_affected_people_min": 40,
       "care_affected_people_max": 80,
       "allow_without_poi": true,
-      "date_start": "2026-06-11T09:00:00Z",
-      "date_end": "2026-07-19T22:00:00Z",
       "patient_specialization_ids": [
         0
       ],

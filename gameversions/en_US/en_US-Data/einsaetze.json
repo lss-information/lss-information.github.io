@@ -24470,7 +24470,7 @@
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
       "date_start": "2026-03-20T10:00:00Z",
-      "date_end": "2026-10-07T23:59:59-04:00"
+      "date_end": "2026-04-07T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 5,
@@ -24505,7 +24505,7 @@
       "max_possible_prisoners": 1,
       "filter_id": "police_station_missions",
       "date_start": "2026-03-20T10:00:00Z",
-      "date_end": "2026-10-07T23:59:59-04:00"
+      "date_end": "2026-04-07T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 5,
@@ -24540,7 +24540,7 @@
     "additional": {
       "filter_id": "firehouse_missions",
       "date_start": "2026-03-20T10:00:00Z",
-      "date_end": "2026-10-07T23:59:59-04:00"
+      "date_end": "2026-04-07T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -24580,7 +24580,7 @@
         "77-B-1"
       ],
       "date_start": "2026-03-20T10:00:00Z",
-      "date_end": "2026-10-07T23:59:59-04:00",
+      "date_end": "2026-04-07T23:59:59-04:00",
       "patient_specialization_ids": [
         4
       ],
@@ -24620,7 +24620,7 @@
     "additional": {
       "filter_id": "firehouse_missions",
       "date_start": "2026-03-20T10:00:00Z",
-      "date_end": "2026-10-07T23:59:59-04:00"
+      "date_end": "2026-04-07T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -24657,7 +24657,7 @@
     "additional": {
       "filter_id": "firehouse_missions",
       "date_start": "2026-03-20T10:00:00Z",
-      "date_end": "2026-10-07T23:59:59-04:00"
+      "date_end": "2026-04-07T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -24690,7 +24690,7 @@
     "additional": {
       "filter_id": "firehouse_missions",
       "date_start": "2026-03-20T10:00:00Z",
-      "date_end": "2026-10-07T23:59:59-04:00"
+      "date_end": "2026-04-07T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -24730,7 +24730,7 @@
       "guard_mission": true,
       "filter_id": "police_station_missions",
       "date_start": "2026-03-20T10:00:00Z",
-      "date_end": "2026-10-07T23:59:59-04:00"
+      "date_end": "2026-04-07T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 5,
@@ -24774,7 +24774,7 @@
         "77-D-2"
       ],
       "date_start": "2026-03-20T10:00:00Z",
-      "date_end": "2026-10-07T23:59:59-04:00",
+      "date_end": "2026-04-07T23:59:59-04:00",
       "patient_specialization_ids": [
         4
       ],
@@ -24814,7 +24814,7 @@
     "additional": {
       "filter_id": "police_station_missions",
       "date_start": "2026-03-20T10:00:00Z",
-      "date_end": "2026-10-07T23:59:59-04:00"
+      "date_end": "2026-04-07T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 5,
@@ -24851,7 +24851,7 @@
     "additional": {
       "filter_id": "firehouse_missions",
       "date_start": "2026-03-20T10:00:00Z",
-      "date_end": "2026-10-07T23:59:59-04:00"
+      "date_end": "2026-04-07T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -31182,8 +31182,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2025-07-04T14:00:00Z",
-      "date_end": "2025-07-06T23:59:59-04:00"
+      "date_start": "2026-07-03T14:00:00Z",
+      "date_end": "2026-07-05T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -31215,8 +31215,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2025-07-04T14:00:00Z",
-      "date_end": "2025-07-06T23:59:59-04:00"
+      "date_start": "2026-07-03T14:00:00Z",
+      "date_end": "2026-07-05T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -31248,8 +31248,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2025-07-04T14:00:00Z",
-      "date_end": "2025-07-06T23:59:59-04:00"
+      "date_start": "2026-07-03T14:00:00Z",
+      "date_end": "2026-07-05T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -31292,8 +31292,8 @@
         "57-D-8",
         "57-B-2"
       ],
-      "date_start": "2025-07-04T14:00:00Z",
-      "date_end": "2025-07-06T23:59:59-04:00",
+      "date_start": "2026-07-03T14:00:00Z",
+      "date_end": "2026-07-05T23:59:59-04:00",
       "patient_specialization_ids": [
         0
       ],
@@ -31335,8 +31335,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2025-07-04T14:00:00Z",
-      "date_end": "2025-07-06T23:59:59-04:00"
+      "date_start": "2026-07-03T14:00:00Z",
+      "date_end": "2026-07-05T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -31371,8 +31371,8 @@
     },
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2025-07-04T14:00:00Z",
-      "date_end": "2025-07-06T23:59:59-04:00"
+      "date_start": "2026-07-03T14:00:00Z",
+      "date_end": "2026-07-05T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -31405,8 +31405,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2025-07-04T14:00:00Z",
-      "date_end": "2025-07-06T23:59:59-04:00"
+      "date_start": "2026-07-03T14:00:00Z",
+      "date_end": "2026-07-05T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -31437,8 +31437,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2025-07-04T14:00:00Z",
-      "date_end": "2025-07-06T23:59:59-04:00"
+      "date_start": "2026-07-03T14:00:00Z",
+      "date_end": "2026-07-05T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -31488,8 +31488,8 @@
         "69-E-7",
         "69-E-8"
       ],
-      "date_start": "2025-07-04T14:00:00Z",
-      "date_end": "2025-07-06T23:59:59-04:00",
+      "date_start": "2026-07-03T14:00:00Z",
+      "date_end": "2026-07-05T23:59:59-04:00",
       "patient_specialization_ids": [
         0
       ],
@@ -31529,8 +31529,8 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "date_start": "2025-07-04T14:00:00Z",
-      "date_end": "2025-07-06T23:59:59-04:00"
+      "date_start": "2026-07-03T14:00:00Z",
+      "date_end": "2026-07-05T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 5,
@@ -31561,8 +31561,8 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "date_start": "2025-07-04T14:00:00Z",
-      "date_end": "2025-07-06T23:59:59-04:00"
+      "date_start": "2026-07-03T14:00:00Z",
+      "date_end": "2026-07-05T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 5,
@@ -31598,8 +31598,8 @@
       "patient_us_code_possible": [
         "57-B-2"
       ],
-      "date_start": "2025-07-04T14:00:00Z",
-      "date_end": "2025-07-06T23:59:59-04:00",
+      "date_start": "2026-07-03T14:00:00Z",
+      "date_end": "2026-07-05T23:59:59-04:00",
       "patient_specialization_ids": [
         4
       ],
@@ -45912,7 +45912,7 @@
     "additional": {
       "filter_id": "firehouse_missions",
       "date_start": "2026-03-20T10:00:00Z",
-      "date_end": "2026-10-07T23:59:59-04:00"
+      "date_end": "2026-04-07T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -45957,7 +45957,7 @@
         "15-D-8"
       ],
       "date_start": "2026-03-20T10:00:00Z",
-      "date_end": "2026-10-07T23:59:59-04:00",
+      "date_end": "2026-04-07T23:59:59-04:00",
       "patient_specialization_ids": [
         0
       ],
@@ -46000,7 +46000,7 @@
     "additional": {
       "filter_id": "firehouse_missions",
       "date_start": "2026-03-20T10:00:00Z",
-      "date_end": "2026-10-07T23:59:59-04:00"
+      "date_end": "2026-04-07T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -46039,7 +46039,7 @@
     "additional": {
       "filter_id": "water_watch_missions",
       "date_start": "2026-03-20T10:00:00Z",
-      "date_end": "2026-10-07T23:59:59-04:00"
+      "date_end": "2026-04-07T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": -1,
@@ -70286,7 +70286,7 @@
         "7-C-1F"
       ],
       "date_start": "2026-03-20T10:00:00Z",
-      "date_end": "2026-10-07T23:59:59-04:00",
+      "date_end": "2026-04-07T23:59:59-04:00",
       "patient_specialization_ids": [
         0
       ],
@@ -70345,7 +70345,7 @@
         "30-A-1"
       ],
       "date_start": "2026-03-20T10:00:00Z",
-      "date_end": "2026-10-07T23:59:59-04:00",
+      "date_end": "2026-04-07T23:59:59-04:00",
       "patient_specialization_ids": [
         0
       ],
@@ -74071,7 +74071,7 @@
         "77-D-10"
       ],
       "date_start": "2026-03-23T10:00:00Z",
-      "date_end": "2026-10-07T23:59:59-04:00",
+      "date_end": "2026-04-07T23:59:59-04:00",
       "patient_specialization_ids": [
         4
       ],
@@ -74113,7 +74113,7 @@
     "additional": {
       "filter_id": "police_station_missions",
       "date_start": "2026-03-23T10:00:00Z",
-      "date_end": "2026-10-07T23:59:59-04:00"
+      "date_end": "2026-04-07T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 5,
@@ -76082,6 +76082,255 @@
     "additive_overlays": "",
     "mission_categories": [
       "police"
+    ]
+  },
+  {
+    "id": "1153",
+    "name": "Fire in inaccessible terrain",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "brush_truck": 5,
+      "battalion_chief_vehicles": 2,
+      "water_tankers": 1,
+      "heavy_rescue_vehicles": 1,
+      "atv_carrier": 1,
+      "firetrucks": 1,
+      "police_cars": 2
+    },
+    "chances": {
+      "atv_carrier": 75,
+      "patient_transport": 50,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 8,
+      "possible_patient_min": 0,
+      "filter_id": "firehouse_missions",
+      "patient_us_code_possible": [
+        "7-D-1"
+      ],
+      "patient_allow_first_responder_chance": 30,
+      "patient_specialization_ids": [
+        4
+      ],
+      "patient_specialization_captions": [
+        "Traumatology"
+      ],
+      "patient_specializations": "Traumatology"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 3,
+      "police_stations": 7,
+      "brush_extension": 2,
+      "fire_stations": 7
+    },
+    "overlay_index": null,
+    "base_mission_id": 1153,
+    "additive_overlays": "",
+    "mission_categories": [
+      "fire",
+      "forestry"
+    ]
+  },
+  {
+    "id": "1154",
+    "name": "Washing machine on fire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1010,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "firetrucks": 1,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 1154,
+    "additive_overlays": "",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1155",
+    "name": "Dryer on fire",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1010,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "firetrucks": 1,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 3
+    },
+    "overlay_index": null,
+    "base_mission_id": 1155,
+    "additive_overlays": "",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1156",
+    "name": "Illegal opening of fire hydrants",
+    "place": "",
+    "place_array": [],
+    "average_credits": 600,
+    "generated_by": "",
+    "icons": [
+      "/images/flood_gruen.png",
+      "/images/flood_gelb.png",
+      "/images/flood_rot.png"
+    ],
+    "requirements": {
+      "firetrucks": 1,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2026-06-29T10:00:00Z",
+      "date_end": "2026-08-21T09:00:00Z"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1156,
+    "additive_overlays": "",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1157",
+    "name": "Acute Behavioural Disturbance",
+    "place": "Bus stop\nTram stop\nTrain station (regional traffic)\nTrain station (regional traffic and long-distance travel)\nGoods station\nMall\nPark",
+    "place_array": [
+      "Bus stop",
+      "Tram stop",
+      "Train station (regional traffic)",
+      "Train station (regional traffic and long-distance travel)",
+      "Goods station",
+      "Mall",
+      "Park"
+    ],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/medicalstore_gruen.png",
+      "/images/medicalstore_gelb.png",
+      "/images/medicalstore_rot.png"
+    ],
+    "requirements": {
+      "police_cars": 4
+    },
+    "chances": {
+      "patient_transport": 100
+    },
+    "additional": {
+      "possible_patient": 1,
+      "possible_patient_min": 1,
+      "filter_id": "ambulance_station_missions",
+      "patient_us_code_possible": [
+        "25-D-1B",
+        "25-D-1W",
+        "25-D-1V",
+        "25-D-1",
+        "25-D-2B",
+        "25-D-2V",
+        "25-D-2W",
+        "25-D-2",
+        "25-B-1",
+        "25-B-2",
+        "25-B-3",
+        "25-B-4",
+        "25-B-5",
+        "25-B-6",
+        "25-B-1B",
+        "25-B-2B",
+        "25-B-3B",
+        "25-B-4B",
+        "25-B-5B",
+        "25-B-6B",
+        "25-B-1V",
+        "25-B-2V",
+        "25-B-3V",
+        "25-B-4V",
+        "25-B-5V",
+        "25-B-6V",
+        "25-B-1W",
+        "25-B-2W",
+        "25-B-3W",
+        "25-B-4W",
+        "25-B-5W",
+        "25-B-6W",
+        "25-A-1",
+        "25-A-2",
+        "25-A-1B",
+        "25-A-2B",
+        "25-A-1V",
+        "25-A-2V",
+        "25-A-1W",
+        "25-A-2W"
+      ],
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "General Internal"
+      ],
+      "patient_specializations": "General Internal"
+    },
+    "prerequisites": {
+      "main_building": 3,
+      "rescue_stations": 2,
+      "police_stations": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1157,
+    "additive_overlays": "",
+    "mission_categories": [
+      "ambulance"
     ]
   }
 ]

@@ -55988,7 +55988,7 @@
     "name": "Treatment after diving",
     "place": "",
     "place_array": [],
-    "average_credits": 600,
+    "average_credits": null,
     "generated_by": "",
     "icons": [
       "/images/soccer_gruen.png",
@@ -56032,7 +56032,7 @@
     "name": "Injury after hitting bar",
     "place": "",
     "place_array": [],
-    "average_credits": 600,
+    "average_credits": null,
     "generated_by": "",
     "icons": [
       "/images/soccer_gruen.png",
@@ -56145,7 +56145,7 @@
     "place_array": [
       "Stadium"
     ],
-    "average_credits": 600,
+    "average_credits": null,
     "generated_by": "",
     "icons": [
       "/images/soccer_gruen.png",
@@ -56191,7 +56191,7 @@
     "place_array": [
       "Stadium"
     ],
-    "average_credits": 600,
+    "average_credits": null,
     "generated_by": "",
     "icons": [
       "/images/soccer_gruen.png",

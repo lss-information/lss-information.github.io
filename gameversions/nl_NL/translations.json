@@ -22,6 +22,7 @@
   "cat_tow_trucks_only": "Berger Inzetten",
   "cat_military_police": "Militaire Inzetten",
   "cat_bomb_disposal": "EOD Inzetten",
+  "cat_railway": "Incidentenbestrijding",
 
   "mission_categories": "Meldingscategorie",
   "chances": "Kansen",
@@ -75,6 +76,11 @@
   "hazard_response_suits": "Benodigde GPH, DB-GP of RC-Gaspakken",
   "hazard_response_disinfection_large": "Benodigde DB-GO, TS-GO of GOH-DC",
   "hazard_response_disinfection": "Benodigde DB-BO, TS-BO of BOH-DC",
+  "railway_fire_engine": "Benodigde DB-ICB of TS-Spoor",
+  "railway_elw": "Benodigde OvD-ICB",
+  "railway_recovery": "Benodigde VW-VZ-ICB",
+  "railway_material": "Benodigde GM-ICB",
+  "railway_fire_equipment_container": "Benodigde HSH-ICB of VW-HS",
 
   "car_carrier": "Benodigde Bergingsvoertuig(en)",
 

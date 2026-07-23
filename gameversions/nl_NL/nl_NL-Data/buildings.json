@@ -1804,7 +1804,7 @@
       "coins": [10, 10, 15, 15, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
     },
     "extensions": [
-      {
+      {f
         "caption": "Mobiele Eenheid, Sectie",
         "credits": 200000,
         "coins": 25,
@@ -1933,5 +1933,97 @@
     "startClassrooms": 1,
     "school": "Militair",
     "icon": "graduation-cap"
+  },
+  "27": {
+    "caption": "Standplaats Incidentenbestrijding spoor",
+    "color": "#f5a42a",
+    "coins": 50,
+    "credits": 5000000,
+    "levelPrices": {
+      "credits": [10000, 50000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000],
+      "coins": [10, 15, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
+    },
+    "extensions": [
+      {
+        "caption": "Haakarmbak parkeerplaats",
+        "credits": 25000,
+        "coins": 15,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [149],
+        "parkingLotReservations": [
+          [149]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Haakarmbak parkeerplaats",
+        "credits": 25000,
+        "coins": 15,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [149],
+        "parkingLotReservations": [
+          [149]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Haakarmbak parkeerplaats",
+        "credits": 25000,
+        "coins": 15,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [149],
+        "parkingLotReservations": [
+          [149]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Haakarmbak parkeerplaats",
+        "credits": 25000,
+        "coins": 15,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [149],
+        "parkingLotReservations": [
+          [149]
+        ],
+        "cannotDisable": true
+      },
+      {
+        "caption": "Haakarmbak parkeerplaats",
+        "credits": 25000,
+        "coins": 15,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 1,
+        "unlocksVehicleTypes": [149],
+        "parkingLotReservations": [
+          [149]
+        ],
+        "cannotDisable": true
+      }
+    ],
+    "levelcost": [
+      "1. 10.000",
+      "2. 50.000",
+      "3.-19. 100.000"
+    ],
+    "maxBuildings": "Geen limiet",
+    "maxLevel": 19,
+    "special": "",
+    "startPersonnel": 2,
+    "schoolingTypes": [
+      "Brandweer"
+    ],
+    "schools": [4],
+    "startParkingLots": 1,
+    "icon": "building_railway"
   }
 }

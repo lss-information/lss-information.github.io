@@ -218,6 +218,7 @@
     },
     "icon": "shuttle-van",
     "possibleBuildings": [0, 17],
+    "equipmentCapacity": 10,
     "special": "Benodigd vanaf 10 brandweerposten.",
     "minPersonnel": 1,
     "maxPersonnel": 4,
@@ -3522,5 +3523,218 @@
         }
       }
     }
+  },
+  "144": {
+    "caption": "DB-ICB",
+    "credits": 12000,
+    "coins": 12,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Brandweer": {
+          "railway_fire": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17,
+      27
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Brandweer": {
+        "Incidentenbestrijder spoor": {
+          "all": true
+        }
+      }
+    }
+  },
+  "145": {
+    "caption": "OvD-ICB",
+    "credits": 25000,
+    "coins": 25,
+    "staff": {
+      "min": 1,
+      "max": 1,
+      "training": {
+        "Brandweer": {
+          "railway_elw": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17,
+      27
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 1,
+    "schooling": {
+      "Brandweer": {
+        "Officier van Dienst Incidentenbestrijding spoor": {
+          "all": true
+        }
+      }
+    }
+  },
+  "146": {
+    "caption": "VW-VZ-ICB",
+    "credits": 15000,
+    "coins": 15,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Brandweer": {
+          "wechsellader": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17,
+      27
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Brandweer": {
+        "Brandweerchauffeur-zwaar": {
+          "all": true
+        }
+      }
+    }
+  },
+  "147": {
+    "caption": "HA-ICB",
+    "credits": 6000,
+    "coins": 6,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Brandweer": {
+          "wechsellader": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17,
+      27
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Brandweer": {
+        "Brandweerchauffeur-zwaar": {
+          "all": true
+        }
+      }
+    }
+  },
+  "148": {
+    "caption": "GM-ICB",
+    "credits": 6000,
+    "coins": 6,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Brandweer": {
+          "wechsellader": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17,
+      27
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Brandweer": {
+        "Brandweerchauffeur-zwaar": {
+          "all": true
+        }
+      }
+    }
+  },
+  "149": {
+    "caption": "HSH-ICB",
+    "credits": 10000,
+    "coins": 10,
+    "staff": {
+      "min": 0,
+      "max": 0
+    },
+    "possibleBuildings": [
+      0,
+      17,
+      27
+    ],
+    "minPersonnel": 0,
+    "maxPersonnel": 0,
+    "schooling": null
+  },
+  "150": {
+    "caption": "VW-HS",
+    "credits": 15000,
+    "coins": 15,
+    "staff": {
+      "min": 1,
+      "max": 2,
+      "training": {
+        "Brandweer": {
+          "railway_fire": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17,
+      27
+    ],
+    "minPersonnel": 1,
+    "maxPersonnel": 2,
+    "schooling": {
+      "Brandweer": {
+        "Incidentenbestrijder spoor": {
+          "all": true
+        }
+      }
+    }
+  },
+  "151": {
+    "caption": "BM-VTHS",
+    "credits": 40000,
+    "coins": 35,
+    "staff": {
+      "min": 2,
+      "max": 8
+    },
+    "possibleBuildings": [
+      0,
+      17
+    ],
+    "minPersonnel": 2,
+    "maxPersonnel": 8,
+    "schooling": null
   }
 }

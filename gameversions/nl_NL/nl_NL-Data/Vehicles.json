@@ -3736,5 +3736,40 @@
     "minPersonnel": 2,
     "maxPersonnel": 8,
     "schooling": null
+  },
+  "152": {
+    "caption": "TS-Spoor",
+    "credits": 25000,
+    "coins": 25,
+    "staff": {
+      "min": 5,
+      "max": 7,
+      "training": {
+        "Brandweer": {
+          "railway_fire": {
+            "all": true
+          }
+        }
+      }
+    },
+    "possibleBuildings": [
+      0,
+      17,
+      27
+    ],
+    "minPersonnel": 5,
+    "maxPersonnel": 7,
+    "schooling": {
+      "Brandweer": {
+        "Incidentenbestrijder spoor": {
+          "all": true
+        }
+      }
+    },
+    "waterTank": 2000,
+    "wtank": 2000,
+    "foamTank": 150,
+    "ftank": 150,
+    "pumpcap": 2000
   }
 }

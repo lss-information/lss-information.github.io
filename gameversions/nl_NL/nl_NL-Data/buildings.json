@@ -52,7 +52,7 @@
         "duration": "5 Dagen",
         "isVehicleExtension": true,
         "givesParkingLots": 5,
-        "unlocksVehicleTypes": [144, 145, 146, 147, 148, 1349, 150, 151, 152]
+        "unlocksVehicleTypes": [144, 145, 146, 147, 148, 149, 150, 151, 152]
       },
       {
         "caption": "1: Haakarmbak parkeerplaats",

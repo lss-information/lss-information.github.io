@@ -10,7 +10,7 @@
     },
     "extensions": [
       {
-        "caption": "Ambulance standplaats",
+        "caption": "0: Ambulance standplaats",
         "credits": 100000,
         "coins": 20,
         "duration": "7 Dagen",
@@ -19,7 +19,7 @@
         "unlocksVehicleTypes": [16, 30, 52, 63]
       },
       {
-        "caption": "Team Digitale Verkenning",
+        "caption": "22: Team Digitale Verkenning",
         "credits": 100000,
         "coins": 10,
         "duration": "5 Dagen",
@@ -28,7 +28,7 @@
         "unlocksVehicleTypes": [129]
       },
       {
-        "caption": "Industriële Brandbestrijding",
+        "caption": "23: Industriële Brandbestrijding",
         "credits": 150000,
         "coins": 15,
         "duration": "5 Dagen",
@@ -37,7 +37,7 @@
         "unlocksVehicleTypes": [130, 131, 132, 133]
       },
       {
-        "caption": "Incidentbestrijding Gevaarlijke Stoffen",
+        "caption": "24: Incidentbestrijding Gevaarlijke Stoffen",
         "credits": 200000,
         "coins": 15,
         "duration": "5  Dagen",
@@ -46,7 +46,16 @@
         "unlocksVehicleTypes": [134, 135, 136, 137, 138, 139, 140, 141, 142, 143]
       },
       {
-        "caption": "Haakarmbak parkeerplaats",
+        "caption": "25: Incidentenbestrijding spoor",
+        "credits": 250000,
+        "coins": 25,
+        "duration": "5 Dagen",
+        "isVehicleExtension": true,
+        "givesParkingLots": 5,
+        "unlocksVehicleTypes": [144, 145, 146, 147, 148, 1349, 150, 151, 152]
+      },
+      {
+        "caption": "1: Haakarmbak parkeerplaats",
         "credits": 100000,
         "coins": 20,
         "duration": "7 Dagen",
@@ -59,7 +68,7 @@
         "cannotDisable": true
       },
       {
-        "caption": "Haakarmbak parkeerplaats",
+        "caption": "2: Haakarmbak parkeerplaats",
         "credits": 100000,
         "coins": 20,
         "duration": "7 Dagen",
@@ -72,7 +81,7 @@
         "cannotDisable": true
       },
       {
-        "caption": "Haakarmbak parkeerplaats",
+        "caption": "3: Haakarmbak parkeerplaats",
         "credits": 100000,
         "coins": 20,
         "duration": "7 Dagen",
@@ -85,7 +94,7 @@
         "cannotDisable": true
       },
       {
-        "caption": "Haakarmbak parkeerplaats",
+        "caption": "4: Haakarmbak parkeerplaats",
         "credits": 100000,
         "coins": 20,
         "duration": "7 Dagen",
@@ -98,7 +107,7 @@
         "cannotDisable": true
       },
       {
-        "caption": "Haakarmbak parkeerplaats",
+        "caption": "5: Haakarmbak parkeerplaats",
         "credits": 100000,
         "coins": 20,
         "duration": "7 Dagen",
@@ -111,7 +120,7 @@
         "cannotDisable": true
       },
       {
-        "caption": "Waterongevallenbestrijding",
+        "caption": "6: Waterongevallenbestrijding",
         "credits": 400000,
         "coins": 25,
         "duration": "7 Dagen",
@@ -120,7 +129,7 @@
         "unlocksVehicleTypes": [33, 36, 49, 50]
       },
       {
-        "caption": "Haakarmbak parkeerplaats",
+        "caption": "7: Haakarmbak parkeerplaats",
         "credits": 100000,
         "coins": 20,
         "duration": "7 Dagen",
@@ -133,7 +142,7 @@
         "cannotDisable": true
       },
       {
-        "caption": "Vliegtuigbrandbestrijding",
+        "caption": "8: Vliegtuigbrandbestrijding",
         "credits": 400000,
         "coins": 25,
         "duration": "7 Dagen",
@@ -142,7 +151,7 @@
         "unlocksVehicleTypes": [41, 42, 43, 44]
       },
       {
-        "caption": "Haakarmbak parkeerplaats",
+        "caption": "9: Haakarmbak parkeerplaats",
         "credits": 100000,
         "coins": 20,
         "duration": "7 Dagen",
@@ -155,7 +164,7 @@
         "cannotDisable": true
       },
       {
-        "caption": "Haakarmbak parkeerplaats",
+        "caption": "10: Haakarmbak parkeerplaats",
         "credits": 100000,
         "coins": 20,
         "duration": "7 Dagen",
@@ -168,7 +177,7 @@
         "cannotDisable": true
       },
       {
-        "caption": "Haakarmbak parkeerplaats",
+        "caption": "11: Haakarmbak parkeerplaats",
         "credits": 100000,
         "coins": 20,
         "duration": "7 Dagen",
@@ -181,7 +190,7 @@
         "cannotDisable": true
       },
       {
-        "caption": "Haakarmbak parkeerplaats",
+        "caption": "12: Haakarmbak parkeerplaats",
         "credits": 100000,
         "coins": 20,
         "duration": "7 Dagen",
@@ -194,7 +203,7 @@
         "cannotDisable": true
       },
       {
-        "caption": "Schuimblussing",
+        "caption": "13: Schuimblussing",
         "credits": 150000,
         "coins": 15,
         "duration": "5 Dagen",
@@ -203,7 +212,7 @@
         "unlocksVehicleTypes": [68, 69, 70]
       },
       {
-        "caption": "Signalisatie",
+        "caption": "14: Signalisatie",
         "credits": 150000,
         "coins": 20,
         "duration": "7 Dagen",
@@ -213,7 +222,7 @@
         "cannotDisable": true
       },
       {
-        "caption": "Natuurbrandbestrijding",
+        "caption": "15: Natuurbrandbestrijding",
         "credits": 100000,
         "coins": 15,
         "duration": "7 Dagen",
@@ -223,7 +232,7 @@
         "cannotDisable": true
       },
       {
-        "caption": "Urban Search and Rescue",
+        "caption": "16: Urban Search and Rescue",
         "credits": 150000,
         "coins": 15,
         "duration": "7 Dagen",
@@ -232,7 +241,7 @@
         "unlocksVehicleTypes": [92, 93, 94, 95, 96, 97]
       },
       {
-        "caption": "Specialisme Technische Hulpverlening",
+        "caption": "17: Specialisme Technische Hulpverlening",
         "credits": 150000,
         "coins": 15,
         "duration": "7 Dagen",
@@ -242,7 +251,7 @@
         "cannotDisable": true
       },
       {
-        "caption": "Grote brandweerkazerne",
+        "caption": "18: Grote brandweerkazerne",
         "credits": 1000000,
         "coins": 50,
         "duration": "7 dagen",
@@ -251,7 +260,7 @@
         "cannotDisable": true
       },
       {
-        "caption": "Grootschalige Geneeskundige Bijstand",
+        "caption": "19: Grootschalige Geneeskundige Bijstand",
         "credits": 200000,
         "coins": 25,
         "duration": "5 Dagen",
@@ -261,7 +270,7 @@
         "unlocksVehicleTypes": [100, 101]
       },
       {
-        "caption": "Verzorgingseenheid",
+        "caption": "20: Verzorgingseenheid",
         "credits": 150000,
         "coins": 25,
         "duration": "5 Dagen",
@@ -273,7 +282,7 @@
         ]
       },
       {
-        "caption": "Arbeidshygiëne",
+        "caption": "21: Arbeidshygiëne",
         "credits": 150000,
         "coins": 25,
         "duration": "5 Dagen",

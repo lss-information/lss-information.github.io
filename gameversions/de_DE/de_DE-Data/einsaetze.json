@@ -59583,9 +59583,6 @@
     "additional": {
       "possible_patient": 1,
       "possible_patient_min": 1,
-      "followup_missions_ids": [
-        1024
-      ],
       "filter_id": "ambulance_station_missions",
       "patient_specialization_ids": [
         4
@@ -137133,9 +137130,6 @@
     "additional": {
       "possible_patient": 3,
       "possible_patient_min": 1,
-      "followup_missions_ids": [
-        1024
-      ],
       "filter_id": "police_station_missions",
       "date_start": "2026-03-13T10:00:00Z",
       "date_end": "2026-06-19T22:00:00Z",
@@ -138660,9 +138654,6 @@
     "additional": {
       "possible_patient": 4,
       "possible_patient_min": 1,
-      "followup_missions_ids": [
-        1025
-      ],
       "filter_id": "ambulance_station_missions",
       "date_start": "2026-06-26T09:00:00Z",
       "date_end": "2026-08-21T09:00:00Z",
@@ -228144,6 +228135,9 @@
       "platform_trucks": 30
     },
     "additional": {
+      "followup_missions_ids": [
+        754
+      ],
       "filter_id": "animal_rescue_missions"
     },
     "prerequisites": {

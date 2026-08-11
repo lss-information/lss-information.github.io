@@ -50688,8 +50688,7 @@
       "coastal_rescue": 2,
       "police_cars": 2,
       "personnel_educations": {
-        "search_and_rescue": 1,
-        "search_and_rescue_command": 2
+        "search_and_rescue": 1
       }
     },
     "chances": {
@@ -50711,8 +50710,7 @@
       ],
       "patient_specializations": "Large Hospital",
       "personnel_educations": {
-        "Search Advisor": 1,
-        "SAR Commander": 2
+        "Search Advisor": 1
       }
     },
     "prerequisites": {
@@ -50721,8 +50719,7 @@
       "rescue_stations": 2,
       "police_stations": 3,
       "personnel_educations": {
-        "search_and_rescue": 2,
-        "search_and_rescue_command": 4
+        "search_and_rescue": 2
       }
     },
     "overlay_index": null,

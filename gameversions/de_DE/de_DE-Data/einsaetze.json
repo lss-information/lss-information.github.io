@@ -234373,7 +234373,7 @@
     "name": "Evakuierung Gefahrengebiet",
     "place": "",
     "place_array": [],
-    "average_credits": 4870,
+    "average_credits": 4530,
     "generated_by": "",
     "icons": [
       "/images/zoom_gruen.png",
@@ -234382,7 +234382,7 @@
     ],
     "requirements": {
       "grukw": 6,
-      "lebefkw": 3,
+      "lebefkw": 2,
       "oneof_police_patrol_or_motorcycle": 8
     },
     "chances": {},
@@ -234407,7 +234407,7 @@
     "name": "Evakuierung Gefahrengebiet",
     "place": "",
     "place_array": [],
-    "average_credits": 5270,
+    "average_credits": 4930,
     "generated_by": "",
     "icons": [
       "/images/zoom_gruen.png",
@@ -234416,7 +234416,7 @@
     ],
     "requirements": {
       "grukw": 6,
-      "lebefkw": 3,
+      "lebefkw": 2,
       "oneof_police_patrol_or_motorcycle": 8,
       "police_speaker": 1
     },

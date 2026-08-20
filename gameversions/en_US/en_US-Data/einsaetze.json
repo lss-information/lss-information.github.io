@@ -30934,7 +30934,7 @@
         "31-D-2"
       ],
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59-04:00",
       "patient_specialization_ids": [
         0
       ],
@@ -31006,7 +31006,7 @@
         "31-D-2"
       ],
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59-04:00",
       "patient_specialization_ids": [
         0
       ],
@@ -31060,7 +31060,7 @@
         "26-A-18"
       ],
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59-04:00",
       "patient_specialization_ids": [
         0
       ],
@@ -31112,7 +31112,7 @@
         "20-D-2H"
       ],
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59-04:00",
       "patient_specialization_ids": [
         0
       ],
@@ -31151,7 +31151,7 @@
     "additional": {
       "filter_id": "firehouse_missions",
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z"
+      "date_end": "2026-08-28T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -41050,7 +41050,7 @@
       "filter_id": "ambulance_station_missions",
       "allow_ktw_instead_of_rtw": true,
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z"
+      "date_end": "2026-08-28T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 3,
@@ -41089,7 +41089,7 @@
         "26-A-11"
       ],
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59-04:00",
       "patient_specialization_ids": [
         0
       ],
@@ -41133,7 +41133,7 @@
       "max_possible_prisoners": 1,
       "filter_id": "firehouse_missions",
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z"
+      "date_end": "2026-08-28T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -55988,7 +55988,7 @@
     "name": "Treatment after diving",
     "place": "",
     "place_array": [],
-    "average_credits": null,
+    "average_credits": 600,
     "generated_by": "",
     "icons": [
       "/images/soccer_gruen.png",
@@ -56032,7 +56032,7 @@
     "name": "Injury after hitting bar",
     "place": "",
     "place_array": [],
-    "average_credits": null,
+    "average_credits": 600,
     "generated_by": "",
     "icons": [
       "/images/soccer_gruen.png",
@@ -56145,7 +56145,7 @@
     "place_array": [
       "Stadium"
     ],
-    "average_credits": null,
+    "average_credits": 600,
     "generated_by": "",
     "icons": [
       "/images/soccer_gruen.png",
@@ -56191,7 +56191,7 @@
     "place_array": [
       "Stadium"
     ],
-    "average_credits": null,
+    "average_credits": 600,
     "generated_by": "",
     "icons": [
       "/images/soccer_gruen.png",
@@ -65720,7 +65720,7 @@
     "additional": {
       "filter_id": "firehouse_missions",
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z"
+      "date_end": "2026-08-28T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -65776,7 +65776,7 @@
         "17-A-3G"
       ],
       "date_start": "2024-07-08T10:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59-04:00",
       "patient_specialization_ids": [
         0
       ],
@@ -65820,7 +65820,7 @@
     "additional": {
       "filter_id": "police_station_missions",
       "date_start": "2024-07-15T10:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z"
+      "date_end": "2026-08-28T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 5,
@@ -65869,7 +65869,7 @@
         "17-A-3G"
       ],
       "date_start": "2024-07-22T10:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59-04:00",
       "patient_specialization_ids": [
         0
       ],
@@ -65908,7 +65908,7 @@
     "additional": {
       "filter_id": "police_station_missions",
       "date_start": "2024-07-29T10:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z"
+      "date_end": "2026-08-28T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 5,
@@ -76227,7 +76227,7 @@
     "additional": {
       "filter_id": "firehouse_missions",
       "date_start": "2026-06-29T10:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z"
+      "date_end": "2026-08-28T23:59:59-04:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -76382,7 +76382,7 @@
     "name": "Lotto millionaire robbed",
     "place": "",
     "place_array": [],
-    "average_credits": 1000,
+    "average_credits": null,
     "generated_by": "",
     "icons": [
       "/images/theft_gruen.png",
@@ -76414,7 +76414,7 @@
     "name": "Burglary in Auction House",
     "place": "",
     "place_array": [],
-    "average_credits": 2000,
+    "average_credits": null,
     "generated_by": "",
     "icons": [
       "/images/zoom_gruen.png",
@@ -76490,104 +76490,6 @@
     },
     "overlay_index": null,
     "base_mission_id": 1161,
-    "additive_overlays": "",
-    "mission_categories": [
-      "ambulance"
-    ]
-  },
-  {
-    "id": "1162",
-    "name": "Lost child at the beach",
-    "place": "Beach",
-    "place_array": [
-      "Beach"
-    ],
-    "average_credits": 2900,
-    "generated_by": "",
-    "icons": [
-      "/images/zoom_gruen.png",
-      "/images/zoom_gelb.png",
-      "/images/zoom_rot.png"
-    ],
-    "requirements": {
-      "police_cars": 2
-    },
-    "chances": {
-      "patient_transport": 5
-    },
-    "additional": {
-      "possible_patient": 1,
-      "possible_patient_min": 0,
-      "filter_id": "police_station_missions",
-      "patient_us_code_possible": [
-        "25-A-1"
-      ],
-      "patient_allow_first_responder_chance": 30,
-      "patient_specialization_ids": [
-        9
-      ],
-      "patient_specialization_captions": [
-        "Large Hospital"
-      ],
-      "patient_specializations": "Large Hospital"
-    },
-    "prerequisites": {
-      "main_building": 5,
-      "rescue_stations": 2,
-      "police_stations": 3
-    },
-    "overlay_index": null,
-    "base_mission_id": 1162,
-    "additive_overlays": "",
-    "mission_categories": [
-      "police"
-    ]
-  },
-  {
-    "id": "1163",
-    "name": "Fish sting on beach",
-    "place": "Beach",
-    "place_array": [
-      "Beach"
-    ],
-    "average_credits": 850,
-    "generated_by": "",
-    "icons": [
-      "/images/medicalstore_gruen.png",
-      "/images/medicalstore_gelb.png",
-      "/images/medicalstore_rot.png"
-    ],
-    "requirements": {},
-    "chances": {
-      "patient_transport": 15
-    },
-    "additional": {
-      "possible_patient": 1,
-      "possible_patient_min": 1,
-      "filter_id": "ambulance_station_missions",
-      "patient_us_code_possible": [
-        "2-A-1",
-        "2-B-1",
-        "2-C-1",
-        "2-C-2",
-        "2-D-1",
-        "2-D-3",
-        "2-E-1"
-      ],
-      "patient_specialization_ids": [
-        0
-      ],
-      "patient_specialization_captions": [
-        "General Internal"
-      ],
-      "patient_specializations": "General Internal"
-    },
-    "prerequisites": {
-      "main_building": 3,
-      "rescue_stations": 1
-    },
-    "overlay_index": null,
-    "base_mission_id": 1163,
     "additive_overlays": "",
     "mission_categories": [
       "ambulance"

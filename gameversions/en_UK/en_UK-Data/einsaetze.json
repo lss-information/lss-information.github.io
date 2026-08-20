@@ -9501,7 +9501,7 @@
       ],
       "filter_id": "ambulance_station_missions",
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59+01:00",
       "patient_specialization_ids": [
         0
       ],
@@ -9545,7 +9545,7 @@
       ],
       "filter_id": "ambulance_station_missions",
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59+01:00",
       "patient_specialization_ids": [
         0
       ],
@@ -9590,7 +9590,7 @@
       ],
       "filter_id": "ambulance_station_missions",
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59+01:00",
       "patient_specialization_ids": [
         0
       ],
@@ -9635,7 +9635,7 @@
       ],
       "filter_id": "ambulance_station_missions",
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59+01:00",
       "patient_specialization_ids": [
         0
       ],
@@ -9674,7 +9674,7 @@
     "additional": {
       "filter_id": "firehouse_missions",
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z"
+      "date_end": "2026-08-28T23:59:59+01:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -21313,7 +21313,7 @@
       "guard_mission": true,
       "filter_id": "ambulance_station_missions",
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z"
+      "date_end": "2026-08-28T23:59:59+01:00"
     },
     "prerequisites": {
       "main_building": 2,
@@ -21353,7 +21353,7 @@
       ],
       "filter_id": "ambulance_station_missions",
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59+01:00",
       "patient_specialization_ids": [
         0
       ],
@@ -21397,7 +21397,7 @@
       "max_possible_prisoners": 1,
       "filter_id": "firehouse_missions",
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z"
+      "date_end": "2026-08-28T23:59:59+01:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -37250,7 +37250,7 @@
       ],
       "filter_id": "ambulance_station_missions",
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59+01:00",
       "patient_specialization_ids": [
         0
       ],
@@ -41777,7 +41777,7 @@
     "additional": {
       "filter_id": "firehouse_missions",
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z"
+      "date_end": "2026-08-28T23:59:59+01:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -41825,7 +41825,7 @@
       ],
       "filter_id": "firehouse_missions",
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59+01:00",
       "patient_specialization_ids": [
         0
       ],
@@ -41870,7 +41870,7 @@
     "additional": {
       "filter_id": "police_station_missions",
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z"
+      "date_end": "2026-08-28T23:59:59+01:00"
     },
     "prerequisites": {
       "main_building": 6,
@@ -41909,7 +41909,7 @@
       ],
       "filter_id": "ambulance_station_missions",
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z",
+      "date_end": "2026-08-28T23:59:59+01:00",
       "patient_specialization_ids": [
         0
       ],
@@ -41948,7 +41948,7 @@
     "additional": {
       "filter_id": "police_station_missions",
       "date_start": "2026-06-26T09:00:00Z",
-      "date_end": "2026-08-21T09:00:00Z"
+      "date_end": "2026-08-28T23:59:59+01:00"
     },
     "prerequisites": {
       "main_building": 6,
@@ -50449,7 +50449,7 @@
     "additional": {
       "filter_id": "firehouse_missions",
       "date_start": "2026-06-29T10:00:00+01:00",
-      "date_end": "2026-08-21T09:00:00Z"
+      "date_end": "2026-08-28T23:59:59+01:00"
     },
     "prerequisites": {
       "main_building": 0,

@@ -198,22 +198,6 @@
     "id": 6
   },
   {
-    "caption": "Winter weather",
-    "mission_type_ids": [
-      423,
-      424,
-      425,
-      426,
-      427,
-      428,
-      429,
-      696,
-      697,
-      698
-    ],
-    "id": 7
-  },
-  {
     "caption": "Sports Event",
     "mission_type_ids": [
       703,
@@ -237,5 +221,21 @@
       519
     ],
     "id": 8
+  },
+  {
+    "caption": "Winter weather",
+    "mission_type_ids": [
+      423,
+      424,
+      425,
+      426,
+      427,
+      428,
+      429,
+      696,
+      697,
+      698
+    ],
+    "id": 9
   }
 ]

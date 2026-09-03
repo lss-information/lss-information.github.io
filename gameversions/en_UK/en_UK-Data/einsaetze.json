@@ -46472,6 +46472,9 @@
     },
     "chances": {},
     "additional": {
+      "expansion_missions_ids": [
+        870
+      ],
       "filter_id": "police_station_missions",
       "subsequent_missions_ids": [
         789

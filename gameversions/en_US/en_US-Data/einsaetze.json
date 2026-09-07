@@ -66831,8 +66831,8 @@
       "duration": 3600,
       "guard_mission": true,
       "filter_id": "police_station_missions",
-      "date_start": "2024-08-30T09:00:00Z",
-      "date_end": "2024-09-02T23:59:59Z"
+      "date_start": "2026-09-07T08:00:00Z",
+      "date_end": "2026-09-08T23:59:59Z"
     },
     "prerequisites": {
       "main_building": 5,
@@ -66863,8 +66863,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2024-08-30T09:00:00Z",
-      "date_end": "2024-09-02T23:59:59Z"
+      "date_start": "2026-09-07T08:00:00Z",
+      "date_end": "2026-09-08T23:59:59Z"
     },
     "prerequisites": {
       "main_building": 0,
@@ -66911,8 +66911,8 @@
         "73-B-1"
       ],
       "patient_at_end_of_mission": true,
-      "date_start": "2024-08-30T09:00:00Z",
-      "date_end": "2024-09-02T23:59:59Z",
+      "date_start": "2026-09-07T08:00:00Z",
+      "date_end": "2026-09-08T23:59:59Z",
       "patient_specialization_ids": [
         0
       ],
@@ -66959,8 +66959,8 @@
       "patient_us_code_possible": [
         "25-A-1"
       ],
-      "date_start": "2024-08-30T09:00:00Z",
-      "date_end": "2024-09-02T23:59:59Z",
+      "date_start": "2026-09-07T08:00:00Z",
+      "date_end": "2026-09-08T23:59:59Z",
       "patient_specialization_ids": [
         0
       ],
@@ -67032,8 +67032,8 @@
         "31-D-1",
         "31-D-2"
       ],
-      "date_start": "2024-08-30T09:00:00Z",
-      "date_end": "2024-09-02T23:59:59Z",
+      "date_start": "2026-09-07T08:00:00Z",
+      "date_end": "2026-09-08T23:59:59Z",
       "patient_specialization_ids": [
         0
       ],
@@ -67074,8 +67074,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2024-08-30T09:00:00Z",
-      "date_end": "2024-09-02T23:59:59Z"
+      "date_start": "2026-09-07T08:00:00Z",
+      "date_end": "2026-09-08T23:59:59Z"
     },
     "prerequisites": {
       "main_building": 0,
@@ -67106,8 +67106,8 @@
     "chances": {},
     "additional": {
       "filter_id": "police_station_missions",
-      "date_start": "2024-08-30T09:00:00Z",
-      "date_end": "2024-09-02T23:59:59Z"
+      "date_start": "2026-09-07T08:00:00Z",
+      "date_end": "2026-09-08T23:59:59Z"
     },
     "prerequisites": {
       "main_building": 5,

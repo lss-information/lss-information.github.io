@@ -41,8 +41,6 @@ jobs:
           download "AU" "https://www.missionchief-australia.com/einsaetze.json" "gameversions/en_AU/en_AU-Data"
           download "ES" "https://www.centro-de-mando.es/einsaetze.json" "gameversions/es_ES/es_ES-Data"
 
-
-
       - name: Commit if changed
         run: |
           git config user.name "github-actions"

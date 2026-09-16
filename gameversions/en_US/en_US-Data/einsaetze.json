@@ -42024,8 +42024,8 @@
       "patient_us_code_possible": [
         "30-B-1"
       ],
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59-05:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59-05:00",
       "patient_specialization_ids": [
         1
       ],
@@ -42072,8 +42072,8 @@
       "patient_us_code_possible": [
         "29-B-1"
       ],
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59-05:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59-05:00",
       "patient_specialization_ids": [
         4
       ],
@@ -42120,8 +42120,8 @@
       "patient_us_code_possible": [
         "17-A-4"
       ],
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59-05:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59-05:00",
       "patient_specialization_ids": [
         4
       ],
@@ -42166,8 +42166,8 @@
       "patient_us_code_possible": [
         "30-A-2"
       ],
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59-05:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59-05:00",
       "patient_specialization_ids": [
         1
       ],
@@ -42207,8 +42207,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59-05:00"
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59-05:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -42249,8 +42249,8 @@
       "patient_us_code_possible": [
         "20-B-1"
       ],
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59-05:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59-05:00",
       "patient_specialization_ids": [
         0
       ],
@@ -42295,8 +42295,8 @@
       "patient_us_code_possible": [
         "29-B-2"
       ],
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59-05:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59-05:00",
       "patient_specialization_ids": [
         4
       ],
@@ -42345,8 +42345,8 @@
       "patient_us_code_possible": [
         "31-C-1"
       ],
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59-05:00",
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59-05:00",
       "patient_specialization_ids": [
         4
       ],
@@ -42387,8 +42387,8 @@
     "chances": {},
     "additional": {
       "filter_id": "firehouse_missions",
-      "date_start": "2025-09-19T09:00:00Z",
-      "date_end": "2025-11-28T23:59:59-05:00"
+      "date_start": "2026-09-18T09:00:00Z",
+      "date_end": "2026-11-20T23:59:59-05:00"
     },
     "prerequisites": {
       "main_building": 0,

@@ -159,6 +159,27 @@
     "id": 5
   },
   {
+<<<<<<< HEAD
+=======
+    "caption": "Summer weather",
+    "mission_type_ids": [
+      403,
+      404,
+      405,
+      406,
+      407,
+      602,
+      603,
+      965,
+      966,
+      967,
+      968,
+      969
+    ],
+    "id": 6
+  },
+  {
+>>>>>>> 18a3bf43431e7af78a4250dd1629ca6afd53fcf2
     "caption": "Sports Event",
     "mission_type_ids": [
       972,

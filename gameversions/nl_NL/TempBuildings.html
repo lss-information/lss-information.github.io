@@ -396,7 +396,7 @@ async function initBuildings() {
             const toggleBtn = row.querySelector('.ext-btn');
             toggleBtn.onclick = () => {
                 const open = div.classList.toggle('show');
-                div.style.maxHeight = open ? div.scrollHeight + 'px' : null;
+                div.style.maxHeight = open ? 'none' : null;
                 toggleBtn.textContent = open
                     ? pageTranslations[currentLang].toggleExtensions.hide
                     : pageTranslations[currentLang].toggleExtensions.show;
@@ -435,7 +435,7 @@ async function initBuildings() {
             const toggleBtn = row.querySelector('.veh-btn');
             toggleBtn.onclick = () => {
                 const open = div.classList.toggle('show');
-                div.style.maxHeight = open ? div.scrollHeight + 'px' : null;
+                div.style.maxHeight = open ? 'none' : null;
                 toggleBtn.textContent = open
                     ? pageTranslations[currentLang].toggleVehicles.hide
                     : pageTranslations[currentLang].toggleVehicles.show;
@@ -477,7 +477,7 @@ async function initBuildings() {
             const toggleBtn = row.querySelector('.stor-btn');
             toggleBtn.onclick = () => {
                 const open = div.classList.toggle('show');
-                div.style.maxHeight = open ? div.scrollHeight + 'px' : null;
+                div.style.maxHeight = open ? 'none' : null;
                 toggleBtn.textContent = open
                     ? pageTranslations[currentLang].toggleStorage.hide
                     : pageTranslations[currentLang].toggleStorage.show;

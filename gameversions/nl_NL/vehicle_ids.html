@@ -2,11 +2,7 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
-<<<<<<< HEAD
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-=======
-<meta name="viewport" content="width=1200, initial-scale=0.4, maximum-scale=1.0">
->>>>>>> 18a3bf43431e7af78a4250dd1629ca6afd53fcf2
 <title>Voertuigen Meldkamerspel (NL)</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
@@ -143,10 +139,7 @@ tbody tr:hover {
     border-radius: 4px;
 }
 </style>
-<<<<<<< HEAD
 <link rel="stylesheet" href="../../styles.css">
-=======
->>>>>>> 18a3bf43431e7af78a4250dd1629ca6afd53fcf2
 </head>
 
 <body>
@@ -158,15 +151,9 @@ tbody tr:hover {
     <li><img src="../../images/flag_us.gif" alt="EN" onclick="changeLanguage('en')"></li>
     <li><img src="../../images/flag_au.gif" alt="EN" onclick="changeLanguage('en')"></li>
 
-<<<<<<< HEAD
     <li><a class="button" id="game-button" href="../../index.html">Startpagina</a></li>
     <li><a class="button" id="contact-button" href="../../gameversions/contact.html">Contact</a></li>
     <li><a class="button" id="back-button" href="../../gameversions/nl_NL/indexNL.html">Terug</a></li>
-=======
-    <li><a class="button" id="game-button" href="/index">Startpagina</a></li>
-    <li><a class="button" id="contact-button" href="/gameversions/contact">Contact</a></li>
-    <li><a class="button" id="back-button" href="/gameversions/nl_NL/indexNL">Terug</a></li>
->>>>>>> 18a3bf43431e7af78a4250dd1629ca6afd53fcf2
 </ul>
 
 <h1 id="page-title"></h1>
@@ -353,7 +340,6 @@ async function initVehicles() {
 
         const labels = pageTranslations[currentLang].extraLabels;
 
-<<<<<<< HEAD
         const detailItems = [];
 
         if (v.schooling) {
@@ -376,48 +362,6 @@ async function initVehicles() {
         if (v.special) detailItems.push(`<div><strong>${labels.special}:</strong> ${v.special}</div>`);
 
         div.innerHTML = `<div class="detail-card">${detailItems.join('')}</div>`;
-=======
-        let schoolingText = '';
-        if (v.schooling) {
-            Object.entries(v.schooling).forEach(([discipline, positions]) => {
-                Object.keys(positions).forEach(pos => {
-                    schoolingText += `${discipline} - ${pos}\n`;
-                });
-            });
-        }
-
-        let detailsText = '';
-
-        if (schoolingText) {
-            detailsText += `${labels.schooling}: ${schoolingText}`;
-        }
-
-        if (v.waterTank != null) {
-            detailsText += `\n${labels.waterTank}: ${v.waterTank} l`;
-        }
-
-        if (v.foamTank != null) {
-            detailsText += `\n${labels.foamTank}: ${v.foamTank} l`;
-        }
-
-        if (v.waterBonus != null) {
-            detailsText += `\n${labels.waterBonus}: ${v.waterBonus} %`;
-        }
-
-        if (v.pumpCapacity != null) {
-            detailsText += `\n${labels.pumpCapacity}: ${v.pumpCapacity} l/min`;
-        }
-
-        if (v.equipmentCapacity != null) {
-            detailsText += `\n${labels.equipmentCapacity}: ${v.equipmentCapacity}`;
-        }
-
-        if (v.special) {
-            detailsText += `\n${labels.special}: ${v.special}`;
-        }
-
-        div.textContent = detailsText;
->>>>>>> 18a3bf43431e7af78a4250dd1629ca6afd53fcf2
 
         td.appendChild(div);
         detailsRow.appendChild(td);
@@ -426,12 +370,8 @@ async function initVehicles() {
         const btn = row.querySelector('.button-toggle');
         btn.onclick = () => {
             const open = div.classList.toggle('show');
-<<<<<<< HEAD
             detailsRow.classList.toggle('show-row', open);
             div.style.maxHeight = open ? (div.scrollHeight + 100) + 'px' : null;
-=======
-            div.style.maxHeight = open ? div.scrollHeight + 'px' : null;
->>>>>>> 18a3bf43431e7af78a4250dd1629ca6afd53fcf2
             btn.textContent = open
                 ? pageTranslations[currentLang].toggle.hide
                 : pageTranslations[currentLang].toggle.show;

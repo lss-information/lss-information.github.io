@@ -2,16 +2,9 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
-<<<<<<< HEAD
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gebouwen Meldkamerspel (NL)</title>
 
-=======
-<meta name="viewport" content="width=1200, initial-scale=0.4, maximum-scale=1.0">
-<title>Gebouwen Meldkamerspel (NL)</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
->>>>>>> 18a3bf43431e7af78a4250dd1629ca6afd53fcf2
 
 <style>
 body {
@@ -188,10 +181,7 @@ tbody tr:hover {
     color: #888888;
 }
 </style>
-<<<<<<< HEAD
 <link rel="stylesheet" href="../../styles.css">
-=======
->>>>>>> 18a3bf43431e7af78a4250dd1629ca6afd53fcf2
 </head>
 
 <body>
@@ -203,15 +193,9 @@ tbody tr:hover {
     <li><img src="../../images/flag_us.gif" alt="English" onclick="changeLanguage('en')"></li>
     <li><img src="../../images/flag_au.gif" alt="English" onclick="changeLanguage('en')"></li>
 
-<<<<<<< HEAD
     <li><a class="button" id="game-button" href="../../index.html">Startpagina</a></li>
     <li><a class="button" id="contact-button" href="../../gameversions/contact.html">Contact</a></li>
     <li><a class="button" id="back-button" href="../../gameversions/nl_NL/indexNL.html">Terug</a></li>
-=======
-    <li><a class="button" id="game-button" href="/index">Startpagina</a></li>
-    <li><a class="button" id="contact-button" href="/gameversions/contact">Contact</a></li>
-    <li><a class="button" id="back-button" href="/gameversions/nl_NL/indexNL">Terug</a></li>
->>>>>>> 18a3bf43431e7af78a4250dd1629ca6afd53fcf2
 </ul>
 
 <h1 id="page-title"></h1>
@@ -397,7 +381,6 @@ async function initBuildings() {
                     .join(', ') || labels.none;
 
                 div.innerHTML += `
-<<<<<<< HEAD
                     <div class="detail-card">
                         <div class="detail-title">${ext.caption}</div>
                         <div class="detail-grid">
@@ -407,13 +390,6 @@ async function initBuildings() {
                             <div><strong>${labels.vehicles}:</strong> ${vehicleNames || labels.none}</div>
                         </div>
                     </div>
-=======
-                    <strong>${ext.caption}</strong><br>
-                    ${labels.credits}: ${ext.credits}<br>
-                    ${labels.duration}: ${ext.duration}<br>
-                    ${labels.required}: ${requiredExtCaptions}<br>
-                    ${labels.vehicles}: ${vehicleNames || labels.none}<br><br>
->>>>>>> 18a3bf43431e7af78a4250dd1629ca6afd53fcf2
                 `;
             });
 
@@ -424,12 +400,8 @@ async function initBuildings() {
             const toggleBtn = row.querySelector('.ext-btn');
             toggleBtn.onclick = () => {
                 const open = div.classList.toggle('show');
-<<<<<<< HEAD
                 extRow.classList.toggle('show-row', open);
                 div.style.maxHeight = open ? (div.scrollHeight + 60) + 'px' : null;
-=======
-                div.style.maxHeight = open ? div.scrollHeight + 'px' : null;
->>>>>>> 18a3bf43431e7af78a4250dd1629ca6afd53fcf2
                 toggleBtn.textContent = open
                     ? pageTranslations[currentLang].toggleExtensions.hide
                     : pageTranslations[currentLang].toggleExtensions.show;
@@ -468,12 +440,8 @@ async function initBuildings() {
             const toggleBtn = row.querySelector('.veh-btn');
             toggleBtn.onclick = () => {
                 const open = div.classList.toggle('show');
-<<<<<<< HEAD
                 vehRow.classList.toggle('show-row', open);
                 div.style.maxHeight = open ? (div.scrollHeight + 60) + 'px' : null;
-=======
-                div.style.maxHeight = open ? div.scrollHeight + 'px' : null;
->>>>>>> 18a3bf43431e7af78a4250dd1629ca6afd53fcf2
                 toggleBtn.textContent = open
                     ? pageTranslations[currentLang].toggleVehicles.hide
                     : pageTranslations[currentLang].toggleVehicles.show;
@@ -492,7 +460,6 @@ async function initBuildings() {
 
             Object.keys(b.storageUpgrades).forEach(sKey => {
                 const s = b.storageUpgrades[sKey];
-<<<<<<< HEAD
                 const reqStorageNames = (s.requiredStorageUpgrades || [])
                     .map(reqKey => b.storageUpgrades[reqKey]?.caption || reqKey)
                     .join(', ') || labels.none;
@@ -507,20 +474,6 @@ async function initBuildings() {
                             <div><strong>${labels.extraStorage}:</strong> ${s.additionalStorage}</div>
                             <div><strong>${labels.required}:</strong> ${reqStorageNames}</div>
                         </div>
-=======
-                div.innerHTML += `
-                    <div class="storage-item">
-                        <strong>${s.caption}</strong><br>
-                        ${labels.credits}: ${s.credits}<br>
-                        Coins: ${s.coins || 0}<br>
-                        ${labels.duration}: ${s.duration}<br>
-                        ${labels.extraStorage}: ${s.additionalStorage}<br>
-                        ${labels.required}: ${
-                            (s.requiredStorageUpgrades || [])
-                                .map(reqKey => b.storageUpgrades[reqKey]?.caption || reqKey)
-                                .join(', ') || labels.none
-                        }<br>
->>>>>>> 18a3bf43431e7af78a4250dd1629ca6afd53fcf2
                     </div>
                 `;
             });
@@ -532,12 +485,8 @@ async function initBuildings() {
             const toggleBtn = row.querySelector('.stor-btn');
             toggleBtn.onclick = () => {
                 const open = div.classList.toggle('show');
-<<<<<<< HEAD
                 storRow.classList.toggle('show-row', open);
                 div.style.maxHeight = open ? (div.scrollHeight + 60) + 'px' : null;
-=======
-                div.style.maxHeight = open ? div.scrollHeight + 'px' : null;
->>>>>>> 18a3bf43431e7af78a4250dd1629ca6afd53fcf2
                 toggleBtn.textContent = open
                     ? pageTranslations[currentLang].toggleStorage.hide
                     : pageTranslations[currentLang].toggleStorage.show;

@@ -251,8 +251,6 @@
     "id": 7
   },
   {
-<<<<<<< HEAD
-=======
     "caption": "Zomerweer",
     "mission_type_ids": [
       617,
@@ -271,7 +269,6 @@
     "id": 8
   },
   {
->>>>>>> 18a3bf43431e7af78a4250dd1629ca6afd53fcf2
     "caption": "Sportevenement",
     "mission_type_ids": [
       1087,

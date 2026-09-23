@@ -390,8 +390,6 @@
     "id": 6
   },
   {
-<<<<<<< HEAD
-=======
     "caption": "Sommerwetter",
     "mission_type_ids": [
       183,
@@ -408,7 +406,6 @@
     "id": 7
   },
   {
->>>>>>> 18a3bf43431e7af78a4250dd1629ca6afd53fcf2
     "caption": "Sport-Event",
     "mission_type_ids": [
       868,

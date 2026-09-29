@@ -51090,7 +51090,10 @@
       "large_coastal_boat": 25
     },
     "additional": {
-      "filter_id": "coastal_rescue_missions"
+      "filter_id": "coastal_rescue_missions",
+      "vehicle_groups": [
+        "ocean_missions"
+      ]
     },
     "prerequisites": {
       "main_building": 28,

@@ -8725,6 +8725,7 @@
     "base_mission_id": 191,
     "additive_overlays": "",
     "mission_categories": [
+      "ambulance",
       "fire",
       "rural"
     ]
@@ -33879,7 +33880,6 @@
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
       "allow_ktw_instead_of_rtw": true,
-      "patient_at_end_of_mission": true,
       "patient_specialization_ids": [
         0
       ],
@@ -33921,7 +33921,6 @@
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
       "allow_ktw_instead_of_rtw": true,
-      "patient_at_end_of_mission": true,
       "patient_specialization_ids": [
         0
       ],
@@ -33966,7 +33965,6 @@
       "max_possible_prisoners": 15,
       "filter_id": "police_station_missions",
       "allow_ktw_instead_of_rtw": true,
-      "patient_at_end_of_mission": true,
       "patient_specialization_ids": [
         0
       ],

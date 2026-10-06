@@ -1192,6 +1192,44 @@
     ]
   },
   {
+    "id": "14/a",
+    "name": "Kleiner Feldbrand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1820,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 4000,
+      "brush_truck": 1,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [
+        131
+      ],
+      "average_min_fire_personnel": 9,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_stations": 2,
+      "wildfire": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 14,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "15",
     "name": "Kleiner Waldbrand",
     "place": "Wald",
@@ -1224,6 +1262,46 @@
     "overlay_index": null,
     "base_mission_id": 15,
     "additive_overlays": "",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "15/a",
+    "name": "Kleiner Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 2030,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 4200,
+      "brush_truck": 1,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [
+        134,
+        135
+      ],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_stations": 2,
+      "wildfire": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 15,
+    "additive_overlays": "a",
     "mission_categories": [
       "fire"
     ]
@@ -6215,6 +6293,42 @@
     ]
   },
   {
+    "id": "112/a",
+    "name": "Brennendes Kürbisfeld",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1670,
+    "generated_by": "",
+    "icons": [
+      "/images/ghost_gruen.png",
+      "/images/ghost_gelb.png",
+      "/images/ghost_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 2500,
+      "brush_truck": 1,
+      "wildfire_equipment": 1,
+      "firetrucks": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2025-10-17T09:00:00Z",
+      "date_end": "2025-10-31T23:59:59+01:00"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_stations": 2,
+      "wildfire": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 112,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "113",
     "name": "Kürbissuppe übergekocht",
     "place": "",
@@ -7206,6 +7320,50 @@
     ]
   },
   {
+    "id": "131/a",
+    "name": "Mittlerer Feldbrand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 3230,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
+      "water_needed": 14000,
+      "brush_truck": 2,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "battalion_chief_vehicles": 50,
+      "water_tankers": 20
+    },
+    "additional": {
+      "expansion_missions_ids": [
+        132,
+        133
+      ],
+      "average_min_fire_personnel": 25,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_stations": 7,
+      "wildfire": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 131,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "132",
     "name": "Großer Feldbrand",
     "place": "",
@@ -7236,6 +7394,44 @@
     "overlay_index": null,
     "base_mission_id": 132,
     "additive_overlays": "",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "132/a",
+    "name": "Großer Feldbrand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6640,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
+      "water_needed": 25500,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": {
+      "average_min_fire_personnel": 40,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "max_police_stations": 4,
+      "fire_stations": 10,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 132,
+    "additive_overlays": "a",
     "mission_categories": [
       "fire"
     ]
@@ -7272,6 +7468,45 @@
     "overlay_index": null,
     "base_mission_id": 133,
     "additive_overlays": "",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "133/a",
+    "name": "Großer Feldbrand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 6740,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
+      "water_needed": 25500,
+      "oneof_police_patrol_or_motorcycle": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": {
+      "average_min_fire_personnel": 40,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "fire_stations": 10,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 133,
+    "additive_overlays": "a",
     "mission_categories": [
       "fire"
     ]
@@ -7322,6 +7557,54 @@
     ]
   },
   {
+    "id": "134/a",
+    "name": "Großer Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 6430,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
+      "helicopter_bucket": 1,
+      "water_needed": 20000,
+      "brush_truck": 2,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "water_tankers": 70
+    },
+    "additional": {
+      "expansion_missions_ids": [
+        136,
+        137
+      ],
+      "average_min_fire_personnel": 27,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "max_police_stations": 4,
+      "fire_stations": 8,
+      "wildfire": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 134,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "135",
     "name": "Großer Waldbrand",
     "place": "Wald",
@@ -7363,6 +7646,55 @@
     "overlay_index": null,
     "base_mission_id": 135,
     "additive_overlays": "",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "135/a",
+    "name": "Großer Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 6530,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
+      "helicopter_bucket": 1,
+      "water_needed": 20500,
+      "oneof_police_patrol_or_motorcycle": 1,
+      "brush_truck": 2,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "water_tankers": 70
+    },
+    "additional": {
+      "expansion_missions_ids": [
+        136,
+        137
+      ],
+      "average_min_fire_personnel": 27,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "fire_stations": 8,
+      "wildfire": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 135,
+    "additive_overlays": "a",
     "mission_categories": [
       "fire"
     ]
@@ -7604,6 +7936,67 @@
     ]
   },
   {
+    "id": "136/d",
+    "name": "Großfeuer im Wald",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 11640,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "helicopter_bucket": 1,
+      "water_needed": 75000,
+      "oneof_police_patrol_or_motorcycle": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "platform_trucks": 10,
+      "mobile_command_vehicles": 30,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [
+        1029
+      ],
+      "average_min_fire_personnel": 90,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "fire_stations": 20,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 136,
+    "additive_overlays": "d",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "136/ab",
     "name": "Großfeuer im Wald",
     "place": "Wald",
@@ -7726,6 +8119,69 @@
     ]
   },
   {
+    "id": "136/ad",
+    "name": "Großfeuer im Wald",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 12040,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "helicopter_bucket": 1,
+      "water_needed": 75000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "platform_trucks": 10,
+      "mobile_command_vehicles": 30,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [
+        1029
+      ],
+      "average_min_fire_personnel": 90,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 1,
+      "drone": 1,
+      "fire_stations": 20,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 136,
+    "additive_overlays": "ad",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "136/bc",
     "name": "Großfeuer im Wald",
     "place": "Wald",
@@ -7781,6 +8237,130 @@
     "overlay_index": null,
     "base_mission_id": 136,
     "additive_overlays": "bc",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "136/bd",
+    "name": "Großfeuer im Wald",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 12040,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "helicopter_bucket": 1,
+      "water_needed": 75000,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "platform_trucks": 10,
+      "mobile_command_vehicles": 30,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [
+        1029
+      ],
+      "average_min_fire_personnel": 90,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "fire_stations": 20,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 136,
+    "additive_overlays": "bd",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "136/cd",
+    "name": "Großfeuer im Wald",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 12040,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "helicopter_bucket": 1,
+      "police_service_group_leader": 1,
+      "water_needed": 75000,
+      "oneof_police_patrol_or_motorcycle": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "platform_trucks": 10,
+      "mobile_command_vehicles": 30,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [
+        1029
+      ],
+      "average_min_fire_personnel": 90,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "police_service_group_leader": 3,
+      "fire_stations": 20,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 136,
+    "additive_overlays": "cd",
     "mission_categories": [
       "fire"
     ]
@@ -7848,6 +8428,262 @@
     ]
   },
   {
+    "id": "136/abd",
+    "name": "Großfeuer im Wald",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 12440,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "helicopter_bucket": 1,
+      "water_needed": 75000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "platform_trucks": 10,
+      "mobile_command_vehicles": 30,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [
+        1029
+      ],
+      "average_min_fire_personnel": 90,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "drone": 1,
+      "fire_stations": 20,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 136,
+    "additive_overlays": "abd",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "136/acd",
+    "name": "Großfeuer im Wald",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 12440,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "helicopter_bucket": 1,
+      "police_service_group_leader": 1,
+      "water_needed": 75000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "platform_trucks": 10,
+      "mobile_command_vehicles": 30,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [
+        1029
+      ],
+      "average_min_fire_personnel": 90,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "police_service_group_leader": 3,
+      "drone": 1,
+      "fire_stations": 20,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 136,
+    "additive_overlays": "acd",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "136/bcd",
+    "name": "Großfeuer im Wald",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 12440,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "helicopter_bucket": 1,
+      "police_service_group_leader": 1,
+      "water_needed": 75000,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "platform_trucks": 10,
+      "mobile_command_vehicles": 30,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [
+        1029
+      ],
+      "average_min_fire_personnel": 90,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "police_service_group_leader": 3,
+      "fire_stations": 20,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 136,
+    "additive_overlays": "bcd",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "136/abcd",
+    "name": "Großfeuer im Wald",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 12840,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "helicopter_bucket": 1,
+      "police_service_group_leader": 1,
+      "water_needed": 75000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "platform_trucks": 10,
+      "mobile_command_vehicles": 30,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 1,
+      "expansion_missions_ids": [
+        1029
+      ],
+      "average_min_fire_personnel": 90,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "police_service_group_leader": 3,
+      "drone": 1,
+      "fire_stations": 20,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 136,
+    "additive_overlays": "abcd",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "138",
     "name": "Flächenbrand",
     "place": "",
@@ -7876,6 +8712,42 @@
     "overlay_index": null,
     "base_mission_id": 138,
     "additive_overlays": "",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "138/a",
+    "name": "Flächenbrand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2320,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 5500,
+      "brush_truck": 1,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": {
+      "average_min_fire_personnel": 9,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "max_police_stations": 4,
+      "fire_stations": 2,
+      "wildfire": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 138,
+    "additive_overlays": "a",
     "mission_categories": [
       "fire"
     ]
@@ -7919,6 +8791,47 @@
     ]
   },
   {
+    "id": "139/a",
+    "name": "Flächenbrand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4730,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
+      "water_needed": 14500,
+      "brush_truck": 2,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "battalion_chief_vehicles": 20,
+      "water_tankers": 20
+    },
+    "additional": {
+      "average_min_fire_personnel": 27,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "max_police_stations": 4,
+      "fire_stations": 7,
+      "wildfire": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 139,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "140",
     "name": "Flächenbrand",
     "place": "",
@@ -7948,6 +8861,43 @@
     "overlay_index": null,
     "base_mission_id": 140,
     "additive_overlays": "",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "140/a",
+    "name": "Flächenbrand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2830,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 9500,
+      "oneof_police_patrol_or_motorcycle": 2,
+      "brush_truck": 2,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": {
+      "average_min_fire_personnel": 9,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "fire_stations": 2,
+      "wildfire": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 140,
+    "additive_overlays": "a",
     "mission_categories": [
       "fire"
     ]
@@ -7987,6 +8937,48 @@
     "overlay_index": null,
     "base_mission_id": 141,
     "additive_overlays": "",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "141/a",
+    "name": "Flächenbrand",
+    "place": "",
+    "place_array": [],
+    "average_credits": 4830,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "water_tankers": 1,
+      "water_needed": 14500,
+      "oneof_police_patrol_or_motorcycle": 2,
+      "brush_truck": 2,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "battalion_chief_vehicles": 20,
+      "water_tankers": 20
+    },
+    "additional": {
+      "average_min_fire_personnel": 27,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "fire_stations": 7,
+      "wildfire": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 141,
+    "additive_overlays": "a",
     "mission_categories": [
       "fire"
     ]
@@ -29723,6 +30715,42 @@
     "overlay_index": null,
     "base_mission_id": 261,
     "additive_overlays": "",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "261/a",
+    "name": "Kleiner Feldbrand durch Feuerwerkskörper",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1820,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "water_needed": 1500,
+      "brush_truck": 1,
+      "wildfire_equipment": 1,
+      "firetrucks": 2
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions",
+      "date_start": "2025-12-26T10:00:00Z",
+      "date_end": "2026-01-01T23:59:59+01:00"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_stations": 2,
+      "wildfire": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 261,
+    "additive_overlays": "a",
     "mission_categories": [
       "fire"
     ]
@@ -70725,6 +71753,49 @@
     "overlay_index": null,
     "base_mission_id": 441,
     "additive_overlays": "",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "441/a",
+    "name": "Brennende Waldhütte",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 2720,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "heavy_rescue_vehicles": 1,
+      "water_needed": 10000,
+      "brush_truck": 1,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": {
+      "expansion_missions_ids": [
+        134,
+        135
+      ],
+      "average_min_fire_personnel": 18,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "fire_stations": 4,
+      "wildfire": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 441,
+    "additive_overlays": "a",
     "mission_categories": [
       "fire"
     ]
@@ -124169,6 +125240,122 @@
     ]
   },
   {
+    "id": "645/b",
+    "name": "Brand Holzpolter",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 9230,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "water_needed": 46000,
+      "oneof_police_patrol_or_motorcycle": 2,
+      "brush_truck": 2,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "mobile_air_vehicles": 15
+    },
+    "additional": {
+      "expansion_missions_ids": [
+        136,
+        137
+      ],
+      "followup_missions_ids": [
+        4,
+        14,
+        15,
+        138,
+        139,
+        140,
+        141
+      ],
+      "average_min_fire_personnel": 80,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "fire_stations": 9,
+      "wildfire": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 645,
+    "additive_overlays": "b",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "645/ab",
+    "name": "Brand Holzpolter",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 9630,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 1,
+      "police_service_group_leader": 1,
+      "water_needed": 46000,
+      "oneof_police_patrol_or_motorcycle": 2,
+      "brush_truck": 2,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "mobile_air_vehicles": 15
+    },
+    "additional": {
+      "expansion_missions_ids": [
+        136,
+        137
+      ],
+      "followup_missions_ids": [
+        4,
+        14,
+        15,
+        138,
+        139,
+        140,
+        141
+      ],
+      "average_min_fire_personnel": 80,
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 2,
+      "police_service_group_leader": 1,
+      "fire_stations": 9,
+      "wildfire": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 645,
+    "additive_overlays": "ab",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "646",
     "name": "Absicherung Schwimmwettbewerb",
     "place": "See\nFluss",
@@ -135031,6 +136218,63 @@
     ]
   },
   {
+    "id": "699/a",
+    "name": "Moorbrand",
+    "place": "Moor",
+    "place_array": [
+      "Moor"
+    ],
+    "average_credits": 11640,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 2,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 1,
+      "water_tankers": 3,
+      "gwmess": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_lkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 85000,
+      "oneof_police_patrol_or_motorcycle": 4,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 10
+    },
+    "additional": {
+      "expansion_missions_ids": [
+        720
+      ],
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 3,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "fire_stations": 20,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 699,
+    "additive_overlays": "a",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "700",
     "name": "Bewusstlose Person am Lkw-Steuer",
     "place": "",
@@ -137001,6 +138245,61 @@
     ]
   },
   {
+    "id": "720/c",
+    "name": "Großfeuer im Moor",
+    "place": "Moor",
+    "place_array": [
+      "Moor"
+    ],
+    "average_credits": 17640,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 2,
+      "mobile_air_vehicles": 2,
+      "water_tankers": 6,
+      "gwmess": 2,
+      "police_helicopters": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 3,
+      "thw_gkw": 2,
+      "thw_lkw": 3,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 160000,
+      "oneof_police_patrol_or_motorcycle": 6,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "police_helicopter_stations": 1,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 3,
+      "fire_stations": 30,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 720,
+    "additive_overlays": "c",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "720/ab",
     "name": "Großfeuer im Moor",
     "place": "Moor",
@@ -137053,6 +138352,181 @@
     "overlay_index": null,
     "base_mission_id": 720,
     "additive_overlays": "ab",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "720/ac",
+    "name": "Großfeuer im Moor",
+    "place": "Moor",
+    "place_array": [
+      "Moor"
+    ],
+    "average_credits": 18040,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 2,
+      "mobile_air_vehicles": 2,
+      "water_tankers": 6,
+      "gwmess": 2,
+      "police_helicopters": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 3,
+      "thw_gkw": 2,
+      "thw_lkw": 3,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 160000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 6,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "police_helicopter_stations": 1,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 3,
+      "drone": 1,
+      "fire_stations": 30,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 720,
+    "additive_overlays": "ac",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "720/bc",
+    "name": "Großfeuer im Moor",
+    "place": "Moor",
+    "place_array": [
+      "Moor"
+    ],
+    "average_credits": 18460,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 2,
+      "mobile_air_vehicles": 2,
+      "water_tankers": 6,
+      "gwmess": 2,
+      "police_helicopters": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 3,
+      "thw_gkw": 2,
+      "thw_lkw": 3,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 160000,
+      "thw_command_2": 1,
+      "thw_command_trailer": 1,
+      "oneof_police_patrol_or_motorcycle": 6,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "police_helicopter_stations": 1,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 3,
+      "thw_command": 1,
+      "fire_stations": 30,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 720,
+    "additive_overlays": "bc",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "720/abc",
+    "name": "Großfeuer im Moor",
+    "place": "Moor",
+    "place_array": [
+      "Moor"
+    ],
+    "average_credits": 18860,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "battalion_chief_vehicles": 4,
+      "mobile_command_vehicles": 2,
+      "mobile_air_vehicles": 2,
+      "water_tankers": 6,
+      "gwmess": 2,
+      "police_helicopters": 1,
+      "heavy_rescue_vehicles": 2,
+      "thw_brmg_r": 3,
+      "thw_gkw": 2,
+      "thw_lkw": 3,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 160000,
+      "drone": 1,
+      "thw_command_2": 1,
+      "thw_command_trailer": 1,
+      "oneof_police_patrol_or_motorcycle": 6,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "firehouse_missions"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "police_stations": 5,
+      "police_helicopter_stations": 1,
+      "thw": 3,
+      "thw_bergung_count": 2,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 3,
+      "drone": 1,
+      "thw_command": 1,
+      "fire_stations": 30,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 720,
+    "additive_overlays": "abc",
     "mission_categories": [
       "fire"
     ]
@@ -165729,6 +167203,74 @@
     ]
   },
   {
+    "id": "866/c",
+    "name": "Großfeuer im Bergwald",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10662,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "mobile_air_vehicles": 2,
+      "water_tankers": 2,
+      "helicopter_bucket": 1,
+      "water_needed": 70000,
+      "mountain_equipment": 3,
+      "mountain_command": 1,
+      "mountain_atv": 2,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 60,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 4,
+      "average_min_fire_personnel": 50,
+      "filter_id": "mountain_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "vehicle_groups": [
+        "fire_missions",
+        "mountain_missions"
+      ],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [
+        25
+      ],
+      "patient_specialization_ids": [
+        0,
+        1,
+        4
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere",
+        "Allgemeine Chirurgie",
+        "Unfallchirurgie"
+      ],
+      "patient_specializations": "Allgemeine Innere, Allgemeine Chirurgie, Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 25,
+      "rescue_stations": 20,
+      "mountain_rescue": 2,
+      "fire_stations": 20,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 866,
+    "additive_overlays": "c",
+    "mission_categories": [
+      "mountain"
+    ]
+  },
+  {
     "id": "866/ab",
     "name": "Großfeuer im Bergwald",
     "place": "",
@@ -165794,6 +167336,220 @@
     "overlay_index": null,
     "base_mission_id": 866,
     "additive_overlays": "ab",
+    "mission_categories": [
+      "mountain"
+    ]
+  },
+  {
+    "id": "866/ac",
+    "name": "Großfeuer im Bergwald",
+    "place": "",
+    "place_array": [],
+    "average_credits": 10747,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "mobile_air_vehicles": 2,
+      "water_tankers": 2,
+      "helicopter_bucket": 1,
+      "water_needed": 70000,
+      "mountain_equipment": 3,
+      "mountain_command": 1,
+      "mountain_atv": 2,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 60,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 4,
+      "average_min_fire_personnel": 50,
+      "filter_id": "mountain_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "vehicle_groups": [
+        "fire_missions",
+        "mountain_missions"
+      ],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [
+        25
+      ],
+      "care_affected_people_min": 10,
+      "care_affected_people_max": 25,
+      "patient_specialization_ids": [
+        0,
+        1,
+        4
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere",
+        "Allgemeine Chirurgie",
+        "Unfallchirurgie"
+      ],
+      "patient_specializations": "Allgemeine Innere, Allgemeine Chirurgie, Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 25,
+      "rescue_stations": 20,
+      "care_service": 1,
+      "mountain_rescue": 2,
+      "fire_stations": 20,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 866,
+    "additive_overlays": "ac",
+    "mission_categories": [
+      "mountain"
+    ]
+  },
+  {
+    "id": "866/bc",
+    "name": "Großfeuer im Bergwald",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11027,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "mobile_air_vehicles": 2,
+      "water_tankers": 2,
+      "helicopter_bucket": 1,
+      "water_needed": 70000,
+      "drone": 1,
+      "mountain_equipment": 3,
+      "mountain_command": 1,
+      "mountain_atv": 2,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 60,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 4,
+      "average_min_fire_personnel": 50,
+      "filter_id": "mountain_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "vehicle_groups": [
+        "fire_missions",
+        "mountain_missions"
+      ],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [
+        25
+      ],
+      "patient_specialization_ids": [
+        0,
+        1,
+        4
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere",
+        "Allgemeine Chirurgie",
+        "Unfallchirurgie"
+      ],
+      "patient_specializations": "Allgemeine Innere, Allgemeine Chirurgie, Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 25,
+      "rescue_stations": 20,
+      "drone": 1,
+      "mountain_rescue": 2,
+      "fire_stations": 20,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 866,
+    "additive_overlays": "bc",
+    "mission_categories": [
+      "mountain"
+    ]
+  },
+  {
+    "id": "866/abc",
+    "name": "Großfeuer im Bergwald",
+    "place": "",
+    "place_array": [],
+    "average_credits": 11112,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "mobile_air_vehicles": 2,
+      "water_tankers": 2,
+      "helicopter_bucket": 1,
+      "water_needed": 70000,
+      "drone": 1,
+      "mountain_equipment": 3,
+      "mountain_command": 1,
+      "mountain_atv": 2,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "nef": 50,
+      "patient_transport": 60,
+      "helicopter": 10
+    },
+    "additional": {
+      "possible_patient": 4,
+      "average_min_fire_personnel": 50,
+      "filter_id": "mountain_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "vehicle_groups": [
+        "fire_missions",
+        "mountain_missions"
+      ],
+      "uses_custom_spawn_area": true,
+      "handoff_possible_via_building_types": [
+        25
+      ],
+      "care_affected_people_min": 10,
+      "care_affected_people_max": 25,
+      "patient_specialization_ids": [
+        0,
+        1,
+        4
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere",
+        "Allgemeine Chirurgie",
+        "Unfallchirurgie"
+      ],
+      "patient_specializations": "Allgemeine Innere, Allgemeine Chirurgie, Unfallchirurgie"
+    },
+    "prerequisites": {
+      "main_building": 25,
+      "rescue_stations": 20,
+      "drone": 1,
+      "care_service": 1,
+      "mountain_rescue": 2,
+      "fire_stations": 20,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 866,
+    "additive_overlays": "abc",
     "mission_categories": [
       "mountain"
     ]
@@ -230089,6 +231845,78 @@
     ]
   },
   {
+    "id": "1029/g",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 28400,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "g",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "1029/ab",
     "name": "Großflächiger Waldbrand",
     "place": "Wald",
@@ -230457,6 +232285,80 @@
     ]
   },
   {
+    "id": "1029/ag",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 28800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "drone": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "ag",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "1029/bc",
     "name": "Großflächiger Waldbrand",
     "place": "Wald",
@@ -230752,6 +232654,80 @@
     ]
   },
   {
+    "id": "1029/bg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 35500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "fire_care_service": 2,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "bg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "1029/cd",
     "name": "Großflächiger Waldbrand",
     "place": "Wald",
@@ -230976,6 +232952,81 @@
     ]
   },
   {
+    "id": "1029/cg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 30960,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "care_service": 3,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "cg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "1029/de",
     "name": "Großflächiger Waldbrand",
     "place": "Wald",
@@ -231126,6 +233177,82 @@
     ]
   },
   {
+    "id": "1029/dg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 29490,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "dg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "1029/ef",
     "name": "Großflächiger Waldbrand",
     "place": "Wald",
@@ -231194,6 +233321,154 @@
     "overlay_index": null,
     "base_mission_id": 1029,
     "additive_overlays": "ef",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/eg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 28800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "energy_supply": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "eg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/fg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 28800,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "fg",
     "mission_categories": [
       "fire"
     ]
@@ -231502,6 +233777,82 @@
     ]
   },
   {
+    "id": "1029/abg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 36000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "drone": 1,
+      "fire_care_service": 2,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "abg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "1029/acd",
     "name": "Großflächiger Waldbrand",
     "place": "Wald",
@@ -231732,6 +234083,83 @@
     ]
   },
   {
+    "id": "1029/acg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 31360,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "drone": 1,
+      "care_service": 3,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "acg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "1029/ade",
     "name": "Großflächiger Waldbrand",
     "place": "Wald",
@@ -231886,6 +234314,84 @@
     ]
   },
   {
+    "id": "1029/adg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 29890,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "drone": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "adg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "1029/aef",
     "name": "Großflächiger Waldbrand",
     "place": "Wald",
@@ -231956,6 +234462,158 @@
     "overlay_index": null,
     "base_mission_id": 1029,
     "additive_overlays": "aef",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/aeg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 29200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "energy_supply": 1,
+      "drone": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "aeg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/afg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 29200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "afg",
     "mission_categories": [
       "fire"
     ]
@@ -232191,6 +234849,83 @@
     ]
   },
   {
+    "id": "1029/bcg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 38060,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "care_service": 3,
+      "fire_care_service": 2,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "bcg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "1029/bde",
     "name": "Großflächiger Waldbrand",
     "place": "Wald",
@@ -232345,6 +235080,84 @@
     ]
   },
   {
+    "id": "1029/bdg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 36862,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "fire_care_service": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "bdg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "1029/bef",
     "name": "Großflächiger Waldbrand",
     "place": "Wald",
@@ -232415,6 +235228,158 @@
     "overlay_index": null,
     "base_mission_id": 1029,
     "additive_overlays": "bef",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/beg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 36000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "energy_supply": 1,
+      "fire_care_service": 2,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "beg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/bfg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 36000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "fire_care_service": 2,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "bfg",
     "mission_categories": [
       "fire"
     ]
@@ -232576,6 +235541,85 @@
     ]
   },
   {
+    "id": "1029/cdg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 32050,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "care_service": 3,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "cdg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "1029/cef",
     "name": "Großflächiger Waldbrand",
     "place": "Wald",
@@ -232647,6 +235691,160 @@
     "overlay_index": null,
     "base_mission_id": 1029,
     "additive_overlays": "cef",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/ceg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 31360,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "energy_supply": 1,
+      "care_service": 3,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "ceg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/cfg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 31360,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "care_service": 3,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "cfg",
     "mission_categories": [
       "fire"
     ]
@@ -232724,6 +235922,238 @@
     "overlay_index": null,
     "base_mission_id": 1029,
     "additive_overlays": "def",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/deg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 29890,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "energy_supply": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "deg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/dfg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 29890,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "dfg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/efg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 29200,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "energy_supply": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "efg",
     "mission_categories": [
       "fire"
     ]
@@ -232965,6 +236395,85 @@
     ]
   },
   {
+    "id": "1029/abcg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 38560,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "drone": 1,
+      "care_service": 3,
+      "fire_care_service": 2,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "abcg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "1029/abde",
     "name": "Großflächiger Waldbrand",
     "place": "Wald",
@@ -233123,6 +236632,86 @@
     ]
   },
   {
+    "id": "1029/abdg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 37362,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "drone": 1,
+      "fire_care_service": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "abdg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "1029/abef",
     "name": "Großflächiger Waldbrand",
     "place": "Wald",
@@ -233195,6 +236784,162 @@
     "overlay_index": null,
     "base_mission_id": 1029,
     "additive_overlays": "abef",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/abeg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 36500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "energy_supply": 1,
+      "drone": 1,
+      "fire_care_service": 2,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "abeg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/abfg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 36500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "fire_care_service": 2,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "abfg",
     "mission_categories": [
       "fire"
     ]
@@ -233360,6 +237105,87 @@
     ]
   },
   {
+    "id": "1029/acdg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 32450,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "drone": 1,
+      "care_service": 3,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "acdg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "1029/acef",
     "name": "Großflächiger Waldbrand",
     "place": "Wald",
@@ -233433,6 +237259,164 @@
     "overlay_index": null,
     "base_mission_id": 1029,
     "additive_overlays": "acef",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/aceg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 31760,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "energy_supply": 1,
+      "drone": 1,
+      "care_service": 3,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "aceg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/acfg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 31760,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "care_service": 3,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "acfg",
     "mission_categories": [
       "fire"
     ]
@@ -233512,6 +237496,244 @@
     "overlay_index": null,
     "base_mission_id": 1029,
     "additive_overlays": "adef",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/adeg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 30290,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "energy_supply": 1,
+      "drone": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "adeg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/adfg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 30290,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "adfg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/aefg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 29600,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "energy_supply": 1,
+      "drone": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "aefg",
     "mission_categories": [
       "fire"
     ]
@@ -233677,6 +237899,87 @@
     ]
   },
   {
+    "id": "1029/bcdg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 39422,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "care_service": 3,
+      "fire_care_service": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "bcdg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "1029/bcef",
     "name": "Großflächiger Waldbrand",
     "place": "Wald",
@@ -233750,6 +238053,164 @@
     "overlay_index": null,
     "base_mission_id": 1029,
     "additive_overlays": "bcef",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/bceg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 38560,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "energy_supply": 1,
+      "care_service": 3,
+      "fire_care_service": 2,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "bceg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/bcfg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 38560,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "care_service": 3,
+      "fire_care_service": 2,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "bcfg",
     "mission_categories": [
       "fire"
     ]
@@ -233834,6 +238295,244 @@
     ]
   },
   {
+    "id": "1029/bdeg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 37362,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "energy_supply": 1,
+      "fire_care_service": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "bdeg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/bdfg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 37362,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "fire_care_service": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "bdfg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/befg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 36500,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "energy_supply": 1,
+      "fire_care_service": 2,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "befg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "1029/cdef",
     "name": "Großflächiger Waldbrand",
     "place": "Wald",
@@ -233909,6 +238608,327 @@
     "overlay_index": null,
     "base_mission_id": 1029,
     "additive_overlays": "cdef",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/cdeg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 32450,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "energy_supply": 1,
+      "care_service": 3,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "cdeg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/cdfg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 32450,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "care_service": 3,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "cdfg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/cefg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 31760,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "energy_supply": 1,
+      "care_service": 3,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "cefg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/defg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 30290,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "energy_supply": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "defg",
     "mission_categories": [
       "fire"
     ]
@@ -234078,6 +239098,89 @@
     ]
   },
   {
+    "id": "1029/abcdg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 39922,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "drone": 1,
+      "care_service": 3,
+      "fire_care_service": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "abcdg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "1029/abcef",
     "name": "Großflächiger Waldbrand",
     "place": "Wald",
@@ -234153,6 +239256,168 @@
     "overlay_index": null,
     "base_mission_id": 1029,
     "additive_overlays": "abcef",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/abceg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 39060,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "energy_supply": 1,
+      "drone": 1,
+      "care_service": 3,
+      "fire_care_service": 2,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "abceg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/abcfg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 39060,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "care_service": 3,
+      "fire_care_service": 2,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "abcfg",
     "mission_categories": [
       "fire"
     ]
@@ -234234,6 +239499,250 @@
     "overlay_index": null,
     "base_mission_id": 1029,
     "additive_overlays": "abdef",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/abdeg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 37862,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "energy_supply": 1,
+      "drone": 1,
+      "fire_care_service": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "abdeg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/abdfg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 37862,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "fire_care_service": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "abdfg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/abefg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 37000,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "energy_supply": 1,
+      "drone": 1,
+      "fire_care_service": 2,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "abefg",
     "mission_categories": [
       "fire"
     ]
@@ -234321,6 +239830,335 @@
     ]
   },
   {
+    "id": "1029/acdeg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 32850,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "energy_supply": 1,
+      "drone": 1,
+      "care_service": 3,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "acdeg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/acdfg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 32850,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "care_service": 3,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "acdfg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/acefg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 32160,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "energy_supply": 1,
+      "drone": 1,
+      "care_service": 3,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "acefg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/adefg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 30690,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "energy_supply": 1,
+      "drone": 1,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "adefg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
     "id": "1029/bcdef",
     "name": "Großflächiger Waldbrand",
     "place": "Wald",
@@ -234398,6 +240236,418 @@
     "overlay_index": null,
     "base_mission_id": 1029,
     "additive_overlays": "bcdef",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/bcdeg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 39922,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "energy_supply": 1,
+      "care_service": 3,
+      "fire_care_service": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "bcdeg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/bcdfg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 39922,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "care_service": 3,
+      "fire_care_service": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "bcdfg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/bcefg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 39060,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "energy_supply": 1,
+      "care_service": 3,
+      "fire_care_service": 2,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "bcefg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/bdefg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 37862,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "energy_supply": 1,
+      "fire_care_service": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "bdefg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/cdefg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 32850,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "energy_supply": 1,
+      "care_service": 3,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "cdefg",
     "mission_categories": [
       "fire"
     ]
@@ -234482,6 +240732,600 @@
     "overlay_index": null,
     "base_mission_id": 1029,
     "additive_overlays": "abcdef",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/abcdeg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 40422,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "energy_supply": 1,
+      "drone": 1,
+      "care_service": 3,
+      "fire_care_service": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "abcdeg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/abcdfg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 40422,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "drone": 1,
+      "care_service": 3,
+      "fire_care_service": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "abcdfg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/abcefg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 39560,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "energy_supply": 1,
+      "drone": 1,
+      "care_service": 3,
+      "fire_care_service": 2,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "abcefg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/abdefg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 38362,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "energy_supply": 1,
+      "drone": 1,
+      "fire_care_service": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "abdefg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/acdefg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 33250,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "energy_supply": 1,
+      "drone": 1,
+      "care_service": 3,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "acdefg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/bcdefg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 40422,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "energy_supply": 1,
+      "care_service": 3,
+      "fire_care_service": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "bcdefg",
+    "mission_categories": [
+      "fire"
+    ]
+  },
+  {
+    "id": "1029/abcdefg",
+    "name": "Großflächiger Waldbrand",
+    "place": "Wald",
+    "place_array": [
+      "Wald"
+    ],
+    "average_credits": 40922,
+    "generated_by": "",
+    "icons": [
+      "/images/fire_gruen.png",
+      "/images/fire_gelb.png",
+      "/images/fire_rot.png"
+    ],
+    "requirements": {
+      "platform_trucks": 1,
+      "battalion_chief_vehicles": 3,
+      "mobile_command_vehicles": 1,
+      "mobile_air_vehicles": 6,
+      "water_tankers": 5,
+      "gwmess": 1,
+      "helicopter_bucket": 2,
+      "police_service_group_leader": 1,
+      "thw_brmg_r": 1,
+      "thw_gkw": 1,
+      "thw_mtwtz": 1,
+      "thw_mzkw": 1,
+      "water_needed": 250000,
+      "energy_supply": 1,
+      "drone": 1,
+      "oneof_police_patrol_or_motorcycle": 10,
+      "disaster_response_technology_equipment": 1,
+      "disaster_response_technology_crew": 1,
+      "disaster_response_technology_trailer": 1,
+      "brush_truck": 3,
+      "wildfire_equipment": 1,
+      "firetrucks": 1
+    },
+    "chances": {
+      "gwmess": 75,
+      "nef": 25,
+      "patient_transport": 50
+    },
+    "additional": {
+      "possible_patient": 15,
+      "possible_patient_min": 5,
+      "followup_missions_ids": [
+        1030
+      ],
+      "average_min_fire_personnel": 150,
+      "filter_id": "firehouse_missions",
+      "need_helicopter_bucket_only_if_present": true,
+      "care_includes_staff_members": true,
+      "care_affected_people_min": 25,
+      "care_affected_people_max": 1000,
+      "patient_specialization_ids": [
+        0
+      ],
+      "patient_specialization_captions": [
+        "Allgemeine Innere"
+      ],
+      "patient_specializations": "Allgemeine Innere"
+    },
+    "prerequisites": {
+      "main_building": 0,
+      "rescue_stations": 10,
+      "police_stations": 12,
+      "thw": 1,
+      "thw_bergung_count": 1,
+      "thw_zugtrupp_count": 1,
+      "thw_fg_raeumen_count": 1,
+      "police_service_group_leader": 5,
+      "energy_supply": 1,
+      "drone": 1,
+      "care_service": 3,
+      "fire_care_service": 2,
+      "disaster_response_technology": 1,
+      "fire_stations": 40,
+      "wildfire": 2
+    },
+    "overlay_index": null,
+    "base_mission_id": 1029,
+    "additive_overlays": "abcdefg",
     "mission_categories": [
       "fire"
     ]

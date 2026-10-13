@@ -36624,7 +36624,6 @@
       "handoff_possible_via_building_types": [
         27
       ],
-      "patient_at_end_of_mission": true,
       "patient_specialization_ids": [
         0
       ],
@@ -45149,8 +45148,7 @@
       "uses_custom_spawn_area": true,
       "handoff_possible_via_building_types": [
         27
-      ],
-      "patient_at_end_of_mission": true
+      ]
     },
     "prerequisites": {
       "main_building": 27,

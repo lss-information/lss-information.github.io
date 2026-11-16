@@ -77397,5 +77397,101 @@
     "mission_categories": [
       "police"
     ]
+  },
+  {
+    "id": "1183",
+    "name": "Home Invasion – Crime Scene",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2000,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "crime_scene_unit": 1,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 2,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1183,
+    "additive_overlays": "",
+    "mission_categories": [
+      "police"
+    ]
+  },
+  {
+    "id": "1184",
+    "name": "Serial Burglary Investigation",
+    "place": "",
+    "place_array": [],
+    "average_credits": 2500,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "crime_scene_unit": 1,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 2,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1184,
+    "additive_overlays": "",
+    "mission_categories": [
+      "police"
+    ]
+  },
+  {
+    "id": "1185",
+    "name": "Evidence Found in Abandoned Vehicle",
+    "place": "",
+    "place_array": [],
+    "average_credits": 1500,
+    "generated_by": "",
+    "icons": [
+      "/images/zoom_gruen.png",
+      "/images/zoom_gelb.png",
+      "/images/zoom_rot.png"
+    ],
+    "requirements": {
+      "crime_scene_unit": 1,
+      "police_cars": 1
+    },
+    "chances": {},
+    "additional": {
+      "filter_id": "police_station_missions"
+    },
+    "prerequisites": {
+      "main_building": 5,
+      "police_stations": 2,
+      "criminal_investigation_count": 1
+    },
+    "overlay_index": null,
+    "base_mission_id": 1185,
+    "additive_overlays": "",
+    "mission_categories": [
+      "police"
+    ]
   }
 ]

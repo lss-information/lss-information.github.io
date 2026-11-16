@@ -244664,7 +244664,7 @@
   },
   {
     "id": "1037",
-    "name": "LKW umgestürzt auf Autobahn",
+    "name": "Umgestürzter LKW auf Autobahn",
     "place": "",
     "place_array": [],
     "average_credits": 2825,
@@ -244690,10 +244690,10 @@
     "additional": {
       "possible_patient": 2,
       "possible_patient_min": 1,
-      "followup_missions_ids": [
+      "filter_id": "highway_police_missions",
+      "subsequent_missions_ids": [
         1002
       ],
-      "filter_id": "highway_police_missions",
       "uses_custom_spawn_area": true,
       "patient_specialization_ids": [
         4
@@ -244718,7 +244718,7 @@
   },
   {
     "id": "1037/a",
-    "name": "LKW umgestürzt auf Autobahn",
+    "name": "Umgestürzter LKW auf Autobahn",
     "place": "",
     "place_array": [],
     "average_credits": 3440,
@@ -244746,10 +244746,10 @@
     "additional": {
       "possible_patient": 2,
       "possible_patient_min": 1,
-      "followup_missions_ids": [
+      "filter_id": "highway_police_missions",
+      "subsequent_missions_ids": [
         1002
       ],
-      "filter_id": "highway_police_missions",
       "uses_custom_spawn_area": true,
       "patient_specialization_ids": [
         4

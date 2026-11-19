@@ -14991,7 +14991,7 @@
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
       "date_start": "2026-09-18T09:00:00Z",
-      "date_end": "2026-11-20T23:59:59+11:00",
+      "date_end": "2026-12-04T23:59:59+11:00",
       "patient_specialization_ids": [
         7
       ],
@@ -15033,7 +15033,7 @@
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
       "date_start": "2026-09-18T09:00:00Z",
-      "date_end": "2026-11-20T23:59:59+11:00",
+      "date_end": "2026-12-04T23:59:59+11:00",
       "patient_specialization_ids": [
         7
       ],
@@ -15074,7 +15074,7 @@
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
       "date_start": "2026-09-18T09:00:00Z",
-      "date_end": "2026-11-20T23:59:59+11:00",
+      "date_end": "2026-12-04T23:59:59+11:00",
       "patient_specialization_ids": [
         4
       ],
@@ -15118,7 +15118,7 @@
       "possible_patient_min": 1,
       "filter_id": "police_station_missions",
       "date_start": "2026-09-18T09:00:00Z",
-      "date_end": "2026-11-20T23:59:59+11:00",
+      "date_end": "2026-12-04T23:59:59+11:00",
       "patient_specialization_ids": [
         4
       ],
@@ -15165,7 +15165,7 @@
       "filter_id": "ambulance_station_missions",
       "patient_allow_first_responder_chance": 50,
       "date_start": "2026-09-18T09:00:00Z",
-      "date_end": "2026-11-20T23:59:59+11:00",
+      "date_end": "2026-12-04T23:59:59+11:00",
       "patient_specialization_ids": [
         0
       ],
@@ -15207,7 +15207,7 @@
     "additional": {
       "filter_id": "firehouse_missions",
       "date_start": "2026-09-18T09:00:00Z",
-      "date_end": "2026-11-20T23:59:59+11:00"
+      "date_end": "2026-12-04T23:59:59+11:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -21840,7 +21840,7 @@
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
       "date_start": "2026-09-18T09:00:00Z",
-      "date_end": "2026-11-20T23:59:59+11:00",
+      "date_end": "2026-12-04T23:59:59+11:00",
       "patient_specialization_ids": [
         7
       ],
@@ -21882,7 +21882,7 @@
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
       "date_start": "2026-09-18T09:00:00Z",
-      "date_end": "2026-11-20T23:59:59+11:00",
+      "date_end": "2026-12-04T23:59:59+11:00",
       "patient_specialization_ids": [
         7
       ],
@@ -21923,7 +21923,7 @@
       "possible_patient_min": 1,
       "filter_id": "ambulance_station_missions",
       "date_start": "2026-09-18T09:00:00Z",
-      "date_end": "2026-11-20T23:59:59+11:00",
+      "date_end": "2026-12-04T23:59:59+11:00",
       "patient_specialization_ids": [
         4
       ],
@@ -21967,7 +21967,7 @@
       "possible_patient_min": 1,
       "filter_id": "police_station_missions",
       "date_start": "2026-09-18T09:00:00Z",
-      "date_end": "2026-11-20T23:59:59+11:00",
+      "date_end": "2026-12-04T23:59:59+11:00",
       "patient_specialization_ids": [
         4
       ],
@@ -22014,7 +22014,7 @@
       "filter_id": "ambulance_station_missions",
       "patient_allow_first_responder_chance": 50,
       "date_start": "2026-09-18T09:00:00Z",
-      "date_end": "2026-11-20T23:59:59+11:00",
+      "date_end": "2026-12-04T23:59:59+11:00",
       "patient_specialization_ids": [
         1
       ],
@@ -22056,7 +22056,7 @@
     "additional": {
       "filter_id": "firehouse_missions",
       "date_start": "2026-09-18T09:00:00Z",
-      "date_end": "2026-11-20T23:59:59+11:00"
+      "date_end": "2026-12-04T23:59:59+11:00"
     },
     "prerequisites": {
       "main_building": 0,
@@ -22097,7 +22097,7 @@
         482
       ],
       "date_start": "2026-09-18T09:00:00Z",
-      "date_end": "2026-11-20T23:59:59+11:00"
+      "date_end": "2026-12-04T23:59:59+11:00"
     },
     "prerequisites": {
       "main_building": 6,
@@ -22133,7 +22133,7 @@
       "filter_id": "police_station_missions",
       "subsequent_mission_only": true,
       "date_start": "2026-09-18T09:00:00Z",
-      "date_end": "2026-11-20T23:59:59+11:00"
+      "date_end": "2026-12-04T23:59:59+11:00"
     },
     "prerequisites": {
       "main_building": 6,
@@ -22173,7 +22173,7 @@
       "patient_allow_first_responder_chance": 60,
       "subsequent_mission_only": true,
       "date_start": "2026-09-18T09:00:00Z",
-      "date_end": "2026-11-20T23:59:59+11:00",
+      "date_end": "2026-12-04T23:59:59+11:00",
       "patient_specialization_ids": [
         0
       ],

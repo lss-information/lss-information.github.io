@@ -490,3 +490,131 @@ tr.info-row:has(.show) {
     background: rgba(183, 28, 28, 0.15);
     color: #ffcdd2;
 }
+
+/* ===== TELEFOON (smal scherm) ===== */
+@media (max-width: 640px) {
+    html, body { max-width: 100% !important; overflow-x: hidden !important; }
+    body { text-align: left !important; }
+
+    /* Navigatie: compacte balk met vlaggen en knoppen */
+    .language-selector {
+        border-radius: 16px !important;
+        margin: 10px auto !important;
+        padding: 8px 10px !important;
+        gap: 6px !important;
+        max-width: calc(100% - 20px) !important;
+        width: auto !important;
+    }
+    .language-selector img { height: 20px !important; width: 30px !important; }
+    .language-selector .button, .language-selector .back-flag {
+        height: 30px !important; padding: 0 12px !important; font-size: 12.5px !important;
+    }
+
+    h1, #page-title, #welcome-title { font-size: 24px !important; margin: 14px auto 6px auto !important; }
+    p, #page-message, #about-text, #select-info { font-size: 14px !important; padding: 0 14px !important; }
+
+    /* Zoekvelden, keuzelijsten en knoppen: volle breedte, nooit buiten beeld */
+    body > div:not(.table-wrapper):not(#exportModal):not(#compare-result) {
+        margin: 10px 12px !important;
+        gap: 8px !important;
+    }
+    input[type="text"], select {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        font-size: 16px !important;          /* voorkomt inzoomen op iPhone */
+        padding: 11px 14px !important;
+    }
+    body > div > .button, body > div > button.button, #event-filter-btn {
+        flex: 1 1 140px !important;
+        padding: 11px 14px !important;
+        font-size: 14px !important;
+    }
+
+    main { padding: 12px 10px !important; }
+    .card, .neon-box { padding: 20px 14px !important; border-radius: 16px !important; }
+
+    /* Tabellen als kaartjes */
+    .table-wrapper {
+        overflow-x: visible !important;
+        border: none !important;
+        box-shadow: none !important;
+        background: transparent !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        margin: 10px 0 !important;
+        padding: 0 10px !important;
+        min-height: 0 !important;
+    }
+    #sheet-data table { min-width: 0 !important; width: 100% !important; display: block !important; }
+    #sheet-data thead { display: none !important; }
+    #sheet-data tbody { display: block !important; }
+    #sheet-data tbody tr.data-row {
+        display: block !important;
+        background: var(--bg-card) !important;
+        border: 1px solid var(--border-color) !important;
+        border-radius: 14px !important;
+        padding: 8px 14px !important;
+        margin: 0 0 10px 0 !important;
+    }
+    #sheet-data tbody tr.data-row td {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: baseline !important;
+        gap: 12px !important;
+        padding: 6px 0 !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+        font-size: 14px !important;
+        text-align: right !important;
+        overflow-wrap: anywhere !important;
+    }
+    #sheet-data tbody tr.data-row td:last-child { border-bottom: none !important; }
+    #sheet-data tbody tr.data-row td::before {
+        content: attr(data-label);
+        flex: 0 0 auto;
+        max-width: 45%;
+        text-align: left;
+        color: var(--text-muted);
+        font-family: 'Outfit', sans-serif;
+        font-size: 11.5px;
+        font-weight: 600;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+    }
+    /* Naam bovenaan groot, knoppen-cel zonder label */
+    #sheet-data tbody tr.data-row td:nth-child(2) { font-weight: 600; color: #f8fafc !important; font-size: 15px !important; }
+    #sheet-data tbody tr.data-row td:has(> .button-toggle)::before,
+    #sheet-data tbody tr.data-row td[data-label=""]::before { content: none; }
+    #sheet-data tbody tr.data-row td:empty { display: none !important; }
+    #sheet-data tbody tr.data-row td:has(> .button-toggle) { padding-top: 10px !important; }
+    #sheet-data tbody tr.data-row td:has(> .button-toggle) { justify-content: flex-start !important; flex-wrap: wrap !important; gap: 6px !important; }
+
+    /* Detail-rijen onder het kaartje */
+    #sheet-data tbody tr:not(.data-row) { display: none; }
+    #sheet-data tbody tr:not(.data-row).show-row,
+    #sheet-data tbody tr:not(.data-row).show,
+    #sheet-data tbody tr:not(.data-row):has(.show) {
+        display: block !important;
+        margin: -6px 0 12px 0 !important;
+    }
+    #sheet-data tbody tr:not(.data-row) td {
+        display: block !important;
+        width: 100% !important;
+        padding: 10px 12px !important;
+        border-radius: 0 0 14px 14px !important;
+        text-align: left !important;
+        background: rgba(15, 23, 42, 0.65) !important;
+        border: 1px solid var(--border-color) !important;
+        border-top: none !important;
+    }
+    .detail-grid { grid-template-columns: 1fr !important; }
+
+    /* Vergelijk-tabel en modals */
+    #compare-result { padding: 0 10px !important; overflow-x: auto !important; }
+    #compare-result table { min-width: 0 !important; width: 100% !important; }
+    #compare-result th, #compare-result td { padding: 8px !important; font-size: 13px !important; }
+    .modal-content, #exportModal > div { width: 94% !important; padding: 18px !important; }
+    .category-grid { grid-template-columns: 1fr !important; }
+
+    footer, #footer { margin: 20px 0 0 0 !important; }
+}

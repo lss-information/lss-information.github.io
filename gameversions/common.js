@@ -66,3 +66,29 @@ async function fetchLastUpdate(file) {
     if (isNaN(date)) throw new Error(`${file}: invalid date`);
     return date;
 }
+
+// Mobiel: elke cel krijgt de kolomnaam als data-label, zodat de tabel op een smal scherm
+// als kaartjes getoond kan worden (zie styles.css, @media max-width 640px).
+function labelTableCells(root) {
+    root.querySelectorAll('#sheet-data table').forEach(table => {
+        const heads = [...table.querySelectorAll('thead th')].map(th => th.textContent.trim());
+        if (!heads.length) return;
+        table.querySelectorAll('tbody > tr').forEach(tr => {
+            const cells = tr.children;
+            if (cells.length !== heads.length) return;   // detail-rijen (colspan) niet
+            tr.classList.add('data-row');
+            [...cells].forEach((td, i) => { if (!td.dataset.label) td.dataset.label = heads[i]; });
+        });
+    });
+}
+document.addEventListener('DOMContentLoaded', () => {
+    const target = document.getElementById('sheet-data');
+    if (!target) return;
+    let pending = false;
+    new MutationObserver(() => {
+        if (pending) return;
+        pending = true;
+        requestAnimationFrame(() => { pending = false; labelTableCells(document); });
+    }).observe(target, { childList: true, subtree: true });
+    labelTableCells(document);
+});

@@ -84,5 +84,13 @@
     "credits": 15000,
     "coins": 10,
     "special": "Uitrusting vereist een voertuig met vrije capaciteit om gebruikt te worden.Mogelijke voertuigen: DB-VEB, DB-LOG, VW-LOG, BMH-LOG"
+    },
+    {
+    "id": "fire_extinguisher_robot_equipment",
+    "name": "RC-BU-BRB",
+    "size": 10,
+    "credits": 15000,
+    "coins": 10,
+    "special": "Uitrusting vereist een voertuig met vrije capaciteit om gebruikt te worden. Mogelijke voertuigen: DB-VEB, DB-BRB, BMH-BRB"
     }
 ]

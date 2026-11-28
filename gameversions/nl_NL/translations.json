@@ -47,6 +47,7 @@
   "gwmess": "Benodigde Verkenningseenheid Brandweer",
   "hazmat_vehicles": "Benodigde Adviseur(en) Gevaarlijke Stoffen",
   "foam": "Benodigde Schuimblusvoertuig(en) / Haakarmbak(ken)",
+  "fire_extinguisher_robot": "Benodigde Brandweerrobot",
   "foam_needed": "Schuim benodigd (L)",
   "water_needed": "Water benodigd (L)",
   "min_pump_speed": "Benodigde Min. Pomp Capaciteit",

@@ -49,6 +49,7 @@
   "foam": "Benodigde Schuimblusvoertuig(en) / Haakarmbak(ken)",
   "fire_extinguisher_robot": "Benodigde Brandweerrobot",
   "fire_boat": "Benodigde Brandweerboot",
+  "car_carrier_large": "Benodigde Berger-G",
   "foam_needed": "Schuim benodigd (L)",
   "water_needed": "Water benodigd (L)",
   "min_pump_speed": "Benodigde Min. Pomp Capaciteit",
@@ -122,6 +123,7 @@
   "bomb_disposal_dogs": "Benodigde Explosievenhonden",
   "bomb_disposal_diver": "Benodigde DB-Explosievenduikers",
   "bomb_disposal_robot": "Benodigde RC-Explosievenrobot",
+  "bomb_disposal_boat": "Benodigde BA-DDG",
   "bomb_disposal_patrol": "Benodigde DB-TEV",
 
   "Arrayx": "Onbekend aantal -",
